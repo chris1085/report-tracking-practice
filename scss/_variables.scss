@@ -1,0 +1,17 @@
+$font-family-title: "Noto Sans TC";
+
+$light_gray: #E4E4E7;
+$step-count: 9;
+$step-states: "pending",
+"active",
+"pass",
+"fail";
+$state-to-glyph: (pending: "\f141",
+    active: "\f021",
+    pass: "\f00c",
+    fail: "\f12a"
+);
+$state-to-color: (pending: #F8AC59,
+    active: #1C84C6,
+    pass: #1AB394,
+    fail: #ED5565);

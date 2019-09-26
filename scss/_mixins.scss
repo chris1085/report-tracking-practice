@@ -1,0 +1,114 @@
+@mixin l-pc {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin pc {
+    @media (min-width:993px) and (max-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin pad {
+    @media (min-width:769px) and (max-width: 992px) {
+        @content;
+    }
+}
+
+@mixin l-mobile {
+    @media (min-width:577px) and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media(max-width:576px) {
+        @content;
+    }
+}
+
+@mixin rainbow-bar ($color0, $color20, $color40, $color60, $color80, $color100) {
+    // background-color: #302244;
+    border-bottom: 4px solid transparent;
+    border-image: linear-gradient(to left, $color100 0%, $color20 20%, $color40 40%, $color60 60%, $color80 80%, $color100 100%);
+    border-image-slice: 1;
+    height: 3px;
+}
+
+@mixin gray-stripe {
+    background-size: 35px 35px;
+    background-color: #EcEcEc;
+    background-image: linear-gradient(-45deg, rgba(255, 255, 255, .4) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .4) 50%, rgba(255, 255, 255, .4) 75%, transparent 75%, transparent);
+    background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, .4) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .4) 50%, rgba(255, 255, 255, .4) 75%, transparent 75%, transparent);
+}
+
+@mixin blue-stripe {
+    background-size: 35px 35px;
+    background-color: #57aed1;
+    background-image: linear-gradient(-45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
+    background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
+}
+
+@mixin green-stripe {
+    background-size: 35px 35px;
+    background-color: #8bc53f;
+    background-image: linear-gradient(-45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
+    background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
+}
+
+@mixin inner-shadow {
+    -webkit-box-shadow: inset 2px 2px 2px 0px rgba(0, 0, 0, .2);
+    box-shadow: inset 2px 2px 2px 0px rgba(0, 0, 0, .2);
+}
+
+
+/*=============================================
+=            step progress bar mixin          =
+=============================================*/
+
+@mixin step-status($step: "1", $status-color: #E4E4E7, $status-icon: '', $animate: false, $last-step: false) {
+
+    .step-item[data-step="#{$step}"] {
+
+        .step-body:before,
+        .step-body:after {
+            @if $last-step==true {
+                width: 0px;
+            }
+        }
+    }
+
+    .step-item[data-step="#{$step}"] .step-body {
+        background-color: $status-color;
+        // border: 5px solid blue;
+        // z-index: 50000;
+
+        .glyphicon {
+            @if $animate==true {
+                animation: active-spin infinite 1s linear;
+            }
+
+            &:before {
+                content: $status-icon;
+            }
+        }
+
+        @if $last-step==true {
+            box-shadow: 0 0 0 3px $status-color;
+        }
+
+    }
+}
+
+@mixin fill-step-progress($from-step, $to-step, $status-color: #E4E4E7) {
+
+    .step-item[data-step="#{$from-step}"] .step-body:after,
+    .step-item[data-step="#{$from-step}"]+.step-item-progress .progress-body,
+    .step-item[data-step="#{$to-step}"] .step-body:before {
+        background-color: $status-color;
+    }
+}
+
+
+/*=====  End of Step progress bar mixin  ======*/

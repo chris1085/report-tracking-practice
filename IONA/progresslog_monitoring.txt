@@ -1,0 +1,1287 @@
+RunID	Sequenced	OnDell	Converted	InCloud	Downloaded	JobSubmitted	JobCompleted	BackToDell	Error	Closed
+Auto-user-YGProton6-683-IONA-Test-20190228-B				0	0/	0/	0/			1
+Auto-user-YGProton6-632-IONA-Test-20181228-A				0	0/	0/	0/			1
+Auto-user-YGProton6-668-IONA-Test-20190215-A				0	0/	0/	0/			1
+Auto-user-YG3-731-IONA-Test-20180207-A				0	0/	0/	0/			1
+Auto-user-YGProton6-501-IONA-Test-20180309-B1				0	0/	0/	0/			1
+Auto-user-YGProton6-565-IONA-Test-20180925-B				0	0/	0/	0/			1
+Auto-user-YGProton6-594-IONA-Test-20181119-A1				0	0/	0/	0/			1
+Auto-user-YGProton6-738-IONA-Test-20190424-A				0	0/	0/	0/			1
+Auto-user-YG3-904-IONA-Test-20181012-B				0	0/	0/	0/			1
+Auto-user-YGProton6-707-IONA-Test-20190321-B1				0	0/	0/	0/			1
+Auto-user-YG3-827-IONA-Test-20180530-A				0	0/	0/	0/			1
+Auto-user-YG3-810-IONA-Test-20180427-B				0	0/	0/	0/			1
+Auto-user-YGProton6-637-IONA-Test-20190102-B				0	0/	0/	0/			1
+Auto-user-YGProton6-678-IONA-Test-20190225-A2				0	0/	0/	0/			1
+Auto-user-YG3-925-IONA-Test-20181127-A				0	0/	0/	0/			1
+Auto-user-YGProton6-705-IONA-Test-20190320-B				0	0/	0/	0/			1
+Auto-user-YG3-814-IONA-Test-20180502-B2				0	0/	0/	0/			1
+Auto-user-YG3-958-IONA-Test-20190118-B				0	0/	0/	0/			1
+Auto-user-YG3-813-IONA-Test-20180502-A2				0	0/	0/	0/			1
+Auto-user-YGProton6-542-IONA-Test-20180719-A1				0	0/	0/	0/			1
+Auto-user-YGProton6-535-IONA-Test-20180710-B				0	0/	0/	0/			1
+Auto-user-YGProton6-631-IONA-Test-20181227-B1				0	0/	0/	0/			1
+Auto-user-YG3-832-IONA-Test-20180607-B				0	0/	0/	0/			1
+Auto-user-YG3-746-IONA-Test-20180226-B2				0	0/	0/	0/			1
+Auto-user-YG3-905-IONA-Test-20181015-A2				0	0/	0/	0/			1
+Auto-user-YGProton6-669-IONA-Test-20190215-B				0	0/	0/	0/			1
+Auto-user-YG3-912-IONA-Test-20181026-B				0	0/	0/	0/			1
+Auto-user-YG3-777-IONA-Test-20180322-A				0	0/	0/	0/			1
+Auto-user-YG3-829-IONA-Test-20180605-A				0	0/	0/	0/			1
+Auto-user-YGProton6-740-IONA-Test-20190426-A				0	0/	0/	0/			1
+Auto-user-YGProton6-730-IONA-Test-20190418-A				0	0/	0/	0/			1
+Auto-user-YGProton6-493-IONA-Test-20180305-B1				0	0/	0/	0/			1
+Auto-user-YGProton6-489-IONA-Test-20180301-B1				0	0/	0/	0/			1
+Auto-user-YG3-864-IONA-Test-20180821-B2				0	0/	0/	0/			1
+Auto-user-YG3-847-IONA-Test-20180731-A				0	0/	0/	0/			1
+Auto-user-YG3-984-IONA-Test-20190314-B2				0	0/	0/	0/			1
+Auto-user-YGProton6-715-IONA-Test-20190328-B				0	0/	0/	0/			1
+Auto-user-YGProton6-524-IONA-Test-20180622-A				0	0/	0/	0/			1
+Auto-user-YG3-787-IONA-Test-20180330-A				0	0/	0/	0/			1
+Auto-user-YG3-959-IONA-Test-20190121-A2				0	0/	0/	0/			1
+Auto-user-YG3-826-IONA-Test-20180523-B				0	0/	0/	0/			1
+Auto-user-YG3-739-IONA-Test-20180221-A2				0	0/	0/	0/			1
+Auto-user-YG3-974-IONA-Test-20190214-B2				0	0/	0/	0/			1
+Auto-user-YGProton6-688-IONA-Test-20190307-A1				0	0/	0/	0/			1
+Auto-user-YGProton6-592-IONA-Test-20181114-A				0	0/	0/	0/			1
+Auto-user-YG3-933-IONA-Test-20181207-A2				0	0/	0/	0/			1
+Auto-user-YG3-915-IONA-Test-20181107-A2				0	0/	0/	0/			1
+Auto-user-YGProton6-665-IONA-Test-20190211-B				0	0/	0/	0/			1
+Auto-user-YGProton6-490-IONA-Test-20180302-A1				0	0/	0/	0/			1
+Auto-user-YGProton6-597-IONA-Test-20181121-B				0	0/	0/	0/			1
+Auto-user-YG3-830-IONA-Test-20180605-B				0	0/	0/	0/			1
+Auto-user-YGProton6-711-IONA-Test-20190325-B				0	0/	0/	0/			1
+Auto-user-YG3-789-IONA-Test-20180402-A				0	0/	0/	0/			1
+Auto-user-YG3-868-IONA-Test-20180824-B				0	0/	0/	0/			1
+Auto-user-YGProton6-694-IONA-Test-20190311-A1				0	0/	0/	0/			1
+Auto-user-YGProton6-556-IONA-Test-20180905-A				0	0/	0/	0/			1
+Auto-user-YG3-818-IONA-Test-20180509-B2				0	0/	0/	0/			1
+Auto-user-YGProton6-504-IONA-Test-20180411-A				0	0/	0/	0/			1
+Auto-user-YGProton6-696-IONA-Test-20190313-A				0	0/	0/	0/			1
+Auto-user-YG3-801-IONA-Test-20180419-A				0	0/	0/	0/			1
+Auto-user-YGProton6-677-IONA-Test-20190222-B				0	0/	0/	0/			1
+Auto-user-YGProton6-635-IONA-Test-20190101-B				0	0/	0/	0/			1
+Auto-user-YG3-932-IONA-Test-20181206-B				0	0/	0/	0/			1
+Auto-user-YG3-751-IONA-Test-20180302-A2				0	0/	0/	0/			1
+Auto-user-YGProton6-507-IONA-Test-20180502-B1				0	0/	0/	0/			1
+Auto-user-YG3-848-IONA-Test-20180731-B				0	0/	0/	0/			1
+Auto-user-YGProton6-615-IONA-Test-20181212-B				0	0/	0/	0/			1
+Auto-user-YG3-951-IONA-Test-20190108-A2				0	0/	0/	0/			1
+Auto-user-YGProton6-560-IONA-Test-20180913-A				0	0/	0/	0/			1
+Auto-user-YG3-957-IONA-Test-20190118-A				0	0/	0/	0/			1
+Auto-user-YGProton6-609-IONA-Test-20181206-BR				0	0/	0/	0/			1
+Auto-user-YG3-784-IONA-Test-20180328-B				0	0/	0/	0/			1
+Auto-user-YGProton6-718-IONA-Test-20190404-A				0	0/	0/	0/			1
+Auto-user-YGProton6-483-IONA-Test-20180212-B1				0	0/	0/	0/			1
+Auto-user-YG3-930-IONA-Test-20181205-B2				0	0/	0/	0/			1
+Auto-user-YGProton6-498-IONA-Test-20180308-A2				0	0/	0/	0/			1
+Auto-user-YG3-835-IONA-Test-20180717-A2				0	0/	0/	0/			1
+Auto-user-YGProton6-638-IONA-Test-20190104-A2				0	0/	0/	0/			1
+Auto-user-YGProton6-502-IONA-Test-20180409-A1				0	0/	0/	0/			1
+Auto-user-YGProton6-662-IONA-Test-20190208-A1				0	0/	0/	0/			1
+Auto-user-YGProton6-742-IONA-Test-20190429-A				0	0/	0/	0/			1
+Auto-user-YG3-799-IONA-Test-20180418-A				0	0/	0/	0/			1
+Auto-user-YG3-949-IONA-Test-20190104-A1				0	0/	0/	0/			1
+Auto-user-YG3-926-IONA-Test-20181127-B				0	0/	0/	0/			1
+Auto-user-YG3-927-IONA-Test-20181130-A				0	0/	0/	0/			1
+Auto-user-YGProton6-739-IONA-Test-20190424-B				0	0/	0/	0/			1
+Auto-user-YGProton6-567-IONA-Test-20181005-B1				0	0/	0/	0/			1
+Auto-user-YGProton6-745-IONA-Test-20190430-B1				0	0/	0/	0/			1
+Auto-user-YG3-875-IONA-Test-20180904-A				0	0/	0/	0/			1
+Auto-user-YGProton6-719-IONA-Test-20190404-B				0	0/	0/	0/			1
+Auto-user-YG3-856-IONA-Test-20180813-B				0	0/	0/	0/			1
+Auto-user-YGProton6-584-IONA-Test-20181102-A				0	0/	0/	0/			1
+Auto-user-YG3-945-IONA-Test-20181225-A2				0	0/	0/	0/			1
+Auto-user-YG3-970-IONA-Test-20190208-B2				0	0/	0/	0/			1
+Auto-user-YG3-939-IONA-Test-20181217-A2				0	0/	0/	0/			1
+Auto-user-YG3-738-IONA-Test-20180213-B				0	0/	0/	0/			1
+Auto-user-YG3-878-IONA-Test-20180907-B				0	0/	0/	0/			1
+Auto-user-YG3-852-IONA-Test-20180809-B				0	0/	0/	0/			1
+Auto-user-YG3-805-IONA-Test-20180425-A				0	0/	0/	0/			1
+Auto-user-YGProton6-566-IONA-Test-20181005-A1				0	0/	0/	0/			1
+Auto-user-YGProton6-505-IONA-Test-20180411-B				0	0/	0/	0/			1
+Auto-user-YG3-839-IONA-Test-20180720-A				0	0/	0/	0/			1
+Auto-user-YGProton6-546-IONA-Test-20180803-A				0	0/	0/	0/			1
+Auto-user-YG3-900-IONA-Test-20181005-B2				0	0/	0/	0/			1
+Auto-user-YG3-728-IONA-Test-20180205-B				0	0/	0/	0/			1
+Auto-user-YGProton6-503-IONA-Test-20180409-B1				0	0/	0/	0/			1
+Auto-user-YG3-774-IONA-Test-20180320-B				0	0/	0/	0/			1
+Auto-user-YGProton6-587-IONA-Test-20181106-B				0	0/	0/	0/			1
+Auto-user-YG3-963-IONA-Test-20190128-A2				0	0/	0/	0/			1
+Auto-user-YGProton6-593-IONA-Test-20181114-B				0	0/	0/	0/			1
+Auto-user-YG3-985-IONA-Test-20190318-A2				0	0/	0/	0/			1
+Auto-user-YGProton6-534-IONA-Test-20180710-A				0	0/	0/	0/			1
+Auto-user-YGProton6-537-IONA-Test-20180713-B1				0	0/	0/	0/			1
+Auto-user-YGProton6-611-IONA-Test-20181207-B1				0	0/	0/	0/			1
+Auto-user-YGProton6-559-IONA-Test-20180906-B				0	0/	0/	0/			1
+Auto-user-YGProton6-532-IONA-Test-20180709-A				0	0/	0/	0/			1
+Auto-user-YG3-979-IONA-Test-20190307-A2				0	0/	0/	0/			1
+Auto-user-YGProton6-543-IONA-Test-20180719-B1				0	0/	0/	0/			1
+Auto-user-YGProton6-743-IONA-Test-20190429-B				0	0/	0/	0/			1
+Auto-user-YGProton6-578-IONA-Test-20181023-A				0	0/	0/	0/			1
+Auto-user-YG3-841-IONA-Test-20180724-A				0	0/	0/	0/			1
+Auto-user-YG3-850-IONA-Test-20180808-B				0	0/	0/	0/			1
+Auto-user-YG3-876-IONA-Test-20180904-B				0	0/	0/	0/			1
+Auto-user-YG3-809-IONA-Test-20180427-A				0	0/	0/	0/			1
+Auto-user-YG3-969-IONA-Test-20190208-A2				0	0/	0/	0/			1
+Auto-user-YGProton6-550-IONA-Test-20180816-A2				0	0/	0/	0/			1
+Auto-user-YGProton6-601-IONA-Test-20181126-B				0	0/	0/	0/			1
+Auto-user-YGProton6-528-IONA-Test-20180704-A				0	0/	0/	0/			1
+Auto-user-YGProton6-720-IONA-Test-20190409-A				0	0/	0/	0/			1
+Auto-user-YG3-770-IONA-Test-20180316-B				0	0/	0/	0/			1
+Auto-user-YGProton6-726-IONA-Test-20190415-A				0	0/	0/	0/			1
+Auto-user-YGProton6-511-IONA-Test-20180507-B				0	0/	0/	0/			1
+Auto-user-YGProton6-514-IONA-Test-20180509-A1				0	0/	0/	0/			1
+Auto-user-YGProton6-539-IONA-Test-20180717-B1				0	0/	0/	0/			1
+Auto-user-YGProton6-475-IONA-Test-20180201-B				0	0/	0/	0/			1
+Auto-user-YG3-816-IONA-Test-20180503-B				0	0/	0/	0/			1
+Auto-user-YG3-956-IONA-Test-20190114-B2				0	0/	0/	0/			1
+Auto-user-YGProton6-636-IONA-Test-20190102-A				0	0/	0/	0/			1
+Auto-user-YGProton6-484-IONA-Test-20180221-A1				0	0/	0/	0/			1
+Auto-user-YG3-886-IONA-Test-20180919-B				0	0/	0/	0/			1
+Auto-user-YGProton6-651-IONA-Test-20190117-B				0	0/	0/	0/			1
+Auto-user-YG3-757-IONA-Test-20180308-A1				0	0/	0/	0/			1
+Auto-user-YGProton6-648-IONA-Test-20190116-A				0	0/	0/	0/			1
+Auto-user-YG3-737-IONA-Test-20180213-A				0	0/	0/	0/			1
+Auto-user-YG3-756-IONA-Test-20180307-B1				0	0/	0/	0/			1
+Auto-user-YGProton6-491-IONA-Test-20180302-B1				0	0/	0/	0/			1
+Auto-user-YGProton6-695-IONA-Test-20190311-B1				0	0/	0/	0/			1
+Auto-user-YGProton6-620-IONA-Test-20181217-A1				0	0/	0/	0/			1
+Auto-user-YG3-836-IONA-Test-20180717-B2				0	0/	0/	0/			1
+Auto-user-YGProton6-548-IONA-Test-20180807-A				0	0/	0/	0/			1
+Auto-user-YG3-988-IONA-Test-20190401-B2				0	0/	0/	0/			1
+Auto-user-YG3-781-IONA-Test-20180327-A				0	0/	0/	0/			1
+Auto-user-YG3-997-IONA-Test-20190425-A				0	0/	0/	0/			1
+Auto-user-YGProton6-479-IONA-Test-20180208-B1				0	0/	0/	0/			1
+Auto-user-YGProton6-625-IONA-Test-20181221-B1				0	0/	0/	0/			1
+Auto-user-YGProton6-697-IONA-Test-20190313-B				0	0/	0/	0/			1
+Auto-user-YG3-948-IONA-Test-20181227-B2				0	0/	0/	0/			1
+Auto-user-YGProton6-699-IONA-Test-20190314-B1				0	0/	0/	0/			1
+Auto-user-YGProton6-661-IONA-Test-20190131-B				0	0/	0/	0/			1
+Auto-user-YG3-931-IONA-Test-20181206-A				0	0/	0/	0/			1
+Auto-user-YGProton6-512-IONA-Test-20180508-A				0	0/	0/	0/			1
+Auto-user-YG3-995-IONA-Test-20190422-A2				0	0/	0/	0/			1
+Auto-user-YG3-918-IONA-Test-20181109-B				0	0/	0/	0/			1
+Auto-user-YG3-834-IONA-Test-20180713-B2				0	0/	0/	0/			1
+Auto-user-YG3-824-IONA-Test-20180517-B				0	0/	0/	0/			1
+Auto-user-YG3-858-IONA-Test-20180814-B				0	0/	0/	0/			1
+Auto-user-YGProton6-633-IONA-Test-20181228-B				0	0/	0/	0/			1
+Auto-user-YG3-788-IONA-Test-20180330-B				0	0/	0/	0/			1
+Auto-user-YGProton6-709-IONA-Test-20190322-B				0	0/	0/	0/			1
+Auto-user-YG3-855-IONA-Test-20180813-A				0	0/	0/	0/			1
+Auto-user-YG3-935-IONA-Test-20181210-A1				0	0/	0/	0/			1
+Auto-user-YGProton6-747-IONA-Test-20190502-B				0	0/	0/	0/			1
+Auto-user-YG3-887-IONA-Test-20180920-A				0	0/	0/	0/			1
+Auto-user-YG3-791-IONA-Test-20180403-A				0	0/	0/	0/			1
+Auto-user-YGProton6-622-IONA-Test-20181218-A				0	0/	0/	0/			1
+Auto-user-YGProton6-670-IONA-Test-20190219-A				0	0/	0/	0/			1
+Auto-user-YG3-941-IONA-Test-20181219-A				0	0/	0/	0/			1
+Auto-user-YGProton6-624-IONA-Test-20181221-A1				0	0/	0/	0/			1
+Auto-user-YGProton6-522-IONA-Test-20180620-A				0	0/	0/	0/			1
+Auto-user-YG3-844-IONA-Test-20180726-B				0	0/	0/	0/			1
+Auto-user-YGProton6-544-IONA-Test-20180802-A				0	0/	0/	0/			1
+Auto-user-YGProton6-731-IONA-Test-20190418-B				0	0/	0/	0/			1
+Auto-user-YGProton6-487-IONA-Test-20180226-B1				0	0/	0/	0/			1
+Auto-user-YGProton6-526-IONA-Test-20180628-A				0	0/	0/	0/			1
+Auto-user-YG3-906-IONA-Test-20181015-B2				0	0/	0/	0/			1
+Auto-user-YGProton6-658-IONA-Test-20190128-A1				0	0/	0/	0/			1
+Auto-user-YGProton6-583-IONA-Test-20181029-B				0	0/	0/	0/			1
+Auto-user-YGProton6-691-IONA-Test-20190308-B				0	0/	0/	0/			1
+Auto-user-YG3-909-IONA-Test-20181018-A				0	0/	0/	0/			1
+Auto-user-YGProton6-517-IONA-Test-20180511-B1				0	0/	0/	0/			1
+Auto-user-YGProton6-496-IONA-Test-20180307-A2				0	0/	0/	0/			1
+Auto-user-YGProton6-642-IONA-Test-20190110-A				0	0/	0/	0/			1
+Auto-user-YG3-934-IONA-Test-20181207-B2				0	0/	0/	0/			1
+Auto-user-YGProton6-590-IONA-Test-20181112-A				0	0/	0/	0/			1
+Auto-user-YGProton6-703-IONA-Test-20190319-B				0	0/	0/	0/			1
+Auto-user-YGProton6-573-IONA-Test-20181018-BR				0	0/	0/	0/			1
+Auto-user-YGProton6-585-IONA-Test-20181102-B				0	0/	0/	0/			1
+Auto-user-YGProton6-645-IONA-Test-20190114-B1				0	0/	0/	0/			1
+Auto-user-YGProton6-499-IONA-Test-20180308-B2				0	0/	0/	0/			1
+Auto-user-YG3-896-IONA-Test-20181001-B				0	0/	0/	0/			1
+Auto-user-YGProton6-531-IONA-Test-20180705-B				0	0/	0/	0/			1
+Auto-user-YG3-821-IONA-Test-20180515-A				0	0/	0/	0/			1
+Auto-user-YGProton6-749-IONA-Test-OT2-20190506-B1				0	0/	0/	0/			1
+Auto-user-YG3-842-IONA-Test-20180724-B				0	0/	0/	0/			1
+Auto-user-YG3-743-IONA-Test-20180223-A				0	0/	0/	0/			1
+Auto-user-YG3-943-IONA-Test-20181221-A2				0	0/	0/	0/			1
+Auto-user-YGProton6-553-IONA-Test-20180817-B1				0	0/	0/	0/			1
+Auto-user-YGProton6-545-IONA-Test-20180802-B				0	0/	0/	0/			1
+Auto-user-YG3-917-IONA-Test-20181109-A				0	0/	0/	0/			1
+Auto-user-YG3-955-IONA-Test-20190114-A2				0	0/	0/	0/			1
+Auto-user-YGProton6-721-IONA-Test-20190409-B				0	0/	0/	0/			1
+Auto-user-YG3-1000-IONA-Test-20190430-B2				0	0/	0/	0/			1
+Auto-user-YG3-944-IONA-Test-20181221-B2				0	0/	0/	0/			1
+Auto-user-YG3-892-IONA-Test-20180927-B				0	0/	0/	0/			1
+Auto-user-YG3-994-IONA-Test-20190417-B				0	0/	0/	0/			1
+Auto-user-YG3-833-IONA-Test-20180713-A2				0	0/	0/	0/			1
+Auto-user-YG3-873-IONA-Test-20180903-A				0	0/	0/	0/			1
+Auto-user-YG3-967-IONA-Test-20190201-A				0	0/	0/	0/			1
+Auto-user-YG3-965-IONA-Test-20190129-A				0	0/	0/	0/			1
+Auto-user-YGProton6-652-IONA-Test-20190121-A1				0	0/	0/	0/			1
+Auto-user-YG3-776-IONA-Test-20180321-B				0	0/	0/	0/			1
+Auto-user-YGProton6-555-IONA-Test-20180821-B1				0	0/	0/	0/			1
+Auto-user-YGProton6-606-IONA-Test-20181205-A1				0	0/	0/	0/			1
+Auto-user-YGProton6-687-IONA-Test-20190306-B				0	0/	0/	0/			1
+Auto-user-YG3-920-IONA-Test-20181113-B				0	0/	0/	0/			1
+Auto-user-YGProton6-533-IONA-Test-20180709-B				0	0/	0/	0/			1
+Auto-user-YGProton6-582-IONA-Test-20181029-A				0	0/	0/	0/			1
+Auto-user-YG3-744-IONA-Test-20180223-B				0	0/	0/	0/			1
+Auto-user-YGProton6-672-IONA-Test-20190220-A				0	0/	0/	0/			1
+Auto-user-YGProton6-612-IONA-Test-20181210-A2				0	0/	0/	0/			1
+Auto-user-YG3-804-IONA-Test-20180423-B				0	0/	0/	0/			1
+Auto-user-YG3-960-IONA-Test-20190121-B2				0	0/	0/	0/			1
+Auto-user-YG3-775-IONA-Test-20180321-A				0	0/	0/	0/			1
+Auto-user-YGProton6-600-IONA-Test-20181126-A				0	0/	0/	0/			1
+Auto-user-YGProton6-734-IONA-Test-20190422-A1				0	0/	0/	0/			1
+Auto-user-YG3-916-IONA-Test-20181107-B2				0	0/	0/	0/			1
+Auto-user-YG3-998-IONA-Test-20190425-B				0	0/	0/	0/			1
+Auto-user-YGProton6-626-IONA-Test-20181222-A				0	0/	0/	0/			1
+Auto-user-YGProton6-527-IONA-Test-20180628-B				0	0/	0/	0/			1
+Auto-user-YGProton6-666-IONA-Test-20190214-A1				0	0/	0/	0/			1
+Auto-user-YGProton6-641-IONA-Test-20190108-B1				0	0/	0/	0/			1
+Auto-user-YGProton6-549-IONA-Test-20180807-B				0	0/	0/	0/			1
+Auto-user-YGProton6-481-IONA-Test-20180209-B				0	0/	0/	0/			1
+Auto-user-YGProton6-704-IONA-Test-20190320-A				0	0/	0/	0/			1
+Auto-user-YGProton6-617-IONA-Test-20181213-B1				0	0/	0/	0/			1
+Auto-user-YGProton6-729-IONA-Test-20190416-B				0	0/	0/	0/			1
+Auto-user-YGProton6-655-IONA-Test-20190122-B				0	0/	0/	0/			1
+Auto-user-YGProton6-660-IONA-Test-20190131-A				0	0/	0/	0/			1
+Auto-user-YG3-761-IONA-Test-20180312-A2				0	0/	0/	0/			1
+Auto-user-YG3-862-IONA-Test-20180817-B2				0	0/	0/	0/			1
+Auto-user-YG3-891-IONA-Test-20180927-A				0	0/	0/	0/			1
+Auto-user-YGProton6-700-IONA-Test-20190318-A1				0	0/	0/	0/			1
+Auto-user-YG3-793-IONA-Test-20180406-A				0	0/	0/	0/			1
+Auto-user-YG3-884-IONA-Test-20180917-B				0	0/	0/	0/			1
+Auto-user-YGProton6-643-IONA-Test-20190110-B				0	0/	0/	0/			1
+Auto-user-YG3-902-IONA-Test-20181008-B				0	0/	0/	0/			1
+Auto-user-YG3-734-IONA-Test-20180208-B2				0	0/	0/	0/			1
+Auto-user-YGProton6-717-IONA-Test-20190401-B1				0	0/	0/	0/			1
+Auto-user-YG3-732-IONA-Test-20180207-B				0	0/	0/	0/			1
+Auto-user-YG3-901-IONA-Test-20181008-A				0	0/	0/	0/			1
+Auto-user-YG3-919-IONA-Test-20181113-A				0	0/	0/	0/			1
+Auto-user-YGProton6-714-IONA-Test-20190328-A				0	0/	0/	0/			1
+Auto-user-YGProton6-599-IONA-Test-20181123-B				0	0/	0/	0/			1
+Auto-user-YG3-726-IONA-Test-20180202-B				0	0/	0/	0/			1
+Auto-user-YG3-871-IONA-Test-20180830-A				0	0/	0/	0/			1
+Auto-user-YG3-792-IONA-Test-20180403-B				0	0/	0/	0/			1
+Auto-user-YG3-869-IONA-Test-20180829-A				0	0/	0/	0/			1
+Auto-user-YGProton6-695-IONA-Test-20190311-B2				0	0/	0/	0/			1
+Auto-user-YG3-729-IONA-Test-20180206-A1				0	0/	0/	0/			1
+Auto-user-YGProton6-684-IONA-Test-20190305-A				0	0/	0/	0/			1
+Auto-user-YG3-928-IONA-Test-20181130-B				0	0/	0/	0/			1
+Auto-user-YGProton6-746-IONA-Test-20190502-A				0	0/	0/	0/			1
+Auto-user-YG3-733-IONA-Test-20180208-A2				0	0/	0/	0/			1
+Auto-user-YGProton6-736-IONA-Test-20190423-A				0	0/	0/	0/			1
+Auto-user-YGProton6-478-IONA-Test-20180208-A1				0	0/	0/	0/			1
+Auto-user-YG3-785-IONA-Test-20180329-A				0	0/	0/	0/			1
+Auto-user-YG3-882-IONA-Test-20180914-B				0	0/	0/	0/			1
+Auto-user-YGProton6-722-IONA-Test-20190410-A1				0	0/	0/	0/			1
+Auto-user-YG3-742-IONA-Test-20180222-B				0	0/	0/	0/			1
+Auto-user-YGProton6-634-IONA-Test-20190101-A				0	0/	0/	0/			1
+Auto-user-YGProton6-515-IONA-Test-20180509-B1				0	0/	0/	0/			1
+Auto-user-YG3-762-IONA-Test-20180312-B2				0	0/	0/	0/			1
+Auto-user-YG3-972-IONA-Test-20190213-B				0	0/	0/	0/			1
+Auto-user-YGProton6-569-IONA-Test-20181015-B1				0	0/	0/	0/			1
+Auto-user-YG3-950-IONA-Test-20190104-B1				0	0/	0/	0/			1
+Auto-user-YG3-977-IONA-Test-20190221-A2				0	0/	0/	0/			1
+Auto-user-YG3-863-IONA-Test-20180821-A2				0	0/	0/	0/			1
+Auto-user-YG3-849-IONA-Test-20180808-A				0	0/	0/	0/			1
+Auto-user-YG3-838-IONA-Test-20180719-B2				0	0/	0/	0/			1
+Auto-user-YG3-763-IONA-Test-20180313-A				0	0/	0/	0/			1
+Auto-user-YGProton6-657-IONA-Test-20190124-B				0	0/	0/	0/			1
+Auto-user-YG3-808-IONA-Test-20180426-B				0	0/	0/	0/			1
+Auto-user-YG3-773-IONA-Test-20180320-A				0	0/	0/	0/			1
+Auto-user-YG3-978-IONA-Test-20190221-B2				0	0/	0/	0/			1
+Auto-user-YG3-817-IONA-Test-20180509-A2				0	0/	0/	0/			1
+Auto-user-YGProton6-510-IONA-Test-20180507-A				0	0/	0/	0/			1
+Auto-user-YGProton6-680-IONA-Test-20190226-A				0	0/	0/	0/			1
+Auto-user-YGProton6-513-IONA-Test-20180508-B				0	0/	0/	0/			1
+Auto-user-YG3-964-IONA-Test-20190128-B2				0	0/	0/	0/			1
+Auto-user-YG3-752-IONA-Test-20180302-B2				0	0/	0/	0/			1
+Auto-user-YG3-1001-IONA-Test-20190506-A2				0	0/	0/	0/			1
+Auto-user-YG3-748-IONA-Test-20180227-B				0	0/	0/	0/			1
+Auto-user-YG3-819-IONA-Test-20180511-A2				0	0/	0/	0/			1
+Auto-user-YGProton6-595-IONA-Test-20181119-B1				0	0/	0/	0/			1
+Auto-user-YG3-952-IONA-Test-20190108-B2				0	0/	0/	0/			1
+Auto-user-YGProton6-710-IONA-Test-20190325-A				0	0/	0/	0/			1
+Auto-user-YGProton6-679-IONA-Test-20190225-B2				0	0/	0/	0/			1
+Auto-user-YGProton6-706-IONA-Test-20190321-A1				0	0/	0/	0/			1
+Auto-user-YGProton6-485-IONA-Test-20180221-B1				0	0/	0/	0/			1
+Auto-user-YGProton6-750-IONA-Test-OT2-20190508-A				0	0/	0/	0/			1
+Auto-user-YGProton6-540-IONA-Test-20180718-A				0	0/	0/	0/			1
+Auto-user-YG3-885-IONA-Test-20180919-A				0	0/	0/	0/			1
+Auto-user-YGProton6-589-IONA-Test-20181107-B1				0	0/	0/	0/			1
+Auto-user-YG3-795-IONA-Test-20180409-A2				0	0/	0/	0/			1
+Auto-user-YG3-881-IONA-Test-20180914-A				0	0/	0/	0/			1
+Auto-user-YGProton6-701-IONA-Test-20190318-B1				0	0/	0/	0/			1
+Auto-user-YGProton6-557-IONA-Test-20180905-B				0	0/	0/	0/			1
+Auto-user-YGProton6-562-IONA-Test-20180921-AR				0	0/	0/	0/			1
+Auto-user-YGProton6-492-IONA-Test-20180305-A1				0	0/	0/	0/			1
+Auto-user-YGProton6-564-IONA-Test-20180925-A				0	0/	0/	0/			1
+Auto-user-YG3-840-IONA-Test-20180720-B				0	0/	0/	0/			1
+Auto-user-YG3-922-IONA-Test-20181119-B2				0	0/	0/	0/			1
+Auto-user-YG3-767-IONA-Test-20180315-A				0	0/	0/	0/			1
+Auto-user-YG3-820-IONA-Test-20180511-B2				0	0/	0/	0/			1
+Auto-user-YGProton6-581-IONA-Test-20181024-B				0	0/	0/	0/			1
+Auto-user-YGProton6-708-IONA-Test-20190322-A				0	0/	0/	0/			1
+Auto-user-YG3-806-IONA-Test-20180425-B				0	0/	0/	0/			1
+Auto-user-YGProton6-724-IONA-Test-20190411-A				0	0/	0/	0/			1
+Auto-user-YG3-966-IONA-Test-20190129-B				0	0/	0/	0/			1
+Auto-user-YG3-989-IONA-Test-20190402-A				0	0/	0/	0/			1
+Auto-user-YG3-982-IONA-Test-20190311-B2				0	0/	0/	0/			1
+Auto-user-YGProton6-561-IONA-Test-20180913-B				0	0/	0/	0/			1
+Auto-user-YG3-747-IONA-Test-20180227-A				0	0/	0/	0/			1
+Auto-user-YGProton6-623-IONA-Test-20181218-B				0	0/	0/	0/			1
+Auto-user-YGProton6-640-IONA-Test-20190108-A1				0	0/	0/	0/			1
+Auto-user-YG3-962-IONA-Test-20190125-B				0	0/	0/	0/			1
+Auto-user-YGProton6-654-IONA-Test-20190122-A				0	0/	0/	0/			1
+Auto-user-YGProton6-519-IONA-Test-20180614-B				0	0/	0/	0/			1
+Auto-user-YGProton6-574-IONA-Test-20181021-A				0	0/	0/	0/			1
+Auto-user-YG3-768-IONA-Test-20180315-B				0	0/	0/	0/			1
+Auto-user-YG3-766-IONA-Test-20180314-B				0	0/	0/	0/			1
+Auto-user-YG3-893-IONA-Test-20180928-A				0	0/	0/	0/			1
+Auto-user-YG3-837-IONA-Test-20180719-A2				0	0/	0/	0/			1
+Auto-user-YG3-755-IONA-Test-20180307-A1				0	0/	0/	0/			1
+Auto-user-YGProton6-579-IONA-Test-20181023-B				0	0/	0/	0/			1
+Auto-user-YGProton6-605-IONA-Test-20181204-B				0	0/	0/	0/			1
+Auto-user-YG3-822-IONA-Test-20180515-B				0	0/	0/	0/			1
+Auto-user-YGProton6-659-IONA-Test-20190128-B1				0	0/	0/	0/			1
+Auto-user-YGProton6-529-IONA-Test-20180704-B				0	0/	0/	0/			1
+Auto-user-YGProton6-482-IONA-Test-20180212-A1				0	0/	0/	0/			1
+Auto-user-YGProton6-488-IONA-Test-20180301-A1				0	0/	0/	0/			1
+Auto-user-YG3-872-IONA-Test-20180830-B				0	0/	0/	0/			1
+Auto-user-YG3-888-IONA-Test-20180920-B				0	0/	0/	0/			1
+Auto-user-YGProton6-664-IONA-Test-20190211-A				0	0/	0/	0/			1
+Auto-user-YG3-796-IONA-Test-20180409-B2				0	0/	0/	0/			1
+Auto-user-YGProton6-689-IONA-Test-20190307-B1				0	0/	0/	0/			1
+Auto-user-YGProton6-563-IONA-Test-20180921-BR				0	0/	0/	0/			1
+Auto-user-YGProton6-614-IONA-Test-20181212-A				0	0/	0/	0/			1
+Auto-user-YG3-779-IONA-Test-20180326-A				0	0/	0/	0/			1
+Auto-user-YGProton6-685-IONA-Test-20190305-B				0	0/	0/	0/			1
+Auto-user-YG3-769-IONA-Test-20180316-A				0	0/	0/	0/			1
+Auto-user-YGProton6-572-IONA-Test-20181018-AR				0	0/	0/	0/			1
+Auto-user-YG3-782-IONA-Test-20180327-B				0	0/	0/	0/			1
+Auto-user-YGProton6-653-IONA-Test-20190121-B1				0	0/	0/	0/			1
+Auto-user-YG3-764-IONA-Test-20180313-B				0	0/	0/	0/			1
+Auto-user-YG3-797-IONA-Test-20180417-A				0	0/	0/	0/			1
+Auto-user-YG3-750-IONA-Test-20180301-B2				0	0/	0/	0/			1
+Auto-user-YG3-754-IONA-Test-20180305-B2				0	0/	0/	0/			1
+Auto-user-YGProton6-497-IONA-Test-20180307-B2				0	0/	0/	0/			1
+Auto-user-YGProton6-586-IONA-Test-20181106-A				0	0/	0/	0/			1
+Auto-user-YGProton6-516-IONA-Test-20180511-A1				0	0/	0/	0/			1
+Auto-user-YGProton6-509-IONA-Test-20180504-B				0	0/	0/	0/			1
+Auto-user-YGProton6-629-IONA-Test-20181225-B1				0	0/	0/	0/			1
+Auto-user-YGProton6-604-IONA-Test-20181204-A				0	0/	0/	0/			1
+Auto-user-YGProton6-494-IONA-Test-20180306-A				0	0/	0/	0/			1
+Auto-user-YG3-860-IONA-Test-20180816-B1				0	0/	0/	0/			1
+Auto-user-YG3-910-IONA-Test-20181018-B				0	0/	0/	0/			1
+Auto-user-YGProton6-591-IONA-Test-20181112-B				0	0/	0/	0/			1
+Auto-user-YG3-975-IONA-Test-20190218-A				0	0/	0/	0/			1
+Auto-user-YGProton6-650-IONA-Test-20190117-A				0	0/	0/	0/			1
+Auto-user-YGProton6-558-IONA-Test-20180906-A				0	0/	0/	0/			1
+Auto-user-YG3-889-IONA-Test-20180921-A				0	0/	0/	0/			1
+Auto-user-YG3-845-IONA-Test-20180730-A				0	0/	0/	0/			1
+Auto-user-YGProton6-627-IONA-Test-20181222-B				0	0/	0/	0/			1
+Auto-user-YGProton6-737-IONA-Test-20190423-B				0	0/	0/	0/			1
+Auto-user-YGProton6-495-IONA-Test-20180306-B				0	0/	0/	0/			1
+Auto-user-YGProton6-541-IONA-Test-20180718-B				0	0/	0/	0/			1
+Auto-user-YGProton6-608-IONA-Test-20181206-AR				0	0/	0/	0/			1
+Auto-user-YG3-740-IONA-Test-20180221-B2				0	0/	0/	0/			1
+Auto-user-YGProton6-673-IONA-Test-20190220-B				0	0/	0/	0/			1
+Auto-user-YGProton6-644-IONA-Test-20190114-A1				0	0/	0/	0/			1
+Auto-user-YGProton6-500-IONA-Test-20180309-A1				0	0/	0/	0/			1
+Auto-user-YGProton6-732-IONA-Test-20190419-A				0	0/	0/	0/			1
+Auto-user-YGProton6-610-IONA-Test-20181207-A1				0	0/	0/	0/			1
+Auto-user-YG3-741-IONA-Test-20180222-A				0	0/	0/	0/			1
+Auto-user-YG3-946-IONA-Test-20181225-B2				0	0/	0/	0/			1
+Auto-user-YGProton6-663-IONA-Test-20190208-B1				0	0/	0/	0/			1
+Auto-user-YGProton6-476-IONA-Test-20180206-A2				0	0/	0/	0/			1
+Auto-user-YGProton6-744-IONA-Test-20190430-A1				0	0/	0/	0/			1
+Auto-user-YGProton6-568-IONA-Test-20181015-A1				0	0/	0/	0/			1
+Auto-user-YGProton6-530-IONA-Test-20180705-A				0	0/	0/	0/			1
+Auto-user-YG3-897-IONA-Test-20181003-A				0	0/	0/	0/			1
+Auto-user-YGProton6-598-IONA-Test-20181123-A				0	0/	0/	0/			1
+Auto-user-YG3-760-IONA-Test-20180309-B2				0	0/	0/	0/			1
+Auto-user-YG3-828-IONA-Test-20180530-B				0	0/	0/	0/			1
+Auto-user-YG3-883-IONA-Test-20180917-A				0	0/	0/	0/			1
+Auto-user-YG3-730-IONA-Test-20180206-B1				0	0/	0/	0/			1
+Auto-user-YG3-802-IONA-Test-20180419-B				0	0/	0/	0/			1
+Auto-user-YGProton6-723-IONA-Test-20190410-B1				0	0/	0/	0/			1
+Auto-user-YG3-753-IONA-Test-20180305-A2				0	0/	0/	0/			1
+Auto-user-YG3-993-IONA-Test-20190417-A				0	0/	0/	0/			1
+Auto-user-YG3-866-IONA-Test-20180823-B				0	0/	0/	0/			1
+Auto-user-YGProton6-728-IONA-Test-20190416-A				0	0/	0/	0/			1
+Auto-user-YG3-867-IONA-Test-20180824-A				0	0/	0/	0/			1
+Auto-user-YG3-759-IONA-Test-20180309-A2				0	0/	0/	0/			1
+Auto-user-YGProton6-713-IONA-Test-20190327-B				0	0/	0/	0/			1
+Auto-user-YGProton6-619-IONA-Test-20181214-B				0	0/	0/	0/			1
+Auto-user-YG3-859-IONA-Test-20180816-A1				0	0/	0/	0/			1
+Auto-user-YGProton6-580-IONA-Test-20181024-A				0	0/	0/	0/			1
+Auto-user-YGProton6-671-IONA-Test-20190219-B				0	0/	0/	0/			1
+Auto-user-YGProton6-554-IONA-Test-20180821-A1				0	0/	0/	0/			1
+Auto-user-YG3-981-IONA-Test-20190311-A2				0	0/	0/	0/			1
+Auto-user-YG3-736-IONA-Test-20180212-B2				0	0/	0/	0/			1
+Auto-user-YG3-914-IONA-Test-20181031-B				0	0/	0/	0/			1
+Auto-user-YGProton6-679-IONA-Test-20190221-B2				0	0/	0/	0/			1
+Auto-user-YG3-811-IONA-Test-20180501-A				0	0/	0/	0/			1
+Auto-user-YG3-880-IONA-Test-20180910-B				0	0/	0/	0/			1
+Auto-user-YG3-936-IONA-Test-20181210-B1				0	0/	0/	0/			1
+Auto-user-YGProton6-628-IONA-Test-20181225-A1				0	0/	0/	0/			1
+Auto-user-YGProton6-525-IONA-Test-20180622-B				0	0/	0/	0/			1
+Auto-user-YG3-853-IONA-Test-20180810-A				0	0/	0/	0/			1
+Auto-user-YGProton6-576-IONA-Test-20181022-A				0	0/	0/	0/			1
+Auto-user-YG3-929-IONA-Test-20181205-A2				0	0/	0/	0/			1
+Auto-user-YG3-727-IONA-Test-20180205-A				0	0/	0/	0/			1
+Auto-user-YG3-800-IONA-Test-20180418-B				0	0/	0/	0/			1
+Auto-user-YG3-807-IONA-Test-20180426-A				0	0/	0/	0/			1
+Auto-user-YG3-772-IONA-Test-20180319-B				0	0/	0/	0/			1
+Auto-user-YG3-903-IONA-Test-20181012-A				0	0/	0/	0/			1
+Auto-user-YG3-923-IONA-Test-20181122-A				0	0/	0/	0/			1
+Auto-user-YGProton6-693-IONA-Test-20190310-B				0	0/	0/	0/			1
+Auto-user-YG3-983-IONA-Test-20190314-A2				0	0/	0/	0/			1
+Auto-user-YG3-786-IONA-Test-20180329-B				0	0/	0/	0/			1
+Auto-user-YGProton6-607-IONA-Test-20181205-B1				0	0/	0/	0/			1
+Auto-user-YGProton6-656-IONA-Test-20190124-A				0	0/	0/	0/			1
+Auto-user-YGProton6-596-IONA-Test-20181121-A				0	0/	0/	0/			1
+Auto-user-YG3-812-IONA-Test-20180501-B				0	0/	0/	0/			1
+Auto-user-YG3-815-IONA-Test-20180503-A				0	0/	0/	0/			1
+Auto-user-YG3-745-IONA-Test-20180226-A2				0	0/	0/	0/			1
+Auto-user-YG3-990-IONA-Test-20190402-B				0	0/	0/	0/			1
+Auto-user-YGProton6-733-IONA-Test-20190419-B				0	0/	0/	0/			1
+Auto-user-YG3-907-IONA-Test-20181016-A2				0	0/	0/	0/			1
+Auto-user-YG3-861-IONA-Test-20180817-A2				0	0/	0/	0/			1
+Auto-user-YGProton6-551-IONA-Test-20180816-B2				0	0/	0/	0/			1
+Auto-user-YG3-823-IONA-Test-20180517-A				0	0/	0/	0/			1
+Auto-user-YGProton6-523-IONA-Test-20180620-B				0	0/	0/	0/			1
+Auto-user-YG3-921-IONA-Test-20181119-A2				0	0/	0/	0/			1
+Auto-user-YGProton6-602-IONA-Test-20181128-A				0	0/	0/	0/			1
+Auto-user-YGProton6-646-IONA-Test-20190115-A				0	0/	0/	0/			1
+Auto-user-YG3-879-IONA-Test-20180910-A				0	0/	0/	0/			1
+Auto-user-YG3-803-IONA-Test-20180423-A				0	0/	0/	0/			1
+Auto-user-YG3-976-IONA-Test-20190218-B				0	0/	0/	0/			1
+Auto-user-YG3-843-IONA-Test-20180726-A				0	0/	0/	0/			1
+Auto-user-YGProton6-570-IONA-Test-20181016-A1				0	0/	0/	0/			1
+Auto-user-YGProton6-538-IONA-Test-20180717-A1				0	0/	0/	0/			1
+Auto-user-YGProton6-751-IONA-Test-OT2-20190508-B				0	0/	0/	0/			1
+Auto-user-YG3-798-IONA-Test-20180417-B				0	0/	0/	0/			1
+Auto-user-YGProton6-698-IONA-Test-20190314-A1				0	0/	0/	0/			1
+Auto-user-YG3-857-IONA-Test-20180814-A				0	0/	0/	0/			1
+Auto-user-YGProton6-725-IONA-Test-20190411-B				0	0/	0/	0/			1
+Auto-user-YGProton6-508-IONA-Test-20180504-A				0	0/	0/	0/			1
+Auto-user-YGProton6-667-IONA-Test-20190214-B1				0	0/	0/	0/			1
+Auto-user-YGProton6-741-IONA-Test-20190426-B				0	0/	0/	0/			1
+Auto-user-YG3-899-IONA-Test-20181005-A2				0	0/	0/	0/			1
+Auto-user-YG3-987-IONA-Test-20190401-A2				0	0/	0/	0/			1
+Auto-user-YG3-999-IONA-Test-20190430-A2				0	0/	0/	0/			1
+Auto-user-YGProton6-616-IONA-Test-20181213-A1				0	0/	0/	0/			1
+Auto-user-YG3-961-IONA-Test-20190125-A				0	0/	0/	0/			1
+Auto-user-YGProton6-603-IONA-Test-20181128-B				0	0/	0/	0/			1
+Auto-user-YGProton6-727-IONA-Test-20190415-B				0	0/	0/	0/			1
+Auto-user-YG3-735-IONA-Test-20180212-A2				0	0/	0/	0/			1
+Auto-user-YGProton6-5				0	0/	0/	0/			1
+Auto-user-YG3-898-IONA-Test-20181003-B				0	0/	0/	0/			1
+Auto-user-YG3-937-IONA-Test-20181213-A2				0	0/	0/	0/			1
+Auto-user-YG3-851-IONA-Test-20180809-A				0	0/	0/	0/			1
+Auto-user-YGProton6-630-IONA-Test-20181227-A1				0	0/	0/	0/			1
+Auto-user-YGProton6-676-IONA-Test-20190222-A				0	0/	0/	0/			1
+Auto-user-YG3-865-IONA-Test-20180823-A				0	0/	0/	0/			1
+Auto-user-YGProton6-518-IONA-Test-20180614-A				0	0/	0/	0/			1
+Auto-user-YGProton6-712-IONA-Test-20190327-A				0	0/	0/	0/			1
+Auto-user-YGProton6-618-IONA-Test-20181214-A				0	0/	0/	0/			1
+Auto-user-YG3-749-IONA-Test-20180301-A2				0	0/	0/	0/			1
+Auto-user-YG3-771-IONA-Test-20180319-A				0	0/	0/	0/			1
+Auto-user-YG3-794-IONA-Test-20180406-B				0	0/	0/	0/			1
+Auto-user-YGProton6-521-IONA-Test-20180615-B				0	0/	0/	0/			1
+Auto-user-YG3-874-IONA-Test-20180903-B				0	0/	0/	0/			1
+Auto-user-YGProton6-474-IONA-Test-20180201-A				0	0/	0/	0/			1
+Auto-user-YGProton6-686-IONA-Test-20190306-A				0	0/	0/	0/			1
+Auto-user-YG3-913-IONA-Test-20181031-A				0	0/	0/	0/			1
+Auto-user-YG3-778-IONA-Test-20180322-B				0	0/	0/	0/			1
+Auto-user-YG3-783-IONA-Test-20180328-A				0	0/	0/	0/			1
+Auto-user-YG3-877-IONA-Test-20180907-A				0	0/	0/	0/			1
+Auto-user-YG3-953-IONA-Test-20190111-A				0	0/	0/	0/			1
+Auto-user-YG3-831-IONA-Test-20180607-A				0	0/	0/	0/			1
+Auto-user-YGProton6-477-IONA-Test-20180206-B2				0	0/	0/	0/			1
+Auto-user-YG3-825-IONA-Test-20180523-A				0	0/	0/	0/			1
+Auto-user-YG3-947-IONA-Test-20181227-A2				0	0/	0/	0/			1
+Auto-user-YG3-854-IONA-Test-20180810-B				0	0/	0/	0/			1
+Auto-user-YGProton6-480-IONA-Test-20180209-A				0	0/	0/	0/			1
+Auto-user-YGProton6-716-IONA-Test-20190401-A1				0	0/	0/	0/			1
+Auto-user-YGProton6-613-IONA-Test-20181210-B2				0	0/	0/	0/			1
+Auto-user-YG3-790-IONA-Test-20180402-B				0	0/	0/	0/			1
+Auto-user-YG3-758-IONA-Test-20180308-B1				0	0/	0/	0/			1
+Auto-user-YG3-870-IONA-Test-20180829-B				0	0/	0/	0/			1
+Auto-user-YG3-991-IONA-Test-20190410-A2				0	0/	0/	0/			1
+Auto-user-YGProton6-735-IONA-Test-20190422-B1				0	0/	0/	0/			1
+Auto-user-YGProton6-577-IONA-Test-20181022-B				0	0/	0/	0/			1
+Auto-user-YG3-980-IONA-Test-20190307-B2				0	0/	0/	0/			1
+Auto-user-YGProton6-536-IONA-Test-20180713-A1				0	0/	0/	0/			1
+Auto-user-YG3-725-IONA-Test-20180202-A				0	0/	0/	0/			1
+Auto-user-YG3-942-IONA-Test-20181219-B				0	0/	0/	0/			1
+Auto-user-YG3-973-IONA-Test-20190214-A2				0	0/	0/	0/			1
+Auto-user-YG3-940-IONA-Test-20181217-B2				0	0/	0/	0/			1
+Auto-user-YG3-938-IONA-Test-20181213-B2				0	0/	0/	0/			1
+Auto-user-YG3-1002-IONA-Test-20190506-B2				0	0/	0/	0/			1
+Auto-user-YG3-954-IONA-Test-20190111-B				0	0/	0/	0/			1
+Auto-user-YG3-765-IONA-Test-20180314-A				0	0/	0/	0/			1
+Auto-user-YGProton6-649-IONA-Test-20190116-B				0	0/	0/	0/			1
+Auto-user-YG3-968-IONA-Test-20190201-B				0	0/	0/	0/			1
+Auto-user-YG3-780-IONA-Test-20180326-B				0	0/	0/	0/			1
+Auto-user-YGProton6-506-IONA-Test-20180502-A1				0	0/	0/	0/			1
+Auto-user-YGProton6-621-IONA-Test-20181217-B1				0	0/	0/	0/			1
+Auto-user-YG3-996-IONA-Test-20190422-B2				0	0/	0/	0/			1
+Auto-user-YGProton6-681-IONA-Test-20190226-B				0	0/	0/	0/			1
+Auto-user-YGProton6-571-IONA-Test-20181016-B1				0	0/	0/	0/			1
+Auto-user-YG3-894-IONA-Test-20180928-B				0	0/	0/	0/			1
+Auto-user-YGProton6-547-IONA-Test-20180803-B				0	0/	0/	0/			1
+Auto-user-YGProton6-486-IONA-Test-20180226-A1				0	0/	0/	0/			1
+Auto-user-YGProton6-692-IONA-Test-20190310-A				0	0/	0/	0/			1
+Auto-user-YG3-992-IONA-Test-20190410-B2				0	0/	0/	0/			1
+Auto-user-YGProton6-674-IONA-Test-20190221-A1				0	0/	0/	0/			1
+Auto-user-YG3-971-IONA-Test-20190213-A				0	0/	0/	0/			1
+Auto-user-YGProton6-639-IONA-Test-20190104-B2				0	0/	0/	0/			1
+Auto-user-YGProton6-702-IONA-Test-20190319-A				0	0/	0/	0/			1
+Auto-user-YG3-924-IONA-Test-20181122-B				0	0/	0/	0/			1
+Auto-user-YG3-908-IONA-Test-20181016-B2				0	0/	0/	0/			1
+Auto-user-YG3-986-IONA-Test-20190318-B2				0	0/	0/	0/			1
+Auto-user-YGProton6-682-IONA-Test-20190228-A				0	0/	0/	0/			1
+Auto-user-YG3-715-IONA-Test-20180112-A				0	0/	0/	0/			1
+Auto-user-YGProton6-748-IONA-Test-OT2-20190506-A1				0	0/	0/	0/			1
+Auto-user-YG3-911-IONA-Test-20181026-A				0	0/	0/	0/			1
+Auto-user-YGProton6-575-IONA-Test-20181021-B				0	0/	0/	0/			1
+Auto-user-YGProton6-552-IONA-Test-20180817-A1				0	0/	0/	0/			1
+Auto-user-YGProton6-675-IONA-Test-20190221-B1				0	0/	0/	0/			1
+Auto-user-YGProton6-647-IONA-Test-20190115-B				0	0/	0/	0/			1
+Auto-user-YGProton6-520-IONA-Test-20180615-A				0	0/	0/	0/			1
+Auto-user-YG3-846-IONA-Test-20180730-B				0	0/	0/	0/			1
+Auto-user-YG3-895-IONA-Test-20181001-A				0	0/	0/	0/			1
+Auto-user-YG3-890-IONA-Test-20180921-B				0	0/	0/	0/			1
+Auto-user-YGProton6-588-IONA-Test-20181107-A1				0	0/	0/	0/			1
+150812_M02559_0124_000000000-AFNT3	1	1	1	0	0	0	0	0	0	1
+150820_M02559_0126_000000000-AFNNA	1	1	1	0	0	0	0	0	0	1
+150825_M02559_0127_000000000-AGAYE	0	0	0	0	0	0	0	0	0	1
+150901_M02559_0128_000000000-AFNTE	0	0	0	0	0	0	0	0	0	1
+150902_M02559_0129_000000000-AGAUV	0	0	0	0	0	0	0	0	0	1
+150904_M02559_0130_000000000-AH6BY	0	0	0	0	0	0	0	0	0	1
+150907_M02559_0131_000000000-AH6BW	0	0	0	0	0	0	0	0	0	1
+150910_M02559_0132_000000000-AFNND	0	0	0	0	0	0	0	0	0	1
+150914_M02559_0133_000000000-AH5U3	0	0	0	0	0	0	0	0	0	1
+150915_M02559_0134_000000000-AHBVF	0	0	0	0	0	0	0	0	0	1
+150921_M02559_0135_000000000-AHE32	0	0	0	0	0	0	0	0	0	1
+150922_M02559_0136_000000000-AGMAU	0	0	0	0	0	0	0	0	0	1
+150923_M02559_0137_000000000-AJ4EY	0	0	0	0	0	0	0	0	0	1
+151006_M02559_0138_000000000-AHNGU	0	0	0	0	0	0	0	0	0	1
+151008_M02559_0139_000000000-AH689	0	0	0	0	0	0	0	0	0	1
+151012_M02559_0140_000000000-AHNDG	0	0	0	0	0	0	0	0	0	1
+151020_M02559_0141_000000000-AHNGJ	0	0	0	0	0	0	0	0	0	1
+151026_M02559_0142_000000000-AHNH1	0	0	0	0	0	0	0	0	0	1
+151103_M02559_0143_000000000-AHNGA	0	0	0	0	0	0	0	0	0	1
+151105_M02559_0144_000000000-AHNGP	0	0	0	0	0	0	0	0	0	1
+151106_M02559_0145_000000000-AH6CH	0	0	0	0	0	0	0	0	0	1
+151117_M02559_0146_000000000-AJ3GK	0	0	0	0	0	0	0	0	0	1
+151127_M02559_0147_000000000-AJYGF	0	0	0	0	0	0	0	0	0	1
+151208_M02559_0148_000000000-AJG9E	0	0	0	0	0	0	0	0	0	1
+151211_M02559_0149_000000000-AJY22	0	0	0	0	0	0	0	0	0	1
+151214_M02559_0150_000000000-AJFR5	0	0	0	0	0	0	0	0	0	1
+151224_M02559_0151_000000000-AJG3K	0	0	0	0	0	0	0	0	0	1
+151225_M02559_0152_000000000-D0RNM	0	0	0	0	0	0	0	0	0	1
+151228_M02559_0153_000000000-D0RNM	0	0	0	0	0	0	0	0	0	1
+151230_M02559_0154_000000000-AJEWP	0	0	0	0	0	0	0	0	0	1
+151231_M02559_0155_000000000-AJYGA	0	0	0	0	0	0	0	0	0	1
+160112_M02559_0156_000000000-AJJTJ	0	0	0	0	0	0	0	0	0	1
+160126_M02559_0157_000000000-AJY70	0	0	0	0	0	0	0	0	0	1
+160130_M02559_0158_000000000-AL19E	0	0	0	0	0	0	0	0	0	1
+160204_M02559_0159_000000000-AJEWY	0	0	0	0	0	0	0	0	0	1
+160225_M02559_0160_000000000-AM2L4	0	0	0	0	0	0	0	0	0	1
+160304_M02559_0161_000000000-G06B9	0	0	0	0	0	0	0	0	0	1
+160315_M02559_0162_000000000-AJG72	0	0	0	0	0	0	0	0	0	1
+160324_M02559_0163_000000000-AJYLN	0	0	0	0	0	0	0	0	0	1
+160330_M02559_0164_000000000-D0TCN	0	0	0	0	0	0	0	0	0	1
+160406_M02559_0165_000000000-AJYLD	0	0	0	0	0	0	0	0	0	1
+160414_M02559_0166_000000000-D0TBF	0	0	0	0	0	0	0	0	0	1
+160415_M02559_0167_000000000-AJ4NG	0	0	0	0	0	0	0	0	0	1
+160419_M02559_0168_000000000-AJYLL	0	0	0	0	0	0	0	0	0	1
+160420_M02559_0169_000000000-AJYLL	0	0	0	0	0	0	0	0	0	1
+160420_M02559_0170_000000000-AJ4N8	0	0	0	0	0	0	0	0	0	1
+160421_M02559_0171_000000000-AJEWL	0	0	0	0	0	0	0	0	0	1
+160429_M02559_0172_000000000-AJNH4	0	0	0	0	0	0	0	0	0	1
+160504_M02559_0173_000000000-AJYEY	0	0	0	0	0	0	0	0	0	1
+160505_M02559_0174_000000000-AJ4NV	0	0	0	0	0	0	0	0	0	1
+160511_M02559_0175_000000000-AJYFY	0	0	0	0	0	0	0	0	0	1
+160512_M02559_0176_000000000-D20WA	0	0	0	0	0	0	0	0	0	1
+160519_M02559_0177_000000000-AJYMB	0	0	0	0	0	0	0	0	0	1
+160525_M02559_0178_000000000-AJYM8	0	0	0	0	0	0	0	0	0	1
+160526_M02559_0179_000000000-AKK51	0	0	0	0	0	0	0	0	0	1
+160528_M02559_0180_000000000-AMN2G	0	0	0	0	0	0	0	0	0	1
+160530_M02559_0181_000000000-AJT2F	0	0	0	0	0	0	0	0	0	1
+160603_M02559_0182_000000000-AKKP3	0	0	0	0	0	0	0	0	0	1
+160606_M02559_0183_000000000-AMM5U	0	0	0	0	0	0	0	0	0	1
+160607_M02559_0184_000000000-AKKNR	0	0	0	0	0	0	0	0	0	1
+160618_M02559_0185_000000000-AMN3H	0	0	0	0	0	0	0	0	0	1
+160619_M02559_0186_000000000-AMM6C	0	0	0	0	0	0	0	0	0	1
+160621_M02559_0187_000000000-G063W	0	0	0	0	0	0	0	0	0	1
+160624_M02559_0188_000000000-AMV0Y	0	0	0	0	0	0	0	0	0	1
+160629_M02559_0189_000000000-AMV2K	0	0	0	0	0	0	0	0	0	1
+160629_M02559_0190_000000000-AL0EA	0	0	0	0	0	0	0	0	0	1
+160707_M02559_0191_000000000-AKK50	0	0	0	0	0	0	0	0	0	1
+160712_M02559_0192_000000000-AMV1R	0	0	0	0	0	0	0	0	0	1
+160727_M02559_0193_000000000-AL48M	0	0	0	0	0	0	0	0	0	1
+160729_M02559_0194_000000000-AMVCV	0	0	0	0	0	0	0	0	0	1
+160730_M02559_0195_000000000-ALTG5	0	0	0	0	0	0	0	0	0	1
+160801_M02559_0196_000000000-AT12J	0	0	0	0	0	0	0	0	0	1
+160804_M02559_0197_000000000-AU0RF	0	0	0	0	0	0	0	0	0	1
+160810_M02559_0198_000000000-AN7FH	0	0	0	0	0	0	0	0	0	1
+160811_M02559_0199_000000000-AULNB	0	0	0	0	0	0	0	0	0	1
+160819_M02559_0200_000000000-AN79L	0	0	0	0	0	0	0	0	0	1
+160823_M02559_0202_000000000-AN7MW	0	0	0	0	0	0	0	0	0	1
+160824_M02559_0203_000000000-G105D	0	0	0	0	0	0	0	0	0	1
+160902_M02559_0204_000000000-APH8Y	0	0	0	0	0	0	0	0	0	1
+160905_M02559_0205_000000000-D0TBM	0	0	0	0	0	0	0	0	0	1
+160909_M02559_0206_000000000-D0REP	0	0	0	0	0	0	0	0	0	1
+160913_M02559_0207_000000000-ANKJY	0	0	0	0	0	0	0	0	0	1
+160930_M02559_0208_000000000-AMV3A	0	0	0	0	0	0	0	0	0	1
+161006_M02559_0209_000000000-AMV8G	0	0	0	0	0	0	0	0	0	1
+161010_M02559_0210_000000000-AMV60	0	0	0	0	0	0	0	0	0	1
+161020_M02559_0211_000000000-AN1HF	0	0	0	0	0	0	0	0	0	1
+161021_M02559_0212_000000000-ALTWE	0	0	0	0	0	0	0	0	0	1
+161024_M02559_0213_000000000-ATV7B	0	0	0	0	0	0	0	0	0	1
+161102_M02559_0214_000000000-AU9UF	0	0	0	0	0	0	0	0	0	1
+161103_M02559_0215_000000000-AU9UF	0	0	0	0	0	0	0	0	0	1
+161103_M02559_0216_000000000-AU9UF	0	0	0	0	0	0	0	0	0	1
+161108_M02559_0217_000000000-G10V9	0	0	0	0	0	0	0	0	0	1
+161116_M02559_0218_000000000-ARR3Y	0	0	0	0	0	0	0	0	0	1
+161124_M02559_0219_000000000-G10M5	0	0	0	0	0	0	0	0	0	1
+161129_M02559_0220_000000000-AU9RA	0	0	0	0	0	0	0	0	0	1
+161206_M02559_0221_000000000-APC2D	0	0	0	0	0	0	0	0	0	1
+161214_M02559_0222_000000000-ANRC9	0	0	0	0	0	0	0	0	0	1
+161216_M02559_0223_000000000-AUWJN	0	0	0	0	0	0	0	0	0	1
+161221_M02559_0224_000000000-ATEFH	0	0	0	0	0	0	0	0	0	1
+161230_M02559_0225_000000000-AUHR3	0	0	0	0	0	0	0	0	0	1
+170103_M02559_0226_000000000-ATLFB	0	0	0	0	0	0	0	0	0	1
+170110_M02559_0227_000000000-AP2EJ	0	0	0	0	0	0	0	0	0	1
+170120_M02559_0228_000000000-ATRA7	0	0	0	0	0	0	0	0	0	1
+170124_M02559_0229_000000000-AY3L7	0	0	0	0	0	0	0	0	0	1
+170124_M02559_0230_000000000-AY3L7	0	0	0	0	0	0	0	0	0	1
+170203_M02559_0231_000000000-AUL2G	0	0	0	0	0	0	0	0	0	1
+170216_M02559_0232_000000000-AP2TH	0	0	0	0	0	0	0	0	0	1
+170221_M02559_0233_000000000-AUKWG	0	0	0	0	0	0	0	0	0	1
+170307_M02559_0234_000000000-AP2GG	0	0	0	0	0	0	0	0	0	1
+170310_M02559_0235_000000000-G10LK	0	0	0	0	0	0	0	0	0	1
+170314_M02559_0236_000000000-AVMB4	0	0	0	0	0	0	0	0	0	1
+170321_M02559_0237_000000000-AYWY7	0	0	0	0	0	0	0	0	0	1
+170322_M02559_0238_000000000-D0R9D	0	0	0	0	0	0	0	0	0	1
+170324_M02559_0239_000000000-G10EF	0	0	0	0	0	0	0	0	0	1
+170327_M02559_0240_000000000-D20Y8	0	0	0	0	0	0	0	0	0	1
+170329_M02559_0241_000000000-B24Y2	0	0	0	0	0	0	0	0	0	1
+170330_M02559_0242_000000000-AWRWN	0	0	0	0	0	0	0	0	0	1
+170407_M02559_0243_000000000-B24Y5	0	0	0	0	0	0	0	0	0	1
+170412_M02559_0244_000000000-D22AB	0	0	0	0	0	0	0	0	0	1
+170414_M02559_0245_000000000-AYWY6	0	0	0	0	0	0	0	0	0	1
+170417_M02559_0246_000000000-D0YKR	1	1	1	0	0	0	0	0	0	1
+170419_M02559_0247_000000000-D23VE	1	1	1	0	0	0	0	0	0	1
+Auto_user_YGProton6-5				0	0/	0/	0/	0		1
+Auto_user_YG3-715-IONA_Test_20180112-A	1	1	1	0	0	0	0	1	0	1
+Auto_user_YGProton6-474-IONA_Test_20180201-A	1	1	1	9/0	9/0	8/8	8/8	0	0	1
+Auto_user_YGProton6-475-IONA_Test_20180201-B	1	1	1	9/0	9/0	8/8	8/8	0	0	1
+Auto_user_YG3-725-IONA_Test_20180202-A	1	1	0	0	0	0	0	0	0	1
+Auto_user_YG3-726-IONA_Test_20180202-B	1	1	0	0	0	0	0	0	0	1
+Auto_user_YG3-727-IONA_Test_20180205-A	1	1	1	9/0	9/0	8/8	8/8	0	0	1
+Auto_user_YG3-728-IONA_Test_20180205-B	1	1	1	9/0	9/0	8/8	8/8	0	0	1
+Auto_user_YG3-729-IONA_Test_20180206-A1	1	1	1	9/0	9/0	8/8	8/8	0	0	1
+Auto_user_YGProton6-476-IONA_Test_20180206-A2	1	1	1	9/0	9/0	8/8	8/8	0	0	1
+Auto_user_YG3-730-IONA_Test_20180206-B1	1	1	1	9/0	9/0	8/8	8/8	0	0	1
+Auto_user_YGProton6-477-IONA_Test_20180206-B2	1	1	1	9/0	9/0	8/8	8/8	0	0	1
+Auto_user_YG3-731-IONA_Test_20180207-A	1	1	1	9/0	9/0	8/8	8/8	0	0	1
+Auto_user_YG3-732-IONA_Test_20180207-B	1	1	1	9/0	9/0	8/8	8/8	0	0	1
+Auto_user_YGProton6-478-IONA_Test_20180208-A1	1	1	1	9/0	9/0	8/8	8/8	0	0	1
+Auto_user_YG3-733-IONA_Test_20180208-A2	1	1	1	9/0	9/0	8/8	8/8	0	0	1
+Auto_user_YGProton6-479-IONA_Test_20180208-B1	1	1	1	9/0	9/0	8/8	8/8	0	0	1
+Auto_user_YG3-734-IONA_Test_20180208-B2	1	1	1	9/0	9/0	8/8	8/8	0	0	1
+Auto_user_YGProton6-480-IONA_Test_20180209-A	1	1	1	9/0	9/0	8/8	8/8	0	0	1
+Auto_user_YGProton6-481-IONA_Test_20180209-B	1	1	1	9/0	9/0	8/8	8/8	0	0	1
+Auto_user_YGProton6-482-IONA_Test_20180212-A1	1	1	1	9/0	9/0	8/8	8/8	0	0	1
+Auto_user_YG3-735-IONA_Test_20180212-A2	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YGProton6-483-IONA_Test_20180212-B1	1	1	1	9/9	8/8	8/8	8/8	0	0	1
+Auto_user_YG3-736-IONA_Test_20180212-B2	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-737-IONA_Test_20180213-A	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-738-IONA_Test_20180213-B	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YGProton6-484-IONA_Test_20180221-A1	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-739-IONA_Test_20180221-A2	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YGProton6-485-IONA_Test_20180221-B1	1	1	1	9/9	8/8	8/8	8/8	0	0	1
+Auto_user_YG3-740-IONA_Test_20180221-B2	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-741-IONA_Test_20180222-A	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-742-IONA_Test_20180222-B	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-743-IONA_Test_20180223-A	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-744-IONA_Test_20180223-B	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YGProton6-486-IONA_Test_20180226-A1	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-745-IONA_Test_20180226-A2	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YGProton6-487-IONA_Test_20180226-B1	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-746-IONA_Test_20180226-B2	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-747-IONA_Test_20180227-A	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-748-IONA_Test_20180227-B	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YGProton6-488-IONA_Test_20180301-A1	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-749-IONA_Test_20180301-A2	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YGProton6-489-IONA_Test_20180301-B1	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-750-IONA_Test_20180301-B2	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YGProton6-490-IONA_Test_20180302-A1	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-751-IONA_Test_20180302-A2	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YGProton6-491-IONA_Test_20180302-B1	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-752-IONA_Test_20180302-B2	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YGProton6-492-IONA_Test_20180305-A1	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-753-IONA_Test_20180305-A2	1	1	0	9/0	0/0	0/8	0/8	0	0	1
+Auto_user_YGProton6-493-IONA_Test_20180305-B1	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-754-IONA_Test_20180305-B2	1	1	0	9/0	0/0	0/8	0/8	0	0	1
+Auto_user_YGProton6-494-IONA_Test_20180306-A	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YGProton6-495-IONA_Test_20180306-B	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-755-IONA_Test_20180307-A1	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YGProton6-496-IONA_Test_20180307-A2	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-756-IONA_Test_20180307-B1	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YGProton6-497-IONA_Test_20180307-B2	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-757-IONA_Test_20180308-A1	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YGProton6-498-IONA_Test_20180308-A2	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-758-IONA_Test_20180308-B1	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YGProton6-499-IONA_Test_20180308-B2	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YGProton6-500-IONA_Test_20180309-A1	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-759-IONA_Test_20180309-A2	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YGProton6-501-IONA_Test_20180309-B1	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-760-IONA_Test_20180309-B2	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-761-IONA_Test_20180312-A2	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-762-IONA_Test_20180312-B2	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-763-IONA_Test_20180313-A	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-764-IONA_Test_20180313-B	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-765-IONA_Test_20180314-A	1	1	0	9/0	0/0	0/8	0/8	0	0	1
+Auto_user_YG3-766-IONA_Test_20180314-B	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-767-IONA_Test_20180315-A	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-768-IONA_Test_20180315-B	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-769-IONA_Test_20180316-A	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-770-IONA_Test_20180316-B	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-771-IONA_Test_20180319-A	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-772-IONA_Test_20180319-B	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-773-IONA_Test_20180320-A	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-774-IONA_Test_20180320-B	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-775-IONA_Test_20180321-A	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-776-IONA_Test_20180321-B	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-777-IONA_Test_20180322-A	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-778-IONA_Test_20180322-B	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-779-IONA_Test_20180326-A	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-780-IONA_Test_20180326-B	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-781-IONA_Test_20180327-A	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-782-IONA_Test_20180327-B	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-783-IONA_Test_20180328-A	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-784-IONA_Test_20180328-B	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-785-IONA_Test_20180329-A	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-786-IONA_Test_20180329-B	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-787-IONA_Test_20180330-A	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-788-IONA_Test_20180330-B	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-789-IONA_Test_20180402-A	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-790-IONA_Test_20180402-B	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-791-IONA_Test_20180403-A	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-792-IONA_Test_20180403-B	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-793-IONA_Test_20180406-A	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-794-IONA_Test_20180406-B	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YGProton6-502-IONA_Test_20180409-A1	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-795-IONA_Test_20180409-A2	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YGProton6-503-IONA_Test_20180409-B1	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-796-IONA_Test_20180409-B2	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YGProton6-504-IONA_Test_20180411-A	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YGProton6-505-IONA_Test_20180411-B	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-797-IONA_Test_20180417-A	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-798-IONA_Test_20180417-B	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-799-IONA_Test_20180418-A	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-800-IONA_Test_20180418-B	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-801-IONA_Test_20180419-A	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-802-IONA_Test_20180419-B	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-803-IONA_Test_20180423-A	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-804-IONA_Test_20180423-B	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-805-IONA_Test_20180425-A	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-806-IONA_Test_20180425-B	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-807-IONA_Test_20180426-A	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-808-IONA_Test_20180426-B	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-809-IONA_Test_20180427-A	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-810-IONA_Test_20180427-B	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-811-IONA_Test_20180501-A	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-812-IONA_Test_20180501-B	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YGProton6-506-IONA_Test_20180502-A1	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-813-IONA_Test_20180502-A2	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YGProton6-507-IONA_Test_20180502-B1	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-814-IONA_Test_20180502-B2	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-815-IONA_Test_20180503-A	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-816-IONA_Test_20180503-B	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YGProton6-508-IONA_Test_20180504-A	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YGProton6-509-IONA_Test_20180504-B	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YGProton6-510-IONA_Test_20180507-A	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YGProton6-511-IONA_Test_20180507-B	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YGProton6-512-IONA_Test_20180508-A	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YGProton6-513-IONA_Test_20180508-B	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YGProton6-514-IONA_Test_20180509-A1	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-817-IONA_Test_20180509-A2	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YGProton6-515-IONA_Test_20180509-B1	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-818-IONA_Test_20180509-B2	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YGProton6-516-IONA_Test_20180511-A1	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-819-IONA_Test_20180511-A2	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YGProton6-517-IONA_Test_20180511-B1	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-820-IONA_Test_20180511-B2	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-821-IONA_Test_20180515-A	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-822-IONA_Test_20180515-B	1	1	1	9/9	9/9	7/8	7/8	0	0	1
+Auto_user_YG3-823-IONA_Test_20180517-A	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-824-IONA_Test_20180517-B	1	1	1	8/8	8/8	7/7	7/7	0	0	1
+Auto_user_YG3-825-IONA_Test_20180523-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-826-IONA_Test_20180523-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-827-IONA_Test_20180530-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-828-IONA_Test_20180530-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-829-IONA_Test_20180605-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-830-IONA_Test_20180605-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-831-IONA_Test_20180607-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-832-IONA_Test_20180607-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-518-IONA_Test_20180614-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-519-IONA_Test_20180614-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-520-IONA_Test_20180615-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-521-IONA_Test_20180615-B	1	1	1	12/12	12/12	11/11	11/11	0	0	1
+Auto_user_YGProton6-522-IONA_Test_20180620-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-523-IONA_Test_20180620-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-524-IONA_Test_20180622-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-525-IONA_Test_20180622-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-526-IONA_Test_20180628-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-527-IONA_Test_20180628-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-528-IONA_Test_20180704-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-529-IONA_Test_20180704-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-530-IONA_Test_20180705-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-531-IONA_Test_20180705-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-532-IONA_Test_20180709-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-533-IONA_Test_20180709-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-534-IONA_Test_20180710-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-535-IONA_Test_20180710-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-536-IONA_Test_20180713-A1	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-833-IONA_Test_20180713-A2	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-537-IONA_Test_20180713-B1	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-834-IONA_Test_20180713-B2	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-538-IONA_Test_20180717-A1	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-835-IONA_Test_20180717-A2	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-539-IONA_Test_20180717-B1	0	0	0	0	0/0	0/12	0/12	0	0	1
+Auto_user_YG3-836-IONA_Test_20180717-B2	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-540-IONA_Test_20180718-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-541-IONA_Test_20180718-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-542-IONA_Test_20180719-A1	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-837-IONA_Test_20180719-A2	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-543-IONA_Test_20180719-B1	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-838-IONA_Test_20180719-B2	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-839-IONA_Test_20180720-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-840-IONA_Test_20180720-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-841-IONA_Test_20180724-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-842-IONA_Test_20180724-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-843-IONA_Test_20180726-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-844-IONA_Test_20180726-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-845-IONA_Test_20180730-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-846-IONA_Test_20180730-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-847-IONA_Test_20180731-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-848-IONA_Test_20180731-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-544-IONA_Test_20180802-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-545-IONA_Test_20180802-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-546-IONA_Test_20180803-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-547-IONA_Test_20180803-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-548-IONA_Test_20180807-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-549-IONA_Test_20180807-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-849-IONA_Test_20180808-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-850-IONA_Test_20180808-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-851-IONA_Test_20180809-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-852-IONA_Test_20180809-B	1	1	1	12/13	12/13	12/12	12/12	0	0	1
+Auto_user_YG3-853-IONA_Test_20180810-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-854-IONA_Test_20180810-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-855-IONA_Test_20180813-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-856-IONA_Test_20180813-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-857-IONA_Test_20180814-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-858-IONA_Test_20180814-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-859-IONA_Test_20180816-A1	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-550-IONA_Test_20180816-A2	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-860-IONA_Test_20180816-B1	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-551-IONA_Test_20180816-B2	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-552-IONA_Test_20180817-A1	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-861-IONA_Test_20180817-A2	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-553-IONA_Test_20180817-B1	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-862-IONA_Test_20180817-B2	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-554-IONA_Test_20180821-A1	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-863-IONA_Test_20180821-A2	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-555-IONA_Test_20180821-B1	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-864-IONA_Test_20180821-B2	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-865-IONA_Test_20180823-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-866-IONA_Test_20180823-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-867-IONA_Test_20180824-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-868-IONA_Test_20180824-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-869-IONA_Test_20180829-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-870-IONA_Test_20180829-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-871-IONA_Test_20180830-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-872-IONA_Test_20180830-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-873-IONA_Test_20180903-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-874-IONA_Test_20180903-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-875-IONA_Test_20180904-A	1	1	1	11/11	11/11	10/10	10/10	0	0	1
+Auto_user_YG3-876-IONA_Test_20180904-B	1	1	1	12/12	12/12	11/11	11/11	0	0	1
+Auto_user_YGProton6-556-IONA_Test_20180905-A	1	1	1	10/10	10/10	9/9	9/9	0	0	1
+Auto_user_YGProton6-557-IONA_Test_20180905-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-558-IONA_Test_20180906-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-559-IONA_Test_20180906-B	1	1	1	10/10	10/10	9/9	9/9	0	0	1
+Auto_user_YG3-877-IONA_Test_20180907-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-878-IONA_Test_20180907-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-879-IONA_Test_20180910-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-880-IONA_Test_20180910-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-560-IONA_Test_20180913-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-561-IONA_Test_20180913-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-881-IONA_Test_20180914-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-882-IONA_Test_20180914-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-883-IONA_Test_20180917-A	1	1	1	12/12	12/12	11/11	11/11	0	0	1
+Auto_user_YG3-884-IONA_Test_20180917-B	1	1	1	11/11	11/11	10/10	10/10	0	0	1
+Auto_user_YG3-885-IONA_Test_20180919-A	1	1	1	12/12	12/12	11/11	11/11	0	0	1
+Auto_user_YG3-886-IONA_Test_20180919-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-887-IONA_Test_20180920-A	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-888-IONA_Test_20180920-B	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-889-IONA_Test_20180921-A	0	0	0	0	0/0	0/12	0/12	0	0	1
+Auto_user_YGProton6-562-IONA_Test_20180921-AR	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-890-IONA_Test_20180921-B	1	1	1	13/13	13/13	1/12	1/12	0	0	1
+Auto_user_YGProton6-563-IONA_Test_20180921-BR	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-564-IONA_Test_20180925-A	1	1	1	10/10	10/10	9/9	9/9	0	0	1
+Auto_user_YGProton6-565-IONA_Test_20180925-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-891-IONA_Test_20180927-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-892-IONA_Test_20180927-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-893-IONA_Test_20180928-A	1	1	1	11/11	11/11	10/10	10/10	0	0	1
+Auto_user_YG3-894-IONA_Test_20180928-B	1	1	1	10/10	10/10	9/9	9/9	0	0	1
+Auto_user_YG3-895-IONA_Test_20181001-A	1	1	1	12/12	12/12	11/11	11/11	0	0	1
+Auto_user_YG3-896-IONA_Test_20181001-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-897-IONA_Test_20181003-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-898-IONA_Test_20181003-B	1	1	1	12/13	12/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-566-IONA_Test_20181005-A1	1	1	1	12/13	12/13	12/12	12/12	0	0	1
+Auto_user_YG3-899-IONA_Test_20181005-A2	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-567-IONA_Test_20181005-B1	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-900-IONA_Test_20181005-B2	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-901-IONA_Test_20181008-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-902-IONA_Test_20181008-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-903-IONA_Test_20181012-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-904-IONA_Test_20181012-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-568-IONA_Test_20181015-A1	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-905-IONA_Test_20181015-A2	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-569-IONA_Test_20181015-B1	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-906-IONA_Test_20181015-B2	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-570-IONA_Test_20181016-A1	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-907-IONA_Test_20181016-A2	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-571-IONA_Test_20181016-B1	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-908-IONA_Test_20181016-B2	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-909-IONA_Test_20181018-A	1	1	1	13/13	13/13	0/12	0/12	0	0	1
+Auto_user_YGProton6-572-IONA_Test_20181018-AR	1	1	1	13/13	13/13	8/12	8/12	0	0	1
+Auto_user_YG3-910-IONA_Test_20181018-B	1	1	1	13/13	13/13	0/12	0/12	0	0	1
+Auto_user_YGProton6-573-IONA_Test_20181018-BR	1	1	1	13/13	13/13	8/12	8/12	0	0	1
+Auto_user_YGProton6-574-IONA_Test_20181021-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-575-IONA_Test_20181021-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-576-IONA_Test_20181022-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-577-IONA_Test_20181022-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-578-IONA_Test_20181023-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-579-IONA_Test_20181023-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-580-IONA_Test_20181024-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-581-IONA_Test_20181024-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-911-IONA_Test_20181026-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-912-IONA_Test_20181026-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-582-IONA_Test_20181029-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-583-IONA_Test_20181029-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-913-IONA_Test_20181031-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-914-IONA_Test_20181031-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-584-IONA_Test_20181102-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-585-IONA_Test_20181102-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-586-IONA_Test_20181106-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-587-IONA_Test_20181106-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-588-IONA_Test_20181107-A1	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-915-IONA_Test_20181107-A2	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-589-IONA_Test_20181107-B1	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-916-IONA_Test_20181107-B2	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-917-IONA_Test_20181109-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-918-IONA_Test_20181109-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-590-IONA_Test_20181112-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-591-IONA_Test_20181112-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-919-IONA_Test_20181113-A	1	1	1	12/12	12/12	11/11	11/11	0	0	1
+Auto_user_YG3-920-IONA_Test_20181113-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-592-IONA_Test_20181114-A	1	1	1	11/11	11/11	10/10	10/10	0	0	1
+Auto_user_YGProton6-593-IONA_Test_20181114-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-594-IONA_Test_20181119-A1	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-921-IONA_Test_20181119-A2	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-595-IONA_Test_20181119-B1	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-922-IONA_Test_20181119-B2	1	1	1	12/12	12/12	11/11	11/11	0	0	1
+Auto_user_YGProton6-596-IONA_Test_20181121-A	1	1	1	12/12	12/12	11/11	11/11	0	0	1
+Auto_user_YGProton6-597-IONA_Test_20181121-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-923-IONA_Test_20181122-A	1	1	1	11/11	11/11	10/10	10/10	0	0	1
+Auto_user_YG3-924-IONA_Test_20181122-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-598-IONA_Test_20181123-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-599-IONA_Test_20181123-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-600-IONA_Test_20181126-A	1	1	1	11/11	11/11	10/10	10/10	0	0	1
+Auto_user_YGProton6-601-IONA_Test_20181126-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-925-IONA_Test_20181127-A	1	1	1	12/12	12/12	11/11	11/11	0	0	1
+Auto_user_YG3-926-IONA_Test_20181127-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-602-IONA_Test_20181128-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-603-IONA_Test_20181128-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-927-IONA_Test_20181130-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-928-IONA_Test_20181130-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-604-IONA_Test_20181204-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-605-IONA_Test_20181204-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-606-IONA_Test_20181205-A1	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-929-IONA_Test_20181205-A2	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-607-IONA_Test_20181205-B1	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-930-IONA_Test_20181205-B2	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-931-IONA_Test_20181206-A	1	1	1	13/0	0/0	0/12	0/12	0	0	1
+Auto_user_YGProton6-608-IONA_Test_20181206-AR	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-932-IONA_Test_20181206-B	1	1	1	13/0	0/0	0/12	0/12	0	0	1
+Auto_user_YGProton6-609-IONA_Test_20181206-BR	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-610-IONA_Test_20181207-A1	1	1	1	11/11	11/11	10/10	10/10	0	0	1
+Auto_user_YG3-933-IONA_Test_20181207-A2	1	1	1	12/12	12/12	11/11	11/11	0	0	1
+Auto_user_YGProton6-611-IONA_Test_20181207-B1	1	1	1	11/11	11/11	10/10	10/10	0	0	1
+Auto_user_YG3-934-IONA_Test_20181207-B2	1	1	1	11/11	11/11	10/10	10/10	0	0	1
+Auto_user_YG3-935-IONA_Test_20181210-A1	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-612-IONA_Test_20181210-A2	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-936-IONA_Test_20181210-B1	1	1	1	12/12	12/12	11/11	11/11	0	0	1
+Auto_user_YGProton6-613-IONA_Test_20181210-B2	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-614-IONA_Test_20181212-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-615-IONA_Test_20181212-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-616-IONA_Test_20181213-A1	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-937-IONA_Test_20181213-A2	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-617-IONA_Test_20181213-B1	1	1	1	12/12	12/12	11/11	11/11	0	0	1
+Auto_user_YG3-938-IONA_Test_20181213-B2	1	1	1	11/11	11/11	10/10	10/10	0	0	1
+Auto_user_YGProton6-618-IONA_Test_20181214-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-619-IONA_Test_20181214-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-620-IONA_Test_20181217-A1	1	1	1	12/12	12/12	11/11	11/11	0	0	1
+Auto_user_YG3-939-IONA_Test_20181217-A2	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-621-IONA_Test_20181217-B1	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-940-IONA_Test_20181217-B2	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-622-IONA_Test_20181218-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-623-IONA_Test_20181218-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-941-IONA_Test_20181219-A	1	1	1	10/10	10/10	9/9	9/9	0	0	1
+Auto_user_YG3-942-IONA_Test_20181219-B	1	1	1	10/10	10/10	9/9	9/9	0	0	1
+Auto_user_YGProton6-624-IONA_Test_20181221-A1	1	1	1	11/11	11/11	10/10	10/10	0	0	1
+Auto_user_YG3-943-IONA_Test_20181221-A2	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-625-IONA_Test_20181221-B1	1	1	1	11/11	11/11	10/10	10/10	0	0	1
+Auto_user_YG3-944-IONA_Test_20181221-B2	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-626-IONA_Test_20181222-A	1	1	1	11/11	11/11	10/10	10/10	0	0	1
+Auto_user_YGProton6-627-IONA_Test_20181222-B	1	1	1	12/12	12/12	11/11	11/11	0	0	1
+Auto_user_YGProton6-628-IONA_Test_20181225-A1	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-945-IONA_Test_20181225-A2	1	1	1	11/11	11/11	10/10	10/10	0	0	1
+Auto_user_YGProton6-629-IONA_Test_20181225-B1	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-946-IONA_Test_20181225-B2	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-630-IONA_Test_20181227-A1	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-947-IONA_Test_20181227-A2	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-631-IONA_Test_20181227-B1	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-948-IONA_Test_20181227-B2	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-632-IONA_Test_20181228-A	1	1	1	13/0	13/0	12/12	12/12	0	0	1
+Auto_user_YGProton6-633-IONA_Test_20181228-B	1	1	1	13/0	13/0	12/12	12/12	0	0	1
+Auto_user_YGProton6-634-IONA_Test_20190101-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-635-IONA_Test_20190101-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-636-IONA_Test_20190102-A	1	1	1	11/11	11/11	10/10	10/10	0	0	1
+Auto_user_YGProton6-637-IONA_Test_20190102-B	1	1	1	12/0	0/0	0/11	0/11	0	0	1
+Auto_user_YG3-949-IONA_Test_20190104-A1	1	1	1	11/11	11/11	10/10	10/10	0	0	1
+Auto_user_YGProton6-638-IONA_Test_20190104-A2	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-950-IONA_Test_20190104-B1	1	1	1	11/11	11/11	10/10	10/10	0	0	1
+Auto_user_YGProton6-639-IONA_Test_20190104-B2	1	1	1	12/12	12/12	11/11	11/11	0	0	1
+Auto_user_YGProton6-640-IONA_Test_20190108-A1	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-951-IONA_Test_20190108-A2	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-641-IONA_Test_20190108-B1	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-952-IONA_Test_20190108-B2	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-642-IONA_Test_20190110-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-643-IONA_Test_20190110-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-953-IONA_Test_20190111-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-954-IONA_Test_20190111-B	1	1	1	12/12	12/12	11/11	11/11	0	0	1
+Auto_user_YGProton6-644-IONA_Test_20190114-A1	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-955-IONA_Test_20190114-A2	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-645-IONA_Test_20190114-B1	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-956-IONA_Test_20190114-B2	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-646-IONA_Test_20190115-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-647-IONA_Test_20190115-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-648-IONA_Test_20190116-A	1	1	1	10/10	10/10	9/9	9/9	0	0	1
+Auto_user_YGProton6-649-IONA_Test_20190116-B	1	1	1	10/10	10/10	9/9	9/9	0	0	1
+Auto_user_YGProton6-650-IONA_Test_20190117-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-651-IONA_Test_20190117-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-957-IONA_Test_20190118-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-958-IONA_Test_20190118-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-652-IONA_Test_20190121-A1	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-959-IONA_Test_20190121-A2	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-653-IONA_Test_20190121-B1	1	1	1	12/12	12/12	11/11	11/11	0	0	1
+Auto_user_YG3-960-IONA_Test_20190121-B2	1	1	1	12/12	12/12	11/11	11/11	0	0	1
+Auto_user_YGProton6-654-IONA_Test_20190122-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-655-IONA_Test_20190122-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-656-IONA_Test_20190124-A	1	1	1	13/0	0/0	0/12	0/12	0	0	1
+Auto_user_YGProton6-657-IONA_Test_20190124-B	1	1	1	13/0	0/0	0/12	0/12	0	0	1
+Auto_user_YG3-961-IONA_Test_20190125-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-962-IONA_Test_20190125-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-658-IONA_Test_20190128-A1	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-963-IONA_Test_20190128-A2	1	1	1	11/11	11/11	10/10	10/10	0	0	1
+Auto_user_YGProton6-659-IONA_Test_20190128-B1	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-964-IONA_Test_20190128-B2	1	1	1	10/10	10/10	9/9	9/9	0	0	1
+Auto_user_YG3-965-IONA_Test_20190129-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-966-IONA_Test_20190129-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-660-IONA_Test_20190131-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-661-IONA_Test_20190131-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-967-IONA_Test_20190201-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-968-IONA_Test_20190201-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-662-IONA_Test_20190208-A1	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-969-IONA_Test_20190208-A2	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-663-IONA_Test_20190208-B1	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-970-IONA_Test_20190208-B2	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-664-IONA_Test_20190211-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-665-IONA_Test_20190211-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-971-IONA_Test_20190213-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-972-IONA_Test_20190213-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-666-IONA_Test_20190214-A1	1	1	1	12/12	12/12	11/11	11/11	0	0	1
+Auto_user_YG3-973-IONA_Test_20190214-A2	1	1	1	10/10	10/10	9/9	9/9	0	0	1
+Auto_user_YGProton6-667-IONA_Test_20190214-B1	1	1	1	12/12	12/12	11/11	11/11	0	0	1
+Auto_user_YG3-974-IONA_Test_20190214-B2	1	1	1	10/10	10/10	9/9	9/9	0	0	1
+Auto_user_YGProton6-668-IONA_Test_20190215-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-669-IONA_Test_20190215-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-975-IONA_Test_20190218-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-976-IONA_Test_20190218-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-670-IONA_Test_20190219-A	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YGProton6-671-IONA_Test_20190219-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-672-IONA_Test_20190220-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-673-IONA_Test_20190220-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-674-IONA_Test_20190221-A1	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-977-IONA_Test_20190221-A2	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-675-IONA_Test_20190221-B1	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-978-IONA_Test_20190221-B2	0	0	0	0	0/0	0/12	0/12	0	0	1
+Auto_user_YGProton6-679-IONA_Test_20190221-B2	0	0	0	0	0/0	0/12	0/12	0	0	1
+Auto_user_YGProton6-676-IONA_Test_20190222-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-677-IONA_Test_20190222-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-678-IONA_Test_20190225-A2	0	0	0	0	0/0	0/12	0/12	0	0	1
+Auto_user_YGProton6-679-IONA_Test_20190225-B2	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-680-IONA_Test_20190226-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-681-IONA_Test_20190226-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-682-IONA_Test_20190228-A	1	1	1	12/12	12/12	11/11	11/11	0	0	1
+Auto_user_YGProton6-683-IONA_Test_20190228-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-684-IONA_Test_20190305-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-685-IONA_Test_20190305-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-686-IONA_Test_20190306-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-687-IONA_Test_20190306-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-688-IONA_Test_20190307-A1	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-979-IONA_Test_20190307-A2	1	1	1	10/10	0/10	0/9	0/9	0	0	1
+Auto_user_YGProton6-689-IONA_Test_20190307-B1	1	1	1	10/10	10/10	9/9	9/9	0	0	1
+Auto_user_YG3-980-IONA_Test_20190307-B2	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-691-IONA_Test_20190308-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-692-IONA_Test_20190310-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-693-IONA_Test_20190310-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-694-IONA_Test_20190311-A1	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-981-IONA_Test_20190311-A2	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-695-IONA_Test_20190311-B1	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-982-IONA_Test_20190311-B2	1	1	1	12/12	12/12	11/11	11/11	0	0	1
+Auto_user_YGProton6-695-IONA_Test_20190311-B2	0	0	0	0	0/0	0/12	0/12	0	0	1
+Auto_user_YGProton6-696-IONA_Test_20190313-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-697-IONA_Test_20190313-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-698-IONA_Test_20190314-A1	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-983-IONA_Test_20190314-A2	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-699-IONA_Test_20190314-B1	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-984-IONA_Test_20190314-B2	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-700-IONA_Test_20190318-A1	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-985-IONA_Test_20190318-A2	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-701-IONA_Test_20190318-B1	1	1	1	10/10	10/10	9/9	9/9	0	0	1
+Auto_user_YG3-986-IONA_Test_20190318-B2	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-702-IONA_Test_20190319-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-703-IONA_Test_20190319-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-704-IONA_Test_20190320-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-705-IONA_Test_20190320-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-706-IONA_Test_20190321-A1	1	1	1	12/12	12/12	11/11	11/11	0	0	1
+Auto_user_YGProton6-707-IONA_Test_20190321-B1	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-708-IONA_Test_20190322-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-709-IONA_Test_20190322-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-710-IONA_Test_20190325-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-711-IONA_Test_20190325-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-712-IONA_Test_20190327-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-713-IONA_Test_20190327-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-714-IONA_Test_20190328-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-715-IONA_Test_20190328-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-716-IONA_Test_20190401-A1	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-987-IONA_Test_20190401-A2	1	1	1	11/11	11/11	10/10	10/10	0	0	1
+Auto_user_YGProton6-717-IONA_Test_20190401-B1	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-988-IONA_Test_20190401-B2	1	1	1	12/12	12/12	11/11	11/11	0	0	1
+Auto_user_YG3-989-IONA_Test_20190402-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-990-IONA_Test_20190402-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-718-IONA_Test_20190404-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-719-IONA_Test_20190404-B	1	1	1	12/12	12/12	11/11	11/11	0	0	1
+Auto_user_YGProton6-720-IONA_Test_20190409-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-721-IONA_Test_20190409-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-722-IONA_Test_20190410-A1	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-991-IONA_Test_20190410-A2	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YGProton6-723-IONA_Test_20190410-B1	1	1	1	10/10	10/10	9/9	9/9	0	0	1
+Auto_user_YG3-992-IONA_Test_20190410-B2	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YGProton6-724-IONA_Test_20190411-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-725-IONA_Test_20190411-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-726-IONA_Test_20190415-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-727-IONA_Test_20190415-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-728-IONA_Test_20190416-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-729-IONA_Test_20190416-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-993-IONA_Test_20190417-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-994-IONA_Test_20190417-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-730-IONA_Test_20190418-A	1	1	1	12/12	12/12	11/11	11/11	0	0	1
+Auto_user_YGProton6-731-IONA_Test_20190418-B	1	1	1	11/11	11/11	10/10	10/10	0	0	1
+Auto_user_YGProton6-732-IONA_Test_20190419-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-733-IONA_Test_20190419-B	1	1	1	12/12	12/12	11/11	11/11	0	0	1
+Auto_user_YGProton6-734-IONA_Test_20190422-A1	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-995-IONA_Test_20190422-A2	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YGProton6-735-IONA_Test_20190422-B1	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YG3-996-IONA_Test_20190422-B2	1	1	1	9/9	9/9	8/8	8/8	0	0	1
+Auto_user_YGProton6-736-IONA_Test_20190423-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-737-IONA_Test_20190423-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-738-IONA_Test_20190424-A	1	1	1	12/12	12/12	11/11	11/11	0	0	1
+Auto_user_YGProton6-739-IONA_Test_20190424-B	1	1	1	10/10	10/10	9/9	9/9	0	0	1
+Auto_user_YG3-997-IONA_Test_20190425-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YG3-998-IONA_Test_20190425-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-740-IONA_Test_20190426-A	1	1	1	12/12	12/12	11/11	11/11	0	0	1
+Auto_user_YGProton6-741-IONA_Test_20190426-B	1	1	1	11/11	11/11	10/10	10/10	0	0	1
+Auto_user_YGProton6-742-IONA_Test_20190429-A	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-743-IONA_Test_20190429-B	1	1	1	13/13	13/13	12/12	12/12	0	0	1
+Auto_user_YGProton6-744-IONA_Test_20190430-A1	1	1	1	11/11	11/11	10/10	10/10	1	0	1
+Auto_user_YG3-999-IONA_Test_20190430-A2	1	1	1	10/10	10/10	9/9	9/9	1	0	1
+Auto_user_YGProton6-745-IONA_Test_20190430-B1	1	1	1	12/12	12/12	11/11	11/11	1	0	1
+Auto_user_YG3-1000-IONA_Test_20190430-B2	1	1	1	13/13	13/13	12/12	12/12	1	0	1
+Auto_user_YGProton6-746-IONA_Test_20190502-A	1	1	1	13/13	13/13	12/12	12/12	1	0	1
+Auto_user_YGProton6-747-IONA_Test_20190502-B	1	1	1	13/13	13/13	12/12	12/12	1	0	1
+Auto_user_YGProton6-748-IONA_Test-OT2_20190506-A1	1	1	1	13/13	13/13	12/12	12/12	1	0	1
+Auto_user_YG3-1001-IONA_Test_20190506-A2	1	1	1	11/11	11/11	10/10	10/10	1	0	1
+Auto_user_YGProton6-749-IONA_Test-OT2_20190506-B1	1	1	1	13/13	13/13	12/12	12/12	1	0	1
+Auto_user_YG3-1002-IONA_Test_20190506-B2	1	1	1	13/13	13/13	12/12	12/12	1	0	1
+Auto_user_YGProton6-750-IONA_Test-OT2_20190508-A	1	1	1	12/12	12/12	12/12	12/12	1	0	1
+Auto_user_YGProton6-751-IONA_Test-OT2_20190508-B	1	1	1	11/11	11/11	11/11	11/11	1	0	1
+Auto_user_YGProton6-752-IONA_Test_20190510-A	1	1	1	11/11	11/11	11/11	11/11	1	0	1
+Auto_user_YGProton6-753-IONA_Test_20190510-B	1	1	1	11/11	11/11	11/11	11/11	1	0	1
+Auto_user_YGProton6-754-IONA_Test_20190513-A	1	1	1	13/13	13/13	12/12	12/12	1	0	1
+Auto_user_YGProton6-755-IONA_Test_20190513-B	1	1	1	8/8	8/8	7/7	7/7	1	0	1
+Auto_user_YG3-1003-IONA_Test_20190514-A	1	1	1	13/13	13/13	12/12	12/12	1	0	1
+Auto_user_YG3-1004-IONA_Test_20190514-B	1	1	1	13/13	13/13	12/12	12/12	1	0	1
+Auto_user_YGProton6-756-IONA_Test_20190515-A	1	1	1	13/13	13/13	12/12	12/12	1	0	1
+Auto_user_YGProton6-757-IONA_Test_20190515-B	1	1	1	13/13	13/13	12/12	12/12	1	0	1
+Auto_user_YGProton6-758-IONA_Test_20190516-A1	1	1	1	13/13	13/13	12/12	12/12	1	0	1
+Auto_user_YG3-1005-IONA_Test_20190516-A2	1	1	1	13/13	13/13	12/12	12/12	1	0	1
+Auto_user_YGProton6-759-IONA_Test_20190516-B1	1	1	1	13/13	13/13	12/12	12/12	1	0	1
+Auto_user_YG3-1006-IONA_Test_20190516-B2	1	1	1	13/13	13/13	12/12	12/12	1	0	1
+Auto_user_YGProton6-760-IONA_Test_20190517-A	1	1	1	13/13	13/13	12/12	12/12	1	0	1
+Auto_user_YGProton6-761-IONA_Test_20190517-B	1	1	1	12/12	12/12	11/11	11/11	1	0	1
+Auto_user_YGProton6-762-IONA_Test_20190520-A1	1	1	1	11/11	11/11	10/10	10/10	1	0	1
+Auto_user_YG3-1007-IONA_Test_20190520-A2	1	1	1	11/11	11/11	10/10	10/10	1	0	1
+Auto_user_YGProton6-763-IONA_Test_20190520-B1	1	1	1	7/7	7/7	6/6	6/6	1	0	1
+Auto_user_YG3-1008-IONA_Test_20190520-B2	1	1	1	12/12	12/12	11/11	11/11	1	0	1
+Auto_user_YG3-1009-IONA_Test_20190522-A	1	1	1	13/13	0/13	0/12	0/12	1	0	0
+Auto_user_YG3-1010-IONA_Test_20190522-B	1	1	1	13/13	13/13	12/12	12/12	1	0	1
+Auto_user_YG3-1011-IONA_Test_20190523-A1	1	1	1	13/13	13/13	12/12	12/12	1	0	1
+Auto_user_YGProton6-764-IONA_Test_20190523-A2	1	1	1	13/13	13/13	12/12	12/12	1	0	1
+Auto_user_YG3-1012-IONA_Test_20190523-B1	1	1	1	12/12	12/12	11/11	11/11	1	0	1
+Auto_user_YGProton6-765-IONA_Test_20190523-B2	1	1	1	12/12	12/12	11/11	11/11	1	0	1
+Auto_user_YG3-1013-IONA_Test_20190524-A	1	1	1	13/13	13/13	12/12	12/12	1	0	1
+Auto_user_YG3-1014-IONA_Test_20190524-B	1	1	1	13/13	13/13	12/12	12/12	1	0	1
+Auto_user_YGProton6-766-IONA_Test_20190525-A	1	1	1	13/13	13/13	12/12	12/12	1	0	1
+Auto_user_YGProton6-767-IONA_Test_20190525-B	1	1	1	13/13	13/13	12/12	12/12	1	0	1
+Auto_user_YGProton6-768-IONA_Test_20190528-A	1	1	1	13/13	13/13	12/12	12/12	1	0	1
+Auto_user_YGProton6-769-IONA_Test_20190528-B	1	1	1	13/13	13/13	12/12	12/12	1	0	1
+Auto_user_YGProton6-770-IONA_Test_20190530-A1	1	1	1	13/13	13/13	12/12	12/12	1	0	1
+Auto_user_YG3-1015-IONA_Test_20190530-A2	1	1	1	10/10	10/10	9/9	9/9	1	0	1
+Auto_user_YGProton6-771-IONA_Test_20190530-B1	1	1	1	13/13	13/13	12/12	12/12	1	0	1
+Auto_user_YG3-1016-IONA_Test_20190530-B2	1	1	1	10/10	10/10	9/9	9/9	1	0	1
+Auto_user_YGProton6-772-IONA_Test_20190531-A1	1	1	1	13/13	13/13	12/12	12/12	1	0	1
+Auto_user_YG3-1017-IONA_Test_20190531-A2	1	1	1	13/13	13/13	12/12	12/12	1	0	1
+Auto_user_YGProton6-773-IONA_Test_20190531-B1	1	1	1	13/13	13/13	12/12	12/12	1	0	1
+Auto_user_YG3-1018-IONA_Test_20190531-B2	1	1	1	13/13	13/13	12/12	12/12	1	0	1
+Auto_user_YGProton6-774-IONA_Test_20190603-A	1	1	1	13/13	13/13	12/12	12/12	1	0	1
+Auto_user_YGProton6-775-IONA_Test_20190603-B	1	1	1	13/13	13/13	12/12	12/12	1	0	1
+Auto_user_YGProton6-776-IONA_Test_20190605-A	1	1	1	13/13	13/13	12/12	12/12	1	0	1
+Auto_user_YGProton6-777-IONA_Test_20190605-B	1	1	1	13/13	13/13	12/12	12/12	1	0	1
+Auto_user_YGProton6-778-IONA_Test_20190607-A1	1	1	1	13/13	13/13	12/12	12/12	1	0	1
+Auto_user_YG3-1019-IONA_Test_20190607-A2	1	1	1	13/13	13/13	12/12	12/12	1	0	1
+Auto_user_YGProton6-779-IONA_Test_20190607-B1	1	1	1	11/11	11/11	10/10	3/10	0	0	0
+Auto_user_YG3-1020-IONA_Test_20190607-B2	1	1	1	13/13	13/13	12/12	12/12	1	0	1
