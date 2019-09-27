@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="../css/reset.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js'></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link rel="stylesheet" href="../css/style.css">
@@ -72,7 +73,7 @@
   <div class="container">
     <div class="banner pt-4">
       <h1>非侵入性產前染色體篩檢即時追蹤系統</h1>
-      <h2 class="pt-2">慧智臨床基因醫學實驗室</h2>
+      <h2 class="pt-2 sub-title">慧智臨床基因醫學實驗室</h2>
     </div>
 
 
@@ -83,8 +84,13 @@
     </div>
 
     <div class="div-progress">
-      <div class="row content-header">
-        <div class="col-lg-3 " id="content-header-name"></div>
+      <div class="row content-header py-3">
+        <div class="col-lg-3 content-header" id="content-header-name">
+          <h2 class="py-2 px-3"><strong>Case Number</strong></h2>
+        </div>
+        <div class="col-lg-1 content-header" id="content-header-time ">
+          <h5 class="badge badge-pill badge-dark py-2 px-3 ">Duration</h5>
+        </div>
         <div class="col-lg-8 content-header-info">
           <div class="col-lg-5 arrow-container">
             <div class="header-sofiva arrow-left"></div>
@@ -98,17 +104,24 @@
           </div>
         </div>
       </div>
-      <div class="row row-sampleRun py-3">
-        <div class="col-lg-3 " id="nips-runId0"></div>
-        <div class="col-lg-8 " id="nips-progressId0">
+      <div class="row row-sampleRun pt-4">
+        <!-- <div class="py-3 row justify-content-between"> -->
+        <div class="col-lg-3 col-6 py-2" id="nips-runId0">
+          <span class="badge badge-pill badge-info"></span>
+        </div>
+        <div class="col-lg-1 col-6 py-2" id="nips-timeUsed0" style="text-align: right;">
+          <span class="badge badge-pill badge-dark py-2 px-3">12:30</span>
+        </div>
+        <!-- </div> -->
+        <div class="col-lg-8 col-12 py-2" id="nips-progressId0">
           <table class="stepbar-progress" data-current-step="1" data-step-status="pending">
             <!-- <caption>First Step Pending</caption> -->
             <tbody>
               <tr>
                 <td class="step-item step-item-first" data-step="1">
-                  <span class="step-body">
-                    <span class="glyphicon"></span>
-                  </span>
+                  <div class="step-body">
+                    <a class="glyphicon" data-toggle="collapse" data-target="#collapseExample"></a>
+                  </div>
                 </td>
                 <td class="step-item-progress">
                   <span class="progress-body">
@@ -190,11 +203,17 @@
                     <span class="glyphicon"></span>
                   </span>
                 </td>
+
               </tr>
             </tbody>
+
           </table>
+          <div class="collapse pt-3" id="collapseExample">
+            <div class="card card-body text-center">
+              Indicated Step: Sequenced
+            </div>
+          </div>
         </div>
-        <div class="col-lg-1 px-4" id="nips-timeUsed0">12:30:52</div>
       </div>
       <div class="row row-sampleRun py-3">
         <div class="col-lg-3" id="nips-runId1"></div>
@@ -1284,7 +1303,6 @@
         <div class="col-lg-1" id="nips-timeUsed11"></div>
       </div>
     </div>
-
   </div>
 
   <footer class="container-fluid bg-secondary py-2">
@@ -1303,9 +1321,6 @@
     </div>
   </footer>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-  </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
   </script>

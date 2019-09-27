@@ -1,19 +1,19 @@
 {
   "workbench.colorCustomizations": {
-    "activityBar.background": "#65c89b",
+    "activityBar.background": "#7295b1",
     "activityBar.foreground": "#15202b",
     "activityBar.inactiveForeground": "#15202b99",
-    "activityBarBadge.background": "#945bc4",
-    "activityBarBadge.foreground": "#e7e7e7",
-    "titleBar.activeBackground": "#42b883",
-    "titleBar.inactiveBackground": "#42b88399",
-    "titleBar.activeForeground": "#15202b",
-    "titleBar.inactiveForeground": "#15202b99",
-    "statusBar.background": "#42b883",
-    "statusBarItem.hoverBackground": "#359268",
-    "statusBar.foreground": "#15202b"
+    "activityBarBadge.background": "#e8d6e0",
+    "activityBarBadge.foreground": "#15202b",
+    "titleBar.activeBackground": "#557c9b",
+    "titleBar.inactiveBackground": "#557c9b99",
+    "titleBar.activeForeground": "#e7e7e7",
+    "titleBar.inactiveForeground": "#e7e7e799",
+    "statusBar.background": "#557c9b",
+    "statusBarItem.hoverBackground": "#7295b1",
+    "statusBar.foreground": "#e7e7e7"
   },
-  "peacock.color": "#42b883",
+  "peacock.color": "#557c9b",
   "atlascode.jira.workingSite": {
     "baseUrlSuffix": "atlassian.net"
   }
