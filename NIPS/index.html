@@ -84,43 +84,40 @@
     </div>
 
     <div class="div-progress">
-      <div class="row content-header py-3">
-        <div class="col-lg-3 content-header" id="content-header-name">
+      <div class="row content-header py-1">
+        <div class="col-lg-3 content-header col-6" id="content-header-name">
           <h2 class="py-2 px-3"><strong>Case Number</strong></h2>
         </div>
-        <div class="col-lg-1 content-header" id="content-header-time ">
-          <h5 class="badge badge-pill badge-dark py-2 px-3 ">Duration</h5>
+        <div class="col-lg-1 content-header col-6 text-right" id="content-header-time">
+          <h4 class=""><span class="badge badge-pill badge-dark py-2">Duration</span></h4>
         </div>
-        <div class="col-lg-8 content-header-info">
-          <div class="col-lg-5 arrow-container">
-            <div class="header-sofiva arrow-left"></div>
-            <div class="arrow-ctr">SOFIVA</div>
-            <div class="header-cloud arrow-right"></div>
-          </div>
-          <div class="col-lg-7 arrow-container">
-            <div class="header-sofiva arrow-left"></div>
-            <div class="arrow-ctr">CLOUD</div>
-            <div class="header-cloud arrow-right arrow-right-end"></div>
-          </div>
+        <div class="col-lg-8 content-header-info ">
+          <ol class="content-header-info-list ">
+            <li class="content-header-info-list__steps not-current first-info">
+              <span class="content-header-info-list__steps-sofiva py-1">SOFIVA</span>
+            </li>
+            <li class="content-header-info-list__steps current second-info">
+              <span class="content-header-info-list__steps-cloud py-1">CLOUD</span>
+            </li>
+          </ol>
         </div>
       </div>
       <div class="row row-sampleRun pt-4">
         <!-- <div class="py-3 row justify-content-between"> -->
-        <div class="col-lg-3 col-6 py-2" id="nips-runId0">
-          <span class="badge badge-pill badge-info"></span>
+        <div class="col-lg-3 col-6 py-2 my-auto" id="nips-runId0" style="height:100%;">
         </div>
-        <div class="col-lg-1 col-6 py-2" id="nips-timeUsed0" style="text-align: right;">
-          <span class="badge badge-pill badge-dark py-2 px-3">12:30</span>
+        <div class="col-lg-1 col-6 py-2" id="nips-timeUsed0" style="text-align: right; width:100%; height:100%;">
+          <h5 class="my-auto"><span class="badge badge-pill badge-dark py-2 px-3">12:30</span></h5>
         </div>
         <!-- </div> -->
-        <div class="col-lg-8 col-12 py-2" id="nips-progressId0">
+        <div class="col-lg-8 col-12 py-2 my-auto" id="nips-progressId0">
           <table class="stepbar-progress" data-current-step="1" data-step-status="pending">
             <!-- <caption>First Step Pending</caption> -->
             <tbody>
               <tr>
                 <td class="step-item step-item-first" data-step="1">
-                  <div class="step-body">
-                    <a class="glyphicon" data-toggle="collapse" data-target="#collapseExample"></a>
+                  <div class="step-body" data-toggle="collapse" data-target="#collapseExample">
+                    <a class="glyphicon" ></a>
                   </div>
                 </td>
                 <td class="step-item-progress">
@@ -1327,7 +1324,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
   </script>
-  <script src="../node_modules/jquery/dist/jquery.js"></script>
+  <!-- <script src="../node_modules/jquery/dist/jquery.js"></script> -->
   <script type="text/javascript" src="../js/all.js"></script>
 </body>
 

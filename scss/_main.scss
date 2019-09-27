@@ -1,470 +1,664 @@
 * {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
-
 
 body,
 html {
-    height: 100%;
-    width: 100%;
-    font-family: $font-family-title;
+  height: 100%;
+  width: 100%;
+  font-family: $font-family-title;
 }
 
 h1 {
-    font-family: $font-family-title;
-    font-weight: bold;
+  font-family: $font-family-title;
+  font-weight: bold;
 }
 
 .sub-title {
-    font-family: $font-family-title;
-    font-weight: bold;
-    color: gray;
+  font-family: $font-family-title;
+  font-weight: bold;
+  color: gray;
 }
 
 .rainbow-box {
-    @include rainbow-bar(gray, #b827fc, #2c90fc, #b8fd33, #fec837, #fd1892);
-    /* margin: 20px auto; */
-    width: 100%;
+  @include rainbow-bar(gray, #b827fc, #2c90fc, #b8fd33, #fec837, #fd1892);
+  /* margin: 20px auto; */
+  width: 100%;
 }
 
 .rainbow {
-    width: 100%;
+  width: 100%;
 }
 
 .btn {
-    border-width: 2px;
+  border-width: 2px;
 }
 
 .bg-cover {
-    background-size: cover;
-    background-position: center center;
+  background-size: cover;
+  background-position: center center;
 }
 
 @media (min-width: 768px) {
-    .text-md-dark {
-        color: #333;
-    }
+  .text-md-dark {
+    color: #333;
+  }
 }
 
 .nav-item {
-    padding: 15px 5px;
-    margin: 0 10px;
+  padding: 15px 5px;
+  margin: 0 10px;
 }
 
 .nav-link {
-    color: gray !important;
-    font-weight: bold;
-    font-size: 18px;
-    font-family: $font-family-title;
+  color: gray !important;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: $font-family-title;
 
-    /* transition-duration: .8s; */
+  /* transition-duration: .8s; */
 }
 
 .nav-item:hover .nav-link:hover {
-    color: black !important;
-    font-weight: bold;
+  color: black !important;
+  font-weight: bold;
 }
 
 .nav-item::after {
-    content: "";
-    border-bottom: 2px solid black;
-    margin: auto;
-    position: relative;
-    width: 0%;
-    display: block;
-    transition: all .2s;
+  content: "";
+  border-bottom: 2px solid black;
+  margin: auto;
+  position: relative;
+  width: 0%;
+  display: block;
+  transition: all 0.2s;
 }
 
 .nav-item:hover::after {
-    width: 100%;
+  width: 100%;
 }
 
 .test {
-    border: 1px solid red;
-    // padding: 100px;
+  border: 1px solid red;
+  // padding: 100px;
 }
 
 .banner::after {
-    content: "";
-    border-bottom: 2px solid gray;
-    display: block;
-    padding-bottom: 25px;
+  content: "";
+  border-bottom: 2px solid gray;
+  display: block;
+  padding-bottom: 25px;
 }
 
 .content-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    // border: 1px solid red;
-    width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  // border: 1px solid red;
+  width: 100%;
 }
 
 .row-sampleRun {
-    font-size: 14px;
+  font-size: 14px;
+  width: 100%;
 }
 
 .content-header-info {
+  display: flex;
+
+  .arrow-container {
     display: flex;
+    float: left;
+    // right: 30px;
 
-    .arrow-container {
-        display: flex;
-        float: left;
-        // right: 30px;
-
-        .header-sofiva,
-        .header-cloud {
-            text-align: center;
-            font-weight: bold;
-            font-size: 30px;
-            // border: 1px solid blue;
-            // margin: 0 auto;
-        }
-
-        // border: 1px solid blue;
-        padding-left: 0px !important;
-        padding-right: 0px !important;
+    .header-sofiva,
+    .header-cloud {
+      text-align: center;
+      font-weight: bold;
+      font-size: 30px;
+      // border: 1px solid blue;
+      // margin: 0 auto;
     }
 
+    // border: 1px solid blue;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
 }
 
-.arrow-left {
-    display: inline-block;
-    width: 0;
-    height: 0;
-    border-top: 40px solid #F05E1C;
-    border-bottom: 40px solid #F05E1C;
-    border-left: 40px solid transparent;
-    -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.7));
-    filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.7))
+#content-header-time {
+  @include l-mobile {
+    justify-content: flex-end;
+  }
+  @include mobile {
+    justify-content: flex-end;
+  }
+}
+// Mixins
+
+// creates the triangle appended to the rectangles in the progress bar
+@mixin arrow() {
+  border-bottom: 50px solid transparent;
+  border-top: 50px solid transparent;
+  content: " ";
+  display: block;
+  height: 0;
+  left: 100%;
+  margin-top: -50px;
+  position: absolute;
+  top: 50%;
+  width: 0;
 }
 
-.arrow-ctr {
-    display: inline-block;
-    // width: 150px;
-    background: #F05E1C;
-    min-height: 80px;
-    line-height: 80px;
-    position: relative;
+.content-header-info-list {
+  -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
+  list-style: none;
+  overflow: hidden; // necessary to cut off top and bottom parts of triangles
+  font: 20px Helvetica;
+  font-weight: 600;
+  display: flex;
+  width: 100%;
+
+  li {
     text-align: center;
+  }
+
+  &__steps {
+    background: #ddd;
+    color: #666;
     width: 100%;
-    font-weight: bold;
-    font-size: 25px;
-    -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.7));
-    filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.7))
+    position: relative;
+    cursor: default;
+
+    // padding: 20px 5px;
+    text-align: center;
+
+    @media screen and (min-width: 800px) {
+      padding: 20px 0 20px 65px; // create padding-left to position text
+      text-align: left;
+    }
+
+    @media screen and (min-width: 800px) {
+      padding: 15px 0 15px 30px;
+    }
+
+    // appended triangle
+    &:after {
+      @media screen and (min-width: 800px) {
+        @include arrow();
+        border-left: 30px solid #ddd;
+        z-index: 2;
+      }
+    }
+
+    // prepend triangle cutout to create separation border
+    &:before {
+      @media screen and (min-width: 800px) {
+        @include arrow();
+        border-left: 30px solid #fff;
+        z-index: 1;
+        margin-left: 5px;
+      }
+    }
+
+    .content-header-info-list__steps-sofiva,
+    .content-header-info-list__steps-cloud {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &:before {
+        display: inline-block;
+        width: 46px;
+        height: 46px;
+        padding-right: 60px;
+        content: "";
+      }
+    }
+
+    .content-header-info-list__steps-sofiva {
+      &:before {
+        background-image: url("../images/SOFIVA.png");
+        background-repeat: no-repeat;
+        background-size: 46px 46px;
+      }
+    }
+
+    .content-header-info-list__steps-cloud {
+      &:before {
+        background-image: url("../images/cloud.png");
+        background-repeat: no-repeat;
+        background-size: 38px 46px;
+        padding-right: 46px;
+      }
+    }
+  }
+
+  .current {
+    background: #58b2dc;
+    color: #fff;
+
+    &:after {
+      border-left: 30px solid #647d5e;
+    }
+  }
 }
 
-.arrow-right {
-    display: inline-block;
-    height: 0;
-    border-top: 40px solid transparent;
-    border-bottom: 40px solid transparent;
-    border-left: 40px solid #F05E1C;
-    // position: relative;
-    -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.7));
-    filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.7))
-}
-
-.arrow-right-end {
-    border: 40px solid #F05E1C;
-    border-top-right-radius: 20%;
-    border-bottom-right-radius: 20%;
-    -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.7));
-    filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.7))
+.first-info {
+  width: 70%;
 }
 
 /*=============================================
 =     Step Bar Progress Bar for Bootstrap.    =
 =============================================*/
+// #nips-progressId0 {
+//   width: 0%;
+// }
 
 @keyframes active-spin {
-    from {
-        transform: rotate(0deg);
-    }
+  from {
+    transform: rotate(0deg);
+  }
 
-    to {
-        transform: rotate(360deg);
-    }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .glyphicon {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    display: block;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  display: block;
 }
 
 td {
-    text-align: center;
+  text-align: center;
 }
 
 .stepbar-progress {
-    width: 100%;
-    height: 32px;
-    border-collapse: collapse;
-    text-align: center;
+  width: 100%;
+  height: 32px;
+  border-collapse: collapse;
+  text-align: center;
+  vertical-align: middle;
+  // display: flex;
+  // justify-content: space-evenly;
+  // align-items: center;
+
+  .step-item {
+    width: 32px;
     vertical-align: middle;
-    // display: flex;
-    // justify-content: space-evenly;
-    // align-items: center;
 
-    .step-item {
-        width: 32px;
-        vertical-align: middle;
+    .step-body {
+      position: relative;
+      display: block;
+      width: 32px;
+      height: 32px;
+      background-color: $light_gray;
+      border: 5px solid $light_gray;
+      border-radius: 50%;
+      cursor: pointer;
+      // padding: 0px 0px 10px 0px;
 
-        .step-body {
-            position: relative;
-            display: block;
-            width: 32px;
-            height: 32px;
-            background-color: $light_gray;
-            border: 5px solid $light_gray;
-            border-radius: 50%;
-            // padding: 0px 0px 10px 0px;
-
-            .glyphicon:before {
-                color: white;
-                margin: auto 4px 0 4px;
-                line-height: 20px;
-            }
-        }
+      .glyphicon:before {
+        color: white;
+        margin: auto 4px 0 4px;
+        line-height: 20px;
+      }
     }
+  }
 
-    .step-item-progress {
-        width: 100% / ($step-count - 1);
-        height: 32px;
-        // verticle-align: middle;
-        vertical-align: middle;
+  .step-item-progress {
+    width: 100% / ($step-count - 1);
+    height: 32px;
+    // verticle-align: middle;
+    vertical-align: middle;
 
-        .progress-body {
-            display: block;
-            height: 11px;
-            background-color: $light_gray;
-            border-top: 3px solid $light_gray;
-            border-bottom: 3px solid $light_gray;
+    .progress-body {
+      display: block;
+      height: 11px;
+      background-color: $light_gray;
+      border-top: 3px solid $light_gray;
+      border-bottom: 3px solid $light_gray;
 
-            background-image: -webkit-linear-gradient(-45deg,
-                    rgba(255, 255, 255, .3) 0%, transparent 5%,
-                    rgba(255, 255, 255, .3) 10%, transparent 15%,
-                    rgba(255, 255, 255, .3) 20%, transparent 25%,
-                    rgba(255, 255, 255, .3) 30%, transparent 35%,
-                    rgba(255, 255, 255, .3) 40%, transparent 45%,
-                    rgba(255, 255, 255, .3) 50%, transparent 55%,
-                    rgba(255, 255, 255, .3) 60%, transparent 65%,
-                    rgba(255, 255, 255, .3) 70%, transparent 75%,
-                    rgba(255, 255, 255, .3) 80%, transparent 85%,
-                    rgba(255, 255, 255, .3) 90%, transparent 95%,
-                    rgba(255, 255, 255, .3) 100%);
+      background-image: -webkit-linear-gradient(
+        -45deg,
+        rgba(255, 255, 255, 0.3) 0%,
+        transparent 5%,
+        rgba(255, 255, 255, 0.3) 10%,
+        transparent 15%,
+        rgba(255, 255, 255, 0.3) 20%,
+        transparent 25%,
+        rgba(255, 255, 255, 0.3) 30%,
+        transparent 35%,
+        rgba(255, 255, 255, 0.3) 40%,
+        transparent 45%,
+        rgba(255, 255, 255, 0.3) 50%,
+        transparent 55%,
+        rgba(255, 255, 255, 0.3) 60%,
+        transparent 65%,
+        rgba(255, 255, 255, 0.3) 70%,
+        transparent 75%,
+        rgba(255, 255, 255, 0.3) 80%,
+        transparent 85%,
+        rgba(255, 255, 255, 0.3) 90%,
+        transparent 95%,
+        rgba(255, 255, 255, 0.3) 100%
+      );
 
-            background-image: -moz-linear-gradient(-45deg,
-                    rgba(255, 255, 255, .3) 0%, transparent 5%,
-                    rgba(255, 255, 255, .3) 10%, transparent 15%,
-                    rgba(255, 255, 255, .3) 20%, transparent 25%,
-                    rgba(255, 255, 255, .3) 30%, transparent 35%,
-                    rgba(255, 255, 255, .3) 40%, transparent 45%,
-                    rgba(255, 255, 255, .3) 50%, transparent 55%,
-                    rgba(255, 255, 255, .3) 60%, transparent 65%,
-                    rgba(255, 255, 255, .3) 70%, transparent 75%,
-                    rgba(255, 255, 255, .3) 80%, transparent 85%,
-                    rgba(255, 255, 255, .3) 90%, transparent 95%,
-                    rgba(255, 255, 255, .3) 100%);
+      background-image: -moz-linear-gradient(
+        -45deg,
+        rgba(255, 255, 255, 0.3) 0%,
+        transparent 5%,
+        rgba(255, 255, 255, 0.3) 10%,
+        transparent 15%,
+        rgba(255, 255, 255, 0.3) 20%,
+        transparent 25%,
+        rgba(255, 255, 255, 0.3) 30%,
+        transparent 35%,
+        rgba(255, 255, 255, 0.3) 40%,
+        transparent 45%,
+        rgba(255, 255, 255, 0.3) 50%,
+        transparent 55%,
+        rgba(255, 255, 255, 0.3) 60%,
+        transparent 65%,
+        rgba(255, 255, 255, 0.3) 70%,
+        transparent 75%,
+        rgba(255, 255, 255, 0.3) 80%,
+        transparent 85%,
+        rgba(255, 255, 255, 0.3) 90%,
+        transparent 95%,
+        rgba(255, 255, 255, 0.3) 100%
+      );
 
-            background-image: -ms-linear-gradient(-45deg,
-                    rgba(255, 255, 255, .3) 0%, transparent 5%,
-                    rgba(255, 255, 255, .3) 10%, transparent 15%,
-                    rgba(255, 255, 255, .3) 20%, transparent 25%,
-                    rgba(255, 255, 255, .3) 30%, transparent 35%,
-                    rgba(255, 255, 255, .3) 40%, transparent 45%,
-                    rgba(255, 255, 255, .3) 50%, transparent 55%,
-                    rgba(255, 255, 255, .3) 60%, transparent 65%,
-                    rgba(255, 255, 255, .3) 70%, transparent 75%,
-                    rgba(255, 255, 255, .3) 80%, transparent 85%,
-                    rgba(255, 255, 255, .3) 90%, transparent 95%,
-                    rgba(255, 255, 255, .3) 100%);
+      background-image: -ms-linear-gradient(
+        -45deg,
+        rgba(255, 255, 255, 0.3) 0%,
+        transparent 5%,
+        rgba(255, 255, 255, 0.3) 10%,
+        transparent 15%,
+        rgba(255, 255, 255, 0.3) 20%,
+        transparent 25%,
+        rgba(255, 255, 255, 0.3) 30%,
+        transparent 35%,
+        rgba(255, 255, 255, 0.3) 40%,
+        transparent 45%,
+        rgba(255, 255, 255, 0.3) 50%,
+        transparent 55%,
+        rgba(255, 255, 255, 0.3) 60%,
+        transparent 65%,
+        rgba(255, 255, 255, 0.3) 70%,
+        transparent 75%,
+        rgba(255, 255, 255, 0.3) 80%,
+        transparent 85%,
+        rgba(255, 255, 255, 0.3) 90%,
+        transparent 95%,
+        rgba(255, 255, 255, 0.3) 100%
+      );
 
-            background-image: -o-linear-gradient(-45deg,
-                    rgba(255, 255, 255, .3) 0%, transparent 5%,
-                    rgba(255, 255, 255, .3) 10%, transparent 15%,
-                    rgba(255, 255, 255, .3) 20%, transparent 25%,
-                    rgba(255, 255, 255, .3) 30%, transparent 35%,
-                    rgba(255, 255, 255, .3) 40%, transparent 45%,
-                    rgba(255, 255, 255, .3) 50%, transparent 55%,
-                    rgba(255, 255, 255, .3) 60%, transparent 65%,
-                    rgba(255, 255, 255, .3) 70%, transparent 75%,
-                    rgba(255, 255, 255, .3) 80%, transparent 85%,
-                    rgba(255, 255, 255, .3) 90%, transparent 95%,
-                    rgba(255, 255, 255, .3) 100%);
+      background-image: -o-linear-gradient(
+        -45deg,
+        rgba(255, 255, 255, 0.3) 0%,
+        transparent 5%,
+        rgba(255, 255, 255, 0.3) 10%,
+        transparent 15%,
+        rgba(255, 255, 255, 0.3) 20%,
+        transparent 25%,
+        rgba(255, 255, 255, 0.3) 30%,
+        transparent 35%,
+        rgba(255, 255, 255, 0.3) 40%,
+        transparent 45%,
+        rgba(255, 255, 255, 0.3) 50%,
+        transparent 55%,
+        rgba(255, 255, 255, 0.3) 60%,
+        transparent 65%,
+        rgba(255, 255, 255, 0.3) 70%,
+        transparent 75%,
+        rgba(255, 255, 255, 0.3) 80%,
+        transparent 85%,
+        rgba(255, 255, 255, 0.3) 90%,
+        transparent 95%,
+        rgba(255, 255, 255, 0.3) 100%
+      );
 
-            background-image: linear-gradient(-45deg,
-                    rgba(255, 255, 255, .3) 0%, transparent 5%,
-                    rgba(255, 255, 255, .3) 10%, transparent 15%,
-                    rgba(255, 255, 255, .3) 20%, transparent 25%,
-                    rgba(255, 255, 255, .3) 30%, transparent 35%,
-                    rgba(255, 255, 255, .3) 40%, transparent 45%,
-                    rgba(255, 255, 255, .3) 50%, transparent 55%,
-                    rgba(255, 255, 255, .3) 60%, transparent 65%,
-                    rgba(255, 255, 255, .3) 70%, transparent 75%,
-                    rgba(255, 255, 255, .3) 80%, transparent 85%,
-                    rgba(255, 255, 255, .3) 90%, transparent 95%,
-                    rgba(255, 255, 255, .3) 100%);
+      background-image: linear-gradient(
+        -45deg,
+        rgba(255, 255, 255, 0.3) 0%,
+        transparent 5%,
+        rgba(255, 255, 255, 0.3) 10%,
+        transparent 15%,
+        rgba(255, 255, 255, 0.3) 20%,
+        transparent 25%,
+        rgba(255, 255, 255, 0.3) 30%,
+        transparent 35%,
+        rgba(255, 255, 255, 0.3) 40%,
+        transparent 45%,
+        rgba(255, 255, 255, 0.3) 50%,
+        transparent 55%,
+        rgba(255, 255, 255, 0.3) 60%,
+        transparent 65%,
+        rgba(255, 255, 255, 0.3) 70%,
+        transparent 75%,
+        rgba(255, 255, 255, 0.3) 80%,
+        transparent 85%,
+        rgba(255, 255, 255, 0.3) 90%,
+        transparent 95%,
+        rgba(255, 255, 255, 0.3) 100%
+      );
 
-            transition: all 1s ease;
+      transition: all 1s ease;
 
-            .body-fill {
-                width: 20px;
-                height: 5px;
-                background-color: #1AB394;
-            }
-        }
+      .body-fill {
+        width: 20px;
+        height: 5px;
+        background-color: #1ab394;
+      }
     }
+  }
 
-    .step-item-first .step-body:after,
-    .step-item-middle .step-body:after,
-    .step-item-middle .step-body:before,
-    .step-item-last .step-body:before {
-        content: "";
-        position: absolute;
-        top: calc(50% - 6px);
-        height: 11px;
-        width: 6px;
-        background-color: $light_gray;
-        border-top: 3px solid $light_gray;
-        border-bottom: 3px solid $light_gray;
-    }
+  .step-item-first .step-body:after,
+  .step-item-middle .step-body:after,
+  .step-item-middle .step-body:before,
+  .step-item-last .step-body:before {
+    content: "";
+    position: absolute;
+    top: calc(50% - 6px);
+    height: 11px;
+    width: 6px;
+    background-color: $light_gray;
+    border-top: 3px solid $light_gray;
+    border-bottom: 3px solid $light_gray;
+  }
 
-    .step-item-first,
-    .step-item-middle {
-        .step-body:after {
-            left: 100%;
-        }
+  .step-item-first,
+  .step-item-middle {
+    .step-body:after {
+      left: 100%;
     }
+  }
 
-    .step-item-middle,
-    .step-item-last {
-        .step-body:before {
-            right: 100%;
-        }
+  .step-item-middle,
+  .step-item-last {
+    .step-body:before {
+      right: 100%;
     }
+  }
 }
 
 .stepbar-progress {
+  /* Individual Steps */
+  @each $state in $step-states {
+    $animate-glyphicon: $state== "active";
+    $state-pass-glyph: map-get($state-to-glyph, "pass");
+    $current-state-color: map-get($state-to-color, $state);
+    $current-state-glyph: map-get($state-to-glyph, $state);
 
-    /* Individual Steps */
-    @each $state in $step-states {
-        $animate-glyphicon: $state=="active";
-        $state-pass-glyph: map-get($state-to-glyph, "pass");
-        $current-state-color: map-get($state-to-color, $state);
-        $current-state-glyph: map-get($state-to-glyph, $state);
-
-        // Upto step 1
-        &[data-current-step="1"][data-step-status="#{$state}"] {
-            @include step-status('1', $current-state-color, $current-state-glyph, $animate-glyphicon, true);
-        }
-
-        // Upto step 2
-        &[data-current-step="2"][data-step-status="#{$state}"] {
-            @include step-status('1', $current-state-color, $state-pass-glyph);
-            @include step-status('2', $current-state-color, $current-state-glyph, $animate-glyphicon, true);
-            @include fill-step-progress('1', '2', $current-state-color);
-        }
-
-        // Upto step 3
-        &[data-current-step="3"][data-step-status="#{$state}"] {
-            @include step-status('1', $current-state-color, $state-pass-glyph);
-            @include step-status('2', $current-state-color, $state-pass-glyph);
-            @include step-status('3', $current-state-color, $current-state-glyph, $animate-glyphicon, true);
-            @include fill-step-progress('1', '2', $current-state-color);
-            @include fill-step-progress('2', '3', $current-state-color);
-        }
-
-        &[data-current-step="4"][data-step-status="#{$state}"] {
-            @include step-status('1', $current-state-color, $state-pass-glyph);
-            @include step-status('2', $current-state-color, $state-pass-glyph);
-            @include step-status('3', $current-state-color, $state-pass-glyph);
-            @include step-status('4', $current-state-color, $current-state-glyph, $animate-glyphicon, true);
-            @include fill-step-progress('1', '2', $current-state-color);
-            @include fill-step-progress('2', '3', $current-state-color);
-            @include fill-step-progress('3', '4', $current-state-color);
-        }
-
-        &[data-current-step="5"][data-step-status="#{$state}"] {
-            @include step-status('1', $current-state-color, $state-pass-glyph);
-            @include step-status('2', $current-state-color, $state-pass-glyph);
-            @include step-status('3', $current-state-color, $state-pass-glyph);
-            @include step-status('4', $current-state-color, $state-pass-glyph);
-            @include step-status('5', $current-state-color, $current-state-glyph, $animate-glyphicon, true);
-            @include fill-step-progress('1', '2', $current-state-color);
-            @include fill-step-progress('2', '3', $current-state-color);
-            @include fill-step-progress('3', '4', $current-state-color);
-            @include fill-step-progress('4', '5', $current-state-color);
-        }
-
-        &[data-current-step="6"][data-step-status="#{$state}"] {
-            @include step-status('1', $current-state-color, $state-pass-glyph);
-            @include step-status('2', $current-state-color, $state-pass-glyph);
-            @include step-status('3', $current-state-color, $state-pass-glyph);
-            @include step-status('4', $current-state-color, $state-pass-glyph);
-            @include step-status('5', $current-state-color, $state-pass-glyph);
-            @include step-status('6', $current-state-color, $current-state-glyph, $animate-glyphicon, true);
-            @include fill-step-progress('1', '2', $current-state-color);
-            @include fill-step-progress('2', '3', $current-state-color);
-            @include fill-step-progress('3', '4', $current-state-color);
-            @include fill-step-progress('4', '5', $current-state-color);
-            @include fill-step-progress('5', '6', $current-state-color);
-        }
-
-        &[data-current-step="7"][data-step-status="#{$state}"] {
-            @include step-status('1', $current-state-color, $state-pass-glyph);
-            @include step-status('2', $current-state-color, $state-pass-glyph);
-            @include step-status('3', $current-state-color, $state-pass-glyph);
-            @include step-status('4', $current-state-color, $state-pass-glyph);
-            @include step-status('5', $current-state-color, $state-pass-glyph);
-            @include step-status('6', $current-state-color, $state-pass-glyph);
-            @include step-status('7', $current-state-color, $current-state-glyph, $animate-glyphicon, true);
-            @include fill-step-progress('1', '2', $current-state-color);
-            @include fill-step-progress('2', '3', $current-state-color);
-            @include fill-step-progress('3', '4', $current-state-color);
-            @include fill-step-progress('4', '5', $current-state-color);
-            @include fill-step-progress('5', '6', $current-state-color);
-            @include fill-step-progress('6', '7', $current-state-color);
-        }
-
-        &[data-current-step="8"][data-step-status="#{$state}"] {
-            @include step-status('1', $current-state-color, $state-pass-glyph);
-            @include step-status('2', $current-state-color, $state-pass-glyph);
-            @include step-status('3', $current-state-color, $state-pass-glyph);
-            @include step-status('4', $current-state-color, $state-pass-glyph);
-            @include step-status('5', $current-state-color, $state-pass-glyph);
-            @include step-status('6', $current-state-color, $state-pass-glyph);
-            @include step-status('7', $current-state-color, $state-pass-glyph);
-            @include step-status('8', $current-state-color, $current-state-glyph, $animate-glyphicon, true);
-            @include fill-step-progress('1', '2', $current-state-color);
-            @include fill-step-progress('2', '3', $current-state-color);
-            @include fill-step-progress('3', '4', $current-state-color);
-            @include fill-step-progress('4', '5', $current-state-color);
-            @include fill-step-progress('5', '6', $current-state-color);
-            @include fill-step-progress('6', '7', $current-state-color);
-            @include fill-step-progress('7', '8', $current-state-color);
-        }
-
-        &[data-current-step="9"][data-step-status="#{$state}"] {
-            @include step-status('1', $current-state-color, $state-pass-glyph);
-            @include step-status('2', $current-state-color, $state-pass-glyph);
-            @include step-status('3', $current-state-color, $state-pass-glyph);
-            @include step-status('4', $current-state-color, $state-pass-glyph);
-            @include step-status('5', $current-state-color, $state-pass-glyph);
-            @include step-status('6', $current-state-color, $state-pass-glyph);
-            @include step-status('7', $current-state-color, $state-pass-glyph);
-            @include step-status('8', $current-state-color, $state-pass-glyph);
-            @include step-status('9', $current-state-color, $current-state-glyph, $animate-glyphicon, true);
-            @include fill-step-progress('1', '2', $current-state-color);
-            @include fill-step-progress('2', '3', $current-state-color);
-            @include fill-step-progress('3', '4', $current-state-color);
-            @include fill-step-progress('4', '5', $current-state-color);
-            @include fill-step-progress('5', '6', $current-state-color);
-            @include fill-step-progress('6', '7', $current-state-color);
-            @include fill-step-progress('7', '8', $current-state-color);
-            @include fill-step-progress('8', '9', $current-state-color);
-        }
+    // Upto step 1
+    &[data-current-step="1"][data-step-status="#{$state}"] {
+      @include step-status(
+        "1",
+        $current-state-color,
+        $current-state-glyph,
+        $animate-glyphicon,
+        true
+      );
     }
+
+    // Upto step 2
+    &[data-current-step="2"][data-step-status="#{$state}"] {
+      @include step-status("1", $current-state-color, $state-pass-glyph);
+      @include step-status(
+        "2",
+        $current-state-color,
+        $current-state-glyph,
+        $animate-glyphicon,
+        true
+      );
+      @include fill-step-progress("1", "2", $current-state-color);
+    }
+
+    // Upto step 3
+    &[data-current-step="3"][data-step-status="#{$state}"] {
+      @include step-status("1", $current-state-color, $state-pass-glyph);
+      @include step-status("2", $current-state-color, $state-pass-glyph);
+      @include step-status(
+        "3",
+        $current-state-color,
+        $current-state-glyph,
+        $animate-glyphicon,
+        true
+      );
+      @include fill-step-progress("1", "2", $current-state-color);
+      @include fill-step-progress("2", "3", $current-state-color);
+    }
+
+    &[data-current-step="4"][data-step-status="#{$state}"] {
+      @include step-status("1", $current-state-color, $state-pass-glyph);
+      @include step-status("2", $current-state-color, $state-pass-glyph);
+      @include step-status("3", $current-state-color, $state-pass-glyph);
+      @include step-status(
+        "4",
+        $current-state-color,
+        $current-state-glyph,
+        $animate-glyphicon,
+        true
+      );
+      @include fill-step-progress("1", "2", $current-state-color);
+      @include fill-step-progress("2", "3", $current-state-color);
+      @include fill-step-progress("3", "4", $current-state-color);
+    }
+
+    &[data-current-step="5"][data-step-status="#{$state}"] {
+      @include step-status("1", $current-state-color, $state-pass-glyph);
+      @include step-status("2", $current-state-color, $state-pass-glyph);
+      @include step-status("3", $current-state-color, $state-pass-glyph);
+      @include step-status("4", $current-state-color, $state-pass-glyph);
+      @include step-status(
+        "5",
+        $current-state-color,
+        $current-state-glyph,
+        $animate-glyphicon,
+        true
+      );
+      @include fill-step-progress("1", "2", $current-state-color);
+      @include fill-step-progress("2", "3", $current-state-color);
+      @include fill-step-progress("3", "4", $current-state-color);
+      @include fill-step-progress("4", "5", $current-state-color);
+    }
+
+    &[data-current-step="6"][data-step-status="#{$state}"] {
+      @include step-status("1", $current-state-color, $state-pass-glyph);
+      @include step-status("2", $current-state-color, $state-pass-glyph);
+      @include step-status("3", $current-state-color, $state-pass-glyph);
+      @include step-status("4", $current-state-color, $state-pass-glyph);
+      @include step-status("5", $current-state-color, $state-pass-glyph);
+      @include step-status(
+        "6",
+        $current-state-color,
+        $current-state-glyph,
+        $animate-glyphicon,
+        true
+      );
+      @include fill-step-progress("1", "2", $current-state-color);
+      @include fill-step-progress("2", "3", $current-state-color);
+      @include fill-step-progress("3", "4", $current-state-color);
+      @include fill-step-progress("4", "5", $current-state-color);
+      @include fill-step-progress("5", "6", $current-state-color);
+    }
+
+    &[data-current-step="7"][data-step-status="#{$state}"] {
+      @include step-status("1", $current-state-color, $state-pass-glyph);
+      @include step-status("2", $current-state-color, $state-pass-glyph);
+      @include step-status("3", $current-state-color, $state-pass-glyph);
+      @include step-status("4", $current-state-color, $state-pass-glyph);
+      @include step-status("5", $current-state-color, $state-pass-glyph);
+      @include step-status("6", $current-state-color, $state-pass-glyph);
+      @include step-status(
+        "7",
+        $current-state-color,
+        $current-state-glyph,
+        $animate-glyphicon,
+        true
+      );
+      @include fill-step-progress("1", "2", $current-state-color);
+      @include fill-step-progress("2", "3", $current-state-color);
+      @include fill-step-progress("3", "4", $current-state-color);
+      @include fill-step-progress("4", "5", $current-state-color);
+      @include fill-step-progress("5", "6", $current-state-color);
+      @include fill-step-progress("6", "7", $current-state-color);
+    }
+
+    &[data-current-step="8"][data-step-status="#{$state}"] {
+      @include step-status("1", $current-state-color, $state-pass-glyph);
+      @include step-status("2", $current-state-color, $state-pass-glyph);
+      @include step-status("3", $current-state-color, $state-pass-glyph);
+      @include step-status("4", $current-state-color, $state-pass-glyph);
+      @include step-status("5", $current-state-color, $state-pass-glyph);
+      @include step-status("6", $current-state-color, $state-pass-glyph);
+      @include step-status("7", $current-state-color, $state-pass-glyph);
+      @include step-status(
+        "8",
+        $current-state-color,
+        $current-state-glyph,
+        $animate-glyphicon,
+        true
+      );
+      @include fill-step-progress("1", "2", $current-state-color);
+      @include fill-step-progress("2", "3", $current-state-color);
+      @include fill-step-progress("3", "4", $current-state-color);
+      @include fill-step-progress("4", "5", $current-state-color);
+      @include fill-step-progress("5", "6", $current-state-color);
+      @include fill-step-progress("6", "7", $current-state-color);
+      @include fill-step-progress("7", "8", $current-state-color);
+    }
+
+    &[data-current-step="9"][data-step-status="#{$state}"] {
+      @include step-status("1", $current-state-color, $state-pass-glyph);
+      @include step-status("2", $current-state-color, $state-pass-glyph);
+      @include step-status("3", $current-state-color, $state-pass-glyph);
+      @include step-status("4", $current-state-color, $state-pass-glyph);
+      @include step-status("5", $current-state-color, $state-pass-glyph);
+      @include step-status("6", $current-state-color, $state-pass-glyph);
+      @include step-status("7", $current-state-color, $state-pass-glyph);
+      @include step-status("8", $current-state-color, $state-pass-glyph);
+      @include step-status(
+        "9",
+        $current-state-color,
+        $current-state-glyph,
+        $animate-glyphicon,
+        true
+      );
+      @include fill-step-progress("1", "2", $current-state-color);
+      @include fill-step-progress("2", "3", $current-state-color);
+      @include fill-step-progress("3", "4", $current-state-color);
+      @include fill-step-progress("4", "5", $current-state-color);
+      @include fill-step-progress("5", "6", $current-state-color);
+      @include fill-step-progress("6", "7", $current-state-color);
+      @include fill-step-progress("7", "8", $current-state-color);
+      @include fill-step-progress("8", "9", $current-state-color);
+    }
+  }
 }
