@@ -142,18 +142,20 @@ h1 {
 }
 
 @media (min-width: 577px) and (max-width: 768px) {
-  #content-header-time {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+  #content-header-time,
+  .duration-time {
+    -webkit-box-pack: end !important;
+        -ms-flex-pack: end !important;
+            justify-content: flex-end !important;
   }
 }
 
 @media (max-width: 576px) {
-  #content-header-time {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+  #content-header-time,
+  .duration-time {
+    -webkit-box-pack: end !important;
+        -ms-flex-pack: end !important;
+            justify-content: flex-end !important;
   }
 }
 
@@ -280,6 +282,17 @@ h1 {
   width: 70%;
 }
 
+.content-icon-item {
+  height: 32px;
+  width: 32px;
+}
+
+.content-icon-progress {
+  width: 12.5%;
+  height: 32px;
+  display: block;
+}
+
 /*=============================================
 =     Step Bar Progress Bar for Bootstrap.    =
 =============================================*/
@@ -304,10 +317,74 @@ h1 {
   }
 }
 
-.glyphicon {
+.glyphicon,
+.glyphicon-step1,
+.glyphicon-step2,
+.glyphicon-step3,
+.glyphicon-step4,
+.glyphicon-step5,
+.glyphicon-step6,
+.glyphicon-step7,
+.glyphicon-step8,
+.glyphicon-step9 {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   display: block;
+}
+
+.glyphicon-step1:before {
+  font-size: 32px;
+  content: "";
+}
+
+.glyphicon-step1:before {
+  font-size: 32px;
+  content: "";
+}
+
+.glyphicon-step1:before {
+  font-size: 32px;
+  content: "";
+}
+
+.glyphicon-step2:before {
+  font-size: 32px;
+  content: "";
+}
+
+.glyphicon-step3:before {
+  font-size: 32px;
+  content: "";
+}
+
+.glyphicon-step4:before {
+  font-size: 32px;
+  content: "";
+}
+
+.glyphicon-step5:before {
+  font-size: 32px;
+  content: "";
+}
+
+.glyphicon-step6:before {
+  font-size: 32px;
+  content: "";
+}
+
+.glyphicon-step7:before {
+  font-size: 32px;
+  content: "";
+}
+
+.glyphicon-step8:before {
+  font-size: 32px;
+  content: "";
+}
+
+.glyphicon-step9:before {
+  font-size: 32px;
+  content: "";
 }
 
 td {
@@ -332,8 +409,8 @@ td {
   display: block;
   width: 32px;
   height: 32px;
-  background-color: #E4E4E7;
-  border: 5px solid #E4E4E7;
+  background-color: #e4e4e7;
+  border: 5px solid #e4e4e7;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -353,9 +430,9 @@ td {
 .stepbar-progress .step-item-progress .progress-body {
   display: block;
   height: 11px;
-  background-color: #E4E4E7;
-  border-top: 3px solid #E4E4E7;
-  border-bottom: 3px solid #E4E4E7;
+  background-color: #e4e4e7;
+  border-top: 3px solid #e4e4e7;
+  border-bottom: 3px solid #e4e4e7;
   background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.3) 0%, transparent 5%, rgba(255, 255, 255, 0.3) 10%, transparent 15%, rgba(255, 255, 255, 0.3) 20%, transparent 25%, rgba(255, 255, 255, 0.3) 30%, transparent 35%, rgba(255, 255, 255, 0.3) 40%, transparent 45%, rgba(255, 255, 255, 0.3) 50%, transparent 55%, rgba(255, 255, 255, 0.3) 60%, transparent 65%, rgba(255, 255, 255, 0.3) 70%, transparent 75%, rgba(255, 255, 255, 0.3) 80%, transparent 85%, rgba(255, 255, 255, 0.3) 90%, transparent 95%, rgba(255, 255, 255, 0.3) 100%);
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
@@ -376,9 +453,9 @@ td {
   top: calc(50% - 6px);
   height: 11px;
   width: 6px;
-  background-color: #E4E4E7;
-  border-top: 3px solid #E4E4E7;
-  border-bottom: 3px solid #E4E4E7;
+  background-color: #e4e4e7;
+  border-top: 3px solid #e4e4e7;
+  border-bottom: 3px solid #e4e4e7;
 }
 
 .stepbar-progress .step-item-first .step-body:after,
@@ -401,9 +478,9 @@ td {
 }
 
 .stepbar-progress[data-current-step="1"][data-step-status="pending"] .step-item[data-step="1"] .step-body {
-  background-color: #F8AC59;
-  -webkit-box-shadow: 0 0 0 3px #F8AC59;
-          box-shadow: 0 0 0 3px #F8AC59;
+  background-color: #f8ac59;
+  -webkit-box-shadow: 0 0 0 3px #f8ac59;
+          box-shadow: 0 0 0 3px #f8ac59;
 }
 
 .stepbar-progress[data-current-step="1"][data-step-status="pending"] .step-item[data-step="1"] .step-body .glyphicon:before {
@@ -411,7 +488,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="2"][data-step-status="pending"] .step-item[data-step="1"] .step-body {
-  background-color: #F8AC59;
+  background-color: #f8ac59;
 }
 
 .stepbar-progress[data-current-step="2"][data-step-status="pending"] .step-item[data-step="1"] .step-body .glyphicon:before {
@@ -424,9 +501,9 @@ td {
 }
 
 .stepbar-progress[data-current-step="2"][data-step-status="pending"] .step-item[data-step="2"] .step-body {
-  background-color: #F8AC59;
-  -webkit-box-shadow: 0 0 0 3px #F8AC59;
-          box-shadow: 0 0 0 3px #F8AC59;
+  background-color: #f8ac59;
+  -webkit-box-shadow: 0 0 0 3px #f8ac59;
+          box-shadow: 0 0 0 3px #f8ac59;
 }
 
 .stepbar-progress[data-current-step="2"][data-step-status="pending"] .step-item[data-step="2"] .step-body .glyphicon:before {
@@ -436,11 +513,11 @@ td {
 .stepbar-progress[data-current-step="2"][data-step-status="pending"] .step-item[data-step="1"] .step-body:after,
 .stepbar-progress[data-current-step="2"][data-step-status="pending"] .step-item[data-step="1"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="2"][data-step-status="pending"] .step-item[data-step="2"] .step-body:before {
-  background-color: #F8AC59;
+  background-color: #f8ac59;
 }
 
 .stepbar-progress[data-current-step="3"][data-step-status="pending"] .step-item[data-step="1"] .step-body {
-  background-color: #F8AC59;
+  background-color: #f8ac59;
 }
 
 .stepbar-progress[data-current-step="3"][data-step-status="pending"] .step-item[data-step="1"] .step-body .glyphicon:before {
@@ -448,7 +525,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="3"][data-step-status="pending"] .step-item[data-step="2"] .step-body {
-  background-color: #F8AC59;
+  background-color: #f8ac59;
 }
 
 .stepbar-progress[data-current-step="3"][data-step-status="pending"] .step-item[data-step="2"] .step-body .glyphicon:before {
@@ -461,9 +538,9 @@ td {
 }
 
 .stepbar-progress[data-current-step="3"][data-step-status="pending"] .step-item[data-step="3"] .step-body {
-  background-color: #F8AC59;
-  -webkit-box-shadow: 0 0 0 3px #F8AC59;
-          box-shadow: 0 0 0 3px #F8AC59;
+  background-color: #f8ac59;
+  -webkit-box-shadow: 0 0 0 3px #f8ac59;
+          box-shadow: 0 0 0 3px #f8ac59;
 }
 
 .stepbar-progress[data-current-step="3"][data-step-status="pending"] .step-item[data-step="3"] .step-body .glyphicon:before {
@@ -473,17 +550,17 @@ td {
 .stepbar-progress[data-current-step="3"][data-step-status="pending"] .step-item[data-step="1"] .step-body:after,
 .stepbar-progress[data-current-step="3"][data-step-status="pending"] .step-item[data-step="1"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="3"][data-step-status="pending"] .step-item[data-step="2"] .step-body:before {
-  background-color: #F8AC59;
+  background-color: #f8ac59;
 }
 
 .stepbar-progress[data-current-step="3"][data-step-status="pending"] .step-item[data-step="2"] .step-body:after,
 .stepbar-progress[data-current-step="3"][data-step-status="pending"] .step-item[data-step="2"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="3"][data-step-status="pending"] .step-item[data-step="3"] .step-body:before {
-  background-color: #F8AC59;
+  background-color: #f8ac59;
 }
 
 .stepbar-progress[data-current-step="4"][data-step-status="pending"] .step-item[data-step="1"] .step-body {
-  background-color: #F8AC59;
+  background-color: #f8ac59;
 }
 
 .stepbar-progress[data-current-step="4"][data-step-status="pending"] .step-item[data-step="1"] .step-body .glyphicon:before {
@@ -491,7 +568,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="4"][data-step-status="pending"] .step-item[data-step="2"] .step-body {
-  background-color: #F8AC59;
+  background-color: #f8ac59;
 }
 
 .stepbar-progress[data-current-step="4"][data-step-status="pending"] .step-item[data-step="2"] .step-body .glyphicon:before {
@@ -499,7 +576,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="4"][data-step-status="pending"] .step-item[data-step="3"] .step-body {
-  background-color: #F8AC59;
+  background-color: #f8ac59;
 }
 
 .stepbar-progress[data-current-step="4"][data-step-status="pending"] .step-item[data-step="3"] .step-body .glyphicon:before {
@@ -512,9 +589,9 @@ td {
 }
 
 .stepbar-progress[data-current-step="4"][data-step-status="pending"] .step-item[data-step="4"] .step-body {
-  background-color: #F8AC59;
-  -webkit-box-shadow: 0 0 0 3px #F8AC59;
-          box-shadow: 0 0 0 3px #F8AC59;
+  background-color: #f8ac59;
+  -webkit-box-shadow: 0 0 0 3px #f8ac59;
+          box-shadow: 0 0 0 3px #f8ac59;
 }
 
 .stepbar-progress[data-current-step="4"][data-step-status="pending"] .step-item[data-step="4"] .step-body .glyphicon:before {
@@ -524,23 +601,23 @@ td {
 .stepbar-progress[data-current-step="4"][data-step-status="pending"] .step-item[data-step="1"] .step-body:after,
 .stepbar-progress[data-current-step="4"][data-step-status="pending"] .step-item[data-step="1"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="4"][data-step-status="pending"] .step-item[data-step="2"] .step-body:before {
-  background-color: #F8AC59;
+  background-color: #f8ac59;
 }
 
 .stepbar-progress[data-current-step="4"][data-step-status="pending"] .step-item[data-step="2"] .step-body:after,
 .stepbar-progress[data-current-step="4"][data-step-status="pending"] .step-item[data-step="2"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="4"][data-step-status="pending"] .step-item[data-step="3"] .step-body:before {
-  background-color: #F8AC59;
+  background-color: #f8ac59;
 }
 
 .stepbar-progress[data-current-step="4"][data-step-status="pending"] .step-item[data-step="3"] .step-body:after,
 .stepbar-progress[data-current-step="4"][data-step-status="pending"] .step-item[data-step="3"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="4"][data-step-status="pending"] .step-item[data-step="4"] .step-body:before {
-  background-color: #F8AC59;
+  background-color: #f8ac59;
 }
 
 .stepbar-progress[data-current-step="5"][data-step-status="pending"] .step-item[data-step="1"] .step-body {
-  background-color: #F8AC59;
+  background-color: #f8ac59;
 }
 
 .stepbar-progress[data-current-step="5"][data-step-status="pending"] .step-item[data-step="1"] .step-body .glyphicon:before {
@@ -548,7 +625,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="5"][data-step-status="pending"] .step-item[data-step="2"] .step-body {
-  background-color: #F8AC59;
+  background-color: #f8ac59;
 }
 
 .stepbar-progress[data-current-step="5"][data-step-status="pending"] .step-item[data-step="2"] .step-body .glyphicon:before {
@@ -556,7 +633,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="5"][data-step-status="pending"] .step-item[data-step="3"] .step-body {
-  background-color: #F8AC59;
+  background-color: #f8ac59;
 }
 
 .stepbar-progress[data-current-step="5"][data-step-status="pending"] .step-item[data-step="3"] .step-body .glyphicon:before {
@@ -564,7 +641,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="5"][data-step-status="pending"] .step-item[data-step="4"] .step-body {
-  background-color: #F8AC59;
+  background-color: #f8ac59;
 }
 
 .stepbar-progress[data-current-step="5"][data-step-status="pending"] .step-item[data-step="4"] .step-body .glyphicon:before {
@@ -577,9 +654,9 @@ td {
 }
 
 .stepbar-progress[data-current-step="5"][data-step-status="pending"] .step-item[data-step="5"] .step-body {
-  background-color: #F8AC59;
-  -webkit-box-shadow: 0 0 0 3px #F8AC59;
-          box-shadow: 0 0 0 3px #F8AC59;
+  background-color: #f8ac59;
+  -webkit-box-shadow: 0 0 0 3px #f8ac59;
+          box-shadow: 0 0 0 3px #f8ac59;
 }
 
 .stepbar-progress[data-current-step="5"][data-step-status="pending"] .step-item[data-step="5"] .step-body .glyphicon:before {
@@ -589,29 +666,29 @@ td {
 .stepbar-progress[data-current-step="5"][data-step-status="pending"] .step-item[data-step="1"] .step-body:after,
 .stepbar-progress[data-current-step="5"][data-step-status="pending"] .step-item[data-step="1"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="5"][data-step-status="pending"] .step-item[data-step="2"] .step-body:before {
-  background-color: #F8AC59;
+  background-color: #f8ac59;
 }
 
 .stepbar-progress[data-current-step="5"][data-step-status="pending"] .step-item[data-step="2"] .step-body:after,
 .stepbar-progress[data-current-step="5"][data-step-status="pending"] .step-item[data-step="2"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="5"][data-step-status="pending"] .step-item[data-step="3"] .step-body:before {
-  background-color: #F8AC59;
+  background-color: #f8ac59;
 }
 
 .stepbar-progress[data-current-step="5"][data-step-status="pending"] .step-item[data-step="3"] .step-body:after,
 .stepbar-progress[data-current-step="5"][data-step-status="pending"] .step-item[data-step="3"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="5"][data-step-status="pending"] .step-item[data-step="4"] .step-body:before {
-  background-color: #F8AC59;
+  background-color: #f8ac59;
 }
 
 .stepbar-progress[data-current-step="5"][data-step-status="pending"] .step-item[data-step="4"] .step-body:after,
 .stepbar-progress[data-current-step="5"][data-step-status="pending"] .step-item[data-step="4"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="5"][data-step-status="pending"] .step-item[data-step="5"] .step-body:before {
-  background-color: #F8AC59;
+  background-color: #f8ac59;
 }
 
 .stepbar-progress[data-current-step="6"][data-step-status="pending"] .step-item[data-step="1"] .step-body {
-  background-color: #F8AC59;
+  background-color: #f8ac59;
 }
 
 .stepbar-progress[data-current-step="6"][data-step-status="pending"] .step-item[data-step="1"] .step-body .glyphicon:before {
@@ -619,7 +696,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="6"][data-step-status="pending"] .step-item[data-step="2"] .step-body {
-  background-color: #F8AC59;
+  background-color: #f8ac59;
 }
 
 .stepbar-progress[data-current-step="6"][data-step-status="pending"] .step-item[data-step="2"] .step-body .glyphicon:before {
@@ -627,7 +704,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="6"][data-step-status="pending"] .step-item[data-step="3"] .step-body {
-  background-color: #F8AC59;
+  background-color: #f8ac59;
 }
 
 .stepbar-progress[data-current-step="6"][data-step-status="pending"] .step-item[data-step="3"] .step-body .glyphicon:before {
@@ -635,7 +712,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="6"][data-step-status="pending"] .step-item[data-step="4"] .step-body {
-  background-color: #F8AC59;
+  background-color: #f8ac59;
 }
 
 .stepbar-progress[data-current-step="6"][data-step-status="pending"] .step-item[data-step="4"] .step-body .glyphicon:before {
@@ -643,7 +720,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="6"][data-step-status="pending"] .step-item[data-step="5"] .step-body {
-  background-color: #F8AC59;
+  background-color: #f8ac59;
 }
 
 .stepbar-progress[data-current-step="6"][data-step-status="pending"] .step-item[data-step="5"] .step-body .glyphicon:before {
@@ -656,9 +733,9 @@ td {
 }
 
 .stepbar-progress[data-current-step="6"][data-step-status="pending"] .step-item[data-step="6"] .step-body {
-  background-color: #F8AC59;
-  -webkit-box-shadow: 0 0 0 3px #F8AC59;
-          box-shadow: 0 0 0 3px #F8AC59;
+  background-color: #f8ac59;
+  -webkit-box-shadow: 0 0 0 3px #f8ac59;
+          box-shadow: 0 0 0 3px #f8ac59;
 }
 
 .stepbar-progress[data-current-step="6"][data-step-status="pending"] .step-item[data-step="6"] .step-body .glyphicon:before {
@@ -668,35 +745,35 @@ td {
 .stepbar-progress[data-current-step="6"][data-step-status="pending"] .step-item[data-step="1"] .step-body:after,
 .stepbar-progress[data-current-step="6"][data-step-status="pending"] .step-item[data-step="1"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="6"][data-step-status="pending"] .step-item[data-step="2"] .step-body:before {
-  background-color: #F8AC59;
+  background-color: #f8ac59;
 }
 
 .stepbar-progress[data-current-step="6"][data-step-status="pending"] .step-item[data-step="2"] .step-body:after,
 .stepbar-progress[data-current-step="6"][data-step-status="pending"] .step-item[data-step="2"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="6"][data-step-status="pending"] .step-item[data-step="3"] .step-body:before {
-  background-color: #F8AC59;
+  background-color: #f8ac59;
 }
 
 .stepbar-progress[data-current-step="6"][data-step-status="pending"] .step-item[data-step="3"] .step-body:after,
 .stepbar-progress[data-current-step="6"][data-step-status="pending"] .step-item[data-step="3"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="6"][data-step-status="pending"] .step-item[data-step="4"] .step-body:before {
-  background-color: #F8AC59;
+  background-color: #f8ac59;
 }
 
 .stepbar-progress[data-current-step="6"][data-step-status="pending"] .step-item[data-step="4"] .step-body:after,
 .stepbar-progress[data-current-step="6"][data-step-status="pending"] .step-item[data-step="4"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="6"][data-step-status="pending"] .step-item[data-step="5"] .step-body:before {
-  background-color: #F8AC59;
+  background-color: #f8ac59;
 }
 
 .stepbar-progress[data-current-step="6"][data-step-status="pending"] .step-item[data-step="5"] .step-body:after,
 .stepbar-progress[data-current-step="6"][data-step-status="pending"] .step-item[data-step="5"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="6"][data-step-status="pending"] .step-item[data-step="6"] .step-body:before {
-  background-color: #F8AC59;
+  background-color: #f8ac59;
 }
 
 .stepbar-progress[data-current-step="7"][data-step-status="pending"] .step-item[data-step="1"] .step-body {
-  background-color: #F8AC59;
+  background-color: #f8ac59;
 }
 
 .stepbar-progress[data-current-step="7"][data-step-status="pending"] .step-item[data-step="1"] .step-body .glyphicon:before {
@@ -704,7 +781,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="7"][data-step-status="pending"] .step-item[data-step="2"] .step-body {
-  background-color: #F8AC59;
+  background-color: #f8ac59;
 }
 
 .stepbar-progress[data-current-step="7"][data-step-status="pending"] .step-item[data-step="2"] .step-body .glyphicon:before {
@@ -712,7 +789,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="7"][data-step-status="pending"] .step-item[data-step="3"] .step-body {
-  background-color: #F8AC59;
+  background-color: #f8ac59;
 }
 
 .stepbar-progress[data-current-step="7"][data-step-status="pending"] .step-item[data-step="3"] .step-body .glyphicon:before {
@@ -720,7 +797,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="7"][data-step-status="pending"] .step-item[data-step="4"] .step-body {
-  background-color: #F8AC59;
+  background-color: #f8ac59;
 }
 
 .stepbar-progress[data-current-step="7"][data-step-status="pending"] .step-item[data-step="4"] .step-body .glyphicon:before {
@@ -728,7 +805,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="7"][data-step-status="pending"] .step-item[data-step="5"] .step-body {
-  background-color: #F8AC59;
+  background-color: #f8ac59;
 }
 
 .stepbar-progress[data-current-step="7"][data-step-status="pending"] .step-item[data-step="5"] .step-body .glyphicon:before {
@@ -736,7 +813,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="7"][data-step-status="pending"] .step-item[data-step="6"] .step-body {
-  background-color: #F8AC59;
+  background-color: #f8ac59;
 }
 
 .stepbar-progress[data-current-step="7"][data-step-status="pending"] .step-item[data-step="6"] .step-body .glyphicon:before {
@@ -749,9 +826,9 @@ td {
 }
 
 .stepbar-progress[data-current-step="7"][data-step-status="pending"] .step-item[data-step="7"] .step-body {
-  background-color: #F8AC59;
-  -webkit-box-shadow: 0 0 0 3px #F8AC59;
-          box-shadow: 0 0 0 3px #F8AC59;
+  background-color: #f8ac59;
+  -webkit-box-shadow: 0 0 0 3px #f8ac59;
+          box-shadow: 0 0 0 3px #f8ac59;
 }
 
 .stepbar-progress[data-current-step="7"][data-step-status="pending"] .step-item[data-step="7"] .step-body .glyphicon:before {
@@ -761,41 +838,41 @@ td {
 .stepbar-progress[data-current-step="7"][data-step-status="pending"] .step-item[data-step="1"] .step-body:after,
 .stepbar-progress[data-current-step="7"][data-step-status="pending"] .step-item[data-step="1"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="7"][data-step-status="pending"] .step-item[data-step="2"] .step-body:before {
-  background-color: #F8AC59;
+  background-color: #f8ac59;
 }
 
 .stepbar-progress[data-current-step="7"][data-step-status="pending"] .step-item[data-step="2"] .step-body:after,
 .stepbar-progress[data-current-step="7"][data-step-status="pending"] .step-item[data-step="2"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="7"][data-step-status="pending"] .step-item[data-step="3"] .step-body:before {
-  background-color: #F8AC59;
+  background-color: #f8ac59;
 }
 
 .stepbar-progress[data-current-step="7"][data-step-status="pending"] .step-item[data-step="3"] .step-body:after,
 .stepbar-progress[data-current-step="7"][data-step-status="pending"] .step-item[data-step="3"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="7"][data-step-status="pending"] .step-item[data-step="4"] .step-body:before {
-  background-color: #F8AC59;
+  background-color: #f8ac59;
 }
 
 .stepbar-progress[data-current-step="7"][data-step-status="pending"] .step-item[data-step="4"] .step-body:after,
 .stepbar-progress[data-current-step="7"][data-step-status="pending"] .step-item[data-step="4"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="7"][data-step-status="pending"] .step-item[data-step="5"] .step-body:before {
-  background-color: #F8AC59;
+  background-color: #f8ac59;
 }
 
 .stepbar-progress[data-current-step="7"][data-step-status="pending"] .step-item[data-step="5"] .step-body:after,
 .stepbar-progress[data-current-step="7"][data-step-status="pending"] .step-item[data-step="5"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="7"][data-step-status="pending"] .step-item[data-step="6"] .step-body:before {
-  background-color: #F8AC59;
+  background-color: #f8ac59;
 }
 
 .stepbar-progress[data-current-step="7"][data-step-status="pending"] .step-item[data-step="6"] .step-body:after,
 .stepbar-progress[data-current-step="7"][data-step-status="pending"] .step-item[data-step="6"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="7"][data-step-status="pending"] .step-item[data-step="7"] .step-body:before {
-  background-color: #F8AC59;
+  background-color: #f8ac59;
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="pending"] .step-item[data-step="1"] .step-body {
-  background-color: #F8AC59;
+  background-color: #f8ac59;
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="pending"] .step-item[data-step="1"] .step-body .glyphicon:before {
@@ -803,7 +880,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="pending"] .step-item[data-step="2"] .step-body {
-  background-color: #F8AC59;
+  background-color: #f8ac59;
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="pending"] .step-item[data-step="2"] .step-body .glyphicon:before {
@@ -811,7 +888,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="pending"] .step-item[data-step="3"] .step-body {
-  background-color: #F8AC59;
+  background-color: #f8ac59;
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="pending"] .step-item[data-step="3"] .step-body .glyphicon:before {
@@ -819,7 +896,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="pending"] .step-item[data-step="4"] .step-body {
-  background-color: #F8AC59;
+  background-color: #f8ac59;
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="pending"] .step-item[data-step="4"] .step-body .glyphicon:before {
@@ -827,7 +904,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="pending"] .step-item[data-step="5"] .step-body {
-  background-color: #F8AC59;
+  background-color: #f8ac59;
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="pending"] .step-item[data-step="5"] .step-body .glyphicon:before {
@@ -835,7 +912,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="pending"] .step-item[data-step="6"] .step-body {
-  background-color: #F8AC59;
+  background-color: #f8ac59;
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="pending"] .step-item[data-step="6"] .step-body .glyphicon:before {
@@ -843,7 +920,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="pending"] .step-item[data-step="7"] .step-body {
-  background-color: #F8AC59;
+  background-color: #f8ac59;
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="pending"] .step-item[data-step="7"] .step-body .glyphicon:before {
@@ -856,9 +933,9 @@ td {
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="pending"] .step-item[data-step="8"] .step-body {
-  background-color: #F8AC59;
-  -webkit-box-shadow: 0 0 0 3px #F8AC59;
-          box-shadow: 0 0 0 3px #F8AC59;
+  background-color: #f8ac59;
+  -webkit-box-shadow: 0 0 0 3px #f8ac59;
+          box-shadow: 0 0 0 3px #f8ac59;
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="pending"] .step-item[data-step="8"] .step-body .glyphicon:before {
@@ -868,47 +945,47 @@ td {
 .stepbar-progress[data-current-step="8"][data-step-status="pending"] .step-item[data-step="1"] .step-body:after,
 .stepbar-progress[data-current-step="8"][data-step-status="pending"] .step-item[data-step="1"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="8"][data-step-status="pending"] .step-item[data-step="2"] .step-body:before {
-  background-color: #F8AC59;
+  background-color: #f8ac59;
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="pending"] .step-item[data-step="2"] .step-body:after,
 .stepbar-progress[data-current-step="8"][data-step-status="pending"] .step-item[data-step="2"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="8"][data-step-status="pending"] .step-item[data-step="3"] .step-body:before {
-  background-color: #F8AC59;
+  background-color: #f8ac59;
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="pending"] .step-item[data-step="3"] .step-body:after,
 .stepbar-progress[data-current-step="8"][data-step-status="pending"] .step-item[data-step="3"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="8"][data-step-status="pending"] .step-item[data-step="4"] .step-body:before {
-  background-color: #F8AC59;
+  background-color: #f8ac59;
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="pending"] .step-item[data-step="4"] .step-body:after,
 .stepbar-progress[data-current-step="8"][data-step-status="pending"] .step-item[data-step="4"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="8"][data-step-status="pending"] .step-item[data-step="5"] .step-body:before {
-  background-color: #F8AC59;
+  background-color: #f8ac59;
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="pending"] .step-item[data-step="5"] .step-body:after,
 .stepbar-progress[data-current-step="8"][data-step-status="pending"] .step-item[data-step="5"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="8"][data-step-status="pending"] .step-item[data-step="6"] .step-body:before {
-  background-color: #F8AC59;
+  background-color: #f8ac59;
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="pending"] .step-item[data-step="6"] .step-body:after,
 .stepbar-progress[data-current-step="8"][data-step-status="pending"] .step-item[data-step="6"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="8"][data-step-status="pending"] .step-item[data-step="7"] .step-body:before {
-  background-color: #F8AC59;
+  background-color: #f8ac59;
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="pending"] .step-item[data-step="7"] .step-body:after,
 .stepbar-progress[data-current-step="8"][data-step-status="pending"] .step-item[data-step="7"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="8"][data-step-status="pending"] .step-item[data-step="8"] .step-body:before {
-  background-color: #F8AC59;
+  background-color: #f8ac59;
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="pending"] .step-item[data-step="1"] .step-body {
-  background-color: #F8AC59;
+  background-color: #f8ac59;
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="pending"] .step-item[data-step="1"] .step-body .glyphicon:before {
@@ -916,7 +993,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="pending"] .step-item[data-step="2"] .step-body {
-  background-color: #F8AC59;
+  background-color: #f8ac59;
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="pending"] .step-item[data-step="2"] .step-body .glyphicon:before {
@@ -924,7 +1001,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="pending"] .step-item[data-step="3"] .step-body {
-  background-color: #F8AC59;
+  background-color: #f8ac59;
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="pending"] .step-item[data-step="3"] .step-body .glyphicon:before {
@@ -932,7 +1009,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="pending"] .step-item[data-step="4"] .step-body {
-  background-color: #F8AC59;
+  background-color: #f8ac59;
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="pending"] .step-item[data-step="4"] .step-body .glyphicon:before {
@@ -940,7 +1017,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="pending"] .step-item[data-step="5"] .step-body {
-  background-color: #F8AC59;
+  background-color: #f8ac59;
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="pending"] .step-item[data-step="5"] .step-body .glyphicon:before {
@@ -948,7 +1025,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="pending"] .step-item[data-step="6"] .step-body {
-  background-color: #F8AC59;
+  background-color: #f8ac59;
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="pending"] .step-item[data-step="6"] .step-body .glyphicon:before {
@@ -956,7 +1033,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="pending"] .step-item[data-step="7"] .step-body {
-  background-color: #F8AC59;
+  background-color: #f8ac59;
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="pending"] .step-item[data-step="7"] .step-body .glyphicon:before {
@@ -964,7 +1041,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="pending"] .step-item[data-step="8"] .step-body {
-  background-color: #F8AC59;
+  background-color: #f8ac59;
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="pending"] .step-item[data-step="8"] .step-body .glyphicon:before {
@@ -977,9 +1054,9 @@ td {
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="pending"] .step-item[data-step="9"] .step-body {
-  background-color: #F8AC59;
-  -webkit-box-shadow: 0 0 0 3px #F8AC59;
-          box-shadow: 0 0 0 3px #F8AC59;
+  background-color: #f8ac59;
+  -webkit-box-shadow: 0 0 0 3px #f8ac59;
+          box-shadow: 0 0 0 3px #f8ac59;
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="pending"] .step-item[data-step="9"] .step-body .glyphicon:before {
@@ -989,49 +1066,49 @@ td {
 .stepbar-progress[data-current-step="9"][data-step-status="pending"] .step-item[data-step="1"] .step-body:after,
 .stepbar-progress[data-current-step="9"][data-step-status="pending"] .step-item[data-step="1"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="9"][data-step-status="pending"] .step-item[data-step="2"] .step-body:before {
-  background-color: #F8AC59;
+  background-color: #f8ac59;
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="pending"] .step-item[data-step="2"] .step-body:after,
 .stepbar-progress[data-current-step="9"][data-step-status="pending"] .step-item[data-step="2"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="9"][data-step-status="pending"] .step-item[data-step="3"] .step-body:before {
-  background-color: #F8AC59;
+  background-color: #f8ac59;
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="pending"] .step-item[data-step="3"] .step-body:after,
 .stepbar-progress[data-current-step="9"][data-step-status="pending"] .step-item[data-step="3"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="9"][data-step-status="pending"] .step-item[data-step="4"] .step-body:before {
-  background-color: #F8AC59;
+  background-color: #f8ac59;
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="pending"] .step-item[data-step="4"] .step-body:after,
 .stepbar-progress[data-current-step="9"][data-step-status="pending"] .step-item[data-step="4"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="9"][data-step-status="pending"] .step-item[data-step="5"] .step-body:before {
-  background-color: #F8AC59;
+  background-color: #f8ac59;
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="pending"] .step-item[data-step="5"] .step-body:after,
 .stepbar-progress[data-current-step="9"][data-step-status="pending"] .step-item[data-step="5"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="9"][data-step-status="pending"] .step-item[data-step="6"] .step-body:before {
-  background-color: #F8AC59;
+  background-color: #f8ac59;
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="pending"] .step-item[data-step="6"] .step-body:after,
 .stepbar-progress[data-current-step="9"][data-step-status="pending"] .step-item[data-step="6"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="9"][data-step-status="pending"] .step-item[data-step="7"] .step-body:before {
-  background-color: #F8AC59;
+  background-color: #f8ac59;
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="pending"] .step-item[data-step="7"] .step-body:after,
 .stepbar-progress[data-current-step="9"][data-step-status="pending"] .step-item[data-step="7"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="9"][data-step-status="pending"] .step-item[data-step="8"] .step-body:before {
-  background-color: #F8AC59;
+  background-color: #f8ac59;
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="pending"] .step-item[data-step="8"] .step-body:after,
 .stepbar-progress[data-current-step="9"][data-step-status="pending"] .step-item[data-step="8"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="9"][data-step-status="pending"] .step-item[data-step="9"] .step-body:before {
-  background-color: #F8AC59;
+  background-color: #f8ac59;
 }
 
 .stepbar-progress[data-current-step="1"][data-step-status="active"] .step-item[data-step="1"] .step-body:before,
@@ -1040,9 +1117,9 @@ td {
 }
 
 .stepbar-progress[data-current-step="1"][data-step-status="active"] .step-item[data-step="1"] .step-body {
-  background-color: #1C84C6;
-  -webkit-box-shadow: 0 0 0 3px #1C84C6;
-          box-shadow: 0 0 0 3px #1C84C6;
+  background-color: #1c84c6;
+  -webkit-box-shadow: 0 0 0 3px #1c84c6;
+          box-shadow: 0 0 0 3px #1c84c6;
 }
 
 .stepbar-progress[data-current-step="1"][data-step-status="active"] .step-item[data-step="1"] .step-body .glyphicon {
@@ -1055,7 +1132,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="2"][data-step-status="active"] .step-item[data-step="1"] .step-body {
-  background-color: #1C84C6;
+  background-color: #1c84c6;
 }
 
 .stepbar-progress[data-current-step="2"][data-step-status="active"] .step-item[data-step="1"] .step-body .glyphicon:before {
@@ -1068,9 +1145,9 @@ td {
 }
 
 .stepbar-progress[data-current-step="2"][data-step-status="active"] .step-item[data-step="2"] .step-body {
-  background-color: #1C84C6;
-  -webkit-box-shadow: 0 0 0 3px #1C84C6;
-          box-shadow: 0 0 0 3px #1C84C6;
+  background-color: #1c84c6;
+  -webkit-box-shadow: 0 0 0 3px #1c84c6;
+          box-shadow: 0 0 0 3px #1c84c6;
 }
 
 .stepbar-progress[data-current-step="2"][data-step-status="active"] .step-item[data-step="2"] .step-body .glyphicon {
@@ -1085,11 +1162,11 @@ td {
 .stepbar-progress[data-current-step="2"][data-step-status="active"] .step-item[data-step="1"] .step-body:after,
 .stepbar-progress[data-current-step="2"][data-step-status="active"] .step-item[data-step="1"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="2"][data-step-status="active"] .step-item[data-step="2"] .step-body:before {
-  background-color: #1C84C6;
+  background-color: #1c84c6;
 }
 
 .stepbar-progress[data-current-step="3"][data-step-status="active"] .step-item[data-step="1"] .step-body {
-  background-color: #1C84C6;
+  background-color: #1c84c6;
 }
 
 .stepbar-progress[data-current-step="3"][data-step-status="active"] .step-item[data-step="1"] .step-body .glyphicon:before {
@@ -1097,7 +1174,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="3"][data-step-status="active"] .step-item[data-step="2"] .step-body {
-  background-color: #1C84C6;
+  background-color: #1c84c6;
 }
 
 .stepbar-progress[data-current-step="3"][data-step-status="active"] .step-item[data-step="2"] .step-body .glyphicon:before {
@@ -1110,9 +1187,9 @@ td {
 }
 
 .stepbar-progress[data-current-step="3"][data-step-status="active"] .step-item[data-step="3"] .step-body {
-  background-color: #1C84C6;
-  -webkit-box-shadow: 0 0 0 3px #1C84C6;
-          box-shadow: 0 0 0 3px #1C84C6;
+  background-color: #1c84c6;
+  -webkit-box-shadow: 0 0 0 3px #1c84c6;
+          box-shadow: 0 0 0 3px #1c84c6;
 }
 
 .stepbar-progress[data-current-step="3"][data-step-status="active"] .step-item[data-step="3"] .step-body .glyphicon {
@@ -1127,17 +1204,17 @@ td {
 .stepbar-progress[data-current-step="3"][data-step-status="active"] .step-item[data-step="1"] .step-body:after,
 .stepbar-progress[data-current-step="3"][data-step-status="active"] .step-item[data-step="1"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="3"][data-step-status="active"] .step-item[data-step="2"] .step-body:before {
-  background-color: #1C84C6;
+  background-color: #1c84c6;
 }
 
 .stepbar-progress[data-current-step="3"][data-step-status="active"] .step-item[data-step="2"] .step-body:after,
 .stepbar-progress[data-current-step="3"][data-step-status="active"] .step-item[data-step="2"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="3"][data-step-status="active"] .step-item[data-step="3"] .step-body:before {
-  background-color: #1C84C6;
+  background-color: #1c84c6;
 }
 
 .stepbar-progress[data-current-step="4"][data-step-status="active"] .step-item[data-step="1"] .step-body {
-  background-color: #1C84C6;
+  background-color: #1c84c6;
 }
 
 .stepbar-progress[data-current-step="4"][data-step-status="active"] .step-item[data-step="1"] .step-body .glyphicon:before {
@@ -1145,7 +1222,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="4"][data-step-status="active"] .step-item[data-step="2"] .step-body {
-  background-color: #1C84C6;
+  background-color: #1c84c6;
 }
 
 .stepbar-progress[data-current-step="4"][data-step-status="active"] .step-item[data-step="2"] .step-body .glyphicon:before {
@@ -1153,7 +1230,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="4"][data-step-status="active"] .step-item[data-step="3"] .step-body {
-  background-color: #1C84C6;
+  background-color: #1c84c6;
 }
 
 .stepbar-progress[data-current-step="4"][data-step-status="active"] .step-item[data-step="3"] .step-body .glyphicon:before {
@@ -1166,9 +1243,9 @@ td {
 }
 
 .stepbar-progress[data-current-step="4"][data-step-status="active"] .step-item[data-step="4"] .step-body {
-  background-color: #1C84C6;
-  -webkit-box-shadow: 0 0 0 3px #1C84C6;
-          box-shadow: 0 0 0 3px #1C84C6;
+  background-color: #1c84c6;
+  -webkit-box-shadow: 0 0 0 3px #1c84c6;
+          box-shadow: 0 0 0 3px #1c84c6;
 }
 
 .stepbar-progress[data-current-step="4"][data-step-status="active"] .step-item[data-step="4"] .step-body .glyphicon {
@@ -1183,23 +1260,23 @@ td {
 .stepbar-progress[data-current-step="4"][data-step-status="active"] .step-item[data-step="1"] .step-body:after,
 .stepbar-progress[data-current-step="4"][data-step-status="active"] .step-item[data-step="1"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="4"][data-step-status="active"] .step-item[data-step="2"] .step-body:before {
-  background-color: #1C84C6;
+  background-color: #1c84c6;
 }
 
 .stepbar-progress[data-current-step="4"][data-step-status="active"] .step-item[data-step="2"] .step-body:after,
 .stepbar-progress[data-current-step="4"][data-step-status="active"] .step-item[data-step="2"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="4"][data-step-status="active"] .step-item[data-step="3"] .step-body:before {
-  background-color: #1C84C6;
+  background-color: #1c84c6;
 }
 
 .stepbar-progress[data-current-step="4"][data-step-status="active"] .step-item[data-step="3"] .step-body:after,
 .stepbar-progress[data-current-step="4"][data-step-status="active"] .step-item[data-step="3"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="4"][data-step-status="active"] .step-item[data-step="4"] .step-body:before {
-  background-color: #1C84C6;
+  background-color: #1c84c6;
 }
 
 .stepbar-progress[data-current-step="5"][data-step-status="active"] .step-item[data-step="1"] .step-body {
-  background-color: #1C84C6;
+  background-color: #1c84c6;
 }
 
 .stepbar-progress[data-current-step="5"][data-step-status="active"] .step-item[data-step="1"] .step-body .glyphicon:before {
@@ -1207,7 +1284,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="5"][data-step-status="active"] .step-item[data-step="2"] .step-body {
-  background-color: #1C84C6;
+  background-color: #1c84c6;
 }
 
 .stepbar-progress[data-current-step="5"][data-step-status="active"] .step-item[data-step="2"] .step-body .glyphicon:before {
@@ -1215,7 +1292,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="5"][data-step-status="active"] .step-item[data-step="3"] .step-body {
-  background-color: #1C84C6;
+  background-color: #1c84c6;
 }
 
 .stepbar-progress[data-current-step="5"][data-step-status="active"] .step-item[data-step="3"] .step-body .glyphicon:before {
@@ -1223,7 +1300,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="5"][data-step-status="active"] .step-item[data-step="4"] .step-body {
-  background-color: #1C84C6;
+  background-color: #1c84c6;
 }
 
 .stepbar-progress[data-current-step="5"][data-step-status="active"] .step-item[data-step="4"] .step-body .glyphicon:before {
@@ -1236,9 +1313,9 @@ td {
 }
 
 .stepbar-progress[data-current-step="5"][data-step-status="active"] .step-item[data-step="5"] .step-body {
-  background-color: #1C84C6;
-  -webkit-box-shadow: 0 0 0 3px #1C84C6;
-          box-shadow: 0 0 0 3px #1C84C6;
+  background-color: #1c84c6;
+  -webkit-box-shadow: 0 0 0 3px #1c84c6;
+          box-shadow: 0 0 0 3px #1c84c6;
 }
 
 .stepbar-progress[data-current-step="5"][data-step-status="active"] .step-item[data-step="5"] .step-body .glyphicon {
@@ -1253,29 +1330,29 @@ td {
 .stepbar-progress[data-current-step="5"][data-step-status="active"] .step-item[data-step="1"] .step-body:after,
 .stepbar-progress[data-current-step="5"][data-step-status="active"] .step-item[data-step="1"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="5"][data-step-status="active"] .step-item[data-step="2"] .step-body:before {
-  background-color: #1C84C6;
+  background-color: #1c84c6;
 }
 
 .stepbar-progress[data-current-step="5"][data-step-status="active"] .step-item[data-step="2"] .step-body:after,
 .stepbar-progress[data-current-step="5"][data-step-status="active"] .step-item[data-step="2"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="5"][data-step-status="active"] .step-item[data-step="3"] .step-body:before {
-  background-color: #1C84C6;
+  background-color: #1c84c6;
 }
 
 .stepbar-progress[data-current-step="5"][data-step-status="active"] .step-item[data-step="3"] .step-body:after,
 .stepbar-progress[data-current-step="5"][data-step-status="active"] .step-item[data-step="3"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="5"][data-step-status="active"] .step-item[data-step="4"] .step-body:before {
-  background-color: #1C84C6;
+  background-color: #1c84c6;
 }
 
 .stepbar-progress[data-current-step="5"][data-step-status="active"] .step-item[data-step="4"] .step-body:after,
 .stepbar-progress[data-current-step="5"][data-step-status="active"] .step-item[data-step="4"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="5"][data-step-status="active"] .step-item[data-step="5"] .step-body:before {
-  background-color: #1C84C6;
+  background-color: #1c84c6;
 }
 
 .stepbar-progress[data-current-step="6"][data-step-status="active"] .step-item[data-step="1"] .step-body {
-  background-color: #1C84C6;
+  background-color: #1c84c6;
 }
 
 .stepbar-progress[data-current-step="6"][data-step-status="active"] .step-item[data-step="1"] .step-body .glyphicon:before {
@@ -1283,7 +1360,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="6"][data-step-status="active"] .step-item[data-step="2"] .step-body {
-  background-color: #1C84C6;
+  background-color: #1c84c6;
 }
 
 .stepbar-progress[data-current-step="6"][data-step-status="active"] .step-item[data-step="2"] .step-body .glyphicon:before {
@@ -1291,7 +1368,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="6"][data-step-status="active"] .step-item[data-step="3"] .step-body {
-  background-color: #1C84C6;
+  background-color: #1c84c6;
 }
 
 .stepbar-progress[data-current-step="6"][data-step-status="active"] .step-item[data-step="3"] .step-body .glyphicon:before {
@@ -1299,7 +1376,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="6"][data-step-status="active"] .step-item[data-step="4"] .step-body {
-  background-color: #1C84C6;
+  background-color: #1c84c6;
 }
 
 .stepbar-progress[data-current-step="6"][data-step-status="active"] .step-item[data-step="4"] .step-body .glyphicon:before {
@@ -1307,7 +1384,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="6"][data-step-status="active"] .step-item[data-step="5"] .step-body {
-  background-color: #1C84C6;
+  background-color: #1c84c6;
 }
 
 .stepbar-progress[data-current-step="6"][data-step-status="active"] .step-item[data-step="5"] .step-body .glyphicon:before {
@@ -1320,9 +1397,9 @@ td {
 }
 
 .stepbar-progress[data-current-step="6"][data-step-status="active"] .step-item[data-step="6"] .step-body {
-  background-color: #1C84C6;
-  -webkit-box-shadow: 0 0 0 3px #1C84C6;
-          box-shadow: 0 0 0 3px #1C84C6;
+  background-color: #1c84c6;
+  -webkit-box-shadow: 0 0 0 3px #1c84c6;
+          box-shadow: 0 0 0 3px #1c84c6;
 }
 
 .stepbar-progress[data-current-step="6"][data-step-status="active"] .step-item[data-step="6"] .step-body .glyphicon {
@@ -1337,35 +1414,35 @@ td {
 .stepbar-progress[data-current-step="6"][data-step-status="active"] .step-item[data-step="1"] .step-body:after,
 .stepbar-progress[data-current-step="6"][data-step-status="active"] .step-item[data-step="1"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="6"][data-step-status="active"] .step-item[data-step="2"] .step-body:before {
-  background-color: #1C84C6;
+  background-color: #1c84c6;
 }
 
 .stepbar-progress[data-current-step="6"][data-step-status="active"] .step-item[data-step="2"] .step-body:after,
 .stepbar-progress[data-current-step="6"][data-step-status="active"] .step-item[data-step="2"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="6"][data-step-status="active"] .step-item[data-step="3"] .step-body:before {
-  background-color: #1C84C6;
+  background-color: #1c84c6;
 }
 
 .stepbar-progress[data-current-step="6"][data-step-status="active"] .step-item[data-step="3"] .step-body:after,
 .stepbar-progress[data-current-step="6"][data-step-status="active"] .step-item[data-step="3"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="6"][data-step-status="active"] .step-item[data-step="4"] .step-body:before {
-  background-color: #1C84C6;
+  background-color: #1c84c6;
 }
 
 .stepbar-progress[data-current-step="6"][data-step-status="active"] .step-item[data-step="4"] .step-body:after,
 .stepbar-progress[data-current-step="6"][data-step-status="active"] .step-item[data-step="4"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="6"][data-step-status="active"] .step-item[data-step="5"] .step-body:before {
-  background-color: #1C84C6;
+  background-color: #1c84c6;
 }
 
 .stepbar-progress[data-current-step="6"][data-step-status="active"] .step-item[data-step="5"] .step-body:after,
 .stepbar-progress[data-current-step="6"][data-step-status="active"] .step-item[data-step="5"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="6"][data-step-status="active"] .step-item[data-step="6"] .step-body:before {
-  background-color: #1C84C6;
+  background-color: #1c84c6;
 }
 
 .stepbar-progress[data-current-step="7"][data-step-status="active"] .step-item[data-step="1"] .step-body {
-  background-color: #1C84C6;
+  background-color: #1c84c6;
 }
 
 .stepbar-progress[data-current-step="7"][data-step-status="active"] .step-item[data-step="1"] .step-body .glyphicon:before {
@@ -1373,7 +1450,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="7"][data-step-status="active"] .step-item[data-step="2"] .step-body {
-  background-color: #1C84C6;
+  background-color: #1c84c6;
 }
 
 .stepbar-progress[data-current-step="7"][data-step-status="active"] .step-item[data-step="2"] .step-body .glyphicon:before {
@@ -1381,7 +1458,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="7"][data-step-status="active"] .step-item[data-step="3"] .step-body {
-  background-color: #1C84C6;
+  background-color: #1c84c6;
 }
 
 .stepbar-progress[data-current-step="7"][data-step-status="active"] .step-item[data-step="3"] .step-body .glyphicon:before {
@@ -1389,7 +1466,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="7"][data-step-status="active"] .step-item[data-step="4"] .step-body {
-  background-color: #1C84C6;
+  background-color: #1c84c6;
 }
 
 .stepbar-progress[data-current-step="7"][data-step-status="active"] .step-item[data-step="4"] .step-body .glyphicon:before {
@@ -1397,7 +1474,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="7"][data-step-status="active"] .step-item[data-step="5"] .step-body {
-  background-color: #1C84C6;
+  background-color: #1c84c6;
 }
 
 .stepbar-progress[data-current-step="7"][data-step-status="active"] .step-item[data-step="5"] .step-body .glyphicon:before {
@@ -1405,7 +1482,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="7"][data-step-status="active"] .step-item[data-step="6"] .step-body {
-  background-color: #1C84C6;
+  background-color: #1c84c6;
 }
 
 .stepbar-progress[data-current-step="7"][data-step-status="active"] .step-item[data-step="6"] .step-body .glyphicon:before {
@@ -1418,9 +1495,9 @@ td {
 }
 
 .stepbar-progress[data-current-step="7"][data-step-status="active"] .step-item[data-step="7"] .step-body {
-  background-color: #1C84C6;
-  -webkit-box-shadow: 0 0 0 3px #1C84C6;
-          box-shadow: 0 0 0 3px #1C84C6;
+  background-color: #1c84c6;
+  -webkit-box-shadow: 0 0 0 3px #1c84c6;
+          box-shadow: 0 0 0 3px #1c84c6;
 }
 
 .stepbar-progress[data-current-step="7"][data-step-status="active"] .step-item[data-step="7"] .step-body .glyphicon {
@@ -1435,41 +1512,41 @@ td {
 .stepbar-progress[data-current-step="7"][data-step-status="active"] .step-item[data-step="1"] .step-body:after,
 .stepbar-progress[data-current-step="7"][data-step-status="active"] .step-item[data-step="1"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="7"][data-step-status="active"] .step-item[data-step="2"] .step-body:before {
-  background-color: #1C84C6;
+  background-color: #1c84c6;
 }
 
 .stepbar-progress[data-current-step="7"][data-step-status="active"] .step-item[data-step="2"] .step-body:after,
 .stepbar-progress[data-current-step="7"][data-step-status="active"] .step-item[data-step="2"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="7"][data-step-status="active"] .step-item[data-step="3"] .step-body:before {
-  background-color: #1C84C6;
+  background-color: #1c84c6;
 }
 
 .stepbar-progress[data-current-step="7"][data-step-status="active"] .step-item[data-step="3"] .step-body:after,
 .stepbar-progress[data-current-step="7"][data-step-status="active"] .step-item[data-step="3"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="7"][data-step-status="active"] .step-item[data-step="4"] .step-body:before {
-  background-color: #1C84C6;
+  background-color: #1c84c6;
 }
 
 .stepbar-progress[data-current-step="7"][data-step-status="active"] .step-item[data-step="4"] .step-body:after,
 .stepbar-progress[data-current-step="7"][data-step-status="active"] .step-item[data-step="4"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="7"][data-step-status="active"] .step-item[data-step="5"] .step-body:before {
-  background-color: #1C84C6;
+  background-color: #1c84c6;
 }
 
 .stepbar-progress[data-current-step="7"][data-step-status="active"] .step-item[data-step="5"] .step-body:after,
 .stepbar-progress[data-current-step="7"][data-step-status="active"] .step-item[data-step="5"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="7"][data-step-status="active"] .step-item[data-step="6"] .step-body:before {
-  background-color: #1C84C6;
+  background-color: #1c84c6;
 }
 
 .stepbar-progress[data-current-step="7"][data-step-status="active"] .step-item[data-step="6"] .step-body:after,
 .stepbar-progress[data-current-step="7"][data-step-status="active"] .step-item[data-step="6"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="7"][data-step-status="active"] .step-item[data-step="7"] .step-body:before {
-  background-color: #1C84C6;
+  background-color: #1c84c6;
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="active"] .step-item[data-step="1"] .step-body {
-  background-color: #1C84C6;
+  background-color: #1c84c6;
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="active"] .step-item[data-step="1"] .step-body .glyphicon:before {
@@ -1477,7 +1554,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="active"] .step-item[data-step="2"] .step-body {
-  background-color: #1C84C6;
+  background-color: #1c84c6;
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="active"] .step-item[data-step="2"] .step-body .glyphicon:before {
@@ -1485,7 +1562,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="active"] .step-item[data-step="3"] .step-body {
-  background-color: #1C84C6;
+  background-color: #1c84c6;
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="active"] .step-item[data-step="3"] .step-body .glyphicon:before {
@@ -1493,7 +1570,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="active"] .step-item[data-step="4"] .step-body {
-  background-color: #1C84C6;
+  background-color: #1c84c6;
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="active"] .step-item[data-step="4"] .step-body .glyphicon:before {
@@ -1501,7 +1578,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="active"] .step-item[data-step="5"] .step-body {
-  background-color: #1C84C6;
+  background-color: #1c84c6;
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="active"] .step-item[data-step="5"] .step-body .glyphicon:before {
@@ -1509,7 +1586,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="active"] .step-item[data-step="6"] .step-body {
-  background-color: #1C84C6;
+  background-color: #1c84c6;
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="active"] .step-item[data-step="6"] .step-body .glyphicon:before {
@@ -1517,7 +1594,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="active"] .step-item[data-step="7"] .step-body {
-  background-color: #1C84C6;
+  background-color: #1c84c6;
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="active"] .step-item[data-step="7"] .step-body .glyphicon:before {
@@ -1530,9 +1607,9 @@ td {
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="active"] .step-item[data-step="8"] .step-body {
-  background-color: #1C84C6;
-  -webkit-box-shadow: 0 0 0 3px #1C84C6;
-          box-shadow: 0 0 0 3px #1C84C6;
+  background-color: #1c84c6;
+  -webkit-box-shadow: 0 0 0 3px #1c84c6;
+          box-shadow: 0 0 0 3px #1c84c6;
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="active"] .step-item[data-step="8"] .step-body .glyphicon {
@@ -1547,47 +1624,47 @@ td {
 .stepbar-progress[data-current-step="8"][data-step-status="active"] .step-item[data-step="1"] .step-body:after,
 .stepbar-progress[data-current-step="8"][data-step-status="active"] .step-item[data-step="1"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="8"][data-step-status="active"] .step-item[data-step="2"] .step-body:before {
-  background-color: #1C84C6;
+  background-color: #1c84c6;
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="active"] .step-item[data-step="2"] .step-body:after,
 .stepbar-progress[data-current-step="8"][data-step-status="active"] .step-item[data-step="2"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="8"][data-step-status="active"] .step-item[data-step="3"] .step-body:before {
-  background-color: #1C84C6;
+  background-color: #1c84c6;
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="active"] .step-item[data-step="3"] .step-body:after,
 .stepbar-progress[data-current-step="8"][data-step-status="active"] .step-item[data-step="3"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="8"][data-step-status="active"] .step-item[data-step="4"] .step-body:before {
-  background-color: #1C84C6;
+  background-color: #1c84c6;
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="active"] .step-item[data-step="4"] .step-body:after,
 .stepbar-progress[data-current-step="8"][data-step-status="active"] .step-item[data-step="4"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="8"][data-step-status="active"] .step-item[data-step="5"] .step-body:before {
-  background-color: #1C84C6;
+  background-color: #1c84c6;
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="active"] .step-item[data-step="5"] .step-body:after,
 .stepbar-progress[data-current-step="8"][data-step-status="active"] .step-item[data-step="5"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="8"][data-step-status="active"] .step-item[data-step="6"] .step-body:before {
-  background-color: #1C84C6;
+  background-color: #1c84c6;
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="active"] .step-item[data-step="6"] .step-body:after,
 .stepbar-progress[data-current-step="8"][data-step-status="active"] .step-item[data-step="6"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="8"][data-step-status="active"] .step-item[data-step="7"] .step-body:before {
-  background-color: #1C84C6;
+  background-color: #1c84c6;
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="active"] .step-item[data-step="7"] .step-body:after,
 .stepbar-progress[data-current-step="8"][data-step-status="active"] .step-item[data-step="7"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="8"][data-step-status="active"] .step-item[data-step="8"] .step-body:before {
-  background-color: #1C84C6;
+  background-color: #1c84c6;
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="active"] .step-item[data-step="1"] .step-body {
-  background-color: #1C84C6;
+  background-color: #1c84c6;
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="active"] .step-item[data-step="1"] .step-body .glyphicon:before {
@@ -1595,7 +1672,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="active"] .step-item[data-step="2"] .step-body {
-  background-color: #1C84C6;
+  background-color: #1c84c6;
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="active"] .step-item[data-step="2"] .step-body .glyphicon:before {
@@ -1603,7 +1680,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="active"] .step-item[data-step="3"] .step-body {
-  background-color: #1C84C6;
+  background-color: #1c84c6;
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="active"] .step-item[data-step="3"] .step-body .glyphicon:before {
@@ -1611,7 +1688,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="active"] .step-item[data-step="4"] .step-body {
-  background-color: #1C84C6;
+  background-color: #1c84c6;
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="active"] .step-item[data-step="4"] .step-body .glyphicon:before {
@@ -1619,7 +1696,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="active"] .step-item[data-step="5"] .step-body {
-  background-color: #1C84C6;
+  background-color: #1c84c6;
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="active"] .step-item[data-step="5"] .step-body .glyphicon:before {
@@ -1627,7 +1704,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="active"] .step-item[data-step="6"] .step-body {
-  background-color: #1C84C6;
+  background-color: #1c84c6;
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="active"] .step-item[data-step="6"] .step-body .glyphicon:before {
@@ -1635,7 +1712,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="active"] .step-item[data-step="7"] .step-body {
-  background-color: #1C84C6;
+  background-color: #1c84c6;
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="active"] .step-item[data-step="7"] .step-body .glyphicon:before {
@@ -1643,7 +1720,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="active"] .step-item[data-step="8"] .step-body {
-  background-color: #1C84C6;
+  background-color: #1c84c6;
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="active"] .step-item[data-step="8"] .step-body .glyphicon:before {
@@ -1656,9 +1733,9 @@ td {
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="active"] .step-item[data-step="9"] .step-body {
-  background-color: #1C84C6;
-  -webkit-box-shadow: 0 0 0 3px #1C84C6;
-          box-shadow: 0 0 0 3px #1C84C6;
+  background-color: #1c84c6;
+  -webkit-box-shadow: 0 0 0 3px #1c84c6;
+          box-shadow: 0 0 0 3px #1c84c6;
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="active"] .step-item[data-step="9"] .step-body .glyphicon {
@@ -1673,49 +1750,49 @@ td {
 .stepbar-progress[data-current-step="9"][data-step-status="active"] .step-item[data-step="1"] .step-body:after,
 .stepbar-progress[data-current-step="9"][data-step-status="active"] .step-item[data-step="1"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="9"][data-step-status="active"] .step-item[data-step="2"] .step-body:before {
-  background-color: #1C84C6;
+  background-color: #1c84c6;
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="active"] .step-item[data-step="2"] .step-body:after,
 .stepbar-progress[data-current-step="9"][data-step-status="active"] .step-item[data-step="2"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="9"][data-step-status="active"] .step-item[data-step="3"] .step-body:before {
-  background-color: #1C84C6;
+  background-color: #1c84c6;
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="active"] .step-item[data-step="3"] .step-body:after,
 .stepbar-progress[data-current-step="9"][data-step-status="active"] .step-item[data-step="3"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="9"][data-step-status="active"] .step-item[data-step="4"] .step-body:before {
-  background-color: #1C84C6;
+  background-color: #1c84c6;
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="active"] .step-item[data-step="4"] .step-body:after,
 .stepbar-progress[data-current-step="9"][data-step-status="active"] .step-item[data-step="4"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="9"][data-step-status="active"] .step-item[data-step="5"] .step-body:before {
-  background-color: #1C84C6;
+  background-color: #1c84c6;
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="active"] .step-item[data-step="5"] .step-body:after,
 .stepbar-progress[data-current-step="9"][data-step-status="active"] .step-item[data-step="5"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="9"][data-step-status="active"] .step-item[data-step="6"] .step-body:before {
-  background-color: #1C84C6;
+  background-color: #1c84c6;
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="active"] .step-item[data-step="6"] .step-body:after,
 .stepbar-progress[data-current-step="9"][data-step-status="active"] .step-item[data-step="6"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="9"][data-step-status="active"] .step-item[data-step="7"] .step-body:before {
-  background-color: #1C84C6;
+  background-color: #1c84c6;
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="active"] .step-item[data-step="7"] .step-body:after,
 .stepbar-progress[data-current-step="9"][data-step-status="active"] .step-item[data-step="7"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="9"][data-step-status="active"] .step-item[data-step="8"] .step-body:before {
-  background-color: #1C84C6;
+  background-color: #1c84c6;
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="active"] .step-item[data-step="8"] .step-body:after,
 .stepbar-progress[data-current-step="9"][data-step-status="active"] .step-item[data-step="8"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="9"][data-step-status="active"] .step-item[data-step="9"] .step-body:before {
-  background-color: #1C84C6;
+  background-color: #1c84c6;
 }
 
 .stepbar-progress[data-current-step="1"][data-step-status="pass"] .step-item[data-step="1"] .step-body:before,
@@ -1724,9 +1801,9 @@ td {
 }
 
 .stepbar-progress[data-current-step="1"][data-step-status="pass"] .step-item[data-step="1"] .step-body {
-  background-color: #1AB394;
-  -webkit-box-shadow: 0 0 0 3px #1AB394;
-          box-shadow: 0 0 0 3px #1AB394;
+  background-color: #1ab394;
+  -webkit-box-shadow: 0 0 0 3px #1ab394;
+          box-shadow: 0 0 0 3px #1ab394;
 }
 
 .stepbar-progress[data-current-step="1"][data-step-status="pass"] .step-item[data-step="1"] .step-body .glyphicon:before {
@@ -1734,7 +1811,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="2"][data-step-status="pass"] .step-item[data-step="1"] .step-body {
-  background-color: #1AB394;
+  background-color: #1ab394;
 }
 
 .stepbar-progress[data-current-step="2"][data-step-status="pass"] .step-item[data-step="1"] .step-body .glyphicon:before {
@@ -1747,9 +1824,9 @@ td {
 }
 
 .stepbar-progress[data-current-step="2"][data-step-status="pass"] .step-item[data-step="2"] .step-body {
-  background-color: #1AB394;
-  -webkit-box-shadow: 0 0 0 3px #1AB394;
-          box-shadow: 0 0 0 3px #1AB394;
+  background-color: #1ab394;
+  -webkit-box-shadow: 0 0 0 3px #1ab394;
+          box-shadow: 0 0 0 3px #1ab394;
 }
 
 .stepbar-progress[data-current-step="2"][data-step-status="pass"] .step-item[data-step="2"] .step-body .glyphicon:before {
@@ -1759,11 +1836,11 @@ td {
 .stepbar-progress[data-current-step="2"][data-step-status="pass"] .step-item[data-step="1"] .step-body:after,
 .stepbar-progress[data-current-step="2"][data-step-status="pass"] .step-item[data-step="1"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="2"][data-step-status="pass"] .step-item[data-step="2"] .step-body:before {
-  background-color: #1AB394;
+  background-color: #1ab394;
 }
 
 .stepbar-progress[data-current-step="3"][data-step-status="pass"] .step-item[data-step="1"] .step-body {
-  background-color: #1AB394;
+  background-color: #1ab394;
 }
 
 .stepbar-progress[data-current-step="3"][data-step-status="pass"] .step-item[data-step="1"] .step-body .glyphicon:before {
@@ -1771,7 +1848,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="3"][data-step-status="pass"] .step-item[data-step="2"] .step-body {
-  background-color: #1AB394;
+  background-color: #1ab394;
 }
 
 .stepbar-progress[data-current-step="3"][data-step-status="pass"] .step-item[data-step="2"] .step-body .glyphicon:before {
@@ -1784,9 +1861,9 @@ td {
 }
 
 .stepbar-progress[data-current-step="3"][data-step-status="pass"] .step-item[data-step="3"] .step-body {
-  background-color: #1AB394;
-  -webkit-box-shadow: 0 0 0 3px #1AB394;
-          box-shadow: 0 0 0 3px #1AB394;
+  background-color: #1ab394;
+  -webkit-box-shadow: 0 0 0 3px #1ab394;
+          box-shadow: 0 0 0 3px #1ab394;
 }
 
 .stepbar-progress[data-current-step="3"][data-step-status="pass"] .step-item[data-step="3"] .step-body .glyphicon:before {
@@ -1796,17 +1873,17 @@ td {
 .stepbar-progress[data-current-step="3"][data-step-status="pass"] .step-item[data-step="1"] .step-body:after,
 .stepbar-progress[data-current-step="3"][data-step-status="pass"] .step-item[data-step="1"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="3"][data-step-status="pass"] .step-item[data-step="2"] .step-body:before {
-  background-color: #1AB394;
+  background-color: #1ab394;
 }
 
 .stepbar-progress[data-current-step="3"][data-step-status="pass"] .step-item[data-step="2"] .step-body:after,
 .stepbar-progress[data-current-step="3"][data-step-status="pass"] .step-item[data-step="2"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="3"][data-step-status="pass"] .step-item[data-step="3"] .step-body:before {
-  background-color: #1AB394;
+  background-color: #1ab394;
 }
 
 .stepbar-progress[data-current-step="4"][data-step-status="pass"] .step-item[data-step="1"] .step-body {
-  background-color: #1AB394;
+  background-color: #1ab394;
 }
 
 .stepbar-progress[data-current-step="4"][data-step-status="pass"] .step-item[data-step="1"] .step-body .glyphicon:before {
@@ -1814,7 +1891,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="4"][data-step-status="pass"] .step-item[data-step="2"] .step-body {
-  background-color: #1AB394;
+  background-color: #1ab394;
 }
 
 .stepbar-progress[data-current-step="4"][data-step-status="pass"] .step-item[data-step="2"] .step-body .glyphicon:before {
@@ -1822,7 +1899,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="4"][data-step-status="pass"] .step-item[data-step="3"] .step-body {
-  background-color: #1AB394;
+  background-color: #1ab394;
 }
 
 .stepbar-progress[data-current-step="4"][data-step-status="pass"] .step-item[data-step="3"] .step-body .glyphicon:before {
@@ -1835,9 +1912,9 @@ td {
 }
 
 .stepbar-progress[data-current-step="4"][data-step-status="pass"] .step-item[data-step="4"] .step-body {
-  background-color: #1AB394;
-  -webkit-box-shadow: 0 0 0 3px #1AB394;
-          box-shadow: 0 0 0 3px #1AB394;
+  background-color: #1ab394;
+  -webkit-box-shadow: 0 0 0 3px #1ab394;
+          box-shadow: 0 0 0 3px #1ab394;
 }
 
 .stepbar-progress[data-current-step="4"][data-step-status="pass"] .step-item[data-step="4"] .step-body .glyphicon:before {
@@ -1847,23 +1924,23 @@ td {
 .stepbar-progress[data-current-step="4"][data-step-status="pass"] .step-item[data-step="1"] .step-body:after,
 .stepbar-progress[data-current-step="4"][data-step-status="pass"] .step-item[data-step="1"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="4"][data-step-status="pass"] .step-item[data-step="2"] .step-body:before {
-  background-color: #1AB394;
+  background-color: #1ab394;
 }
 
 .stepbar-progress[data-current-step="4"][data-step-status="pass"] .step-item[data-step="2"] .step-body:after,
 .stepbar-progress[data-current-step="4"][data-step-status="pass"] .step-item[data-step="2"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="4"][data-step-status="pass"] .step-item[data-step="3"] .step-body:before {
-  background-color: #1AB394;
+  background-color: #1ab394;
 }
 
 .stepbar-progress[data-current-step="4"][data-step-status="pass"] .step-item[data-step="3"] .step-body:after,
 .stepbar-progress[data-current-step="4"][data-step-status="pass"] .step-item[data-step="3"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="4"][data-step-status="pass"] .step-item[data-step="4"] .step-body:before {
-  background-color: #1AB394;
+  background-color: #1ab394;
 }
 
 .stepbar-progress[data-current-step="5"][data-step-status="pass"] .step-item[data-step="1"] .step-body {
-  background-color: #1AB394;
+  background-color: #1ab394;
 }
 
 .stepbar-progress[data-current-step="5"][data-step-status="pass"] .step-item[data-step="1"] .step-body .glyphicon:before {
@@ -1871,7 +1948,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="5"][data-step-status="pass"] .step-item[data-step="2"] .step-body {
-  background-color: #1AB394;
+  background-color: #1ab394;
 }
 
 .stepbar-progress[data-current-step="5"][data-step-status="pass"] .step-item[data-step="2"] .step-body .glyphicon:before {
@@ -1879,7 +1956,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="5"][data-step-status="pass"] .step-item[data-step="3"] .step-body {
-  background-color: #1AB394;
+  background-color: #1ab394;
 }
 
 .stepbar-progress[data-current-step="5"][data-step-status="pass"] .step-item[data-step="3"] .step-body .glyphicon:before {
@@ -1887,7 +1964,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="5"][data-step-status="pass"] .step-item[data-step="4"] .step-body {
-  background-color: #1AB394;
+  background-color: #1ab394;
 }
 
 .stepbar-progress[data-current-step="5"][data-step-status="pass"] .step-item[data-step="4"] .step-body .glyphicon:before {
@@ -1900,9 +1977,9 @@ td {
 }
 
 .stepbar-progress[data-current-step="5"][data-step-status="pass"] .step-item[data-step="5"] .step-body {
-  background-color: #1AB394;
-  -webkit-box-shadow: 0 0 0 3px #1AB394;
-          box-shadow: 0 0 0 3px #1AB394;
+  background-color: #1ab394;
+  -webkit-box-shadow: 0 0 0 3px #1ab394;
+          box-shadow: 0 0 0 3px #1ab394;
 }
 
 .stepbar-progress[data-current-step="5"][data-step-status="pass"] .step-item[data-step="5"] .step-body .glyphicon:before {
@@ -1912,29 +1989,29 @@ td {
 .stepbar-progress[data-current-step="5"][data-step-status="pass"] .step-item[data-step="1"] .step-body:after,
 .stepbar-progress[data-current-step="5"][data-step-status="pass"] .step-item[data-step="1"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="5"][data-step-status="pass"] .step-item[data-step="2"] .step-body:before {
-  background-color: #1AB394;
+  background-color: #1ab394;
 }
 
 .stepbar-progress[data-current-step="5"][data-step-status="pass"] .step-item[data-step="2"] .step-body:after,
 .stepbar-progress[data-current-step="5"][data-step-status="pass"] .step-item[data-step="2"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="5"][data-step-status="pass"] .step-item[data-step="3"] .step-body:before {
-  background-color: #1AB394;
+  background-color: #1ab394;
 }
 
 .stepbar-progress[data-current-step="5"][data-step-status="pass"] .step-item[data-step="3"] .step-body:after,
 .stepbar-progress[data-current-step="5"][data-step-status="pass"] .step-item[data-step="3"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="5"][data-step-status="pass"] .step-item[data-step="4"] .step-body:before {
-  background-color: #1AB394;
+  background-color: #1ab394;
 }
 
 .stepbar-progress[data-current-step="5"][data-step-status="pass"] .step-item[data-step="4"] .step-body:after,
 .stepbar-progress[data-current-step="5"][data-step-status="pass"] .step-item[data-step="4"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="5"][data-step-status="pass"] .step-item[data-step="5"] .step-body:before {
-  background-color: #1AB394;
+  background-color: #1ab394;
 }
 
 .stepbar-progress[data-current-step="6"][data-step-status="pass"] .step-item[data-step="1"] .step-body {
-  background-color: #1AB394;
+  background-color: #1ab394;
 }
 
 .stepbar-progress[data-current-step="6"][data-step-status="pass"] .step-item[data-step="1"] .step-body .glyphicon:before {
@@ -1942,7 +2019,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="6"][data-step-status="pass"] .step-item[data-step="2"] .step-body {
-  background-color: #1AB394;
+  background-color: #1ab394;
 }
 
 .stepbar-progress[data-current-step="6"][data-step-status="pass"] .step-item[data-step="2"] .step-body .glyphicon:before {
@@ -1950,7 +2027,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="6"][data-step-status="pass"] .step-item[data-step="3"] .step-body {
-  background-color: #1AB394;
+  background-color: #1ab394;
 }
 
 .stepbar-progress[data-current-step="6"][data-step-status="pass"] .step-item[data-step="3"] .step-body .glyphicon:before {
@@ -1958,7 +2035,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="6"][data-step-status="pass"] .step-item[data-step="4"] .step-body {
-  background-color: #1AB394;
+  background-color: #1ab394;
 }
 
 .stepbar-progress[data-current-step="6"][data-step-status="pass"] .step-item[data-step="4"] .step-body .glyphicon:before {
@@ -1966,7 +2043,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="6"][data-step-status="pass"] .step-item[data-step="5"] .step-body {
-  background-color: #1AB394;
+  background-color: #1ab394;
 }
 
 .stepbar-progress[data-current-step="6"][data-step-status="pass"] .step-item[data-step="5"] .step-body .glyphicon:before {
@@ -1979,9 +2056,9 @@ td {
 }
 
 .stepbar-progress[data-current-step="6"][data-step-status="pass"] .step-item[data-step="6"] .step-body {
-  background-color: #1AB394;
-  -webkit-box-shadow: 0 0 0 3px #1AB394;
-          box-shadow: 0 0 0 3px #1AB394;
+  background-color: #1ab394;
+  -webkit-box-shadow: 0 0 0 3px #1ab394;
+          box-shadow: 0 0 0 3px #1ab394;
 }
 
 .stepbar-progress[data-current-step="6"][data-step-status="pass"] .step-item[data-step="6"] .step-body .glyphicon:before {
@@ -1991,35 +2068,35 @@ td {
 .stepbar-progress[data-current-step="6"][data-step-status="pass"] .step-item[data-step="1"] .step-body:after,
 .stepbar-progress[data-current-step="6"][data-step-status="pass"] .step-item[data-step="1"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="6"][data-step-status="pass"] .step-item[data-step="2"] .step-body:before {
-  background-color: #1AB394;
+  background-color: #1ab394;
 }
 
 .stepbar-progress[data-current-step="6"][data-step-status="pass"] .step-item[data-step="2"] .step-body:after,
 .stepbar-progress[data-current-step="6"][data-step-status="pass"] .step-item[data-step="2"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="6"][data-step-status="pass"] .step-item[data-step="3"] .step-body:before {
-  background-color: #1AB394;
+  background-color: #1ab394;
 }
 
 .stepbar-progress[data-current-step="6"][data-step-status="pass"] .step-item[data-step="3"] .step-body:after,
 .stepbar-progress[data-current-step="6"][data-step-status="pass"] .step-item[data-step="3"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="6"][data-step-status="pass"] .step-item[data-step="4"] .step-body:before {
-  background-color: #1AB394;
+  background-color: #1ab394;
 }
 
 .stepbar-progress[data-current-step="6"][data-step-status="pass"] .step-item[data-step="4"] .step-body:after,
 .stepbar-progress[data-current-step="6"][data-step-status="pass"] .step-item[data-step="4"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="6"][data-step-status="pass"] .step-item[data-step="5"] .step-body:before {
-  background-color: #1AB394;
+  background-color: #1ab394;
 }
 
 .stepbar-progress[data-current-step="6"][data-step-status="pass"] .step-item[data-step="5"] .step-body:after,
 .stepbar-progress[data-current-step="6"][data-step-status="pass"] .step-item[data-step="5"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="6"][data-step-status="pass"] .step-item[data-step="6"] .step-body:before {
-  background-color: #1AB394;
+  background-color: #1ab394;
 }
 
 .stepbar-progress[data-current-step="7"][data-step-status="pass"] .step-item[data-step="1"] .step-body {
-  background-color: #1AB394;
+  background-color: #1ab394;
 }
 
 .stepbar-progress[data-current-step="7"][data-step-status="pass"] .step-item[data-step="1"] .step-body .glyphicon:before {
@@ -2027,7 +2104,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="7"][data-step-status="pass"] .step-item[data-step="2"] .step-body {
-  background-color: #1AB394;
+  background-color: #1ab394;
 }
 
 .stepbar-progress[data-current-step="7"][data-step-status="pass"] .step-item[data-step="2"] .step-body .glyphicon:before {
@@ -2035,7 +2112,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="7"][data-step-status="pass"] .step-item[data-step="3"] .step-body {
-  background-color: #1AB394;
+  background-color: #1ab394;
 }
 
 .stepbar-progress[data-current-step="7"][data-step-status="pass"] .step-item[data-step="3"] .step-body .glyphicon:before {
@@ -2043,7 +2120,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="7"][data-step-status="pass"] .step-item[data-step="4"] .step-body {
-  background-color: #1AB394;
+  background-color: #1ab394;
 }
 
 .stepbar-progress[data-current-step="7"][data-step-status="pass"] .step-item[data-step="4"] .step-body .glyphicon:before {
@@ -2051,7 +2128,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="7"][data-step-status="pass"] .step-item[data-step="5"] .step-body {
-  background-color: #1AB394;
+  background-color: #1ab394;
 }
 
 .stepbar-progress[data-current-step="7"][data-step-status="pass"] .step-item[data-step="5"] .step-body .glyphicon:before {
@@ -2059,7 +2136,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="7"][data-step-status="pass"] .step-item[data-step="6"] .step-body {
-  background-color: #1AB394;
+  background-color: #1ab394;
 }
 
 .stepbar-progress[data-current-step="7"][data-step-status="pass"] .step-item[data-step="6"] .step-body .glyphicon:before {
@@ -2072,9 +2149,9 @@ td {
 }
 
 .stepbar-progress[data-current-step="7"][data-step-status="pass"] .step-item[data-step="7"] .step-body {
-  background-color: #1AB394;
-  -webkit-box-shadow: 0 0 0 3px #1AB394;
-          box-shadow: 0 0 0 3px #1AB394;
+  background-color: #1ab394;
+  -webkit-box-shadow: 0 0 0 3px #1ab394;
+          box-shadow: 0 0 0 3px #1ab394;
 }
 
 .stepbar-progress[data-current-step="7"][data-step-status="pass"] .step-item[data-step="7"] .step-body .glyphicon:before {
@@ -2084,41 +2161,41 @@ td {
 .stepbar-progress[data-current-step="7"][data-step-status="pass"] .step-item[data-step="1"] .step-body:after,
 .stepbar-progress[data-current-step="7"][data-step-status="pass"] .step-item[data-step="1"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="7"][data-step-status="pass"] .step-item[data-step="2"] .step-body:before {
-  background-color: #1AB394;
+  background-color: #1ab394;
 }
 
 .stepbar-progress[data-current-step="7"][data-step-status="pass"] .step-item[data-step="2"] .step-body:after,
 .stepbar-progress[data-current-step="7"][data-step-status="pass"] .step-item[data-step="2"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="7"][data-step-status="pass"] .step-item[data-step="3"] .step-body:before {
-  background-color: #1AB394;
+  background-color: #1ab394;
 }
 
 .stepbar-progress[data-current-step="7"][data-step-status="pass"] .step-item[data-step="3"] .step-body:after,
 .stepbar-progress[data-current-step="7"][data-step-status="pass"] .step-item[data-step="3"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="7"][data-step-status="pass"] .step-item[data-step="4"] .step-body:before {
-  background-color: #1AB394;
+  background-color: #1ab394;
 }
 
 .stepbar-progress[data-current-step="7"][data-step-status="pass"] .step-item[data-step="4"] .step-body:after,
 .stepbar-progress[data-current-step="7"][data-step-status="pass"] .step-item[data-step="4"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="7"][data-step-status="pass"] .step-item[data-step="5"] .step-body:before {
-  background-color: #1AB394;
+  background-color: #1ab394;
 }
 
 .stepbar-progress[data-current-step="7"][data-step-status="pass"] .step-item[data-step="5"] .step-body:after,
 .stepbar-progress[data-current-step="7"][data-step-status="pass"] .step-item[data-step="5"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="7"][data-step-status="pass"] .step-item[data-step="6"] .step-body:before {
-  background-color: #1AB394;
+  background-color: #1ab394;
 }
 
 .stepbar-progress[data-current-step="7"][data-step-status="pass"] .step-item[data-step="6"] .step-body:after,
 .stepbar-progress[data-current-step="7"][data-step-status="pass"] .step-item[data-step="6"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="7"][data-step-status="pass"] .step-item[data-step="7"] .step-body:before {
-  background-color: #1AB394;
+  background-color: #1ab394;
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="pass"] .step-item[data-step="1"] .step-body {
-  background-color: #1AB394;
+  background-color: #1ab394;
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="pass"] .step-item[data-step="1"] .step-body .glyphicon:before {
@@ -2126,7 +2203,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="pass"] .step-item[data-step="2"] .step-body {
-  background-color: #1AB394;
+  background-color: #1ab394;
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="pass"] .step-item[data-step="2"] .step-body .glyphicon:before {
@@ -2134,7 +2211,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="pass"] .step-item[data-step="3"] .step-body {
-  background-color: #1AB394;
+  background-color: #1ab394;
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="pass"] .step-item[data-step="3"] .step-body .glyphicon:before {
@@ -2142,7 +2219,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="pass"] .step-item[data-step="4"] .step-body {
-  background-color: #1AB394;
+  background-color: #1ab394;
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="pass"] .step-item[data-step="4"] .step-body .glyphicon:before {
@@ -2150,7 +2227,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="pass"] .step-item[data-step="5"] .step-body {
-  background-color: #1AB394;
+  background-color: #1ab394;
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="pass"] .step-item[data-step="5"] .step-body .glyphicon:before {
@@ -2158,7 +2235,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="pass"] .step-item[data-step="6"] .step-body {
-  background-color: #1AB394;
+  background-color: #1ab394;
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="pass"] .step-item[data-step="6"] .step-body .glyphicon:before {
@@ -2166,7 +2243,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="pass"] .step-item[data-step="7"] .step-body {
-  background-color: #1AB394;
+  background-color: #1ab394;
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="pass"] .step-item[data-step="7"] .step-body .glyphicon:before {
@@ -2179,9 +2256,9 @@ td {
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="pass"] .step-item[data-step="8"] .step-body {
-  background-color: #1AB394;
-  -webkit-box-shadow: 0 0 0 3px #1AB394;
-          box-shadow: 0 0 0 3px #1AB394;
+  background-color: #1ab394;
+  -webkit-box-shadow: 0 0 0 3px #1ab394;
+          box-shadow: 0 0 0 3px #1ab394;
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="pass"] .step-item[data-step="8"] .step-body .glyphicon:before {
@@ -2191,47 +2268,47 @@ td {
 .stepbar-progress[data-current-step="8"][data-step-status="pass"] .step-item[data-step="1"] .step-body:after,
 .stepbar-progress[data-current-step="8"][data-step-status="pass"] .step-item[data-step="1"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="8"][data-step-status="pass"] .step-item[data-step="2"] .step-body:before {
-  background-color: #1AB394;
+  background-color: #1ab394;
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="pass"] .step-item[data-step="2"] .step-body:after,
 .stepbar-progress[data-current-step="8"][data-step-status="pass"] .step-item[data-step="2"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="8"][data-step-status="pass"] .step-item[data-step="3"] .step-body:before {
-  background-color: #1AB394;
+  background-color: #1ab394;
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="pass"] .step-item[data-step="3"] .step-body:after,
 .stepbar-progress[data-current-step="8"][data-step-status="pass"] .step-item[data-step="3"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="8"][data-step-status="pass"] .step-item[data-step="4"] .step-body:before {
-  background-color: #1AB394;
+  background-color: #1ab394;
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="pass"] .step-item[data-step="4"] .step-body:after,
 .stepbar-progress[data-current-step="8"][data-step-status="pass"] .step-item[data-step="4"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="8"][data-step-status="pass"] .step-item[data-step="5"] .step-body:before {
-  background-color: #1AB394;
+  background-color: #1ab394;
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="pass"] .step-item[data-step="5"] .step-body:after,
 .stepbar-progress[data-current-step="8"][data-step-status="pass"] .step-item[data-step="5"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="8"][data-step-status="pass"] .step-item[data-step="6"] .step-body:before {
-  background-color: #1AB394;
+  background-color: #1ab394;
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="pass"] .step-item[data-step="6"] .step-body:after,
 .stepbar-progress[data-current-step="8"][data-step-status="pass"] .step-item[data-step="6"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="8"][data-step-status="pass"] .step-item[data-step="7"] .step-body:before {
-  background-color: #1AB394;
+  background-color: #1ab394;
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="pass"] .step-item[data-step="7"] .step-body:after,
 .stepbar-progress[data-current-step="8"][data-step-status="pass"] .step-item[data-step="7"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="8"][data-step-status="pass"] .step-item[data-step="8"] .step-body:before {
-  background-color: #1AB394;
+  background-color: #1ab394;
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="pass"] .step-item[data-step="1"] .step-body {
-  background-color: #1AB394;
+  background-color: #1ab394;
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="pass"] .step-item[data-step="1"] .step-body .glyphicon:before {
@@ -2239,7 +2316,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="pass"] .step-item[data-step="2"] .step-body {
-  background-color: #1AB394;
+  background-color: #1ab394;
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="pass"] .step-item[data-step="2"] .step-body .glyphicon:before {
@@ -2247,7 +2324,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="pass"] .step-item[data-step="3"] .step-body {
-  background-color: #1AB394;
+  background-color: #1ab394;
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="pass"] .step-item[data-step="3"] .step-body .glyphicon:before {
@@ -2255,7 +2332,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="pass"] .step-item[data-step="4"] .step-body {
-  background-color: #1AB394;
+  background-color: #1ab394;
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="pass"] .step-item[data-step="4"] .step-body .glyphicon:before {
@@ -2263,7 +2340,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="pass"] .step-item[data-step="5"] .step-body {
-  background-color: #1AB394;
+  background-color: #1ab394;
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="pass"] .step-item[data-step="5"] .step-body .glyphicon:before {
@@ -2271,7 +2348,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="pass"] .step-item[data-step="6"] .step-body {
-  background-color: #1AB394;
+  background-color: #1ab394;
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="pass"] .step-item[data-step="6"] .step-body .glyphicon:before {
@@ -2279,7 +2356,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="pass"] .step-item[data-step="7"] .step-body {
-  background-color: #1AB394;
+  background-color: #1ab394;
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="pass"] .step-item[data-step="7"] .step-body .glyphicon:before {
@@ -2287,7 +2364,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="pass"] .step-item[data-step="8"] .step-body {
-  background-color: #1AB394;
+  background-color: #1ab394;
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="pass"] .step-item[data-step="8"] .step-body .glyphicon:before {
@@ -2300,9 +2377,9 @@ td {
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="pass"] .step-item[data-step="9"] .step-body {
-  background-color: #1AB394;
-  -webkit-box-shadow: 0 0 0 3px #1AB394;
-          box-shadow: 0 0 0 3px #1AB394;
+  background-color: #1ab394;
+  -webkit-box-shadow: 0 0 0 3px #1ab394;
+          box-shadow: 0 0 0 3px #1ab394;
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="pass"] .step-item[data-step="9"] .step-body .glyphicon:before {
@@ -2312,49 +2389,49 @@ td {
 .stepbar-progress[data-current-step="9"][data-step-status="pass"] .step-item[data-step="1"] .step-body:after,
 .stepbar-progress[data-current-step="9"][data-step-status="pass"] .step-item[data-step="1"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="9"][data-step-status="pass"] .step-item[data-step="2"] .step-body:before {
-  background-color: #1AB394;
+  background-color: #1ab394;
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="pass"] .step-item[data-step="2"] .step-body:after,
 .stepbar-progress[data-current-step="9"][data-step-status="pass"] .step-item[data-step="2"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="9"][data-step-status="pass"] .step-item[data-step="3"] .step-body:before {
-  background-color: #1AB394;
+  background-color: #1ab394;
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="pass"] .step-item[data-step="3"] .step-body:after,
 .stepbar-progress[data-current-step="9"][data-step-status="pass"] .step-item[data-step="3"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="9"][data-step-status="pass"] .step-item[data-step="4"] .step-body:before {
-  background-color: #1AB394;
+  background-color: #1ab394;
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="pass"] .step-item[data-step="4"] .step-body:after,
 .stepbar-progress[data-current-step="9"][data-step-status="pass"] .step-item[data-step="4"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="9"][data-step-status="pass"] .step-item[data-step="5"] .step-body:before {
-  background-color: #1AB394;
+  background-color: #1ab394;
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="pass"] .step-item[data-step="5"] .step-body:after,
 .stepbar-progress[data-current-step="9"][data-step-status="pass"] .step-item[data-step="5"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="9"][data-step-status="pass"] .step-item[data-step="6"] .step-body:before {
-  background-color: #1AB394;
+  background-color: #1ab394;
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="pass"] .step-item[data-step="6"] .step-body:after,
 .stepbar-progress[data-current-step="9"][data-step-status="pass"] .step-item[data-step="6"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="9"][data-step-status="pass"] .step-item[data-step="7"] .step-body:before {
-  background-color: #1AB394;
+  background-color: #1ab394;
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="pass"] .step-item[data-step="7"] .step-body:after,
 .stepbar-progress[data-current-step="9"][data-step-status="pass"] .step-item[data-step="7"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="9"][data-step-status="pass"] .step-item[data-step="8"] .step-body:before {
-  background-color: #1AB394;
+  background-color: #1ab394;
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="pass"] .step-item[data-step="8"] .step-body:after,
 .stepbar-progress[data-current-step="9"][data-step-status="pass"] .step-item[data-step="8"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="9"][data-step-status="pass"] .step-item[data-step="9"] .step-body:before {
-  background-color: #1AB394;
+  background-color: #1ab394;
 }
 
 .stepbar-progress[data-current-step="1"][data-step-status="fail"] .step-item[data-step="1"] .step-body:before,
@@ -2363,9 +2440,9 @@ td {
 }
 
 .stepbar-progress[data-current-step="1"][data-step-status="fail"] .step-item[data-step="1"] .step-body {
-  background-color: #ED5565;
-  -webkit-box-shadow: 0 0 0 3px #ED5565;
-          box-shadow: 0 0 0 3px #ED5565;
+  background-color: #ed5565;
+  -webkit-box-shadow: 0 0 0 3px #ed5565;
+          box-shadow: 0 0 0 3px #ed5565;
 }
 
 .stepbar-progress[data-current-step="1"][data-step-status="fail"] .step-item[data-step="1"] .step-body .glyphicon:before {
@@ -2373,7 +2450,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="2"][data-step-status="fail"] .step-item[data-step="1"] .step-body {
-  background-color: #ED5565;
+  background-color: #ed5565;
 }
 
 .stepbar-progress[data-current-step="2"][data-step-status="fail"] .step-item[data-step="1"] .step-body .glyphicon:before {
@@ -2386,9 +2463,9 @@ td {
 }
 
 .stepbar-progress[data-current-step="2"][data-step-status="fail"] .step-item[data-step="2"] .step-body {
-  background-color: #ED5565;
-  -webkit-box-shadow: 0 0 0 3px #ED5565;
-          box-shadow: 0 0 0 3px #ED5565;
+  background-color: #ed5565;
+  -webkit-box-shadow: 0 0 0 3px #ed5565;
+          box-shadow: 0 0 0 3px #ed5565;
 }
 
 .stepbar-progress[data-current-step="2"][data-step-status="fail"] .step-item[data-step="2"] .step-body .glyphicon:before {
@@ -2398,11 +2475,11 @@ td {
 .stepbar-progress[data-current-step="2"][data-step-status="fail"] .step-item[data-step="1"] .step-body:after,
 .stepbar-progress[data-current-step="2"][data-step-status="fail"] .step-item[data-step="1"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="2"][data-step-status="fail"] .step-item[data-step="2"] .step-body:before {
-  background-color: #ED5565;
+  background-color: #ed5565;
 }
 
 .stepbar-progress[data-current-step="3"][data-step-status="fail"] .step-item[data-step="1"] .step-body {
-  background-color: #ED5565;
+  background-color: #ed5565;
 }
 
 .stepbar-progress[data-current-step="3"][data-step-status="fail"] .step-item[data-step="1"] .step-body .glyphicon:before {
@@ -2410,7 +2487,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="3"][data-step-status="fail"] .step-item[data-step="2"] .step-body {
-  background-color: #ED5565;
+  background-color: #ed5565;
 }
 
 .stepbar-progress[data-current-step="3"][data-step-status="fail"] .step-item[data-step="2"] .step-body .glyphicon:before {
@@ -2423,9 +2500,9 @@ td {
 }
 
 .stepbar-progress[data-current-step="3"][data-step-status="fail"] .step-item[data-step="3"] .step-body {
-  background-color: #ED5565;
-  -webkit-box-shadow: 0 0 0 3px #ED5565;
-          box-shadow: 0 0 0 3px #ED5565;
+  background-color: #ed5565;
+  -webkit-box-shadow: 0 0 0 3px #ed5565;
+          box-shadow: 0 0 0 3px #ed5565;
 }
 
 .stepbar-progress[data-current-step="3"][data-step-status="fail"] .step-item[data-step="3"] .step-body .glyphicon:before {
@@ -2435,17 +2512,17 @@ td {
 .stepbar-progress[data-current-step="3"][data-step-status="fail"] .step-item[data-step="1"] .step-body:after,
 .stepbar-progress[data-current-step="3"][data-step-status="fail"] .step-item[data-step="1"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="3"][data-step-status="fail"] .step-item[data-step="2"] .step-body:before {
-  background-color: #ED5565;
+  background-color: #ed5565;
 }
 
 .stepbar-progress[data-current-step="3"][data-step-status="fail"] .step-item[data-step="2"] .step-body:after,
 .stepbar-progress[data-current-step="3"][data-step-status="fail"] .step-item[data-step="2"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="3"][data-step-status="fail"] .step-item[data-step="3"] .step-body:before {
-  background-color: #ED5565;
+  background-color: #ed5565;
 }
 
 .stepbar-progress[data-current-step="4"][data-step-status="fail"] .step-item[data-step="1"] .step-body {
-  background-color: #ED5565;
+  background-color: #ed5565;
 }
 
 .stepbar-progress[data-current-step="4"][data-step-status="fail"] .step-item[data-step="1"] .step-body .glyphicon:before {
@@ -2453,7 +2530,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="4"][data-step-status="fail"] .step-item[data-step="2"] .step-body {
-  background-color: #ED5565;
+  background-color: #ed5565;
 }
 
 .stepbar-progress[data-current-step="4"][data-step-status="fail"] .step-item[data-step="2"] .step-body .glyphicon:before {
@@ -2461,7 +2538,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="4"][data-step-status="fail"] .step-item[data-step="3"] .step-body {
-  background-color: #ED5565;
+  background-color: #ed5565;
 }
 
 .stepbar-progress[data-current-step="4"][data-step-status="fail"] .step-item[data-step="3"] .step-body .glyphicon:before {
@@ -2474,9 +2551,9 @@ td {
 }
 
 .stepbar-progress[data-current-step="4"][data-step-status="fail"] .step-item[data-step="4"] .step-body {
-  background-color: #ED5565;
-  -webkit-box-shadow: 0 0 0 3px #ED5565;
-          box-shadow: 0 0 0 3px #ED5565;
+  background-color: #ed5565;
+  -webkit-box-shadow: 0 0 0 3px #ed5565;
+          box-shadow: 0 0 0 3px #ed5565;
 }
 
 .stepbar-progress[data-current-step="4"][data-step-status="fail"] .step-item[data-step="4"] .step-body .glyphicon:before {
@@ -2486,23 +2563,23 @@ td {
 .stepbar-progress[data-current-step="4"][data-step-status="fail"] .step-item[data-step="1"] .step-body:after,
 .stepbar-progress[data-current-step="4"][data-step-status="fail"] .step-item[data-step="1"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="4"][data-step-status="fail"] .step-item[data-step="2"] .step-body:before {
-  background-color: #ED5565;
+  background-color: #ed5565;
 }
 
 .stepbar-progress[data-current-step="4"][data-step-status="fail"] .step-item[data-step="2"] .step-body:after,
 .stepbar-progress[data-current-step="4"][data-step-status="fail"] .step-item[data-step="2"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="4"][data-step-status="fail"] .step-item[data-step="3"] .step-body:before {
-  background-color: #ED5565;
+  background-color: #ed5565;
 }
 
 .stepbar-progress[data-current-step="4"][data-step-status="fail"] .step-item[data-step="3"] .step-body:after,
 .stepbar-progress[data-current-step="4"][data-step-status="fail"] .step-item[data-step="3"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="4"][data-step-status="fail"] .step-item[data-step="4"] .step-body:before {
-  background-color: #ED5565;
+  background-color: #ed5565;
 }
 
 .stepbar-progress[data-current-step="5"][data-step-status="fail"] .step-item[data-step="1"] .step-body {
-  background-color: #ED5565;
+  background-color: #ed5565;
 }
 
 .stepbar-progress[data-current-step="5"][data-step-status="fail"] .step-item[data-step="1"] .step-body .glyphicon:before {
@@ -2510,7 +2587,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="5"][data-step-status="fail"] .step-item[data-step="2"] .step-body {
-  background-color: #ED5565;
+  background-color: #ed5565;
 }
 
 .stepbar-progress[data-current-step="5"][data-step-status="fail"] .step-item[data-step="2"] .step-body .glyphicon:before {
@@ -2518,7 +2595,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="5"][data-step-status="fail"] .step-item[data-step="3"] .step-body {
-  background-color: #ED5565;
+  background-color: #ed5565;
 }
 
 .stepbar-progress[data-current-step="5"][data-step-status="fail"] .step-item[data-step="3"] .step-body .glyphicon:before {
@@ -2526,7 +2603,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="5"][data-step-status="fail"] .step-item[data-step="4"] .step-body {
-  background-color: #ED5565;
+  background-color: #ed5565;
 }
 
 .stepbar-progress[data-current-step="5"][data-step-status="fail"] .step-item[data-step="4"] .step-body .glyphicon:before {
@@ -2539,9 +2616,9 @@ td {
 }
 
 .stepbar-progress[data-current-step="5"][data-step-status="fail"] .step-item[data-step="5"] .step-body {
-  background-color: #ED5565;
-  -webkit-box-shadow: 0 0 0 3px #ED5565;
-          box-shadow: 0 0 0 3px #ED5565;
+  background-color: #ed5565;
+  -webkit-box-shadow: 0 0 0 3px #ed5565;
+          box-shadow: 0 0 0 3px #ed5565;
 }
 
 .stepbar-progress[data-current-step="5"][data-step-status="fail"] .step-item[data-step="5"] .step-body .glyphicon:before {
@@ -2551,29 +2628,29 @@ td {
 .stepbar-progress[data-current-step="5"][data-step-status="fail"] .step-item[data-step="1"] .step-body:after,
 .stepbar-progress[data-current-step="5"][data-step-status="fail"] .step-item[data-step="1"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="5"][data-step-status="fail"] .step-item[data-step="2"] .step-body:before {
-  background-color: #ED5565;
+  background-color: #ed5565;
 }
 
 .stepbar-progress[data-current-step="5"][data-step-status="fail"] .step-item[data-step="2"] .step-body:after,
 .stepbar-progress[data-current-step="5"][data-step-status="fail"] .step-item[data-step="2"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="5"][data-step-status="fail"] .step-item[data-step="3"] .step-body:before {
-  background-color: #ED5565;
+  background-color: #ed5565;
 }
 
 .stepbar-progress[data-current-step="5"][data-step-status="fail"] .step-item[data-step="3"] .step-body:after,
 .stepbar-progress[data-current-step="5"][data-step-status="fail"] .step-item[data-step="3"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="5"][data-step-status="fail"] .step-item[data-step="4"] .step-body:before {
-  background-color: #ED5565;
+  background-color: #ed5565;
 }
 
 .stepbar-progress[data-current-step="5"][data-step-status="fail"] .step-item[data-step="4"] .step-body:after,
 .stepbar-progress[data-current-step="5"][data-step-status="fail"] .step-item[data-step="4"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="5"][data-step-status="fail"] .step-item[data-step="5"] .step-body:before {
-  background-color: #ED5565;
+  background-color: #ed5565;
 }
 
 .stepbar-progress[data-current-step="6"][data-step-status="fail"] .step-item[data-step="1"] .step-body {
-  background-color: #ED5565;
+  background-color: #ed5565;
 }
 
 .stepbar-progress[data-current-step="6"][data-step-status="fail"] .step-item[data-step="1"] .step-body .glyphicon:before {
@@ -2581,7 +2658,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="6"][data-step-status="fail"] .step-item[data-step="2"] .step-body {
-  background-color: #ED5565;
+  background-color: #ed5565;
 }
 
 .stepbar-progress[data-current-step="6"][data-step-status="fail"] .step-item[data-step="2"] .step-body .glyphicon:before {
@@ -2589,7 +2666,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="6"][data-step-status="fail"] .step-item[data-step="3"] .step-body {
-  background-color: #ED5565;
+  background-color: #ed5565;
 }
 
 .stepbar-progress[data-current-step="6"][data-step-status="fail"] .step-item[data-step="3"] .step-body .glyphicon:before {
@@ -2597,7 +2674,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="6"][data-step-status="fail"] .step-item[data-step="4"] .step-body {
-  background-color: #ED5565;
+  background-color: #ed5565;
 }
 
 .stepbar-progress[data-current-step="6"][data-step-status="fail"] .step-item[data-step="4"] .step-body .glyphicon:before {
@@ -2605,7 +2682,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="6"][data-step-status="fail"] .step-item[data-step="5"] .step-body {
-  background-color: #ED5565;
+  background-color: #ed5565;
 }
 
 .stepbar-progress[data-current-step="6"][data-step-status="fail"] .step-item[data-step="5"] .step-body .glyphicon:before {
@@ -2618,9 +2695,9 @@ td {
 }
 
 .stepbar-progress[data-current-step="6"][data-step-status="fail"] .step-item[data-step="6"] .step-body {
-  background-color: #ED5565;
-  -webkit-box-shadow: 0 0 0 3px #ED5565;
-          box-shadow: 0 0 0 3px #ED5565;
+  background-color: #ed5565;
+  -webkit-box-shadow: 0 0 0 3px #ed5565;
+          box-shadow: 0 0 0 3px #ed5565;
 }
 
 .stepbar-progress[data-current-step="6"][data-step-status="fail"] .step-item[data-step="6"] .step-body .glyphicon:before {
@@ -2630,35 +2707,35 @@ td {
 .stepbar-progress[data-current-step="6"][data-step-status="fail"] .step-item[data-step="1"] .step-body:after,
 .stepbar-progress[data-current-step="6"][data-step-status="fail"] .step-item[data-step="1"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="6"][data-step-status="fail"] .step-item[data-step="2"] .step-body:before {
-  background-color: #ED5565;
+  background-color: #ed5565;
 }
 
 .stepbar-progress[data-current-step="6"][data-step-status="fail"] .step-item[data-step="2"] .step-body:after,
 .stepbar-progress[data-current-step="6"][data-step-status="fail"] .step-item[data-step="2"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="6"][data-step-status="fail"] .step-item[data-step="3"] .step-body:before {
-  background-color: #ED5565;
+  background-color: #ed5565;
 }
 
 .stepbar-progress[data-current-step="6"][data-step-status="fail"] .step-item[data-step="3"] .step-body:after,
 .stepbar-progress[data-current-step="6"][data-step-status="fail"] .step-item[data-step="3"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="6"][data-step-status="fail"] .step-item[data-step="4"] .step-body:before {
-  background-color: #ED5565;
+  background-color: #ed5565;
 }
 
 .stepbar-progress[data-current-step="6"][data-step-status="fail"] .step-item[data-step="4"] .step-body:after,
 .stepbar-progress[data-current-step="6"][data-step-status="fail"] .step-item[data-step="4"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="6"][data-step-status="fail"] .step-item[data-step="5"] .step-body:before {
-  background-color: #ED5565;
+  background-color: #ed5565;
 }
 
 .stepbar-progress[data-current-step="6"][data-step-status="fail"] .step-item[data-step="5"] .step-body:after,
 .stepbar-progress[data-current-step="6"][data-step-status="fail"] .step-item[data-step="5"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="6"][data-step-status="fail"] .step-item[data-step="6"] .step-body:before {
-  background-color: #ED5565;
+  background-color: #ed5565;
 }
 
 .stepbar-progress[data-current-step="7"][data-step-status="fail"] .step-item[data-step="1"] .step-body {
-  background-color: #ED5565;
+  background-color: #ed5565;
 }
 
 .stepbar-progress[data-current-step="7"][data-step-status="fail"] .step-item[data-step="1"] .step-body .glyphicon:before {
@@ -2666,7 +2743,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="7"][data-step-status="fail"] .step-item[data-step="2"] .step-body {
-  background-color: #ED5565;
+  background-color: #ed5565;
 }
 
 .stepbar-progress[data-current-step="7"][data-step-status="fail"] .step-item[data-step="2"] .step-body .glyphicon:before {
@@ -2674,7 +2751,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="7"][data-step-status="fail"] .step-item[data-step="3"] .step-body {
-  background-color: #ED5565;
+  background-color: #ed5565;
 }
 
 .stepbar-progress[data-current-step="7"][data-step-status="fail"] .step-item[data-step="3"] .step-body .glyphicon:before {
@@ -2682,7 +2759,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="7"][data-step-status="fail"] .step-item[data-step="4"] .step-body {
-  background-color: #ED5565;
+  background-color: #ed5565;
 }
 
 .stepbar-progress[data-current-step="7"][data-step-status="fail"] .step-item[data-step="4"] .step-body .glyphicon:before {
@@ -2690,7 +2767,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="7"][data-step-status="fail"] .step-item[data-step="5"] .step-body {
-  background-color: #ED5565;
+  background-color: #ed5565;
 }
 
 .stepbar-progress[data-current-step="7"][data-step-status="fail"] .step-item[data-step="5"] .step-body .glyphicon:before {
@@ -2698,7 +2775,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="7"][data-step-status="fail"] .step-item[data-step="6"] .step-body {
-  background-color: #ED5565;
+  background-color: #ed5565;
 }
 
 .stepbar-progress[data-current-step="7"][data-step-status="fail"] .step-item[data-step="6"] .step-body .glyphicon:before {
@@ -2711,9 +2788,9 @@ td {
 }
 
 .stepbar-progress[data-current-step="7"][data-step-status="fail"] .step-item[data-step="7"] .step-body {
-  background-color: #ED5565;
-  -webkit-box-shadow: 0 0 0 3px #ED5565;
-          box-shadow: 0 0 0 3px #ED5565;
+  background-color: #ed5565;
+  -webkit-box-shadow: 0 0 0 3px #ed5565;
+          box-shadow: 0 0 0 3px #ed5565;
 }
 
 .stepbar-progress[data-current-step="7"][data-step-status="fail"] .step-item[data-step="7"] .step-body .glyphicon:before {
@@ -2723,41 +2800,41 @@ td {
 .stepbar-progress[data-current-step="7"][data-step-status="fail"] .step-item[data-step="1"] .step-body:after,
 .stepbar-progress[data-current-step="7"][data-step-status="fail"] .step-item[data-step="1"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="7"][data-step-status="fail"] .step-item[data-step="2"] .step-body:before {
-  background-color: #ED5565;
+  background-color: #ed5565;
 }
 
 .stepbar-progress[data-current-step="7"][data-step-status="fail"] .step-item[data-step="2"] .step-body:after,
 .stepbar-progress[data-current-step="7"][data-step-status="fail"] .step-item[data-step="2"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="7"][data-step-status="fail"] .step-item[data-step="3"] .step-body:before {
-  background-color: #ED5565;
+  background-color: #ed5565;
 }
 
 .stepbar-progress[data-current-step="7"][data-step-status="fail"] .step-item[data-step="3"] .step-body:after,
 .stepbar-progress[data-current-step="7"][data-step-status="fail"] .step-item[data-step="3"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="7"][data-step-status="fail"] .step-item[data-step="4"] .step-body:before {
-  background-color: #ED5565;
+  background-color: #ed5565;
 }
 
 .stepbar-progress[data-current-step="7"][data-step-status="fail"] .step-item[data-step="4"] .step-body:after,
 .stepbar-progress[data-current-step="7"][data-step-status="fail"] .step-item[data-step="4"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="7"][data-step-status="fail"] .step-item[data-step="5"] .step-body:before {
-  background-color: #ED5565;
+  background-color: #ed5565;
 }
 
 .stepbar-progress[data-current-step="7"][data-step-status="fail"] .step-item[data-step="5"] .step-body:after,
 .stepbar-progress[data-current-step="7"][data-step-status="fail"] .step-item[data-step="5"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="7"][data-step-status="fail"] .step-item[data-step="6"] .step-body:before {
-  background-color: #ED5565;
+  background-color: #ed5565;
 }
 
 .stepbar-progress[data-current-step="7"][data-step-status="fail"] .step-item[data-step="6"] .step-body:after,
 .stepbar-progress[data-current-step="7"][data-step-status="fail"] .step-item[data-step="6"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="7"][data-step-status="fail"] .step-item[data-step="7"] .step-body:before {
-  background-color: #ED5565;
+  background-color: #ed5565;
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="fail"] .step-item[data-step="1"] .step-body {
-  background-color: #ED5565;
+  background-color: #ed5565;
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="fail"] .step-item[data-step="1"] .step-body .glyphicon:before {
@@ -2765,7 +2842,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="fail"] .step-item[data-step="2"] .step-body {
-  background-color: #ED5565;
+  background-color: #ed5565;
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="fail"] .step-item[data-step="2"] .step-body .glyphicon:before {
@@ -2773,7 +2850,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="fail"] .step-item[data-step="3"] .step-body {
-  background-color: #ED5565;
+  background-color: #ed5565;
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="fail"] .step-item[data-step="3"] .step-body .glyphicon:before {
@@ -2781,7 +2858,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="fail"] .step-item[data-step="4"] .step-body {
-  background-color: #ED5565;
+  background-color: #ed5565;
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="fail"] .step-item[data-step="4"] .step-body .glyphicon:before {
@@ -2789,7 +2866,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="fail"] .step-item[data-step="5"] .step-body {
-  background-color: #ED5565;
+  background-color: #ed5565;
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="fail"] .step-item[data-step="5"] .step-body .glyphicon:before {
@@ -2797,7 +2874,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="fail"] .step-item[data-step="6"] .step-body {
-  background-color: #ED5565;
+  background-color: #ed5565;
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="fail"] .step-item[data-step="6"] .step-body .glyphicon:before {
@@ -2805,7 +2882,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="fail"] .step-item[data-step="7"] .step-body {
-  background-color: #ED5565;
+  background-color: #ed5565;
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="fail"] .step-item[data-step="7"] .step-body .glyphicon:before {
@@ -2818,9 +2895,9 @@ td {
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="fail"] .step-item[data-step="8"] .step-body {
-  background-color: #ED5565;
-  -webkit-box-shadow: 0 0 0 3px #ED5565;
-          box-shadow: 0 0 0 3px #ED5565;
+  background-color: #ed5565;
+  -webkit-box-shadow: 0 0 0 3px #ed5565;
+          box-shadow: 0 0 0 3px #ed5565;
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="fail"] .step-item[data-step="8"] .step-body .glyphicon:before {
@@ -2830,47 +2907,47 @@ td {
 .stepbar-progress[data-current-step="8"][data-step-status="fail"] .step-item[data-step="1"] .step-body:after,
 .stepbar-progress[data-current-step="8"][data-step-status="fail"] .step-item[data-step="1"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="8"][data-step-status="fail"] .step-item[data-step="2"] .step-body:before {
-  background-color: #ED5565;
+  background-color: #ed5565;
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="fail"] .step-item[data-step="2"] .step-body:after,
 .stepbar-progress[data-current-step="8"][data-step-status="fail"] .step-item[data-step="2"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="8"][data-step-status="fail"] .step-item[data-step="3"] .step-body:before {
-  background-color: #ED5565;
+  background-color: #ed5565;
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="fail"] .step-item[data-step="3"] .step-body:after,
 .stepbar-progress[data-current-step="8"][data-step-status="fail"] .step-item[data-step="3"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="8"][data-step-status="fail"] .step-item[data-step="4"] .step-body:before {
-  background-color: #ED5565;
+  background-color: #ed5565;
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="fail"] .step-item[data-step="4"] .step-body:after,
 .stepbar-progress[data-current-step="8"][data-step-status="fail"] .step-item[data-step="4"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="8"][data-step-status="fail"] .step-item[data-step="5"] .step-body:before {
-  background-color: #ED5565;
+  background-color: #ed5565;
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="fail"] .step-item[data-step="5"] .step-body:after,
 .stepbar-progress[data-current-step="8"][data-step-status="fail"] .step-item[data-step="5"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="8"][data-step-status="fail"] .step-item[data-step="6"] .step-body:before {
-  background-color: #ED5565;
+  background-color: #ed5565;
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="fail"] .step-item[data-step="6"] .step-body:after,
 .stepbar-progress[data-current-step="8"][data-step-status="fail"] .step-item[data-step="6"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="8"][data-step-status="fail"] .step-item[data-step="7"] .step-body:before {
-  background-color: #ED5565;
+  background-color: #ed5565;
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="fail"] .step-item[data-step="7"] .step-body:after,
 .stepbar-progress[data-current-step="8"][data-step-status="fail"] .step-item[data-step="7"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="8"][data-step-status="fail"] .step-item[data-step="8"] .step-body:before {
-  background-color: #ED5565;
+  background-color: #ed5565;
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="fail"] .step-item[data-step="1"] .step-body {
-  background-color: #ED5565;
+  background-color: #ed5565;
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="fail"] .step-item[data-step="1"] .step-body .glyphicon:before {
@@ -2878,7 +2955,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="fail"] .step-item[data-step="2"] .step-body {
-  background-color: #ED5565;
+  background-color: #ed5565;
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="fail"] .step-item[data-step="2"] .step-body .glyphicon:before {
@@ -2886,7 +2963,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="fail"] .step-item[data-step="3"] .step-body {
-  background-color: #ED5565;
+  background-color: #ed5565;
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="fail"] .step-item[data-step="3"] .step-body .glyphicon:before {
@@ -2894,7 +2971,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="fail"] .step-item[data-step="4"] .step-body {
-  background-color: #ED5565;
+  background-color: #ed5565;
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="fail"] .step-item[data-step="4"] .step-body .glyphicon:before {
@@ -2902,7 +2979,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="fail"] .step-item[data-step="5"] .step-body {
-  background-color: #ED5565;
+  background-color: #ed5565;
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="fail"] .step-item[data-step="5"] .step-body .glyphicon:before {
@@ -2910,7 +2987,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="fail"] .step-item[data-step="6"] .step-body {
-  background-color: #ED5565;
+  background-color: #ed5565;
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="fail"] .step-item[data-step="6"] .step-body .glyphicon:before {
@@ -2918,7 +2995,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="fail"] .step-item[data-step="7"] .step-body {
-  background-color: #ED5565;
+  background-color: #ed5565;
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="fail"] .step-item[data-step="7"] .step-body .glyphicon:before {
@@ -2926,7 +3003,7 @@ td {
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="fail"] .step-item[data-step="8"] .step-body {
-  background-color: #ED5565;
+  background-color: #ed5565;
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="fail"] .step-item[data-step="8"] .step-body .glyphicon:before {
@@ -2939,9 +3016,9 @@ td {
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="fail"] .step-item[data-step="9"] .step-body {
-  background-color: #ED5565;
-  -webkit-box-shadow: 0 0 0 3px #ED5565;
-          box-shadow: 0 0 0 3px #ED5565;
+  background-color: #ed5565;
+  -webkit-box-shadow: 0 0 0 3px #ed5565;
+          box-shadow: 0 0 0 3px #ed5565;
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="fail"] .step-item[data-step="9"] .step-body .glyphicon:before {
@@ -2951,48 +3028,48 @@ td {
 .stepbar-progress[data-current-step="9"][data-step-status="fail"] .step-item[data-step="1"] .step-body:after,
 .stepbar-progress[data-current-step="9"][data-step-status="fail"] .step-item[data-step="1"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="9"][data-step-status="fail"] .step-item[data-step="2"] .step-body:before {
-  background-color: #ED5565;
+  background-color: #ed5565;
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="fail"] .step-item[data-step="2"] .step-body:after,
 .stepbar-progress[data-current-step="9"][data-step-status="fail"] .step-item[data-step="2"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="9"][data-step-status="fail"] .step-item[data-step="3"] .step-body:before {
-  background-color: #ED5565;
+  background-color: #ed5565;
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="fail"] .step-item[data-step="3"] .step-body:after,
 .stepbar-progress[data-current-step="9"][data-step-status="fail"] .step-item[data-step="3"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="9"][data-step-status="fail"] .step-item[data-step="4"] .step-body:before {
-  background-color: #ED5565;
+  background-color: #ed5565;
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="fail"] .step-item[data-step="4"] .step-body:after,
 .stepbar-progress[data-current-step="9"][data-step-status="fail"] .step-item[data-step="4"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="9"][data-step-status="fail"] .step-item[data-step="5"] .step-body:before {
-  background-color: #ED5565;
+  background-color: #ed5565;
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="fail"] .step-item[data-step="5"] .step-body:after,
 .stepbar-progress[data-current-step="9"][data-step-status="fail"] .step-item[data-step="5"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="9"][data-step-status="fail"] .step-item[data-step="6"] .step-body:before {
-  background-color: #ED5565;
+  background-color: #ed5565;
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="fail"] .step-item[data-step="6"] .step-body:after,
 .stepbar-progress[data-current-step="9"][data-step-status="fail"] .step-item[data-step="6"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="9"][data-step-status="fail"] .step-item[data-step="7"] .step-body:before {
-  background-color: #ED5565;
+  background-color: #ed5565;
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="fail"] .step-item[data-step="7"] .step-body:after,
 .stepbar-progress[data-current-step="9"][data-step-status="fail"] .step-item[data-step="7"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="9"][data-step-status="fail"] .step-item[data-step="8"] .step-body:before {
-  background-color: #ED5565;
+  background-color: #ed5565;
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="fail"] .step-item[data-step="8"] .step-body:after,
 .stepbar-progress[data-current-step="9"][data-step-status="fail"] .step-item[data-step="8"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="9"][data-step-status="fail"] .step-item[data-step="9"] .step-body:before {
-  background-color: #ED5565;
+  background-color: #ed5565;
 }
 /*# sourceMappingURL=style.css.map */
