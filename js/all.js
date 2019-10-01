@@ -1,10 +1,8 @@
 function getJSONList(path) {
-  $.getJSON(path, function(data) {
+  $.getJSON(path, function (data) {
     // console.log(data); //json output
     for (
-      let prorgressIndex = 0;
-      prorgressIndex < data.length;
-      prorgressIndex++
+      let prorgressIndex = 0; prorgressIndex < data.length; prorgressIndex++
     ) {
       const runid = data[prorgressIndex].runid;
       const sequenced = data[prorgressIndex].sequenced;
@@ -27,19 +25,24 @@ function getJSONList(path) {
     }
   });
 }
-var JSONListPath = [
-  "../NIPS/nips_progress_tail.json",
-  "../SG/sg_progress_tail.json",
-  "../IONA/iona_progress_tail.json"
-];
 
-JSONListPath.forEach(getJSONList);
+$(document).ready(function () {
+  var JSONListPath = [
+    "../NIPS/nips_progress_tail.json",
+    "../SG/sg_progress_tail.json",
+    "../IONA/iona_progress_tail.json"
+  ];
 
-$(".step-body").hover(
-  function() {
-    $(".collapse").collapse("show");
-  },
-  function() {
-    $(".collapse").collapse("hide");
-  }
-);
+  JSONListPath.forEach(getJSONList);
+
+  // $(".step-body").hover(
+  //   function () {
+  //     $(".collapse").collapse("show");
+  //   },
+  //   function () {
+  //     $(".collapse").collapse("hide");
+  //   }
+  // );
+
+
+});
