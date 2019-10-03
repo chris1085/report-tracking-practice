@@ -212,6 +212,11 @@ h1 {
   }
 }
 
+.card-body {
+  // display: inline !important;
+  flex-direction: row;
+}
+
 // Mixins
 
 // creates the triangle appended to the rectangles in the progress bar

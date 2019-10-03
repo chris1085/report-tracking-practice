@@ -225,6 +225,13 @@ h1 {
   }
 }
 
+.card-body {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
 .content-header-info-list {
   -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.3));
   filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
