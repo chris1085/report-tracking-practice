@@ -116,6 +116,17 @@ h1 {
 
 }
 
+.banner-time-content {
+  @include l-mobile {
+    flex-direction: column;
+  }
+
+  @include mobile {
+    font-size: 18px;
+    flex-direction: column;
+
+  }
+}
 
 
 .row-sampleRun {

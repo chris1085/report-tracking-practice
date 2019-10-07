@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="../css/reset.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js'></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link rel="stylesheet" href="../css/style.css">
@@ -17,7 +18,7 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-sm navbar-light bg-white">
+  <nav class="navbar navbar-expand-sm navbar-light bg-white d-flex flex-column fixed-top">
     <div class="container">
       <a class="navbar-brand" href="../index.html"><img src="../images/sofiva_logo.jpg" width="240" height="80"
           alt=""></a>
@@ -31,7 +32,7 @@
             <a class="nav-link" href="../index.html">首頁 <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item active mr-2">
-            <a class="nav-link" href="../NIPS/index.html">NIPS <span class="sr-only"></span></a>
+            <a class="nav-link" href="../NIPS/index.html">NIPS<span class="sr-only"></span></a>
           </li>
           <li class="nav-item active mr-2">
             <a class="nav-link" href="../SG/index.html">SG <span class="sr-only"></span></a>
@@ -57,33 +58,1446 @@
             </div>
           </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
+        <form class="form-inline my-2 my-lg-0 pl-2">
           <button class="btn btn-outline-primary my-2 my-sm-0 mr-1" type="submit" data-toggle="modal"
             data-target="#loginModal">登入</button>
           <!-- <button class="btn btn-outline-primary my-2 my-sm-0" type="submit" data-toggle="modal" data-target="#registerModal">註冊</button> -->
         </form>
       </div>
     </div>
+    <div class="rainbow-box"></div>
   </nav>
 
-  <div class="rainbow-box">
-  </div>
 
-  <div class="container">
+  <div class="container" style="margin-top: 110px;">
     <div class="banner pt-4">
       <h1>非侵入性產前染色體篩檢即時追蹤系統</h1>
-      <h2 class="pt-2">慧智臨床基因醫學實驗室</h2>
+      <div class="d-flex justify-content-between h-100 banner-time-content">
+        <h2 class="pt-2 sub-title">慧智臨床基因醫學實驗室</h2>
+        <span class="sg-updatedTime" style="display: inline-flex;align-items:flex-end ;">Last Updated: </span>
+      </div>
     </div>
 
+    <div class="div-progress py-5">
+      <div class="row content-header py-1">
+        <div class="col-lg-3 content-header col-6" id="content-header-name">
+        </div>
+        <div class="col-lg-1 content-header col-6 text-right" id="content-header-time">
+        </div>
+        <div class="col-lg-8 content-header-info ">
+          <ol class="content-header-info-list ">
+            <li class="content-header-info-list__steps not-current first-info">
+              <span class="content-header-info-list__steps-sofiva py-1">SOFIVA</span>
+            </li>
+            <li class="content-header-info-list__steps current second-info">
+              <span class="content-header-info-list__steps-cloud py-1">CLOUD</span>
+            </li>
+          </ol>
+        </div>
+      </div>
+      <div class="row w-100 pt-2 d-flex justify-content-end content-info">
+        <div class="col-lg-3 content-header col-5" id="content-header-name">
+          <h4 class="py-2 px-3"><strong>Case Number</strong></h4>
+        </div>
+        <div class="col-lg-1 content-header col-6 text-right text-center" id="content-header-time">
+          <h4 class=""><span class="badge badge-pill badge-dark py-2">Duration</span></h4>
+        </div>
+        <div class="col-lg-8 col-12 content-progress-icon w-100">
+          <table class="stepbar-progress">
+            <tbody>
+              <tr>
+                <td class="content-icon-item">
+                  <div class="">
+                    <a class="glyphicon-step1" title="Sequenced"></a>
+                  </div>
+                </td>
+                <td class="content-icon-progress">
+                  <div class="progress-body">
+                    <span class="body-fill"></span>
+                  </div>
+                </td>
+                <td class="content-icon-item">
+                  <div class="">
+                    <a class="glyphicon-step2" title="Analyzed"></a>
+                  </div>
+                </td>
+                <td class="content-icon-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="content-icon-item">
+                  <div class="">
+                    <a class="glyphicon-step3" title="Transferred to Dell"></a>
+                  </div>
+                </td>
+                <td class="content-icon-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="content-icon-item">
+                  <div class="">
+                    <a class="glyphicon-step4" title="Converted to Fastq"></a>
+                  </div>
+                </td>
+                <td class="content-icon-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="content-icon-item">
+                  <div class="">
+                    <a class="glyphicon-step5" title="Transferred to Cloud"></a>
+                  </div>
+                </td>
+                <td class="content-icon-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="content-icon-item">
+                  <div class="">
+                    <a class="glyphicon-step6" title="Transferred to Comp.Node"></a>
+                  </div>
+                </td>
+                <td class="content-icon-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="content-icon-item">
+                  <div class="">
+                    <a class="glyphicon-step7" title="Job submitted"></a>
+                  </div>
+                </td>
+                <td class="content-icon-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="content-icon-item">
+                  <div class="">
+                    <a class="glyphicon-step8" title="Job completed"></a>
+                  </div>
+                </td>
+                <td class="content-icon-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="content-icon-item">
+                  <div class="">
+                    <a class="glyphicon-step9" title="Report Transferred to Dell"></a>
+                  </div>
+                </td>
 
-    <div class="py-3">
-      <div>
-        <img src="monitor.png" width="100%" id="SOFPIPE" alt="" />
+              </tr>
+            </tbody>
+
+          </table>
+        </div>
+      </div>
+      <div class="row row-sampleRun pt-2">
+        <!-- <div class="py-3 row justify-content-between"> -->
+        <div class="col-lg-3 col-6 py-2 my-1" id="sg-runId0">
+        </div>
+        <div class="col-lg-1 col-6 py-2 d-flex justify-content-center duration-time" id="sg-timeUsed0">
+          <h5 class=""><span class="badge badge-pill badge-dark py-2">12:30</span></h5>
+        </div>
+        <!-- </div> -->
+        <div class="col-lg-8 col-12 py-2" id="sg-progressId0">
+          <table class="stepbar-progress" data-current-step="sequenced" data-step-status="pending">
+            <!-- <caption>First Step Pending</caption> -->
+            <tbody>
+              <tr>
+                <td class="step-item step-item-first" data-step="sequenced">
+                  <div class="step-body" data-toggle="collapse" data-target="#collapseStepInfo0" id="icon-step1">
+                    <a class="glyphicon"></a>
+                  </div>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="analyzed">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo0" id="icon-step2">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="ondell">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo0" id="icon-step3">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="converted">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo0" id="icon-step4">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="incloud">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo0" id="icon-step5">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="downloaded">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo0" id="icon-step6">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="jobsubmitted">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo0" id="icon-step7">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="jobcompleted">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo0" id="icon-step8">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-last" data-step="backtodell">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo0" id="icon-step9">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+
+              </tr>
+            </tbody>
+
+          </table>
+          <div class="collapse pt-3" id="collapseStepInfo0">
+            <div class="card card-body text-center align-items-center">
+              Indicated Step: Sequenced
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row row-sampleRun pt-2">
+        <div class="col-lg-3 col-6 py-2 my-1" id="sg-runId1"></div>
+        <div class="col-lg-1 col-6 py-2 d-flex justify-content-center duration-time" id="sg-timeUsed1">
+          <h5 class=""><span class="badge badge-pill badge-dark py-2">12:30</span></h5>
+        </div>
+        <div class="col-lg-8 col-12 py-2" id="sg-progressId1">
+          <table class="stepbar-progress" data-current-step="sequenced" data-step-status="pending">
+            <!-- <caption>First Step Pending</caption> -->
+            <tbody>
+              <tr>
+                <td class="step-item step-item-first" data-step="sequenced">
+                  <div class="step-body" data-toggle="collapse" data-target="#collapseStepInfo1" id="icon-step1">
+                    <a class="glyphicon"></a>
+                  </div>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="analyzed">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo1" id="icon-step2">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="ondell">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo1" id="icon-step3">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="converted">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo1" id="icon-step4">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="incloud">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo1" id="icon-step5">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="downloaded">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo1" id="icon-step6">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="jobsubmitted">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo1" id="icon-step7">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="jobcompleted">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo1" id="icon-step8">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-last" data-step="backtodell">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo1" id="icon-step9">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+
+              </tr>
+            </tbody>
+
+          </table>
+          <div class="collapse pt-3" id="collapseStepInfo1">
+            <div class="card card-body text-center align-items-center">
+              Indicated Step: Sequenced
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="row row-sampleRun pt-2">
+        <div class="col-lg-3 col-6 py-2 my-1" id="sg-runId2"></div>
+        <div class="col-lg-1 col-6 py-2 d-flex justify-content-center duration-time" id="sg-timeUsed2">
+          <h5 class=""><span class="badge badge-pill badge-dark py-2">12:30</span></h5>
+        </div>
+        <div class="col-lg-8 col-12 py-2" id="sg-progressId2">
+          <table class="stepbar-progress" data-current-step="sequenced" data-step-status="pending">
+            <!-- <caption>First Step Pending</caption> -->
+            <tbody>
+              <tr>
+                <td class="step-item step-item-first" data-step="sequenced">
+                  <div class="step-body" data-toggle="collapse" data-target="#collapseStepInfo2" id="icon-step1">
+                    <a class="glyphicon"></a>
+                  </div>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="analyzed">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo2" id="icon-step2">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="ondell">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo2" id="icon-step3">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="converted">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo2" id="icon-step4">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="incloud">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo2" id="icon-step5">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="downloaded">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo2" id="icon-step6">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="jobsubmitted">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo2" id="icon-step7">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="jobcompleted">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo2" id="icon-step8">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-last" data-step="backtodell">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo2" id="icon-step9">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+
+              </tr>
+            </tbody>
+
+          </table>
+          <div class="collapse pt-3" id="collapseStepInfo2">
+            <div class="card card-body text-center align-items-center">
+              Indicated Step: Sequenced
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row row-sampleRun pt-2">
+        <div class="col-lg-3 col-6 py-2 my-1" id="sg-runId3"></div>
+        <div class="col-lg-1 col-6 py-2 d-flex justify-content-center duration-time" id="sg-timeUsed3">
+          <h5 class=""><span class="badge badge-pill badge-dark py-2">12:30</span></h5>
+        </div>
+        <div class="col-lg-8 col-12 py-2" id="sg-progressId3">
+          <table class="stepbar-progress" data-current-step="sequenced" data-step-status="pending">
+            <!-- <caption>First Step Pending</caption> -->
+            <tbody>
+              <tr>
+                <td class="step-item step-item-first" data-step="sequenced">
+                  <div class="step-body" data-toggle="collapse" data-target="#collapseStepInfo3" id="icon-step1">
+                    <a class="glyphicon"></a>
+                  </div>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="analyzed">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo3" id="icon-step2">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="ondell">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo3" id="icon-step3">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="converted">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo3" id="icon-step4">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="incloud">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo3" id="icon-step5">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="downloaded">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo3" id="icon-step6">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="jobsubmitted">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo3" id="icon-step7">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="jobcompleted">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo3" id="icon-step8">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-last" data-step="backtodell">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo3" id="icon-step9">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+
+              </tr>
+            </tbody>
+
+          </table>
+          <div class="collapse pt-3" id="collapseStepInfo3">
+            <div class="card card-body text-center align-items-center">
+              Indicated Step: Sequenced
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="row row-sampleRun pt-2">
+        <div class="col-lg-3 col-6 py-2 my-1" id="sg-runId4"></div>
+        <div class="col-lg-1 col-6 py-2 d-flex justify-content-center duration-time" id="sg-timeUsed4">
+          <h5 class=""><span class="badge badge-pill badge-dark py-2">12:30</span></h5>
+        </div>
+        <div class="col-lg-8 col-12 py-2" id="sg-progressId4">
+          <table class="stepbar-progress" data-current-step="sequenced" data-step-status="pending">
+            <!-- <caption>First Step Pending</caption> -->
+            <tbody>
+              <tr>
+                <td class="step-item step-item-first" data-step="sequenced">
+                  <div class="step-body" data-toggle="collapse" data-target="#collapseStepInfo4" id="icon-step1">
+                    <a class="glyphicon"></a>
+                  </div>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="analyzed">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo4" id="icon-step2">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="ondell">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo4" id="icon-step3">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="converted">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo4" id="icon-step4">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="incloud">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo4" id="icon-step5">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="downloaded">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo4" id="icon-step6">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="jobsubmitted">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo4" id="icon-step7">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="jobcompleted">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo4" id="icon-step8">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-last" data-step="backtodell">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo4" id="icon-step9">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+
+              </tr>
+            </tbody>
+
+          </table>
+          <div class="collapse pt-3" id="collapseStepInfo4">
+            <div class="card card-body text-center align-items-center">
+              Indicated Step: Sequenced
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="row row-sampleRun pt-2">
+        <div class="col-lg-3 col-6 py-2 my-1" id="sg-runId5"></div>
+        <div class="col-lg-1 col-6 py-2 d-flex justify-content-center duration-time" id="sg-timeUsed5">
+          <h5 class=""><span class="badge badge-pill badge-dark py-2">12:30</span></h5>
+        </div>
+        <div class="col-lg-8 col-12 py-2" id="sg-progressId5">
+          <table class="stepbar-progress" data-current-step="sequenced" data-step-status="pending">
+            <!-- <caption>First Step Pending</caption> -->
+            <tbody>
+              <tr>
+                <td class="step-item step-item-first" data-step="sequenced">
+                  <div class="step-body" data-toggle="collapse" data-target="#collapseStepInfo5" id="icon-step1">
+                    <a class="glyphicon"></a>
+                  </div>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="analyzed">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo5" id="icon-step2">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="ondell">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo5" id="icon-step3">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="converted">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo5" id="icon-step4">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="incloud">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo5" id="icon-step5">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="downloaded">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo5" id="icon-step6">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="jobsubmitted">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo5" id="icon-step7">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="jobcompleted">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo5" id="icon-step8">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-last" data-step="backtodell">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo5" id="icon-step9">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+
+              </tr>
+            </tbody>
+
+          </table>
+          <div class="collapse pt-3" id="collapseStepInfo5">
+            <div class="card card-body text-center align-items-center">
+              Indicated Step: Sequenced
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="row row-sampleRun pt-2">
+        <div class="col-lg-3 col-6 py-2 my-1" id="sg-runId6"></div>
+        <div class="col-lg-1 col-6 py-2 d-flex justify-content-center duration-time" id="sg-timeUsed6">
+          <h5 class=""><span class="badge badge-pill badge-dark py-2">12:30</span></h5>
+        </div>
+        <div class="col-lg-8 col-12 py-2" id="sg-progressId6">
+          <table class="stepbar-progress" data-current-step="sequenced" data-step-status="pending">
+            <!-- <caption>First Step Pending</caption> -->
+            <tbody>
+              <tr>
+                <td class="step-item step-item-first" data-step="sequenced">
+                  <div class="step-body" data-toggle="collapse" data-target="#collapseStepInfo6" id="icon-step1">
+                    <a class="glyphicon"></a>
+                  </div>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="analyzed">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo6" id="icon-step2">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="ondell">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo6" id="icon-step3">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="converted">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo6" id="icon-step4">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="incloud">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo6" id="icon-step5">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="downloaded">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo6" id="icon-step6">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="jobsubmitted">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo6" id="icon-step7">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="jobcompleted">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo6" id="icon-step8">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-last" data-step="backtodell">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo6" id="icon-step9">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+
+              </tr>
+            </tbody>
+
+          </table>
+          <div class="collapse pt-3" id="collapseStepInfo6">
+            <div class="card card-body text-center align-items-center">
+              Indicated Step: Sequenced
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="row row-sampleRun pt-2">
+        <div class="col-lg-3 col-6 py-2 my-1" id="sg-runId7"></div>
+        <div class="col-lg-1 col-6 py-2 d-flex justify-content-center duration-time" id="sg-timeUsed7">
+          <h5 class=""><span class="badge badge-pill badge-dark py-2">12:30</span></h5>
+        </div>
+        <div class="col-lg-8 col-12 py-2" id="sg-progressId7">
+          <table class="stepbar-progress" data-current-step="sequenced" data-step-status="pending">
+            <!-- <caption>First Step Pending</caption> -->
+            <tbody>
+              <tr>
+                <td class="step-item step-item-first" data-step="sequenced">
+                  <div class="step-body" data-toggle="collapse" data-target="#collapseStepInfo7" id="icon-step1">
+                    <a class="glyphicon"></a>
+                  </div>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="analyzed">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo7" id="icon-step2">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="ondell">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo7" id="icon-step3">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="converted">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo7" id="icon-step4">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="incloud">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo7" id="icon-step5">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="downloaded">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo7" id="icon-step6">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="jobsubmitted">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo7" id="icon-step7">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="jobcompleted">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo7" id="icon-step8">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-last" data-step="backtodell">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo7" id="icon-step9">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+
+              </tr>
+            </tbody>
+
+          </table>
+          <div class="collapse pt-3" id="collapseStepInfo7">
+            <div class="card card-body text-center align-items-center">
+              Indicated Step: Sequenced
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="row row-sampleRun pt-2">
+        <div class="col-lg-3 col-6 py-2 my-1" id="sg-runId8"></div>
+        <div class="col-lg-1 col-6 py-2 d-flex justify-content-center duration-time" id="sg-timeUsed8">
+          <h5 class=""><span class="badge badge-pill badge-dark py-2">12:30</span></h5>
+        </div>
+        <div class="col-lg-8 col-12 py-2" id="sg-progressId8">
+          <table class="stepbar-progress" data-current-step="sequenced" data-step-status="pending">
+            <!-- <caption>First Step Pending</caption> -->
+            <tbody>
+              <tr>
+                <td class="step-item step-item-first" data-step="sequenced">
+                  <div class="step-body" data-toggle="collapse" data-target="#collapseStepInfo8" id="icon-step1">
+                    <a class="glyphicon"></a>
+                  </div>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="analyzed">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo8" id="icon-step2">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="ondell">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo8" id="icon-step3">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="converted">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo8" id="icon-step4">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="incloud">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo8" id="icon-step5">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="downloaded">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo8" id="icon-step6">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="jobsubmitted">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo8" id="icon-step7">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="jobcompleted">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo8" id="icon-step8">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-last" data-step="backtodell">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo8" id="icon-step9">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+
+              </tr>
+            </tbody>
+
+          </table>
+          <div class="collapse pt-3" id="collapseStepInfo8">
+            <div class="card card-body text-center align-items-center">
+              Indicated Step: Sequenced
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="row row-sampleRun pt-2">
+        <div class="col-lg-3 col-6 py-2 my-1" id="sg-runId9"></div>
+        <div class="col-lg-1 col-6 py-2 d-flex justify-content-center duration-time" id="sg-timeUsed9">
+          <h5 class=""><span class="badge badge-pill badge-dark py-2">12:30</span></h5>
+        </div>
+        <div class="col-lg-8 col-12 py-2" id="sg-progressId9">
+          <table class="stepbar-progress" data-current-step="sequenced" data-step-status="pending">
+            <!-- <caption>First Step Pending</caption> -->
+            <tbody>
+              <tr>
+                <td class="step-item step-item-first" data-step="sequenced">
+                  <div class="step-body" data-toggle="collapse" data-target="#collapseStepInfo9" id="icon-step1">
+                    <a class="glyphicon"></a>
+                  </div>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="analyzed">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo9" id="icon-step2">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="ondell">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo9" id="icon-step3">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="converted">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo9" id="icon-step4">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="incloud">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo9" id="icon-step5">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="downloaded">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo9" id="icon-step6">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="jobsubmitted">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo9" id="icon-step7">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="jobcompleted">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo9" id="icon-step8">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-last" data-step="backtodell">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo9" id="icon-step9">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+
+              </tr>
+            </tbody>
+
+          </table>
+          <div class="collapse pt-3" id="collapseStepInfo9">
+            <div class="card card-body text-center align-items-center">
+              Indicated Step: Sequenced
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="row row-sampleRun pt-2">
+        <div class="col-lg-3 col-6 py-2 my-1" id="sg-runId10"></div>
+        <div class="col-lg-1 col-6 py-2 d-flex justify-content-center duration-time" id="sg-timeUsed10">
+          <h5 class=""><span class="badge badge-pill badge-dark py-2">12:30</span></h5>
+        </div>
+        <div class="col-lg-8 col-12 py-2" id="sg-progressId10">
+          <table class="stepbar-progress" data-current-step="sequenced" data-step-status="pending">
+            <!-- <caption>First Step Pending</caption> -->
+            <tbody>
+              <tr>
+                <td class="step-item step-item-first" data-step="sequenced">
+                  <div class="step-body" data-toggle="collapse" data-target="#collapseStepInfo10" id="icon-step1">
+                    <a class="glyphicon"></a>
+                  </div>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="analyzed">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo10" id="icon-step2">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="ondell">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo10" id="icon-step3">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="converted">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo10" id="icon-step4">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="incloud">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo10" id="icon-step5">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="downloaded">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo10" id="icon-step6">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="jobsubmitted">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo10" id="icon-step7">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="jobcompleted">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo10" id="icon-step8">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-last" data-step="backtodell">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo10" id="icon-step9">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+
+              </tr>
+            </tbody>
+
+          </table>
+          <div class="collapse pt-3" id="collapseStepInfo10">
+            <div class="card card-body text-center align-items-center">
+              Indicated Step: Sequenced
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="row row-sampleRun pt-2">
+        <div class="col-lg-3 col-6 py-2 my-1" id="sg-runId11"></div>
+        <div class="col-lg-1 col-6 py-2 d-flex justify-content-center duration-time" id="sg-timeUsed11">
+          <h5 class=""><span class="badge badge-pill badge-dark py-2">12:30</span></h5>
+        </div>
+        <div class="col-lg-8 col-12 py-2" id="sg-progressId11">
+          <table class="stepbar-progress" data-current-step="sequenced" data-step-status="pending">
+            <!-- <caption>First Step Pending</caption> -->
+            <tbody>
+              <tr>
+                <td class="step-item step-item-first" data-step="sequenced">
+                  <div class="step-body" data-toggle="collapse" data-target="#collapseStepInfo11" id="icon-step1">
+                    <a class="glyphicon"></a>
+                  </div>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="analyzed">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo11" id="icon-step2">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="ondell">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo11" id="icon-step3">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="converted">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo11" id="icon-step4">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="incloud">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo11" id="icon-step5">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="downloaded">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo11" id="icon-step6">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="jobsubmitted">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo11" id="icon-step7">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-middle" data-step="jobcompleted">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo11" id="icon-step8">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+                <td class="step-item-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="step-item step-item-last" data-step="backtodell">
+                  <span class="step-body" data-toggle="collapse" data-target="#collapseStepInfo11" id="icon-step9">
+                    <span class="glyphicon"></span>
+                  </span>
+                </td>
+
+              </tr>
+            </tbody>
+
+          </table>
+          <div class="collapse pt-3" id="collapseStepInfo11">
+            <div class="card card-body text-center align-items-center">
+              Indicated Step: Sequenced
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
-  <div class="div-progress">
+  <!-- <div class="div-progress">
     <div class="row content-header py-3">
 
     </div>
@@ -158,11 +1572,11 @@
       <div class="col-lg-7" id="sg-progressId11"></div>
       <div class="col-lg-1" id="sg-completed11"></div>
       <div class="col-lg-1" id="sg-timeUsed11"></div>
-    </div>
-  </div>
+    </div> -->
+  <!-- </div> -->
 
   <footer class="container-fluid bg-secondary py-2">
-    <div class="container pt-3">
+    <div class="container pt-3 text-center">
       <ul class="list-unstyled">
         <li class="d-inline-block text-white mr-3">© Copright 2019 SOFIVA GENOMICS</li>
         <li class="d-inline-block text-white mr-3">www.sofivagenomics.com.tw</li>
@@ -177,16 +1591,13 @@
     </div>
   </footer>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-  </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
   </script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
   </script>
-  <script src="../node_modules/jquery/dist/jquery.js"></script>
+  <!-- <script src="../node_modules/jquery/dist/jquery.js"></script> -->
   <script type="text/javascript" src="../js/all.js"></script>
 </body>
 
