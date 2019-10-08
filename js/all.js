@@ -42,22 +42,17 @@ function getModifyTime(path) {
       let updatedTime = res[3] + "/" + numberMonth + "/" + res[2] + " " + res[4];
 
       if (path == '../NIPS/nips_progress_tail.json') {
-        modifyUpdatedTime(updatedTime, "nips");
+        // modifyUpdatedTime(updatedTime, "nips");
+        $(".nips-updatedTime").append(updatedTime);
       } else if (path == '../SG/sg_progress_tail.json') {
-        modifyUpdatedTime(updatedTime, "sg");
+        // modifyUpdatedTime(updatedTime, "sg");
+        $(".sg-updatedTime").append(updatedTime);
       } else if (path == '../IONA/iona_progress_tail.json') {
-        modifyUpdatedTime(updatedTime, "iona");
+        // modifyUpdatedTime(updatedTime, "iona");
+        $(".iona-updatedTime").append(updatedTime);
       }
     }
   });
-}
-
-function modifyUpdatedTime(updatedTime, productTypeIndex) {
-  // console.log(updatedTime);
-
-  // console.log($(".sg-updatedTime"));
-
-  $("." + productTypeIndex + "-updatedTime").append(updatedTime);
 }
 
 function transferDetail2clickEvent(statusDetail) {
@@ -279,11 +274,7 @@ $(document).ready(function () {
     '../SG/sg_progress_tail.json',
     '../IONA/iona_progress_tail.json',
   ];
-  let statusDetail = JSONListPath.forEach(getJSONList);
+  JSONListPath.forEach(getJSONList);
   JSONListPath.forEach(getModifyTime);
-
-  // console.log(statusDetail);
-
-  // clickProgressIcon();
 
 });

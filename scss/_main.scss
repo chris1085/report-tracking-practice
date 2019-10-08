@@ -88,6 +88,12 @@ h1 {
   // padding: 100px;
 }
 
+.font-title {
+  font-family: 'Gentium Book Basic',
+    serif;
+  font-size: 80px;
+}
+
 .banner::after {
   content: "";
   border-bottom: 2px solid gray;

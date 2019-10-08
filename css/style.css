@@ -1,4 +1,6 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Crimson+Text:700i&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Crimson+Text:700i|Gentium+Book+Basic:700i&display=swap");
 /*=============================================
 =            step progress bar mixin          =
 =============================================*/
@@ -95,6 +97,11 @@ h1 {
 
 .test {
   border: 1px solid red;
+}
+
+.font-title {
+  font-family: 'Gentium Book Basic', serif;
+  font-size: 80px;
 }
 
 .banner::after {
