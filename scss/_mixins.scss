@@ -28,6 +28,11 @@
     }
 }
 
+
+/*=============================================
+=            rainbow bar start                =
+=============================================*/
+
 @mixin rainbow-bar ($color0, $color20, $color40, $color60, $color80, $color100) {
     // background-color: #302244;
     border-bottom: 4px solid transparent;
@@ -61,6 +66,8 @@
     -webkit-box-shadow: inset 2px 2px 2px 0px rgba(0, 0, 0, .2);
     box-shadow: inset 2px 2px 2px 0px rgba(0, 0, 0, .2);
 }
+
+/*=====  End of rainbow bar  ======*/
 
 
 /*=============================================
