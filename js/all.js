@@ -192,9 +192,14 @@ function clickProgressIcon(statusDetail) {
     let collapseStatusDetail = "";
     let sampleRunNumber = $(this).parents('.div-progress').find('.row-sampleRun').length;
 
+    // if (statusDetail[id].productType.match(productType)) {
+    //   console.log(productType);
+    // }
+
     Object.keys(statusDetail[id]).some(function (key) { //loop to find progress key and value
+      // console.log(id);
       // console.log(key);
-      if (key == currentStatusDetail) {
+      if (key == currentStatusDetail && statusDetail[id].productType.match(productType)) {
         // console.log(statusDetail[id][key]);
         collapseStatusDetail = "Data Info: " + statusDetail[id][key];
       }
@@ -242,7 +247,7 @@ function getProgressStatus(progressContent = data, productTypeIndex = 1) {
   // console.log(progressContent);
   // console.log(productTypeIndex);
 
-  //NOTE To determine which run stauts was Pending, Pass, Fail and Active and show in the collapsed content
+  //NOTE To determine which run-stauts was Pending, Pass, Fail and Active and show in the collapsed content
   progressContent.forEach(function (sampleRun, index) {
     // console.log(sampleRun);
     $(productType[productTypeIndex] + '-runId' + index).text(sampleRun.runid);
