@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-[{"runid":"190603_NB551141_0684_AHMFJYBGXB","sequenced":"1","analyzed":"1","ondell":"65/65","converted":"1","incloud":"65/65","downloaded":"65/65","jobsubmitted":"15/15","jobcompleted":"15/15","backtodell":"1","error":"0","closed":"1"},
-{"runid":"190604_NB500908_1153_AHMFT2BGXB","sequenced":"1","analyzed":"1","ondell":"65/65","converted":"1","incloud":"65/65","downloaded":"65/65","jobsubmitted":"15/15","jobcompleted":"15/15","backtodell":"1","error":"0","closed":"1"},
-{"runid":"190604_NB551141_0685_AHMFKCBGXB","sequenced":"1","analyzed":"1","ondell":"65/65","converted":"1","incloud":"65/65","downloaded":"65/65","jobsubmitted":"15/15","jobcompleted":"15/15","backtodell":"1","error":"0","closed":"1"},
-{"runid":"190605_NB500908_1154_AHMFGLBGXB","sequenced":"1","analyzed":"1","ondell":"65/65","converted":"1","incloud":"65/65","downloaded":"65/65","jobsubmitted":"15/15","jobcompleted":"15/15","backtodell":"1","error":"0","closed":"1"},
-{"runid":"190605_NB500908_1155_AHJL3WBGXB","sequenced":"1","analyzed":"1","ondell":"65/65","converted":"1","incloud":"65/65","downloaded":"65/65","jobsubmitted":"15/15","jobcompleted":"15/15","backtodell":"1","error":"0","closed":"1"},
-{"runid":"190605_NB551141_0686_AHMFTFBGXB","sequenced":"1","analyzed":"1","ondell":"65/65","converted":"1","incloud":"65/65","downloaded":"65/65","jobsubmitted":"15/15","jobcompleted":"15/15","backtodell":"1","error":"0","closed":"1"},
-{"runid":"190605_NB551141_0687_AHMFNNBGXB","sequenced":"1","analyzed":"1","ondell":"65/65","converted":"1","incloud":"65/65","downloaded":"65/65","jobsubmitted":"15/15","jobcompleted":"15/15","backtodell":"1","error":"0","closed":"1"},
-{"runid":"190606_NB500908_1156_AHJJWVBGXB","sequenced":"1","analyzed":"1","ondell":"65/65","converted":"1","incloud":"65/65","downloaded":"65/65","jobsubmitted":"15/15","jobcompleted":"15/15","backtodell":"1","error":"0","closed":"1"},
-{"runid":"190606_NB551141_0688_AHJJJ7BGXB","sequenced":"1","analyzed":"1","ondell":"65/65","converted":"1","incloud":"65/65","downloaded":"65/65","jobsubmitted":"15/15","jobcompleted":"15/15","backtodell":"1","error":"0","closed":"1"},
-{"runid":"190606_NB551141_0689_AHJJWKBGXB","sequenced":"1","analyzed":"1","ondell":"65/65","converted":"1","incloud":"65/65","downloaded":"65/65","jobsubmitted":"15/15","jobcompleted":"15/15","backtodell":"1","error":"0","closed":"1"},
-{"runid":"190607_NB551141_0690_AHJJJ5BGXB","sequenced":"1","analyzed":"1","ondell":"65/65","converted":"1","incloud":"65/65","downloaded":"65/65","jobsubmitted":"15/15","jobcompleted":"15/15","backtodell":"1","error":"0","closed":"1"},
-{"runid":"190608_NB551141_0691_AHJJYKBGXB","sequenced":"1","analyzed":"1","ondell":"65/65","converted":"1","incloud":"65/65","downloaded":"65/65","jobsubmitted":"15/15","jobcompleted":"15/15","backtodell":"1","error":"0","closed":"1"}]
-=======
 [{"runid":"191003_NB500908_1243_AHTMTJBGXB","sequenced":"1","analyzed":"1","ondell":"65/65","converted":"1","incloud":"65/65","downloaded":"65/65","jobsubmitted":"15/15","jobcompleted":"15/15","backtodell":"1","error":"0","closed":"1","timeUsed":"00:00"},
 {"runid":"191003_NB500911_1240_AHVYKMBGXB","sequenced":"1","analyzed":"1","ondell":"65/65","converted":"1","incloud":"65/65","downloaded":"65/65","jobsubmitted":"15/15","jobcompleted":"15/15","backtodell":"1","error":"0","closed":"1","timeUsed":"00:00"},
 {"runid":"191003_NB551141_0798_AHTNHVBGXB","sequenced":"1","analyzed":"1","ondell":"65/65","converted":"1","incloud":"65/65","downloaded":"65/65","jobsubmitted":"15/15","jobcompleted":"15/15","backtodell":"1","error":"0","closed":"1","timeUsed":"00:00"},
@@ -24,4 +10,3 @@
 {"runid":"191007_NB551141_0801_AHW57CBGXB","sequenced":"1","analyzed":"1","ondell":"65/65","converted":"1","incloud":"65/65","downloaded":"65/65","jobsubmitted":"15/15","jobcompleted":"15/15","backtodell":"1","error":"0","closed":"1","timeUsed":"00:00"},
 {"runid":"191008_NB500911_1244_AHW7CLBGXB","sequenced":"1","analyzed":"1","ondell":"65/65","converted":"1","incloud":"65/65","downloaded":"65/65","jobsubmitted":"15/15","jobcompleted":"15/15","backtodell":"1","error":"0","closed":"1","timeUsed":"00:00"},
 {"runid":"191008_NB551141_0802_AHW7CWBGXB","sequenced":"1","analyzed":"1","ondell":"65/65","converted":"1","incloud":"65/65","downloaded":"65/65","jobsubmitted":"15/15","jobcompleted":"15/15","backtodell":"1","error":"0","closed":"1","timeUsed":"00:00"}]
->>>>>>> nips_Function
