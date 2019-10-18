@@ -10,8 +10,7 @@ function getJSONList(path) {
 
   /* Asynchronous ajax */
   $.getJSON(path, function (data) {
-    // console.log(data); //JOSN output
-    // console.log(data[0].runid);
+
     if (path == '../NIPS/nips_progress_tail.json') {
       getProgressStatus(data, 0);
       statusDetail = getStatusDetail(data, 0);
@@ -24,7 +23,7 @@ function getJSONList(path) {
       getProgressStatus(data, 2);
       statusDetail = getStatusDetail(data, 2);
       transferDetail2clickEvent(statusDetail);
-      // console.log(statusDetail);
+
     }
 
   });
@@ -44,24 +43,19 @@ function getModifyTime(path) {
     success: function (response) { // If response of path succeed, Cal Last-Updated and Duration time
       var fileTime = String(new Date(xhr.getResponseHeader("Last-Modified")));
       var res = fileTime.split(" ");
-      // console.log(res);
       var numberMonth = ("JanFebMarAprMayJunJulAugSepOctNovDec".indexOf(res[1]) / 3 + 1);
-      // console.log(numberMonth);
 
       let updatedTime = res[3] + "/" + numberMonth + "/" + res[2] + " " + res[4];
 
       if (path == '../NIPS/nips_progress_tail.json') {
-        // modifyUpdatedTime(updatedTime, "nips");
         $(".nips-updatedTime").append(updatedTime);
         modifyDurationTime(response, "nips-");
 
       } else if (path == '../SG/sg_progress_tail.json') {
-        // modifyUpdatedTime(updatedTime, "sg");
         $(".sg-updatedTime").append(updatedTime);
         modifyDurationTime(response, "sg-");
 
       } else if (path == '../IONA/iona_progress_tail.json') {
-        // modifyUpdatedTime(updatedTime, "iona");
         $(".iona-updatedTime").append(updatedTime);
         modifyDurationTime(response, "iona-");
 
@@ -70,7 +64,6 @@ function getModifyTime(path) {
   });
 }
 
-
 /**
  * Function of modifing sample run duration time or initing it
  *
@@ -78,20 +71,14 @@ function getModifyTime(path) {
  * @param {Product} productType
  */
 function modifyDurationTime(JSONList, productType) {
-  // setTimeout(modifyDurationTime(JSONList, productType), 1000);
-  console.log("test2");
-
+  // console.log("test2");
   let temp = JSONList;
   temp = JSON.parse(JSONList);
 
   let newDate = new Date();
   let second = ("0" + newDate.getSeconds()).slice(-2);
-  // console.log(temp);
 
   Object.keys(temp).forEach(function (sampleRun, index) {
-    // console.log(sampleRun);
-    // console.log(temp[sampleRun].timeUsed);
-    // console.log(temp[sampleRun].timeUsed.split(":")[0]);
 
     if (typeof (temp[sampleRun].timeUsed) == "undefined") { //adding time-used class and text if its type is undefined!
       $("#" + productType + "timeUsed" + index).find("span").removeClass("badge-dark").addClass("badge-warning");
@@ -123,8 +110,6 @@ function modifyDurationTime(JSONList, productType) {
 function transferDetail2clickEvent(statusDetail) {
   clickProgressIcon(statusDetail);
 }
-
-
 
 /**
  * select the description in every step
@@ -202,10 +187,6 @@ function clickProgressIcon(statusDetail) {
     let collapseStatusDetail = "";
     let sampleRunNumber = $(this).parents('.div-progress').find('.row-sampleRun').length;
 
-    // if (statusDetail[id].productType.match(productType)) {
-    //   console.log(productType);
-    // }
-
     Object.keys(statusDetail[id]).some(function (key) { //loop to find progress key and value
       // console.log(id);
       // console.log(key);
@@ -254,18 +235,11 @@ function getProgressStatus(progressContent = data, productTypeIndex = 1) {
   const productType = ["#nips", "#sg", "#iona"];
   let regexp = /(\d+)\/(\d+)/;
 
-  // console.log(progressContent);
-  // console.log(productTypeIndex);
-
   //NOTE To determine which run-stauts was Pending, Pass, Fail and Active and show in the collapsed content
   progressContent.forEach(function (sampleRun, index) {
-    // console.log(sampleRun);
     $(productType[productTypeIndex] + '-runId' + index).text(sampleRun.runid);
-    // console.log(sampleRun);
 
     if (sampleRun.closed == 0) { //fail, active or pending progress info added
-
-      // console.log(sampleRun);
 
       if (sampleRun.sequenced == 0 && sampleRun.error == 0) { //pending progress info added
         $(productType[productTypeIndex] + "-progressId" + index).find(".stepbar-progress").attr("data-current-step", "sequenced");
@@ -275,7 +249,6 @@ function getProgressStatus(progressContent = data, productTypeIndex = 1) {
       }
       if (sampleRun.error == 1) { //fail progress info added
         let failStep;
-        // console.log(sampleRun.converted);
         Object.keys(sampleRun).some(function (key) { //loop to find "fail" progress key and value
           if (sampleRun[key] == 0 && key != "error" && key != "closed") {
             failStep = key;
@@ -285,6 +258,8 @@ function getProgressStatus(progressContent = data, productTypeIndex = 1) {
         $(productType[productTypeIndex] + "-progressId" + index).find(".stepbar-progress").attr("data-step-status", "fail");
       } else { //active progress info added
         let flag = 0;
+        console.log(sampleRun);
+
         Object.keys(sampleRun).some(function (key) {
           if (sampleRun[key] == 0 && key != "error" && key != "closed" && flag != 1) { //active
             // console.log(key + '=' + sampleRun[key]);
@@ -309,7 +284,6 @@ function getProgressStatus(progressContent = data, productTypeIndex = 1) {
   });
 }
 
-
 /**
  * Getting Something Status Detail which showed the run numbers in Json List
  *
@@ -318,21 +292,17 @@ function getProgressStatus(progressContent = data, productTypeIndex = 1) {
  * @returns
  */
 function getStatusDetail(progressContent = data, productTypeIndex = 1) {
-  // console.log(progressContent);
 
   const productType = ["#nips", "#sg", "#iona"];
   let statusDetail = [];
 
   let regexp = /(\d+)\/(\d+)/;
-  // console.log(progressContent);
 
   progressContent.forEach(function (sampleRun, index) {
     let incloudNumber = 0;
     let downloadedNumber = 0;
     let jobsubmittedNumber = 0;
     let jobcompletedNumber = 0;
-
-    // console.log(sampleRun);
 
     if (sampleRun.incloud.match(regexp)) { //if incloud matched the run numbers
       // console.log(sampleRun.incloud.match(regexp));
