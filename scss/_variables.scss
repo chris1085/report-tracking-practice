@@ -1,29 +1,31 @@
-$font-family-title: "Noto Sans TC";
+$font-family-title: 'Noto Sans TC';
 $light_gray: #e4e4e7;
 
 $step-count: 9;
-$step-states: "pending",
-"active",
-"pass",
-"fail";
-$state-to-glyph: (pending: "\f141",
-  active: "\f021",
-  pass: "\f00c",
-  fail: "\f12a"
+$step-states: 'pending', 'active', 'pass', 'fail';
+$state-to-glyph: (
+  pending: '\f141',
+  active: '\f021',
+  pass: '\f00c',
+  fail: '\f12a'
 );
 
-$state-to-color: (pending: #f8ac59,
+$state-to-color: (
+  pending: #f8ac59,
   active: #1c84c6,
-  pass: #1ab394,
-  fail: #ed5565);
+  pass: #66ff00,
+  //1ab394  66ff00
+    fail: #ed5565
+);
 
-$content-icon-glyph: (step1: "\f577",
-  step2: "\f080",
-  step3: "\f474",
-  step4: "\f074",
-  step5: "\f382",
-  step6: "\f6ff",
-  step7: "\f1d8",
-  step8: "\f46c",
-  step9: "\f381"
+$content-icon-glyph: (
+  step1: '\f577',
+  step2: '\f080',
+  step3: '\f474',
+  step4: '\f074',
+  step5: '\f382',
+  step6: '\f6ff',
+  step7: '\f1d8',
+  step8: '\f46c',
+  step9: '\f381'
 );

@@ -38,7 +38,6 @@ function getJSONList(path) {
  */
 function getModifyTime(path) {
 
-
   /* Asynchronous ajax */
   var xhr = $.ajax({
     url: path,
@@ -79,9 +78,14 @@ function getModifyTime(path) {
  * @param {Product} productType
  */
 function modifyDurationTime(JSONList, productType) {
-  // console.log(JSONList);
+  // setTimeout(modifyDurationTime(JSONList, productType), 1000);
+  console.log("test2");
+
   let temp = JSONList;
   temp = JSON.parse(JSONList);
+
+  let newDate = new Date();
+  let second = ("0" + newDate.getSeconds()).slice(-2);
   // console.log(temp);
 
   Object.keys(temp).forEach(function (sampleRun, index) {
@@ -91,17 +95,23 @@ function modifyDurationTime(JSONList, productType) {
 
     if (typeof (temp[sampleRun].timeUsed) == "undefined") { //adding time-used class and text if its type is undefined!
       $("#" + productType + "timeUsed" + index).find("span").removeClass("badge-dark").addClass("badge-warning");
-      $("#" + productType + "timeUsed" + index).find("span").text("00:00");
+      $("#" + productType + "timeUsed" + index).find("span").text("00:00:00");
     } else {
       let durationHour = temp[sampleRun].timeUsed.split(":")[0];
 
       if (durationHour >= 12) { //adding warning class if its duration time over half a day
         $("#" + productType + "timeUsed" + index).find("span").removeClass("badge-dark").addClass("badge-danger");
       }
-      $("#" + productType + "timeUsed" + index).find("span").text(temp[sampleRun].timeUsed);
+
+      if (temp[sampleRun].closed == "1") {
+        $("#" + productType + "timeUsed" + index).find("span").text(temp[sampleRun].timeUsed + ":00");
+      } else {
+        $("#" + productType + "timeUsed" + index).find("span").text(temp[sampleRun].timeUsed + ":" + second);
+        // console.log($("#" + productType + "timeUsed" + index).find("span"));
+
+      }
     }
   });
-
 }
 
 
@@ -360,7 +370,33 @@ function getStatusDetail(progressContent = data, productTypeIndex = 1) {
   return statusDetail;
 }
 
-$(document).ready(function () {
+function startRefresh() {
+  setTimeout(startRefresh, 1000);
+
+  let newDate = new Date();
+  let second = ("0" + newDate.getSeconds()).slice(-2);
+  // $(".duration-time").children()[0];
+  let children = Array.from($(".duration-time").children());
+  // console.log($('[data-step-status="pass"]'));
+
+
+  children.forEach(function (sampleRun, index) {
+    let hour = sampleRun.innerText.split(":")[0];
+    let min = sampleRun.innerText.split(":")[1];
+    let content = hour + ":" + min + ":" + second;
+
+    $(sampleRun).find("span").html(content);
+  });
+
+  // console.log(children);
+
+
+  return second;
+  // console.log(second);
+
+}
+
+$(document).ready(function myfunction() {
   const JSONListPath = [
     '../NIPS/nips_progress_tail.json',
     '../SG/sg_progress_tail.json',
@@ -368,5 +404,13 @@ $(document).ready(function () {
   ];
   JSONListPath.forEach(getJSONList); //get Json List and changing their status
   JSONListPath.forEach(getModifyTime); //get Json List and Modify Updated and Duration Time 
+  // startRefresh();
+
+  // setTimeout(myfunction, 1000);
+  // console.log("test");
+
+
+  // setInterval(getModifyTime(JSONListPath[0]), 10000);
+  // setTimeout(JSONListPath.forEach(getModifyTime), 1000);
 
 });

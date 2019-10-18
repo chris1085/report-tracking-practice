@@ -70,7 +70,7 @@ h1 {
 }
 
 .nav-item::after {
-  content: "";
+  content: '';
   border-bottom: 2px solid black;
   margin: auto;
   position: relative;
@@ -84,18 +84,17 @@ h1 {
 }
 
 .test {
-  border: 1px solid red;
+  border: 1px solid green;
   // padding: 100px;
 }
 
 .font-title {
-  font-family: 'Gentium Book Basic',
-    serif;
+  font-family: 'Gentium Book Basic', serif;
   font-size: 80px;
 }
 
 .banner::after {
-  content: "";
+  content: '';
   border-bottom: 2px solid gray;
   display: block;
   padding-bottom: 25px;
@@ -116,10 +115,8 @@ h1 {
   h4 {
     @include mobile {
       font-size: 18px;
-
     }
   }
-
 }
 
 .banner-time-content {
@@ -130,16 +127,13 @@ h1 {
   @include mobile {
     font-size: 18px;
     flex-direction: column;
-
   }
 }
-
 
 .row-sampleRun {
   font-size: 14px;
   width: 100%;
   // border: 1px solid gray !important;
-
 
   @include l-mobile {
     border: 1px solid gray !important;
@@ -160,7 +154,6 @@ h1 {
     padding-bottom: 0.5rem;
     // margin-right: 0.5rem !important;
   }
-
 }
 
 .content-info,
@@ -174,12 +167,10 @@ h1 {
 
   @include l-mobile {
     margin-left: 0.1rem !important;
-
   }
 }
 
 .content-info {
-
   @include mobile {
     border: 3px solid green !important;
     border-radius: 8px;
@@ -191,7 +182,6 @@ h1 {
   @include l-mobile {
     border: 3px solid green !important;
     border-radius: 8px;
-
   }
 }
 
@@ -240,7 +230,7 @@ h1 {
 @mixin arrow() {
   border-bottom: 50px solid transparent;
   border-top: 50px solid transparent;
-  content: " ";
+  content: ' ';
   display: block;
   height: 0;
   left: 100%;
@@ -314,13 +304,13 @@ h1 {
         width: 46px;
         height: 46px;
         padding-right: 60px;
-        content: "";
+        content: '';
       }
     }
 
     .content-header-info-list__steps-sofiva {
       &:before {
-        background-image: url("../images/SOFIVA.png");
+        background-image: url('../images/SOFIVA.png');
         background-repeat: no-repeat;
         background-size: 46px 46px;
       }
@@ -328,7 +318,7 @@ h1 {
 
     .content-header-info-list__steps-cloud {
       &:before {
-        background-image: url("../images/cloud.png");
+        background-image: url('../images/cloud.png');
         background-repeat: no-repeat;
         background-size: 38px 46px;
         padding-right: 46px;
@@ -364,6 +354,11 @@ h1 {
   // border: 1px solid gray;
 }
 
+.runID {
+  word-wrap: break-word;
+  width: 100%;
+}
+
 /*=============================================
 =     Step Bar Progress Bar for Bootstrap.    =
 =============================================*/
@@ -388,54 +383,54 @@ h1 {
 .glyphicon-step7,
 .glyphicon-step8,
 .glyphicon-step9 {
-  font-family: "Font Awesome 5 Free";
+  font-family: 'Font Awesome 5 Free';
   font-weight: 900;
   display: block;
 }
 
 .glyphicon-step1:before {
   font-size: 32px;
-  content: map-get($content-icon-glyph, "step1");
+  content: map-get($content-icon-glyph, 'step1');
 }
 
 .glyphicon-step2:before {
   font-size: 32px;
-  content: map-get($content-icon-glyph, "step2");
+  content: map-get($content-icon-glyph, 'step2');
 }
 
 .glyphicon-step3:before {
   font-size: 32px;
-  content: map-get($content-icon-glyph, "step3");
+  content: map-get($content-icon-glyph, 'step3');
 }
 
 .glyphicon-step4:before {
   font-size: 32px;
-  content: map-get($content-icon-glyph, "step4");
+  content: map-get($content-icon-glyph, 'step4');
 }
 
 .glyphicon-step5:before {
   font-size: 32px;
-  content: map-get($content-icon-glyph, "step5");
+  content: map-get($content-icon-glyph, 'step5');
 }
 
 .glyphicon-step6:before {
   font-size: 32px;
-  content: map-get($content-icon-glyph, "step6");
+  content: map-get($content-icon-glyph, 'step6');
 }
 
 .glyphicon-step7:before {
   font-size: 32px;
-  content: map-get($content-icon-glyph, "step7");
+  content: map-get($content-icon-glyph, 'step7');
 }
 
 .glyphicon-step8:before {
   font-size: 32px;
-  content: map-get($content-icon-glyph, "step8");
+  content: map-get($content-icon-glyph, 'step8');
 }
 
 .glyphicon-step9:before {
   font-size: 32px;
-  content: map-get($content-icon-glyph, "step9");
+  content: map-get($content-icon-glyph, 'step9');
 }
 
 td {
@@ -488,127 +483,137 @@ td {
       border-top: 3px solid $light_gray;
       border-bottom: 3px solid $light_gray;
 
-      background-image: -webkit-linear-gradient(-45deg,
-          rgba(255, 255, 255, 0.3) 0%,
-          transparent 5%,
-          rgba(255, 255, 255, 0.3) 10%,
-          transparent 15%,
-          rgba(255, 255, 255, 0.3) 20%,
-          transparent 25%,
-          rgba(255, 255, 255, 0.3) 30%,
-          transparent 35%,
-          rgba(255, 255, 255, 0.3) 40%,
-          transparent 45%,
-          rgba(255, 255, 255, 0.3) 50%,
-          transparent 55%,
-          rgba(255, 255, 255, 0.3) 60%,
-          transparent 65%,
-          rgba(255, 255, 255, 0.3) 70%,
-          transparent 75%,
-          rgba(255, 255, 255, 0.3) 80%,
-          transparent 85%,
-          rgba(255, 255, 255, 0.3) 90%,
-          transparent 95%,
-          rgba(255, 255, 255, 0.3) 100%);
+      background-image: -webkit-linear-gradient(
+        -45deg,
+        rgba(255, 255, 255, 0.3) 0%,
+        transparent 5%,
+        rgba(255, 255, 255, 0.3) 10%,
+        transparent 15%,
+        rgba(255, 255, 255, 0.3) 20%,
+        transparent 25%,
+        rgba(255, 255, 255, 0.3) 30%,
+        transparent 35%,
+        rgba(255, 255, 255, 0.3) 40%,
+        transparent 45%,
+        rgba(255, 255, 255, 0.3) 50%,
+        transparent 55%,
+        rgba(255, 255, 255, 0.3) 60%,
+        transparent 65%,
+        rgba(255, 255, 255, 0.3) 70%,
+        transparent 75%,
+        rgba(255, 255, 255, 0.3) 80%,
+        transparent 85%,
+        rgba(255, 255, 255, 0.3) 90%,
+        transparent 95%,
+        rgba(255, 255, 255, 0.3) 100%
+      );
 
-      background-image: -moz-linear-gradient(-45deg,
-          rgba(255, 255, 255, 0.3) 0%,
-          transparent 5%,
-          rgba(255, 255, 255, 0.3) 10%,
-          transparent 15%,
-          rgba(255, 255, 255, 0.3) 20%,
-          transparent 25%,
-          rgba(255, 255, 255, 0.3) 30%,
-          transparent 35%,
-          rgba(255, 255, 255, 0.3) 40%,
-          transparent 45%,
-          rgba(255, 255, 255, 0.3) 50%,
-          transparent 55%,
-          rgba(255, 255, 255, 0.3) 60%,
-          transparent 65%,
-          rgba(255, 255, 255, 0.3) 70%,
-          transparent 75%,
-          rgba(255, 255, 255, 0.3) 80%,
-          transparent 85%,
-          rgba(255, 255, 255, 0.3) 90%,
-          transparent 95%,
-          rgba(255, 255, 255, 0.3) 100%);
+      background-image: -moz-linear-gradient(
+        -45deg,
+        rgba(255, 255, 255, 0.3) 0%,
+        transparent 5%,
+        rgba(255, 255, 255, 0.3) 10%,
+        transparent 15%,
+        rgba(255, 255, 255, 0.3) 20%,
+        transparent 25%,
+        rgba(255, 255, 255, 0.3) 30%,
+        transparent 35%,
+        rgba(255, 255, 255, 0.3) 40%,
+        transparent 45%,
+        rgba(255, 255, 255, 0.3) 50%,
+        transparent 55%,
+        rgba(255, 255, 255, 0.3) 60%,
+        transparent 65%,
+        rgba(255, 255, 255, 0.3) 70%,
+        transparent 75%,
+        rgba(255, 255, 255, 0.3) 80%,
+        transparent 85%,
+        rgba(255, 255, 255, 0.3) 90%,
+        transparent 95%,
+        rgba(255, 255, 255, 0.3) 100%
+      );
 
-      background-image: -ms-linear-gradient(-45deg,
-          rgba(255, 255, 255, 0.3) 0%,
-          transparent 5%,
-          rgba(255, 255, 255, 0.3) 10%,
-          transparent 15%,
-          rgba(255, 255, 255, 0.3) 20%,
-          transparent 25%,
-          rgba(255, 255, 255, 0.3) 30%,
-          transparent 35%,
-          rgba(255, 255, 255, 0.3) 40%,
-          transparent 45%,
-          rgba(255, 255, 255, 0.3) 50%,
-          transparent 55%,
-          rgba(255, 255, 255, 0.3) 60%,
-          transparent 65%,
-          rgba(255, 255, 255, 0.3) 70%,
-          transparent 75%,
-          rgba(255, 255, 255, 0.3) 80%,
-          transparent 85%,
-          rgba(255, 255, 255, 0.3) 90%,
-          transparent 95%,
-          rgba(255, 255, 255, 0.3) 100%);
+      background-image: -ms-linear-gradient(
+        -45deg,
+        rgba(255, 255, 255, 0.3) 0%,
+        transparent 5%,
+        rgba(255, 255, 255, 0.3) 10%,
+        transparent 15%,
+        rgba(255, 255, 255, 0.3) 20%,
+        transparent 25%,
+        rgba(255, 255, 255, 0.3) 30%,
+        transparent 35%,
+        rgba(255, 255, 255, 0.3) 40%,
+        transparent 45%,
+        rgba(255, 255, 255, 0.3) 50%,
+        transparent 55%,
+        rgba(255, 255, 255, 0.3) 60%,
+        transparent 65%,
+        rgba(255, 255, 255, 0.3) 70%,
+        transparent 75%,
+        rgba(255, 255, 255, 0.3) 80%,
+        transparent 85%,
+        rgba(255, 255, 255, 0.3) 90%,
+        transparent 95%,
+        rgba(255, 255, 255, 0.3) 100%
+      );
 
-      background-image: -o-linear-gradient(-45deg,
-          rgba(255, 255, 255, 0.3) 0%,
-          transparent 5%,
-          rgba(255, 255, 255, 0.3) 10%,
-          transparent 15%,
-          rgba(255, 255, 255, 0.3) 20%,
-          transparent 25%,
-          rgba(255, 255, 255, 0.3) 30%,
-          transparent 35%,
-          rgba(255, 255, 255, 0.3) 40%,
-          transparent 45%,
-          rgba(255, 255, 255, 0.3) 50%,
-          transparent 55%,
-          rgba(255, 255, 255, 0.3) 60%,
-          transparent 65%,
-          rgba(255, 255, 255, 0.3) 70%,
-          transparent 75%,
-          rgba(255, 255, 255, 0.3) 80%,
-          transparent 85%,
-          rgba(255, 255, 255, 0.3) 90%,
-          transparent 95%,
-          rgba(255, 255, 255, 0.3) 100%);
+      background-image: -o-linear-gradient(
+        -45deg,
+        rgba(255, 255, 255, 0.3) 0%,
+        transparent 5%,
+        rgba(255, 255, 255, 0.3) 10%,
+        transparent 15%,
+        rgba(255, 255, 255, 0.3) 20%,
+        transparent 25%,
+        rgba(255, 255, 255, 0.3) 30%,
+        transparent 35%,
+        rgba(255, 255, 255, 0.3) 40%,
+        transparent 45%,
+        rgba(255, 255, 255, 0.3) 50%,
+        transparent 55%,
+        rgba(255, 255, 255, 0.3) 60%,
+        transparent 65%,
+        rgba(255, 255, 255, 0.3) 70%,
+        transparent 75%,
+        rgba(255, 255, 255, 0.3) 80%,
+        transparent 85%,
+        rgba(255, 255, 255, 0.3) 90%,
+        transparent 95%,
+        rgba(255, 255, 255, 0.3) 100%
+      );
 
-      background-image: linear-gradient(-45deg,
-          rgba(255, 255, 255, 0.3) 0%,
-          transparent 5%,
-          rgba(255, 255, 255, 0.3) 10%,
-          transparent 15%,
-          rgba(255, 255, 255, 0.3) 20%,
-          transparent 25%,
-          rgba(255, 255, 255, 0.3) 30%,
-          transparent 35%,
-          rgba(255, 255, 255, 0.3) 40%,
-          transparent 45%,
-          rgba(255, 255, 255, 0.3) 50%,
-          transparent 55%,
-          rgba(255, 255, 255, 0.3) 60%,
-          transparent 65%,
-          rgba(255, 255, 255, 0.3) 70%,
-          transparent 75%,
-          rgba(255, 255, 255, 0.3) 80%,
-          transparent 85%,
-          rgba(255, 255, 255, 0.3) 90%,
-          transparent 95%,
-          rgba(255, 255, 255, 0.3) 100%);
+      background-image: linear-gradient(
+        -45deg,
+        rgba(255, 255, 255, 0.3) 0%,
+        transparent 5%,
+        rgba(255, 255, 255, 0.3) 10%,
+        transparent 15%,
+        rgba(255, 255, 255, 0.3) 20%,
+        transparent 25%,
+        rgba(255, 255, 255, 0.3) 30%,
+        transparent 35%,
+        rgba(255, 255, 255, 0.3) 40%,
+        transparent 45%,
+        rgba(255, 255, 255, 0.3) 50%,
+        transparent 55%,
+        rgba(255, 255, 255, 0.3) 60%,
+        transparent 65%,
+        rgba(255, 255, 255, 0.3) 70%,
+        transparent 75%,
+        rgba(255, 255, 255, 0.3) 80%,
+        transparent 85%,
+        rgba(255, 255, 255, 0.3) 90%,
+        transparent 95%,
+        rgba(255, 255, 255, 0.3) 100%
+      );
 
       transition: all 1s ease;
 
       .body-fill {
         width: 20px;
         height: 5px;
-        background-color: #1ab394;
+        background-color: #66ff00; //1ab394
       }
     }
   }
@@ -617,7 +622,7 @@ td {
   .step-item-middle .step-body:after,
   .step-item-middle .step-body:before,
   .step-item-last .step-body:before {
-    content: "";
+    content: '';
     position: absolute;
     top: calc(50% - 6px);
     height: 11px;
@@ -643,159 +648,122 @@ td {
 }
 
 .stepbar-progress {
-
   /* Individual Steps */
   @each $state in $step-states {
-    $animate-glyphicon: $state=="active";
-    $state-pass-glyph: map-get($state-to-glyph, "pass");
+    $animate-glyphicon: $state== 'active';
+    $state-pass-glyph: map-get($state-to-glyph, 'pass');
     $current-state-color: map-get($state-to-color, $state);
     $current-state-glyph: map-get($state-to-glyph, $state);
 
     // Upto step 1
-    &[data-current-step="sequenced"][data-step-status="#{$state}"] {
-      @include step-status("sequenced",
-        $current-state-color,
-        $current-state-glyph,
-        $animate-glyphicon,
-        true);
+    &[data-current-step='sequenced'][data-step-status='#{$state}'] {
+      @include step-status('sequenced', $current-state-color, $current-state-glyph, $animate-glyphicon, true);
     }
 
     // Upto step 2
-    &[data-current-step="analyzed"][data-step-status="#{$state}"] {
-      @include step-status("sequenced", $current-state-color, $state-pass-glyph);
-      @include step-status("analyzed",
-        $current-state-color,
-        $current-state-glyph,
-        $animate-glyphicon,
-        true);
-      @include fill-step-progress("sequenced", "analyzed", $current-state-color);
+    &[data-current-step='analyzed'][data-step-status='#{$state}'] {
+      @include step-status('sequenced', $current-state-color, $state-pass-glyph);
+      @include step-status('analyzed', $current-state-color, $current-state-glyph, $animate-glyphicon, true);
+      @include fill-step-progress('sequenced', 'analyzed', $current-state-color);
     }
 
     // Upto step 3
-    &[data-current-step="ondell"][data-step-status="#{$state}"] {
-      @include step-status("sequenced", $current-state-color, $state-pass-glyph);
-      @include step-status("analyzed", $current-state-color, $state-pass-glyph);
-      @include step-status("ondell",
-        $current-state-color,
-        $current-state-glyph,
-        $animate-glyphicon,
-        true);
-      @include fill-step-progress("sequenced", "analyzed", $current-state-color);
-      @include fill-step-progress("analyzed", "ondell", $current-state-color);
+    &[data-current-step='ondell'][data-step-status='#{$state}'] {
+      @include step-status('sequenced', $current-state-color, $state-pass-glyph);
+      @include step-status('analyzed', $current-state-color, $state-pass-glyph);
+      @include step-status('ondell', $current-state-color, $current-state-glyph, $animate-glyphicon, true);
+      @include fill-step-progress('sequenced', 'analyzed', $current-state-color);
+      @include fill-step-progress('analyzed', 'ondell', $current-state-color);
     }
 
-    &[data-current-step="converted"][data-step-status="#{$state}"] {
-      @include step-status("sequenced", $current-state-color, $state-pass-glyph);
-      @include step-status("analyzed", $current-state-color, $state-pass-glyph);
-      @include step-status("ondell", $current-state-color, $state-pass-glyph);
-      @include step-status("converted",
-        $current-state-color,
-        $current-state-glyph,
-        $animate-glyphicon,
-        true);
-      @include fill-step-progress("sequenced", "analyzed", $current-state-color);
-      @include fill-step-progress("analyzed", "ondell", $current-state-color);
-      @include fill-step-progress("ondell", "converted", $current-state-color);
+    &[data-current-step='converted'][data-step-status='#{$state}'] {
+      @include step-status('sequenced', $current-state-color, $state-pass-glyph);
+      @include step-status('analyzed', $current-state-color, $state-pass-glyph);
+      @include step-status('ondell', $current-state-color, $state-pass-glyph);
+      @include step-status('converted', $current-state-color, $current-state-glyph, $animate-glyphicon, true);
+      @include fill-step-progress('sequenced', 'analyzed', $current-state-color);
+      @include fill-step-progress('analyzed', 'ondell', $current-state-color);
+      @include fill-step-progress('ondell', 'converted', $current-state-color);
     }
 
-    &[data-current-step="incloud"][data-step-status="#{$state}"] {
-      @include step-status("sequenced", $current-state-color, $state-pass-glyph);
-      @include step-status("analyzed", $current-state-color, $state-pass-glyph);
-      @include step-status("ondell", $current-state-color, $state-pass-glyph);
-      @include step-status("converted", $current-state-color, $state-pass-glyph);
-      @include step-status("incloud",
-        $current-state-color,
-        $current-state-glyph,
-        $animate-glyphicon,
-        true);
-      @include fill-step-progress("sequenced", "analyzed", $current-state-color);
-      @include fill-step-progress("analyzed", "ondell", $current-state-color);
-      @include fill-step-progress("ondell", "converted", $current-state-color);
-      @include fill-step-progress("converted", "incloud", $current-state-color);
+    &[data-current-step='incloud'][data-step-status='#{$state}'] {
+      @include step-status('sequenced', $current-state-color, $state-pass-glyph);
+      @include step-status('analyzed', $current-state-color, $state-pass-glyph);
+      @include step-status('ondell', $current-state-color, $state-pass-glyph);
+      @include step-status('converted', $current-state-color, $state-pass-glyph);
+      @include step-status('incloud', $current-state-color, $current-state-glyph, $animate-glyphicon, true);
+      @include fill-step-progress('sequenced', 'analyzed', $current-state-color);
+      @include fill-step-progress('analyzed', 'ondell', $current-state-color);
+      @include fill-step-progress('ondell', 'converted', $current-state-color);
+      @include fill-step-progress('converted', 'incloud', $current-state-color);
     }
 
-    &[data-current-step="downloaded"][data-step-status="#{$state}"] {
-      @include step-status("sequenced", $current-state-color, $state-pass-glyph);
-      @include step-status("analyzed", $current-state-color, $state-pass-glyph);
-      @include step-status("ondell", $current-state-color, $state-pass-glyph);
-      @include step-status("converted", $current-state-color, $state-pass-glyph);
-      @include step-status("incloud", $current-state-color, $state-pass-glyph);
-      @include step-status("downloaded",
-        $current-state-color,
-        $current-state-glyph,
-        $animate-glyphicon,
-        true);
-      @include fill-step-progress("sequenced", "analyzed", $current-state-color);
-      @include fill-step-progress("analyzed", "ondell", $current-state-color);
-      @include fill-step-progress("ondell", "converted", $current-state-color);
-      @include fill-step-progress("converted", "incloud", $current-state-color);
-      @include fill-step-progress("incloud", "downloaded", $current-state-color);
+    &[data-current-step='downloaded'][data-step-status='#{$state}'] {
+      @include step-status('sequenced', $current-state-color, $state-pass-glyph);
+      @include step-status('analyzed', $current-state-color, $state-pass-glyph);
+      @include step-status('ondell', $current-state-color, $state-pass-glyph);
+      @include step-status('converted', $current-state-color, $state-pass-glyph);
+      @include step-status('incloud', $current-state-color, $state-pass-glyph);
+      @include step-status('downloaded', $current-state-color, $current-state-glyph, $animate-glyphicon, true);
+      @include fill-step-progress('sequenced', 'analyzed', $current-state-color);
+      @include fill-step-progress('analyzed', 'ondell', $current-state-color);
+      @include fill-step-progress('ondell', 'converted', $current-state-color);
+      @include fill-step-progress('converted', 'incloud', $current-state-color);
+      @include fill-step-progress('incloud', 'downloaded', $current-state-color);
     }
 
-    &[data-current-step="jobsubmitted"][data-step-status="#{$state}"] {
-      @include step-status("sequenced", $current-state-color, $state-pass-glyph);
-      @include step-status("analyzed", $current-state-color, $state-pass-glyph);
-      @include step-status("ondell", $current-state-color, $state-pass-glyph);
-      @include step-status("converted", $current-state-color, $state-pass-glyph);
-      @include step-status("incloud", $current-state-color, $state-pass-glyph);
-      @include step-status("downloaded", $current-state-color, $state-pass-glyph);
-      @include step-status("jobsubmitted",
-        $current-state-color,
-        $current-state-glyph,
-        $animate-glyphicon,
-        true);
-      @include fill-step-progress("sequenced", "analyzed", $current-state-color);
-      @include fill-step-progress("analyzed", "ondell", $current-state-color);
-      @include fill-step-progress("ondell", "converted", $current-state-color);
-      @include fill-step-progress("converted", "incloud", $current-state-color);
-      @include fill-step-progress("incloud", "downloaded", $current-state-color);
-      @include fill-step-progress("downloaded", "jobsubmitted", $current-state-color);
+    &[data-current-step='jobsubmitted'][data-step-status='#{$state}'] {
+      @include step-status('sequenced', $current-state-color, $state-pass-glyph);
+      @include step-status('analyzed', $current-state-color, $state-pass-glyph);
+      @include step-status('ondell', $current-state-color, $state-pass-glyph);
+      @include step-status('converted', $current-state-color, $state-pass-glyph);
+      @include step-status('incloud', $current-state-color, $state-pass-glyph);
+      @include step-status('downloaded', $current-state-color, $state-pass-glyph);
+      @include step-status('jobsubmitted', $current-state-color, $current-state-glyph, $animate-glyphicon, true);
+      @include fill-step-progress('sequenced', 'analyzed', $current-state-color);
+      @include fill-step-progress('analyzed', 'ondell', $current-state-color);
+      @include fill-step-progress('ondell', 'converted', $current-state-color);
+      @include fill-step-progress('converted', 'incloud', $current-state-color);
+      @include fill-step-progress('incloud', 'downloaded', $current-state-color);
+      @include fill-step-progress('downloaded', 'jobsubmitted', $current-state-color);
     }
 
-    &[data-current-step="jobcompleted"][data-step-status="#{$state}"] {
-      @include step-status("sequenced", $current-state-color, $state-pass-glyph);
-      @include step-status("analyzed", $current-state-color, $state-pass-glyph);
-      @include step-status("ondell", $current-state-color, $state-pass-glyph);
-      @include step-status("converted", $current-state-color, $state-pass-glyph);
-      @include step-status("incloud", $current-state-color, $state-pass-glyph);
-      @include step-status("downloaded", $current-state-color, $state-pass-glyph);
-      @include step-status("jobsubmitted", $current-state-color, $state-pass-glyph);
-      @include step-status("jobcompleted",
-        $current-state-color,
-        $current-state-glyph,
-        $animate-glyphicon,
-        true);
-      @include fill-step-progress("sequenced", "analyzed", $current-state-color);
-      @include fill-step-progress("analyzed", "ondell", $current-state-color);
-      @include fill-step-progress("ondell", "converted", $current-state-color);
-      @include fill-step-progress("converted", "incloud", $current-state-color);
-      @include fill-step-progress("incloud", "downloaded", $current-state-color);
-      @include fill-step-progress("downloaded", "jobsubmitted", $current-state-color);
-      @include fill-step-progress("jobsubmitted", "jobcompleted", $current-state-color);
+    &[data-current-step='jobcompleted'][data-step-status='#{$state}'] {
+      @include step-status('sequenced', $current-state-color, $state-pass-glyph);
+      @include step-status('analyzed', $current-state-color, $state-pass-glyph);
+      @include step-status('ondell', $current-state-color, $state-pass-glyph);
+      @include step-status('converted', $current-state-color, $state-pass-glyph);
+      @include step-status('incloud', $current-state-color, $state-pass-glyph);
+      @include step-status('downloaded', $current-state-color, $state-pass-glyph);
+      @include step-status('jobsubmitted', $current-state-color, $state-pass-glyph);
+      @include step-status('jobcompleted', $current-state-color, $current-state-glyph, $animate-glyphicon, true);
+      @include fill-step-progress('sequenced', 'analyzed', $current-state-color);
+      @include fill-step-progress('analyzed', 'ondell', $current-state-color);
+      @include fill-step-progress('ondell', 'converted', $current-state-color);
+      @include fill-step-progress('converted', 'incloud', $current-state-color);
+      @include fill-step-progress('incloud', 'downloaded', $current-state-color);
+      @include fill-step-progress('downloaded', 'jobsubmitted', $current-state-color);
+      @include fill-step-progress('jobsubmitted', 'jobcompleted', $current-state-color);
     }
 
-    &[data-current-step="backtodell"][data-step-status="#{$state}"] {
-      @include step-status("sequenced", $current-state-color, $state-pass-glyph);
-      @include step-status("analyzed", $current-state-color, $state-pass-glyph);
-      @include step-status("ondell", $current-state-color, $state-pass-glyph);
-      @include step-status("converted", $current-state-color, $state-pass-glyph);
-      @include step-status("incloud", $current-state-color, $state-pass-glyph);
-      @include step-status("downloaded", $current-state-color, $state-pass-glyph);
-      @include step-status("jobsubmitted", $current-state-color, $state-pass-glyph);
-      @include step-status("jobcompleted", $current-state-color, $state-pass-glyph);
-      @include step-status("backtodell",
-        $current-state-color,
-        $current-state-glyph,
-        $animate-glyphicon,
-        true);
-      @include fill-step-progress("sequenced", "analyzed", $current-state-color);
-      @include fill-step-progress("analyzed", "ondell", $current-state-color);
-      @include fill-step-progress("ondell", "converted", $current-state-color);
-      @include fill-step-progress("converted", "incloud", $current-state-color);
-      @include fill-step-progress("incloud", "downloaded", $current-state-color);
-      @include fill-step-progress("downloaded", "jobsubmitted", $current-state-color);
-      @include fill-step-progress("jobsubmitted", "jobcompleted", $current-state-color);
-      @include fill-step-progress("jobcompleted", "backtodell", $current-state-color);
+    &[data-current-step='backtodell'][data-step-status='#{$state}'] {
+      @include step-status('sequenced', $current-state-color, $state-pass-glyph);
+      @include step-status('analyzed', $current-state-color, $state-pass-glyph);
+      @include step-status('ondell', $current-state-color, $state-pass-glyph);
+      @include step-status('converted', $current-state-color, $state-pass-glyph);
+      @include step-status('incloud', $current-state-color, $state-pass-glyph);
+      @include step-status('downloaded', $current-state-color, $state-pass-glyph);
+      @include step-status('jobsubmitted', $current-state-color, $state-pass-glyph);
+      @include step-status('jobcompleted', $current-state-color, $state-pass-glyph);
+      @include step-status('backtodell', $current-state-color, $current-state-glyph, $animate-glyphicon, true);
+      @include fill-step-progress('sequenced', 'analyzed', $current-state-color);
+      @include fill-step-progress('analyzed', 'ondell', $current-state-color);
+      @include fill-step-progress('ondell', 'converted', $current-state-color);
+      @include fill-step-progress('converted', 'incloud', $current-state-color);
+      @include fill-step-progress('incloud', 'downloaded', $current-state-color);
+      @include fill-step-progress('downloaded', 'jobsubmitted', $current-state-color);
+      @include fill-step-progress('jobsubmitted', 'jobcompleted', $current-state-color);
+      @include fill-step-progress('jobcompleted', 'backtodell', $current-state-color);
     }
   }
 }
