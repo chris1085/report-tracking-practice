@@ -1,4 +1,13 @@
 @charset "UTF-8";
+<<<<<<< HEAD
+=======
+@import url("https://fonts.googleapis.com/css?family=Crimson+Text:700i&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Crimson+Text:700i|Gentium+Book+Basic:700i&display=swap");
+/*=============================================
+=            rainbow bar start                =
+=============================================*/
+/*=====  End of rainbow bar  ======*/
+>>>>>>> nips_Function
 /*=============================================
 =            step progress bar mixin          =
 =============================================*/
@@ -20,7 +29,11 @@ h1 {
   font-weight: bold;
 }
 
+<<<<<<< HEAD
 h2 {
+=======
+.sub-title {
+>>>>>>> nips_Function
   font-family: "Noto Sans TC";
   font-weight: bold;
   color: gray;
@@ -56,6 +69,13 @@ h2 {
   }
 }
 
+<<<<<<< HEAD
+=======
+.navbar {
+  padding: 0px !important;
+}
+
+>>>>>>> nips_Function
 .nav-item {
   padding: 15px 5px;
   margin: 0 10px;
@@ -75,14 +95,23 @@ h2 {
 }
 
 .nav-item::after {
+<<<<<<< HEAD
   content: "";
+=======
+  content: '';
+>>>>>>> nips_Function
   border-bottom: 2px solid black;
   margin: auto;
   position: relative;
   width: 0%;
   display: block;
+<<<<<<< HEAD
   -webkit-transition: all .2s;
   transition: all .2s;
+=======
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+>>>>>>> nips_Function
 }
 
 .nav-item:hover::after {
@@ -90,18 +119,132 @@ h2 {
 }
 
 .test {
+<<<<<<< HEAD
   border: 1px solid red;
 }
 
 .banner::after {
   content: "";
+=======
+  border: 1px solid green;
+}
+
+.font-title {
+  font-family: 'Gentium Book Basic', serif;
+  font-size: 80px;
+}
+
+.banner::after {
+  content: '';
+>>>>>>> nips_Function
   border-bottom: 2px solid gray;
   display: block;
   padding-bottom: 25px;
 }
 
+<<<<<<< HEAD
 .row-sampleRun {
   font-size: 14px;
+=======
+.content-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .content-header {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .content-header h4 {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .banner-time-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 576px) {
+  .banner-time-content {
+    font-size: 18px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.row-sampleRun {
+  font-size: 14px;
+  width: 100%;
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .row-sampleRun {
+    border: 1px solid gray !important;
+    margin-top: 0.5rem !important;
+    margin-bottom: 0.5rem !important;
+    margin-left: 0.1rem !important;
+    border-radius: 8px;
+    padding-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .row-sampleRun {
+    border: 1px solid gray !important;
+    border-radius: 8px;
+    margin-top: 0.6rem !important;
+    margin-bottom: 0.6rem !important;
+    margin-left: 0.1rem !important;
+    padding-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .content-info,
+  .content-header {
+    margin-left: 0.1rem !important;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .content-info,
+  .content-header {
+    margin-left: 0.1rem !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .content-info {
+    border: 3px solid green !important;
+    border-radius: 8px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .content-info {
+    border: 3px solid green !important;
+    border-radius: 8px;
+  }
+>>>>>>> nips_Function
 }
 
 .content-header-info {
@@ -126,6 +269,7 @@ h2 {
   font-size: 30px;
 }
 
+<<<<<<< HEAD
 .arrow-left {
   display: inline-block;
   width: 0;
@@ -360,6 +504,171 @@ ul.checkout-bar li:nth-child(9):before {
     width: 100%;
     z-index: 99;
   }
+=======
+@media (min-width: 577px) and (max-width: 768px) {
+  #content-header-time,
+  .duration-time {
+    -webkit-box-pack: end !important;
+        -ms-flex-pack: end !important;
+            justify-content: flex-end !important;
+  }
+}
+
+@media (max-width: 576px) {
+  #content-header-time,
+  .duration-time {
+    -webkit-box-pack: end !important;
+        -ms-flex-pack: end !important;
+            justify-content: flex-end !important;
+  }
+}
+
+.card-body {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.content-header-info-list {
+  -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
+  list-style: none;
+  overflow: hidden;
+  font: 20px Helvetica;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.content-header-info-list li {
+  text-align: center;
+}
+
+.content-header-info-list__steps {
+  background: #ddd;
+  color: #666;
+  width: 100%;
+  position: relative;
+  cursor: default;
+  text-align: center;
+}
+
+@media screen and (min-width: 800px) {
+  .content-header-info-list__steps {
+    padding: 20px 0 20px 65px;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .content-header-info-list__steps {
+    padding: 15px 0 15px 30px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .content-header-info-list__steps:after {
+    border-bottom: 50px solid transparent;
+    border-top: 50px solid transparent;
+    content: ' ';
+    display: block;
+    height: 0;
+    left: 100%;
+    margin-top: -50px;
+    position: absolute;
+    top: 50%;
+    width: 0;
+    border-left: 30px solid #ddd;
+    z-index: 2;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .content-header-info-list__steps:before {
+    border-bottom: 50px solid transparent;
+    border-top: 50px solid transparent;
+    content: ' ';
+    display: block;
+    height: 0;
+    left: 100%;
+    margin-top: -50px;
+    position: absolute;
+    top: 50%;
+    width: 0;
+    border-left: 30px solid #fff;
+    z-index: 1;
+    margin-left: 5px;
+  }
+}
+
+.content-header-info-list__steps .content-header-info-list__steps-sofiva,
+.content-header-info-list__steps .content-header-info-list__steps-cloud {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.content-header-info-list__steps .content-header-info-list__steps-sofiva:before,
+.content-header-info-list__steps .content-header-info-list__steps-cloud:before {
+  display: inline-block;
+  width: 46px;
+  height: 46px;
+  padding-right: 60px;
+  content: '';
+}
+
+.content-header-info-list__steps .content-header-info-list__steps-sofiva:before {
+  background-image: url("../images/SOFIVA.png");
+  background-repeat: no-repeat;
+  background-size: 46px 46px;
+}
+
+.content-header-info-list__steps .content-header-info-list__steps-cloud:before {
+  background-image: url("../images/cloud.png");
+  background-repeat: no-repeat;
+  background-size: 38px 46px;
+  padding-right: 46px;
+}
+
+.content-header-info-list .current {
+  background: #58b2dc;
+  color: #fff;
+}
+
+.content-header-info-list .current:after {
+  border-left: 30px solid #647d5e;
+}
+
+.first-info {
+  width: 70%;
+}
+
+.content-icon-item {
+  height: 32px;
+  width: 32px;
+  color: gray !important;
+}
+
+.content-icon-progress {
+  width: 12.5%;
+  height: 32px;
+  display: block;
+}
+
+.runID {
+  word-wrap: break-word;
+  width: 100%;
+>>>>>>> nips_Function
 }
 
 /*=============================================
@@ -386,12 +695,74 @@ ul.checkout-bar li:nth-child(9):before {
   }
 }
 
+<<<<<<< HEAD
 .glyphicon {
   font-family: "Font Awesome 5 Free";
+=======
+.glyphicon,
+.glyphicon-step1,
+.glyphicon-step2,
+.glyphicon-step3,
+.glyphicon-step4,
+.glyphicon-step5,
+.glyphicon-step6,
+.glyphicon-step7,
+.glyphicon-step8,
+.glyphicon-step9 {
+  font-family: 'Font Awesome 5 Free';
+>>>>>>> nips_Function
   font-weight: 900;
   display: block;
 }
 
+<<<<<<< HEAD
+=======
+.glyphicon-step1:before {
+  font-size: 32px;
+  content: "";
+}
+
+.glyphicon-step2:before {
+  font-size: 32px;
+  content: "";
+}
+
+.glyphicon-step3:before {
+  font-size: 32px;
+  content: "";
+}
+
+.glyphicon-step4:before {
+  font-size: 32px;
+  content: "";
+}
+
+.glyphicon-step5:before {
+  font-size: 32px;
+  content: "";
+}
+
+.glyphicon-step6:before {
+  font-size: 32px;
+  content: "";
+}
+
+.glyphicon-step7:before {
+  font-size: 32px;
+  content: "";
+}
+
+.glyphicon-step8:before {
+  font-size: 32px;
+  content: "";
+}
+
+.glyphicon-step9:before {
+  font-size: 32px;
+  content: "";
+}
+
+>>>>>>> nips_Function
 td {
   text-align: center;
 }
@@ -414,9 +785,16 @@ td {
   display: block;
   width: 32px;
   height: 32px;
+<<<<<<< HEAD
   background-color: #E4E4E7;
   border: 5px solid #E4E4E7;
   border-radius: 50%;
+=======
+  background-color: #e4e4e7;
+  border: 5px solid #e4e4e7;
+  border-radius: 50%;
+  cursor: pointer;
+>>>>>>> nips_Function
 }
 
 .stepbar-progress .step-item .step-body .glyphicon:before {
@@ -434,9 +812,15 @@ td {
 .stepbar-progress .step-item-progress .progress-body {
   display: block;
   height: 11px;
+<<<<<<< HEAD
   background-color: #E4E4E7;
   border-top: 3px solid #E4E4E7;
   border-bottom: 3px solid #E4E4E7;
+=======
+  background-color: #e4e4e7;
+  border-top: 3px solid #e4e4e7;
+  border-bottom: 3px solid #e4e4e7;
+>>>>>>> nips_Function
   background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.3) 0%, transparent 5%, rgba(255, 255, 255, 0.3) 10%, transparent 15%, rgba(255, 255, 255, 0.3) 20%, transparent 25%, rgba(255, 255, 255, 0.3) 30%, transparent 35%, rgba(255, 255, 255, 0.3) 40%, transparent 45%, rgba(255, 255, 255, 0.3) 50%, transparent 55%, rgba(255, 255, 255, 0.3) 60%, transparent 65%, rgba(255, 255, 255, 0.3) 70%, transparent 75%, rgba(255, 255, 255, 0.3) 80%, transparent 85%, rgba(255, 255, 255, 0.3) 90%, transparent 95%, rgba(255, 255, 255, 0.3) 100%);
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
@@ -445,21 +829,35 @@ td {
 .stepbar-progress .step-item-progress .progress-body .body-fill {
   width: 20px;
   height: 5px;
+<<<<<<< HEAD
   background-color: #1AB394;
+=======
+  background-color: #66ff00;
+>>>>>>> nips_Function
 }
 
 .stepbar-progress .step-item-first .step-body:after,
 .stepbar-progress .step-item-middle .step-body:after,
 .stepbar-progress .step-item-middle .step-body:before,
 .stepbar-progress .step-item-last .step-body:before {
+<<<<<<< HEAD
   content: "";
+=======
+  content: '';
+>>>>>>> nips_Function
   position: absolute;
   top: calc(50% - 6px);
   height: 11px;
   width: 6px;
+<<<<<<< HEAD
   background-color: #E4E4E7;
   border-top: 3px solid #E4E4E7;
   border-bottom: 3px solid #E4E4E7;
+=======
+  background-color: #e4e4e7;
+  border-top: 3px solid #e4e4e7;
+  border-bottom: 3px solid #e4e4e7;
+>>>>>>> nips_Function
 }
 
 .stepbar-progress .step-item-first .step-body:after,
@@ -476,6 +874,7 @@ td {
   /* Individual Steps */
 }
 
+<<<<<<< HEAD
 .stepbar-progress[data-current-step="1"][data-step-status="pending"] .step-item[data-step="1"] .step-body:before,
 .stepbar-progress[data-current-step="1"][data-step-status="pending"] .step-item[data-step="1"] .step-body:after {
   width: 0px;
@@ -1127,10 +1526,664 @@ td {
 }
 
 .stepbar-progress[data-current-step="1"][data-step-status="active"] .step-item[data-step="1"] .step-body .glyphicon {
+=======
+.stepbar-progress[data-current-step='sequenced'][data-step-status='pending'] .step-item[data-step='sequenced'] .step-body:before,
+.stepbar-progress[data-current-step='sequenced'][data-step-status='pending'] .step-item[data-step='sequenced'] .step-body:after {
+  width: 0px;
+}
+
+.stepbar-progress[data-current-step='sequenced'][data-step-status='pending'] .step-item[data-step='sequenced'] .step-body {
+  background-color: #f8ac59;
+  -webkit-box-shadow: 0 0 0 3px #f8ac59;
+          box-shadow: 0 0 0 3px #f8ac59;
+}
+
+.stepbar-progress[data-current-step='sequenced'][data-step-status='pending'] .step-item[data-step='sequenced'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='analyzed'][data-step-status='pending'] .step-item[data-step='sequenced'] .step-body {
+  background-color: #f8ac59;
+}
+
+.stepbar-progress[data-current-step='analyzed'][data-step-status='pending'] .step-item[data-step='sequenced'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='analyzed'][data-step-status='pending'] .step-item[data-step='analyzed'] .step-body:before,
+.stepbar-progress[data-current-step='analyzed'][data-step-status='pending'] .step-item[data-step='analyzed'] .step-body:after {
+  width: 0px;
+}
+
+.stepbar-progress[data-current-step='analyzed'][data-step-status='pending'] .step-item[data-step='analyzed'] .step-body {
+  background-color: #f8ac59;
+  -webkit-box-shadow: 0 0 0 3px #f8ac59;
+          box-shadow: 0 0 0 3px #f8ac59;
+}
+
+.stepbar-progress[data-current-step='analyzed'][data-step-status='pending'] .step-item[data-step='analyzed'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='analyzed'][data-step-status='pending'] .step-item[data-step='sequenced'] .step-body:after,
+.stepbar-progress[data-current-step='analyzed'][data-step-status='pending'] .step-item[data-step='sequenced'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='analyzed'][data-step-status='pending'] .step-item[data-step='analyzed'] .step-body:before {
+  background-color: #f8ac59;
+}
+
+.stepbar-progress[data-current-step='ondell'][data-step-status='pending'] .step-item[data-step='sequenced'] .step-body {
+  background-color: #f8ac59;
+}
+
+.stepbar-progress[data-current-step='ondell'][data-step-status='pending'] .step-item[data-step='sequenced'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='ondell'][data-step-status='pending'] .step-item[data-step='analyzed'] .step-body {
+  background-color: #f8ac59;
+}
+
+.stepbar-progress[data-current-step='ondell'][data-step-status='pending'] .step-item[data-step='analyzed'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='ondell'][data-step-status='pending'] .step-item[data-step='ondell'] .step-body:before,
+.stepbar-progress[data-current-step='ondell'][data-step-status='pending'] .step-item[data-step='ondell'] .step-body:after {
+  width: 0px;
+}
+
+.stepbar-progress[data-current-step='ondell'][data-step-status='pending'] .step-item[data-step='ondell'] .step-body {
+  background-color: #f8ac59;
+  -webkit-box-shadow: 0 0 0 3px #f8ac59;
+          box-shadow: 0 0 0 3px #f8ac59;
+}
+
+.stepbar-progress[data-current-step='ondell'][data-step-status='pending'] .step-item[data-step='ondell'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='ondell'][data-step-status='pending'] .step-item[data-step='sequenced'] .step-body:after,
+.stepbar-progress[data-current-step='ondell'][data-step-status='pending'] .step-item[data-step='sequenced'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='ondell'][data-step-status='pending'] .step-item[data-step='analyzed'] .step-body:before {
+  background-color: #f8ac59;
+}
+
+.stepbar-progress[data-current-step='ondell'][data-step-status='pending'] .step-item[data-step='analyzed'] .step-body:after,
+.stepbar-progress[data-current-step='ondell'][data-step-status='pending'] .step-item[data-step='analyzed'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='ondell'][data-step-status='pending'] .step-item[data-step='ondell'] .step-body:before {
+  background-color: #f8ac59;
+}
+
+.stepbar-progress[data-current-step='converted'][data-step-status='pending'] .step-item[data-step='sequenced'] .step-body {
+  background-color: #f8ac59;
+}
+
+.stepbar-progress[data-current-step='converted'][data-step-status='pending'] .step-item[data-step='sequenced'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='converted'][data-step-status='pending'] .step-item[data-step='analyzed'] .step-body {
+  background-color: #f8ac59;
+}
+
+.stepbar-progress[data-current-step='converted'][data-step-status='pending'] .step-item[data-step='analyzed'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='converted'][data-step-status='pending'] .step-item[data-step='ondell'] .step-body {
+  background-color: #f8ac59;
+}
+
+.stepbar-progress[data-current-step='converted'][data-step-status='pending'] .step-item[data-step='ondell'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='converted'][data-step-status='pending'] .step-item[data-step='converted'] .step-body:before,
+.stepbar-progress[data-current-step='converted'][data-step-status='pending'] .step-item[data-step='converted'] .step-body:after {
+  width: 0px;
+}
+
+.stepbar-progress[data-current-step='converted'][data-step-status='pending'] .step-item[data-step='converted'] .step-body {
+  background-color: #f8ac59;
+  -webkit-box-shadow: 0 0 0 3px #f8ac59;
+          box-shadow: 0 0 0 3px #f8ac59;
+}
+
+.stepbar-progress[data-current-step='converted'][data-step-status='pending'] .step-item[data-step='converted'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='converted'][data-step-status='pending'] .step-item[data-step='sequenced'] .step-body:after,
+.stepbar-progress[data-current-step='converted'][data-step-status='pending'] .step-item[data-step='sequenced'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='converted'][data-step-status='pending'] .step-item[data-step='analyzed'] .step-body:before {
+  background-color: #f8ac59;
+}
+
+.stepbar-progress[data-current-step='converted'][data-step-status='pending'] .step-item[data-step='analyzed'] .step-body:after,
+.stepbar-progress[data-current-step='converted'][data-step-status='pending'] .step-item[data-step='analyzed'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='converted'][data-step-status='pending'] .step-item[data-step='ondell'] .step-body:before {
+  background-color: #f8ac59;
+}
+
+.stepbar-progress[data-current-step='converted'][data-step-status='pending'] .step-item[data-step='ondell'] .step-body:after,
+.stepbar-progress[data-current-step='converted'][data-step-status='pending'] .step-item[data-step='ondell'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='converted'][data-step-status='pending'] .step-item[data-step='converted'] .step-body:before {
+  background-color: #f8ac59;
+}
+
+.stepbar-progress[data-current-step='incloud'][data-step-status='pending'] .step-item[data-step='sequenced'] .step-body {
+  background-color: #f8ac59;
+}
+
+.stepbar-progress[data-current-step='incloud'][data-step-status='pending'] .step-item[data-step='sequenced'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='incloud'][data-step-status='pending'] .step-item[data-step='analyzed'] .step-body {
+  background-color: #f8ac59;
+}
+
+.stepbar-progress[data-current-step='incloud'][data-step-status='pending'] .step-item[data-step='analyzed'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='incloud'][data-step-status='pending'] .step-item[data-step='ondell'] .step-body {
+  background-color: #f8ac59;
+}
+
+.stepbar-progress[data-current-step='incloud'][data-step-status='pending'] .step-item[data-step='ondell'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='incloud'][data-step-status='pending'] .step-item[data-step='converted'] .step-body {
+  background-color: #f8ac59;
+}
+
+.stepbar-progress[data-current-step='incloud'][data-step-status='pending'] .step-item[data-step='converted'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='incloud'][data-step-status='pending'] .step-item[data-step='incloud'] .step-body:before,
+.stepbar-progress[data-current-step='incloud'][data-step-status='pending'] .step-item[data-step='incloud'] .step-body:after {
+  width: 0px;
+}
+
+.stepbar-progress[data-current-step='incloud'][data-step-status='pending'] .step-item[data-step='incloud'] .step-body {
+  background-color: #f8ac59;
+  -webkit-box-shadow: 0 0 0 3px #f8ac59;
+          box-shadow: 0 0 0 3px #f8ac59;
+}
+
+.stepbar-progress[data-current-step='incloud'][data-step-status='pending'] .step-item[data-step='incloud'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='incloud'][data-step-status='pending'] .step-item[data-step='sequenced'] .step-body:after,
+.stepbar-progress[data-current-step='incloud'][data-step-status='pending'] .step-item[data-step='sequenced'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='incloud'][data-step-status='pending'] .step-item[data-step='analyzed'] .step-body:before {
+  background-color: #f8ac59;
+}
+
+.stepbar-progress[data-current-step='incloud'][data-step-status='pending'] .step-item[data-step='analyzed'] .step-body:after,
+.stepbar-progress[data-current-step='incloud'][data-step-status='pending'] .step-item[data-step='analyzed'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='incloud'][data-step-status='pending'] .step-item[data-step='ondell'] .step-body:before {
+  background-color: #f8ac59;
+}
+
+.stepbar-progress[data-current-step='incloud'][data-step-status='pending'] .step-item[data-step='ondell'] .step-body:after,
+.stepbar-progress[data-current-step='incloud'][data-step-status='pending'] .step-item[data-step='ondell'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='incloud'][data-step-status='pending'] .step-item[data-step='converted'] .step-body:before {
+  background-color: #f8ac59;
+}
+
+.stepbar-progress[data-current-step='incloud'][data-step-status='pending'] .step-item[data-step='converted'] .step-body:after,
+.stepbar-progress[data-current-step='incloud'][data-step-status='pending'] .step-item[data-step='converted'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='incloud'][data-step-status='pending'] .step-item[data-step='incloud'] .step-body:before {
+  background-color: #f8ac59;
+}
+
+.stepbar-progress[data-current-step='downloaded'][data-step-status='pending'] .step-item[data-step='sequenced'] .step-body {
+  background-color: #f8ac59;
+}
+
+.stepbar-progress[data-current-step='downloaded'][data-step-status='pending'] .step-item[data-step='sequenced'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='downloaded'][data-step-status='pending'] .step-item[data-step='analyzed'] .step-body {
+  background-color: #f8ac59;
+}
+
+.stepbar-progress[data-current-step='downloaded'][data-step-status='pending'] .step-item[data-step='analyzed'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='downloaded'][data-step-status='pending'] .step-item[data-step='ondell'] .step-body {
+  background-color: #f8ac59;
+}
+
+.stepbar-progress[data-current-step='downloaded'][data-step-status='pending'] .step-item[data-step='ondell'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='downloaded'][data-step-status='pending'] .step-item[data-step='converted'] .step-body {
+  background-color: #f8ac59;
+}
+
+.stepbar-progress[data-current-step='downloaded'][data-step-status='pending'] .step-item[data-step='converted'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='downloaded'][data-step-status='pending'] .step-item[data-step='incloud'] .step-body {
+  background-color: #f8ac59;
+}
+
+.stepbar-progress[data-current-step='downloaded'][data-step-status='pending'] .step-item[data-step='incloud'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='downloaded'][data-step-status='pending'] .step-item[data-step='downloaded'] .step-body:before,
+.stepbar-progress[data-current-step='downloaded'][data-step-status='pending'] .step-item[data-step='downloaded'] .step-body:after {
+  width: 0px;
+}
+
+.stepbar-progress[data-current-step='downloaded'][data-step-status='pending'] .step-item[data-step='downloaded'] .step-body {
+  background-color: #f8ac59;
+  -webkit-box-shadow: 0 0 0 3px #f8ac59;
+          box-shadow: 0 0 0 3px #f8ac59;
+}
+
+.stepbar-progress[data-current-step='downloaded'][data-step-status='pending'] .step-item[data-step='downloaded'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='downloaded'][data-step-status='pending'] .step-item[data-step='sequenced'] .step-body:after,
+.stepbar-progress[data-current-step='downloaded'][data-step-status='pending'] .step-item[data-step='sequenced'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='downloaded'][data-step-status='pending'] .step-item[data-step='analyzed'] .step-body:before {
+  background-color: #f8ac59;
+}
+
+.stepbar-progress[data-current-step='downloaded'][data-step-status='pending'] .step-item[data-step='analyzed'] .step-body:after,
+.stepbar-progress[data-current-step='downloaded'][data-step-status='pending'] .step-item[data-step='analyzed'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='downloaded'][data-step-status='pending'] .step-item[data-step='ondell'] .step-body:before {
+  background-color: #f8ac59;
+}
+
+.stepbar-progress[data-current-step='downloaded'][data-step-status='pending'] .step-item[data-step='ondell'] .step-body:after,
+.stepbar-progress[data-current-step='downloaded'][data-step-status='pending'] .step-item[data-step='ondell'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='downloaded'][data-step-status='pending'] .step-item[data-step='converted'] .step-body:before {
+  background-color: #f8ac59;
+}
+
+.stepbar-progress[data-current-step='downloaded'][data-step-status='pending'] .step-item[data-step='converted'] .step-body:after,
+.stepbar-progress[data-current-step='downloaded'][data-step-status='pending'] .step-item[data-step='converted'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='downloaded'][data-step-status='pending'] .step-item[data-step='incloud'] .step-body:before {
+  background-color: #f8ac59;
+}
+
+.stepbar-progress[data-current-step='downloaded'][data-step-status='pending'] .step-item[data-step='incloud'] .step-body:after,
+.stepbar-progress[data-current-step='downloaded'][data-step-status='pending'] .step-item[data-step='incloud'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='downloaded'][data-step-status='pending'] .step-item[data-step='downloaded'] .step-body:before {
+  background-color: #f8ac59;
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='pending'] .step-item[data-step='sequenced'] .step-body {
+  background-color: #f8ac59;
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='pending'] .step-item[data-step='sequenced'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='pending'] .step-item[data-step='analyzed'] .step-body {
+  background-color: #f8ac59;
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='pending'] .step-item[data-step='analyzed'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='pending'] .step-item[data-step='ondell'] .step-body {
+  background-color: #f8ac59;
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='pending'] .step-item[data-step='ondell'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='pending'] .step-item[data-step='converted'] .step-body {
+  background-color: #f8ac59;
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='pending'] .step-item[data-step='converted'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='pending'] .step-item[data-step='incloud'] .step-body {
+  background-color: #f8ac59;
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='pending'] .step-item[data-step='incloud'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='pending'] .step-item[data-step='downloaded'] .step-body {
+  background-color: #f8ac59;
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='pending'] .step-item[data-step='downloaded'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='pending'] .step-item[data-step='jobsubmitted'] .step-body:before,
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='pending'] .step-item[data-step='jobsubmitted'] .step-body:after {
+  width: 0px;
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='pending'] .step-item[data-step='jobsubmitted'] .step-body {
+  background-color: #f8ac59;
+  -webkit-box-shadow: 0 0 0 3px #f8ac59;
+          box-shadow: 0 0 0 3px #f8ac59;
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='pending'] .step-item[data-step='jobsubmitted'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='pending'] .step-item[data-step='sequenced'] .step-body:after,
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='pending'] .step-item[data-step='sequenced'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='pending'] .step-item[data-step='analyzed'] .step-body:before {
+  background-color: #f8ac59;
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='pending'] .step-item[data-step='analyzed'] .step-body:after,
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='pending'] .step-item[data-step='analyzed'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='pending'] .step-item[data-step='ondell'] .step-body:before {
+  background-color: #f8ac59;
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='pending'] .step-item[data-step='ondell'] .step-body:after,
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='pending'] .step-item[data-step='ondell'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='pending'] .step-item[data-step='converted'] .step-body:before {
+  background-color: #f8ac59;
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='pending'] .step-item[data-step='converted'] .step-body:after,
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='pending'] .step-item[data-step='converted'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='pending'] .step-item[data-step='incloud'] .step-body:before {
+  background-color: #f8ac59;
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='pending'] .step-item[data-step='incloud'] .step-body:after,
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='pending'] .step-item[data-step='incloud'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='pending'] .step-item[data-step='downloaded'] .step-body:before {
+  background-color: #f8ac59;
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='pending'] .step-item[data-step='downloaded'] .step-body:after,
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='pending'] .step-item[data-step='downloaded'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='pending'] .step-item[data-step='jobsubmitted'] .step-body:before {
+  background-color: #f8ac59;
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='pending'] .step-item[data-step='sequenced'] .step-body {
+  background-color: #f8ac59;
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='pending'] .step-item[data-step='sequenced'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='pending'] .step-item[data-step='analyzed'] .step-body {
+  background-color: #f8ac59;
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='pending'] .step-item[data-step='analyzed'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='pending'] .step-item[data-step='ondell'] .step-body {
+  background-color: #f8ac59;
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='pending'] .step-item[data-step='ondell'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='pending'] .step-item[data-step='converted'] .step-body {
+  background-color: #f8ac59;
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='pending'] .step-item[data-step='converted'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='pending'] .step-item[data-step='incloud'] .step-body {
+  background-color: #f8ac59;
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='pending'] .step-item[data-step='incloud'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='pending'] .step-item[data-step='downloaded'] .step-body {
+  background-color: #f8ac59;
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='pending'] .step-item[data-step='downloaded'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='pending'] .step-item[data-step='jobsubmitted'] .step-body {
+  background-color: #f8ac59;
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='pending'] .step-item[data-step='jobsubmitted'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='pending'] .step-item[data-step='jobcompleted'] .step-body:before,
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='pending'] .step-item[data-step='jobcompleted'] .step-body:after {
+  width: 0px;
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='pending'] .step-item[data-step='jobcompleted'] .step-body {
+  background-color: #f8ac59;
+  -webkit-box-shadow: 0 0 0 3px #f8ac59;
+          box-shadow: 0 0 0 3px #f8ac59;
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='pending'] .step-item[data-step='jobcompleted'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='pending'] .step-item[data-step='sequenced'] .step-body:after,
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='pending'] .step-item[data-step='sequenced'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='pending'] .step-item[data-step='analyzed'] .step-body:before {
+  background-color: #f8ac59;
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='pending'] .step-item[data-step='analyzed'] .step-body:after,
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='pending'] .step-item[data-step='analyzed'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='pending'] .step-item[data-step='ondell'] .step-body:before {
+  background-color: #f8ac59;
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='pending'] .step-item[data-step='ondell'] .step-body:after,
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='pending'] .step-item[data-step='ondell'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='pending'] .step-item[data-step='converted'] .step-body:before {
+  background-color: #f8ac59;
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='pending'] .step-item[data-step='converted'] .step-body:after,
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='pending'] .step-item[data-step='converted'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='pending'] .step-item[data-step='incloud'] .step-body:before {
+  background-color: #f8ac59;
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='pending'] .step-item[data-step='incloud'] .step-body:after,
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='pending'] .step-item[data-step='incloud'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='pending'] .step-item[data-step='downloaded'] .step-body:before {
+  background-color: #f8ac59;
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='pending'] .step-item[data-step='downloaded'] .step-body:after,
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='pending'] .step-item[data-step='downloaded'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='pending'] .step-item[data-step='jobsubmitted'] .step-body:before {
+  background-color: #f8ac59;
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='pending'] .step-item[data-step='jobsubmitted'] .step-body:after,
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='pending'] .step-item[data-step='jobsubmitted'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='pending'] .step-item[data-step='jobcompleted'] .step-body:before {
+  background-color: #f8ac59;
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pending'] .step-item[data-step='sequenced'] .step-body {
+  background-color: #f8ac59;
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pending'] .step-item[data-step='sequenced'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pending'] .step-item[data-step='analyzed'] .step-body {
+  background-color: #f8ac59;
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pending'] .step-item[data-step='analyzed'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pending'] .step-item[data-step='ondell'] .step-body {
+  background-color: #f8ac59;
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pending'] .step-item[data-step='ondell'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pending'] .step-item[data-step='converted'] .step-body {
+  background-color: #f8ac59;
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pending'] .step-item[data-step='converted'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pending'] .step-item[data-step='incloud'] .step-body {
+  background-color: #f8ac59;
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pending'] .step-item[data-step='incloud'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pending'] .step-item[data-step='downloaded'] .step-body {
+  background-color: #f8ac59;
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pending'] .step-item[data-step='downloaded'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pending'] .step-item[data-step='jobsubmitted'] .step-body {
+  background-color: #f8ac59;
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pending'] .step-item[data-step='jobsubmitted'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pending'] .step-item[data-step='jobcompleted'] .step-body {
+  background-color: #f8ac59;
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pending'] .step-item[data-step='jobcompleted'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pending'] .step-item[data-step='backtodell'] .step-body:before,
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pending'] .step-item[data-step='backtodell'] .step-body:after {
+  width: 0px;
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pending'] .step-item[data-step='backtodell'] .step-body {
+  background-color: #f8ac59;
+  -webkit-box-shadow: 0 0 0 3px #f8ac59;
+          box-shadow: 0 0 0 3px #f8ac59;
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pending'] .step-item[data-step='backtodell'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pending'] .step-item[data-step='sequenced'] .step-body:after,
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pending'] .step-item[data-step='sequenced'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pending'] .step-item[data-step='analyzed'] .step-body:before {
+  background-color: #f8ac59;
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pending'] .step-item[data-step='analyzed'] .step-body:after,
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pending'] .step-item[data-step='analyzed'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pending'] .step-item[data-step='ondell'] .step-body:before {
+  background-color: #f8ac59;
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pending'] .step-item[data-step='ondell'] .step-body:after,
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pending'] .step-item[data-step='ondell'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pending'] .step-item[data-step='converted'] .step-body:before {
+  background-color: #f8ac59;
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pending'] .step-item[data-step='converted'] .step-body:after,
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pending'] .step-item[data-step='converted'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pending'] .step-item[data-step='incloud'] .step-body:before {
+  background-color: #f8ac59;
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pending'] .step-item[data-step='incloud'] .step-body:after,
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pending'] .step-item[data-step='incloud'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pending'] .step-item[data-step='downloaded'] .step-body:before {
+  background-color: #f8ac59;
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pending'] .step-item[data-step='downloaded'] .step-body:after,
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pending'] .step-item[data-step='downloaded'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pending'] .step-item[data-step='jobsubmitted'] .step-body:before {
+  background-color: #f8ac59;
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pending'] .step-item[data-step='jobsubmitted'] .step-body:after,
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pending'] .step-item[data-step='jobsubmitted'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pending'] .step-item[data-step='jobcompleted'] .step-body:before {
+  background-color: #f8ac59;
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pending'] .step-item[data-step='jobcompleted'] .step-body:after,
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pending'] .step-item[data-step='jobcompleted'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pending'] .step-item[data-step='backtodell'] .step-body:before {
+  background-color: #f8ac59;
+}
+
+.stepbar-progress[data-current-step='sequenced'][data-step-status='active'] .step-item[data-step='sequenced'] .step-body:before,
+.stepbar-progress[data-current-step='sequenced'][data-step-status='active'] .step-item[data-step='sequenced'] .step-body:after {
+  width: 0px;
+}
+
+.stepbar-progress[data-current-step='sequenced'][data-step-status='active'] .step-item[data-step='sequenced'] .step-body {
+  background-color: #1c84c6;
+  -webkit-box-shadow: 0 0 0 3px #1c84c6;
+          box-shadow: 0 0 0 3px #1c84c6;
+}
+
+.stepbar-progress[data-current-step='sequenced'][data-step-status='active'] .step-item[data-step='sequenced'] .step-body .glyphicon {
+>>>>>>> nips_Function
   -webkit-animation: active-spin infinite 1s linear;
           animation: active-spin infinite 1s linear;
 }
 
+<<<<<<< HEAD
 .stepbar-progress[data-current-step="1"][data-step-status="active"] .step-item[data-step="1"] .step-body .glyphicon:before {
   content: "";
 }
@@ -1155,10 +2208,37 @@ td {
 }
 
 .stepbar-progress[data-current-step="2"][data-step-status="active"] .step-item[data-step="2"] .step-body .glyphicon {
+=======
+.stepbar-progress[data-current-step='sequenced'][data-step-status='active'] .step-item[data-step='sequenced'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='analyzed'][data-step-status='active'] .step-item[data-step='sequenced'] .step-body {
+  background-color: #1c84c6;
+}
+
+.stepbar-progress[data-current-step='analyzed'][data-step-status='active'] .step-item[data-step='sequenced'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='analyzed'][data-step-status='active'] .step-item[data-step='analyzed'] .step-body:before,
+.stepbar-progress[data-current-step='analyzed'][data-step-status='active'] .step-item[data-step='analyzed'] .step-body:after {
+  width: 0px;
+}
+
+.stepbar-progress[data-current-step='analyzed'][data-step-status='active'] .step-item[data-step='analyzed'] .step-body {
+  background-color: #1c84c6;
+  -webkit-box-shadow: 0 0 0 3px #1c84c6;
+          box-shadow: 0 0 0 3px #1c84c6;
+}
+
+.stepbar-progress[data-current-step='analyzed'][data-step-status='active'] .step-item[data-step='analyzed'] .step-body .glyphicon {
+>>>>>>> nips_Function
   -webkit-animation: active-spin infinite 1s linear;
           animation: active-spin infinite 1s linear;
 }
 
+<<<<<<< HEAD
 .stepbar-progress[data-current-step="2"][data-step-status="active"] .step-item[data-step="2"] .step-body .glyphicon:before {
   content: "";
 }
@@ -1197,10 +2277,51 @@ td {
 }
 
 .stepbar-progress[data-current-step="3"][data-step-status="active"] .step-item[data-step="3"] .step-body .glyphicon {
+=======
+.stepbar-progress[data-current-step='analyzed'][data-step-status='active'] .step-item[data-step='analyzed'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='analyzed'][data-step-status='active'] .step-item[data-step='sequenced'] .step-body:after,
+.stepbar-progress[data-current-step='analyzed'][data-step-status='active'] .step-item[data-step='sequenced'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='analyzed'][data-step-status='active'] .step-item[data-step='analyzed'] .step-body:before {
+  background-color: #1c84c6;
+}
+
+.stepbar-progress[data-current-step='ondell'][data-step-status='active'] .step-item[data-step='sequenced'] .step-body {
+  background-color: #1c84c6;
+}
+
+.stepbar-progress[data-current-step='ondell'][data-step-status='active'] .step-item[data-step='sequenced'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='ondell'][data-step-status='active'] .step-item[data-step='analyzed'] .step-body {
+  background-color: #1c84c6;
+}
+
+.stepbar-progress[data-current-step='ondell'][data-step-status='active'] .step-item[data-step='analyzed'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='ondell'][data-step-status='active'] .step-item[data-step='ondell'] .step-body:before,
+.stepbar-progress[data-current-step='ondell'][data-step-status='active'] .step-item[data-step='ondell'] .step-body:after {
+  width: 0px;
+}
+
+.stepbar-progress[data-current-step='ondell'][data-step-status='active'] .step-item[data-step='ondell'] .step-body {
+  background-color: #1c84c6;
+  -webkit-box-shadow: 0 0 0 3px #1c84c6;
+          box-shadow: 0 0 0 3px #1c84c6;
+}
+
+.stepbar-progress[data-current-step='ondell'][data-step-status='active'] .step-item[data-step='ondell'] .step-body .glyphicon {
+>>>>>>> nips_Function
   -webkit-animation: active-spin infinite 1s linear;
           animation: active-spin infinite 1s linear;
 }
 
+<<<<<<< HEAD
 .stepbar-progress[data-current-step="3"][data-step-status="active"] .step-item[data-step="3"] .step-body .glyphicon:before {
   content: "";
 }
@@ -1253,10 +2374,65 @@ td {
 }
 
 .stepbar-progress[data-current-step="4"][data-step-status="active"] .step-item[data-step="4"] .step-body .glyphicon {
+=======
+.stepbar-progress[data-current-step='ondell'][data-step-status='active'] .step-item[data-step='ondell'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='ondell'][data-step-status='active'] .step-item[data-step='sequenced'] .step-body:after,
+.stepbar-progress[data-current-step='ondell'][data-step-status='active'] .step-item[data-step='sequenced'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='ondell'][data-step-status='active'] .step-item[data-step='analyzed'] .step-body:before {
+  background-color: #1c84c6;
+}
+
+.stepbar-progress[data-current-step='ondell'][data-step-status='active'] .step-item[data-step='analyzed'] .step-body:after,
+.stepbar-progress[data-current-step='ondell'][data-step-status='active'] .step-item[data-step='analyzed'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='ondell'][data-step-status='active'] .step-item[data-step='ondell'] .step-body:before {
+  background-color: #1c84c6;
+}
+
+.stepbar-progress[data-current-step='converted'][data-step-status='active'] .step-item[data-step='sequenced'] .step-body {
+  background-color: #1c84c6;
+}
+
+.stepbar-progress[data-current-step='converted'][data-step-status='active'] .step-item[data-step='sequenced'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='converted'][data-step-status='active'] .step-item[data-step='analyzed'] .step-body {
+  background-color: #1c84c6;
+}
+
+.stepbar-progress[data-current-step='converted'][data-step-status='active'] .step-item[data-step='analyzed'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='converted'][data-step-status='active'] .step-item[data-step='ondell'] .step-body {
+  background-color: #1c84c6;
+}
+
+.stepbar-progress[data-current-step='converted'][data-step-status='active'] .step-item[data-step='ondell'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='converted'][data-step-status='active'] .step-item[data-step='converted'] .step-body:before,
+.stepbar-progress[data-current-step='converted'][data-step-status='active'] .step-item[data-step='converted'] .step-body:after {
+  width: 0px;
+}
+
+.stepbar-progress[data-current-step='converted'][data-step-status='active'] .step-item[data-step='converted'] .step-body {
+  background-color: #1c84c6;
+  -webkit-box-shadow: 0 0 0 3px #1c84c6;
+          box-shadow: 0 0 0 3px #1c84c6;
+}
+
+.stepbar-progress[data-current-step='converted'][data-step-status='active'] .step-item[data-step='converted'] .step-body .glyphicon {
+>>>>>>> nips_Function
   -webkit-animation: active-spin infinite 1s linear;
           animation: active-spin infinite 1s linear;
 }
 
+<<<<<<< HEAD
 .stepbar-progress[data-current-step="4"][data-step-status="active"] .step-item[data-step="4"] .step-body .glyphicon:before {
   content: "";
 }
@@ -1323,10 +2499,79 @@ td {
 }
 
 .stepbar-progress[data-current-step="5"][data-step-status="active"] .step-item[data-step="5"] .step-body .glyphicon {
+=======
+.stepbar-progress[data-current-step='converted'][data-step-status='active'] .step-item[data-step='converted'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='converted'][data-step-status='active'] .step-item[data-step='sequenced'] .step-body:after,
+.stepbar-progress[data-current-step='converted'][data-step-status='active'] .step-item[data-step='sequenced'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='converted'][data-step-status='active'] .step-item[data-step='analyzed'] .step-body:before {
+  background-color: #1c84c6;
+}
+
+.stepbar-progress[data-current-step='converted'][data-step-status='active'] .step-item[data-step='analyzed'] .step-body:after,
+.stepbar-progress[data-current-step='converted'][data-step-status='active'] .step-item[data-step='analyzed'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='converted'][data-step-status='active'] .step-item[data-step='ondell'] .step-body:before {
+  background-color: #1c84c6;
+}
+
+.stepbar-progress[data-current-step='converted'][data-step-status='active'] .step-item[data-step='ondell'] .step-body:after,
+.stepbar-progress[data-current-step='converted'][data-step-status='active'] .step-item[data-step='ondell'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='converted'][data-step-status='active'] .step-item[data-step='converted'] .step-body:before {
+  background-color: #1c84c6;
+}
+
+.stepbar-progress[data-current-step='incloud'][data-step-status='active'] .step-item[data-step='sequenced'] .step-body {
+  background-color: #1c84c6;
+}
+
+.stepbar-progress[data-current-step='incloud'][data-step-status='active'] .step-item[data-step='sequenced'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='incloud'][data-step-status='active'] .step-item[data-step='analyzed'] .step-body {
+  background-color: #1c84c6;
+}
+
+.stepbar-progress[data-current-step='incloud'][data-step-status='active'] .step-item[data-step='analyzed'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='incloud'][data-step-status='active'] .step-item[data-step='ondell'] .step-body {
+  background-color: #1c84c6;
+}
+
+.stepbar-progress[data-current-step='incloud'][data-step-status='active'] .step-item[data-step='ondell'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='incloud'][data-step-status='active'] .step-item[data-step='converted'] .step-body {
+  background-color: #1c84c6;
+}
+
+.stepbar-progress[data-current-step='incloud'][data-step-status='active'] .step-item[data-step='converted'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='incloud'][data-step-status='active'] .step-item[data-step='incloud'] .step-body:before,
+.stepbar-progress[data-current-step='incloud'][data-step-status='active'] .step-item[data-step='incloud'] .step-body:after {
+  width: 0px;
+}
+
+.stepbar-progress[data-current-step='incloud'][data-step-status='active'] .step-item[data-step='incloud'] .step-body {
+  background-color: #1c84c6;
+  -webkit-box-shadow: 0 0 0 3px #1c84c6;
+          box-shadow: 0 0 0 3px #1c84c6;
+}
+
+.stepbar-progress[data-current-step='incloud'][data-step-status='active'] .step-item[data-step='incloud'] .step-body .glyphicon {
+>>>>>>> nips_Function
   -webkit-animation: active-spin infinite 1s linear;
           animation: active-spin infinite 1s linear;
 }
 
+<<<<<<< HEAD
 .stepbar-progress[data-current-step="5"][data-step-status="active"] .step-item[data-step="5"] .step-body .glyphicon:before {
   content: "";
 }
@@ -1407,10 +2652,93 @@ td {
 }
 
 .stepbar-progress[data-current-step="6"][data-step-status="active"] .step-item[data-step="6"] .step-body .glyphicon {
+=======
+.stepbar-progress[data-current-step='incloud'][data-step-status='active'] .step-item[data-step='incloud'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='incloud'][data-step-status='active'] .step-item[data-step='sequenced'] .step-body:after,
+.stepbar-progress[data-current-step='incloud'][data-step-status='active'] .step-item[data-step='sequenced'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='incloud'][data-step-status='active'] .step-item[data-step='analyzed'] .step-body:before {
+  background-color: #1c84c6;
+}
+
+.stepbar-progress[data-current-step='incloud'][data-step-status='active'] .step-item[data-step='analyzed'] .step-body:after,
+.stepbar-progress[data-current-step='incloud'][data-step-status='active'] .step-item[data-step='analyzed'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='incloud'][data-step-status='active'] .step-item[data-step='ondell'] .step-body:before {
+  background-color: #1c84c6;
+}
+
+.stepbar-progress[data-current-step='incloud'][data-step-status='active'] .step-item[data-step='ondell'] .step-body:after,
+.stepbar-progress[data-current-step='incloud'][data-step-status='active'] .step-item[data-step='ondell'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='incloud'][data-step-status='active'] .step-item[data-step='converted'] .step-body:before {
+  background-color: #1c84c6;
+}
+
+.stepbar-progress[data-current-step='incloud'][data-step-status='active'] .step-item[data-step='converted'] .step-body:after,
+.stepbar-progress[data-current-step='incloud'][data-step-status='active'] .step-item[data-step='converted'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='incloud'][data-step-status='active'] .step-item[data-step='incloud'] .step-body:before {
+  background-color: #1c84c6;
+}
+
+.stepbar-progress[data-current-step='downloaded'][data-step-status='active'] .step-item[data-step='sequenced'] .step-body {
+  background-color: #1c84c6;
+}
+
+.stepbar-progress[data-current-step='downloaded'][data-step-status='active'] .step-item[data-step='sequenced'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='downloaded'][data-step-status='active'] .step-item[data-step='analyzed'] .step-body {
+  background-color: #1c84c6;
+}
+
+.stepbar-progress[data-current-step='downloaded'][data-step-status='active'] .step-item[data-step='analyzed'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='downloaded'][data-step-status='active'] .step-item[data-step='ondell'] .step-body {
+  background-color: #1c84c6;
+}
+
+.stepbar-progress[data-current-step='downloaded'][data-step-status='active'] .step-item[data-step='ondell'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='downloaded'][data-step-status='active'] .step-item[data-step='converted'] .step-body {
+  background-color: #1c84c6;
+}
+
+.stepbar-progress[data-current-step='downloaded'][data-step-status='active'] .step-item[data-step='converted'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='downloaded'][data-step-status='active'] .step-item[data-step='incloud'] .step-body {
+  background-color: #1c84c6;
+}
+
+.stepbar-progress[data-current-step='downloaded'][data-step-status='active'] .step-item[data-step='incloud'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='downloaded'][data-step-status='active'] .step-item[data-step='downloaded'] .step-body:before,
+.stepbar-progress[data-current-step='downloaded'][data-step-status='active'] .step-item[data-step='downloaded'] .step-body:after {
+  width: 0px;
+}
+
+.stepbar-progress[data-current-step='downloaded'][data-step-status='active'] .step-item[data-step='downloaded'] .step-body {
+  background-color: #1c84c6;
+  -webkit-box-shadow: 0 0 0 3px #1c84c6;
+          box-shadow: 0 0 0 3px #1c84c6;
+}
+
+.stepbar-progress[data-current-step='downloaded'][data-step-status='active'] .step-item[data-step='downloaded'] .step-body .glyphicon {
+>>>>>>> nips_Function
   -webkit-animation: active-spin infinite 1s linear;
           animation: active-spin infinite 1s linear;
 }
 
+<<<<<<< HEAD
 .stepbar-progress[data-current-step="6"][data-step-status="active"] .step-item[data-step="6"] .step-body .glyphicon:before {
   content: "";
 }
@@ -1505,10 +2833,107 @@ td {
 }
 
 .stepbar-progress[data-current-step="7"][data-step-status="active"] .step-item[data-step="7"] .step-body .glyphicon {
+=======
+.stepbar-progress[data-current-step='downloaded'][data-step-status='active'] .step-item[data-step='downloaded'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='downloaded'][data-step-status='active'] .step-item[data-step='sequenced'] .step-body:after,
+.stepbar-progress[data-current-step='downloaded'][data-step-status='active'] .step-item[data-step='sequenced'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='downloaded'][data-step-status='active'] .step-item[data-step='analyzed'] .step-body:before {
+  background-color: #1c84c6;
+}
+
+.stepbar-progress[data-current-step='downloaded'][data-step-status='active'] .step-item[data-step='analyzed'] .step-body:after,
+.stepbar-progress[data-current-step='downloaded'][data-step-status='active'] .step-item[data-step='analyzed'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='downloaded'][data-step-status='active'] .step-item[data-step='ondell'] .step-body:before {
+  background-color: #1c84c6;
+}
+
+.stepbar-progress[data-current-step='downloaded'][data-step-status='active'] .step-item[data-step='ondell'] .step-body:after,
+.stepbar-progress[data-current-step='downloaded'][data-step-status='active'] .step-item[data-step='ondell'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='downloaded'][data-step-status='active'] .step-item[data-step='converted'] .step-body:before {
+  background-color: #1c84c6;
+}
+
+.stepbar-progress[data-current-step='downloaded'][data-step-status='active'] .step-item[data-step='converted'] .step-body:after,
+.stepbar-progress[data-current-step='downloaded'][data-step-status='active'] .step-item[data-step='converted'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='downloaded'][data-step-status='active'] .step-item[data-step='incloud'] .step-body:before {
+  background-color: #1c84c6;
+}
+
+.stepbar-progress[data-current-step='downloaded'][data-step-status='active'] .step-item[data-step='incloud'] .step-body:after,
+.stepbar-progress[data-current-step='downloaded'][data-step-status='active'] .step-item[data-step='incloud'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='downloaded'][data-step-status='active'] .step-item[data-step='downloaded'] .step-body:before {
+  background-color: #1c84c6;
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='active'] .step-item[data-step='sequenced'] .step-body {
+  background-color: #1c84c6;
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='active'] .step-item[data-step='sequenced'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='active'] .step-item[data-step='analyzed'] .step-body {
+  background-color: #1c84c6;
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='active'] .step-item[data-step='analyzed'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='active'] .step-item[data-step='ondell'] .step-body {
+  background-color: #1c84c6;
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='active'] .step-item[data-step='ondell'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='active'] .step-item[data-step='converted'] .step-body {
+  background-color: #1c84c6;
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='active'] .step-item[data-step='converted'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='active'] .step-item[data-step='incloud'] .step-body {
+  background-color: #1c84c6;
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='active'] .step-item[data-step='incloud'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='active'] .step-item[data-step='downloaded'] .step-body {
+  background-color: #1c84c6;
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='active'] .step-item[data-step='downloaded'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='active'] .step-item[data-step='jobsubmitted'] .step-body:before,
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='active'] .step-item[data-step='jobsubmitted'] .step-body:after {
+  width: 0px;
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='active'] .step-item[data-step='jobsubmitted'] .step-body {
+  background-color: #1c84c6;
+  -webkit-box-shadow: 0 0 0 3px #1c84c6;
+          box-shadow: 0 0 0 3px #1c84c6;
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='active'] .step-item[data-step='jobsubmitted'] .step-body .glyphicon {
+>>>>>>> nips_Function
   -webkit-animation: active-spin infinite 1s linear;
           animation: active-spin infinite 1s linear;
 }
 
+<<<<<<< HEAD
 .stepbar-progress[data-current-step="7"][data-step-status="active"] .step-item[data-step="7"] .step-body .glyphicon:before {
   content: "";
 }
@@ -1617,10 +3042,121 @@ td {
 }
 
 .stepbar-progress[data-current-step="8"][data-step-status="active"] .step-item[data-step="8"] .step-body .glyphicon {
+=======
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='active'] .step-item[data-step='jobsubmitted'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='active'] .step-item[data-step='sequenced'] .step-body:after,
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='active'] .step-item[data-step='sequenced'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='active'] .step-item[data-step='analyzed'] .step-body:before {
+  background-color: #1c84c6;
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='active'] .step-item[data-step='analyzed'] .step-body:after,
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='active'] .step-item[data-step='analyzed'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='active'] .step-item[data-step='ondell'] .step-body:before {
+  background-color: #1c84c6;
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='active'] .step-item[data-step='ondell'] .step-body:after,
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='active'] .step-item[data-step='ondell'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='active'] .step-item[data-step='converted'] .step-body:before {
+  background-color: #1c84c6;
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='active'] .step-item[data-step='converted'] .step-body:after,
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='active'] .step-item[data-step='converted'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='active'] .step-item[data-step='incloud'] .step-body:before {
+  background-color: #1c84c6;
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='active'] .step-item[data-step='incloud'] .step-body:after,
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='active'] .step-item[data-step='incloud'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='active'] .step-item[data-step='downloaded'] .step-body:before {
+  background-color: #1c84c6;
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='active'] .step-item[data-step='downloaded'] .step-body:after,
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='active'] .step-item[data-step='downloaded'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='active'] .step-item[data-step='jobsubmitted'] .step-body:before {
+  background-color: #1c84c6;
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='active'] .step-item[data-step='sequenced'] .step-body {
+  background-color: #1c84c6;
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='active'] .step-item[data-step='sequenced'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='active'] .step-item[data-step='analyzed'] .step-body {
+  background-color: #1c84c6;
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='active'] .step-item[data-step='analyzed'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='active'] .step-item[data-step='ondell'] .step-body {
+  background-color: #1c84c6;
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='active'] .step-item[data-step='ondell'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='active'] .step-item[data-step='converted'] .step-body {
+  background-color: #1c84c6;
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='active'] .step-item[data-step='converted'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='active'] .step-item[data-step='incloud'] .step-body {
+  background-color: #1c84c6;
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='active'] .step-item[data-step='incloud'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='active'] .step-item[data-step='downloaded'] .step-body {
+  background-color: #1c84c6;
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='active'] .step-item[data-step='downloaded'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='active'] .step-item[data-step='jobsubmitted'] .step-body {
+  background-color: #1c84c6;
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='active'] .step-item[data-step='jobsubmitted'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='active'] .step-item[data-step='jobcompleted'] .step-body:before,
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='active'] .step-item[data-step='jobcompleted'] .step-body:after {
+  width: 0px;
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='active'] .step-item[data-step='jobcompleted'] .step-body {
+  background-color: #1c84c6;
+  -webkit-box-shadow: 0 0 0 3px #1c84c6;
+          box-shadow: 0 0 0 3px #1c84c6;
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='active'] .step-item[data-step='jobcompleted'] .step-body .glyphicon {
+>>>>>>> nips_Function
   -webkit-animation: active-spin infinite 1s linear;
           animation: active-spin infinite 1s linear;
 }
 
+<<<<<<< HEAD
 .stepbar-progress[data-current-step="8"][data-step-status="active"] .step-item[data-step="8"] .step-body .glyphicon:before {
   content: "";
 }
@@ -1743,10 +3279,135 @@ td {
 }
 
 .stepbar-progress[data-current-step="9"][data-step-status="active"] .step-item[data-step="9"] .step-body .glyphicon {
+=======
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='active'] .step-item[data-step='jobcompleted'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='active'] .step-item[data-step='sequenced'] .step-body:after,
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='active'] .step-item[data-step='sequenced'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='active'] .step-item[data-step='analyzed'] .step-body:before {
+  background-color: #1c84c6;
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='active'] .step-item[data-step='analyzed'] .step-body:after,
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='active'] .step-item[data-step='analyzed'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='active'] .step-item[data-step='ondell'] .step-body:before {
+  background-color: #1c84c6;
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='active'] .step-item[data-step='ondell'] .step-body:after,
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='active'] .step-item[data-step='ondell'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='active'] .step-item[data-step='converted'] .step-body:before {
+  background-color: #1c84c6;
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='active'] .step-item[data-step='converted'] .step-body:after,
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='active'] .step-item[data-step='converted'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='active'] .step-item[data-step='incloud'] .step-body:before {
+  background-color: #1c84c6;
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='active'] .step-item[data-step='incloud'] .step-body:after,
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='active'] .step-item[data-step='incloud'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='active'] .step-item[data-step='downloaded'] .step-body:before {
+  background-color: #1c84c6;
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='active'] .step-item[data-step='downloaded'] .step-body:after,
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='active'] .step-item[data-step='downloaded'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='active'] .step-item[data-step='jobsubmitted'] .step-body:before {
+  background-color: #1c84c6;
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='active'] .step-item[data-step='jobsubmitted'] .step-body:after,
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='active'] .step-item[data-step='jobsubmitted'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='active'] .step-item[data-step='jobcompleted'] .step-body:before {
+  background-color: #1c84c6;
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='active'] .step-item[data-step='sequenced'] .step-body {
+  background-color: #1c84c6;
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='active'] .step-item[data-step='sequenced'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='active'] .step-item[data-step='analyzed'] .step-body {
+  background-color: #1c84c6;
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='active'] .step-item[data-step='analyzed'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='active'] .step-item[data-step='ondell'] .step-body {
+  background-color: #1c84c6;
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='active'] .step-item[data-step='ondell'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='active'] .step-item[data-step='converted'] .step-body {
+  background-color: #1c84c6;
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='active'] .step-item[data-step='converted'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='active'] .step-item[data-step='incloud'] .step-body {
+  background-color: #1c84c6;
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='active'] .step-item[data-step='incloud'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='active'] .step-item[data-step='downloaded'] .step-body {
+  background-color: #1c84c6;
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='active'] .step-item[data-step='downloaded'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='active'] .step-item[data-step='jobsubmitted'] .step-body {
+  background-color: #1c84c6;
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='active'] .step-item[data-step='jobsubmitted'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='active'] .step-item[data-step='jobcompleted'] .step-body {
+  background-color: #1c84c6;
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='active'] .step-item[data-step='jobcompleted'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='active'] .step-item[data-step='backtodell'] .step-body:before,
+.stepbar-progress[data-current-step='backtodell'][data-step-status='active'] .step-item[data-step='backtodell'] .step-body:after {
+  width: 0px;
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='active'] .step-item[data-step='backtodell'] .step-body {
+  background-color: #1c84c6;
+  -webkit-box-shadow: 0 0 0 3px #1c84c6;
+          box-shadow: 0 0 0 3px #1c84c6;
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='active'] .step-item[data-step='backtodell'] .step-body .glyphicon {
+>>>>>>> nips_Function
   -webkit-animation: active-spin infinite 1s linear;
           animation: active-spin infinite 1s linear;
 }
 
+<<<<<<< HEAD
 .stepbar-progress[data-current-step="9"][data-step-status="active"] .step-item[data-step="9"] .step-body .glyphicon:before {
   content: "";
 }
@@ -3075,5 +4736,1335 @@ td {
 .stepbar-progress[data-current-step="9"][data-step-status="fail"] .step-item[data-step="8"] + .step-item-progress .progress-body,
 .stepbar-progress[data-current-step="9"][data-step-status="fail"] .step-item[data-step="9"] .step-body:before {
   background-color: #ED5565;
+=======
+.stepbar-progress[data-current-step='backtodell'][data-step-status='active'] .step-item[data-step='backtodell'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='active'] .step-item[data-step='sequenced'] .step-body:after,
+.stepbar-progress[data-current-step='backtodell'][data-step-status='active'] .step-item[data-step='sequenced'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='backtodell'][data-step-status='active'] .step-item[data-step='analyzed'] .step-body:before {
+  background-color: #1c84c6;
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='active'] .step-item[data-step='analyzed'] .step-body:after,
+.stepbar-progress[data-current-step='backtodell'][data-step-status='active'] .step-item[data-step='analyzed'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='backtodell'][data-step-status='active'] .step-item[data-step='ondell'] .step-body:before {
+  background-color: #1c84c6;
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='active'] .step-item[data-step='ondell'] .step-body:after,
+.stepbar-progress[data-current-step='backtodell'][data-step-status='active'] .step-item[data-step='ondell'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='backtodell'][data-step-status='active'] .step-item[data-step='converted'] .step-body:before {
+  background-color: #1c84c6;
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='active'] .step-item[data-step='converted'] .step-body:after,
+.stepbar-progress[data-current-step='backtodell'][data-step-status='active'] .step-item[data-step='converted'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='backtodell'][data-step-status='active'] .step-item[data-step='incloud'] .step-body:before {
+  background-color: #1c84c6;
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='active'] .step-item[data-step='incloud'] .step-body:after,
+.stepbar-progress[data-current-step='backtodell'][data-step-status='active'] .step-item[data-step='incloud'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='backtodell'][data-step-status='active'] .step-item[data-step='downloaded'] .step-body:before {
+  background-color: #1c84c6;
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='active'] .step-item[data-step='downloaded'] .step-body:after,
+.stepbar-progress[data-current-step='backtodell'][data-step-status='active'] .step-item[data-step='downloaded'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='backtodell'][data-step-status='active'] .step-item[data-step='jobsubmitted'] .step-body:before {
+  background-color: #1c84c6;
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='active'] .step-item[data-step='jobsubmitted'] .step-body:after,
+.stepbar-progress[data-current-step='backtodell'][data-step-status='active'] .step-item[data-step='jobsubmitted'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='backtodell'][data-step-status='active'] .step-item[data-step='jobcompleted'] .step-body:before {
+  background-color: #1c84c6;
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='active'] .step-item[data-step='jobcompleted'] .step-body:after,
+.stepbar-progress[data-current-step='backtodell'][data-step-status='active'] .step-item[data-step='jobcompleted'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='backtodell'][data-step-status='active'] .step-item[data-step='backtodell'] .step-body:before {
+  background-color: #1c84c6;
+}
+
+.stepbar-progress[data-current-step='sequenced'][data-step-status='pass'] .step-item[data-step='sequenced'] .step-body:before,
+.stepbar-progress[data-current-step='sequenced'][data-step-status='pass'] .step-item[data-step='sequenced'] .step-body:after {
+  width: 0px;
+}
+
+.stepbar-progress[data-current-step='sequenced'][data-step-status='pass'] .step-item[data-step='sequenced'] .step-body {
+  background-color: #66ff00;
+  -webkit-box-shadow: 0 0 0 3px #66ff00;
+          box-shadow: 0 0 0 3px #66ff00;
+}
+
+.stepbar-progress[data-current-step='sequenced'][data-step-status='pass'] .step-item[data-step='sequenced'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='analyzed'][data-step-status='pass'] .step-item[data-step='sequenced'] .step-body {
+  background-color: #66ff00;
+}
+
+.stepbar-progress[data-current-step='analyzed'][data-step-status='pass'] .step-item[data-step='sequenced'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='analyzed'][data-step-status='pass'] .step-item[data-step='analyzed'] .step-body:before,
+.stepbar-progress[data-current-step='analyzed'][data-step-status='pass'] .step-item[data-step='analyzed'] .step-body:after {
+  width: 0px;
+}
+
+.stepbar-progress[data-current-step='analyzed'][data-step-status='pass'] .step-item[data-step='analyzed'] .step-body {
+  background-color: #66ff00;
+  -webkit-box-shadow: 0 0 0 3px #66ff00;
+          box-shadow: 0 0 0 3px #66ff00;
+}
+
+.stepbar-progress[data-current-step='analyzed'][data-step-status='pass'] .step-item[data-step='analyzed'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='analyzed'][data-step-status='pass'] .step-item[data-step='sequenced'] .step-body:after,
+.stepbar-progress[data-current-step='analyzed'][data-step-status='pass'] .step-item[data-step='sequenced'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='analyzed'][data-step-status='pass'] .step-item[data-step='analyzed'] .step-body:before {
+  background-color: #66ff00;
+}
+
+.stepbar-progress[data-current-step='ondell'][data-step-status='pass'] .step-item[data-step='sequenced'] .step-body {
+  background-color: #66ff00;
+}
+
+.stepbar-progress[data-current-step='ondell'][data-step-status='pass'] .step-item[data-step='sequenced'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='ondell'][data-step-status='pass'] .step-item[data-step='analyzed'] .step-body {
+  background-color: #66ff00;
+}
+
+.stepbar-progress[data-current-step='ondell'][data-step-status='pass'] .step-item[data-step='analyzed'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='ondell'][data-step-status='pass'] .step-item[data-step='ondell'] .step-body:before,
+.stepbar-progress[data-current-step='ondell'][data-step-status='pass'] .step-item[data-step='ondell'] .step-body:after {
+  width: 0px;
+}
+
+.stepbar-progress[data-current-step='ondell'][data-step-status='pass'] .step-item[data-step='ondell'] .step-body {
+  background-color: #66ff00;
+  -webkit-box-shadow: 0 0 0 3px #66ff00;
+          box-shadow: 0 0 0 3px #66ff00;
+}
+
+.stepbar-progress[data-current-step='ondell'][data-step-status='pass'] .step-item[data-step='ondell'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='ondell'][data-step-status='pass'] .step-item[data-step='sequenced'] .step-body:after,
+.stepbar-progress[data-current-step='ondell'][data-step-status='pass'] .step-item[data-step='sequenced'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='ondell'][data-step-status='pass'] .step-item[data-step='analyzed'] .step-body:before {
+  background-color: #66ff00;
+}
+
+.stepbar-progress[data-current-step='ondell'][data-step-status='pass'] .step-item[data-step='analyzed'] .step-body:after,
+.stepbar-progress[data-current-step='ondell'][data-step-status='pass'] .step-item[data-step='analyzed'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='ondell'][data-step-status='pass'] .step-item[data-step='ondell'] .step-body:before {
+  background-color: #66ff00;
+}
+
+.stepbar-progress[data-current-step='converted'][data-step-status='pass'] .step-item[data-step='sequenced'] .step-body {
+  background-color: #66ff00;
+}
+
+.stepbar-progress[data-current-step='converted'][data-step-status='pass'] .step-item[data-step='sequenced'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='converted'][data-step-status='pass'] .step-item[data-step='analyzed'] .step-body {
+  background-color: #66ff00;
+}
+
+.stepbar-progress[data-current-step='converted'][data-step-status='pass'] .step-item[data-step='analyzed'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='converted'][data-step-status='pass'] .step-item[data-step='ondell'] .step-body {
+  background-color: #66ff00;
+}
+
+.stepbar-progress[data-current-step='converted'][data-step-status='pass'] .step-item[data-step='ondell'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='converted'][data-step-status='pass'] .step-item[data-step='converted'] .step-body:before,
+.stepbar-progress[data-current-step='converted'][data-step-status='pass'] .step-item[data-step='converted'] .step-body:after {
+  width: 0px;
+}
+
+.stepbar-progress[data-current-step='converted'][data-step-status='pass'] .step-item[data-step='converted'] .step-body {
+  background-color: #66ff00;
+  -webkit-box-shadow: 0 0 0 3px #66ff00;
+          box-shadow: 0 0 0 3px #66ff00;
+}
+
+.stepbar-progress[data-current-step='converted'][data-step-status='pass'] .step-item[data-step='converted'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='converted'][data-step-status='pass'] .step-item[data-step='sequenced'] .step-body:after,
+.stepbar-progress[data-current-step='converted'][data-step-status='pass'] .step-item[data-step='sequenced'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='converted'][data-step-status='pass'] .step-item[data-step='analyzed'] .step-body:before {
+  background-color: #66ff00;
+}
+
+.stepbar-progress[data-current-step='converted'][data-step-status='pass'] .step-item[data-step='analyzed'] .step-body:after,
+.stepbar-progress[data-current-step='converted'][data-step-status='pass'] .step-item[data-step='analyzed'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='converted'][data-step-status='pass'] .step-item[data-step='ondell'] .step-body:before {
+  background-color: #66ff00;
+}
+
+.stepbar-progress[data-current-step='converted'][data-step-status='pass'] .step-item[data-step='ondell'] .step-body:after,
+.stepbar-progress[data-current-step='converted'][data-step-status='pass'] .step-item[data-step='ondell'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='converted'][data-step-status='pass'] .step-item[data-step='converted'] .step-body:before {
+  background-color: #66ff00;
+}
+
+.stepbar-progress[data-current-step='incloud'][data-step-status='pass'] .step-item[data-step='sequenced'] .step-body {
+  background-color: #66ff00;
+}
+
+.stepbar-progress[data-current-step='incloud'][data-step-status='pass'] .step-item[data-step='sequenced'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='incloud'][data-step-status='pass'] .step-item[data-step='analyzed'] .step-body {
+  background-color: #66ff00;
+}
+
+.stepbar-progress[data-current-step='incloud'][data-step-status='pass'] .step-item[data-step='analyzed'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='incloud'][data-step-status='pass'] .step-item[data-step='ondell'] .step-body {
+  background-color: #66ff00;
+}
+
+.stepbar-progress[data-current-step='incloud'][data-step-status='pass'] .step-item[data-step='ondell'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='incloud'][data-step-status='pass'] .step-item[data-step='converted'] .step-body {
+  background-color: #66ff00;
+}
+
+.stepbar-progress[data-current-step='incloud'][data-step-status='pass'] .step-item[data-step='converted'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='incloud'][data-step-status='pass'] .step-item[data-step='incloud'] .step-body:before,
+.stepbar-progress[data-current-step='incloud'][data-step-status='pass'] .step-item[data-step='incloud'] .step-body:after {
+  width: 0px;
+}
+
+.stepbar-progress[data-current-step='incloud'][data-step-status='pass'] .step-item[data-step='incloud'] .step-body {
+  background-color: #66ff00;
+  -webkit-box-shadow: 0 0 0 3px #66ff00;
+          box-shadow: 0 0 0 3px #66ff00;
+}
+
+.stepbar-progress[data-current-step='incloud'][data-step-status='pass'] .step-item[data-step='incloud'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='incloud'][data-step-status='pass'] .step-item[data-step='sequenced'] .step-body:after,
+.stepbar-progress[data-current-step='incloud'][data-step-status='pass'] .step-item[data-step='sequenced'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='incloud'][data-step-status='pass'] .step-item[data-step='analyzed'] .step-body:before {
+  background-color: #66ff00;
+}
+
+.stepbar-progress[data-current-step='incloud'][data-step-status='pass'] .step-item[data-step='analyzed'] .step-body:after,
+.stepbar-progress[data-current-step='incloud'][data-step-status='pass'] .step-item[data-step='analyzed'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='incloud'][data-step-status='pass'] .step-item[data-step='ondell'] .step-body:before {
+  background-color: #66ff00;
+}
+
+.stepbar-progress[data-current-step='incloud'][data-step-status='pass'] .step-item[data-step='ondell'] .step-body:after,
+.stepbar-progress[data-current-step='incloud'][data-step-status='pass'] .step-item[data-step='ondell'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='incloud'][data-step-status='pass'] .step-item[data-step='converted'] .step-body:before {
+  background-color: #66ff00;
+}
+
+.stepbar-progress[data-current-step='incloud'][data-step-status='pass'] .step-item[data-step='converted'] .step-body:after,
+.stepbar-progress[data-current-step='incloud'][data-step-status='pass'] .step-item[data-step='converted'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='incloud'][data-step-status='pass'] .step-item[data-step='incloud'] .step-body:before {
+  background-color: #66ff00;
+}
+
+.stepbar-progress[data-current-step='downloaded'][data-step-status='pass'] .step-item[data-step='sequenced'] .step-body {
+  background-color: #66ff00;
+}
+
+.stepbar-progress[data-current-step='downloaded'][data-step-status='pass'] .step-item[data-step='sequenced'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='downloaded'][data-step-status='pass'] .step-item[data-step='analyzed'] .step-body {
+  background-color: #66ff00;
+}
+
+.stepbar-progress[data-current-step='downloaded'][data-step-status='pass'] .step-item[data-step='analyzed'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='downloaded'][data-step-status='pass'] .step-item[data-step='ondell'] .step-body {
+  background-color: #66ff00;
+}
+
+.stepbar-progress[data-current-step='downloaded'][data-step-status='pass'] .step-item[data-step='ondell'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='downloaded'][data-step-status='pass'] .step-item[data-step='converted'] .step-body {
+  background-color: #66ff00;
+}
+
+.stepbar-progress[data-current-step='downloaded'][data-step-status='pass'] .step-item[data-step='converted'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='downloaded'][data-step-status='pass'] .step-item[data-step='incloud'] .step-body {
+  background-color: #66ff00;
+}
+
+.stepbar-progress[data-current-step='downloaded'][data-step-status='pass'] .step-item[data-step='incloud'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='downloaded'][data-step-status='pass'] .step-item[data-step='downloaded'] .step-body:before,
+.stepbar-progress[data-current-step='downloaded'][data-step-status='pass'] .step-item[data-step='downloaded'] .step-body:after {
+  width: 0px;
+}
+
+.stepbar-progress[data-current-step='downloaded'][data-step-status='pass'] .step-item[data-step='downloaded'] .step-body {
+  background-color: #66ff00;
+  -webkit-box-shadow: 0 0 0 3px #66ff00;
+          box-shadow: 0 0 0 3px #66ff00;
+}
+
+.stepbar-progress[data-current-step='downloaded'][data-step-status='pass'] .step-item[data-step='downloaded'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='downloaded'][data-step-status='pass'] .step-item[data-step='sequenced'] .step-body:after,
+.stepbar-progress[data-current-step='downloaded'][data-step-status='pass'] .step-item[data-step='sequenced'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='downloaded'][data-step-status='pass'] .step-item[data-step='analyzed'] .step-body:before {
+  background-color: #66ff00;
+}
+
+.stepbar-progress[data-current-step='downloaded'][data-step-status='pass'] .step-item[data-step='analyzed'] .step-body:after,
+.stepbar-progress[data-current-step='downloaded'][data-step-status='pass'] .step-item[data-step='analyzed'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='downloaded'][data-step-status='pass'] .step-item[data-step='ondell'] .step-body:before {
+  background-color: #66ff00;
+}
+
+.stepbar-progress[data-current-step='downloaded'][data-step-status='pass'] .step-item[data-step='ondell'] .step-body:after,
+.stepbar-progress[data-current-step='downloaded'][data-step-status='pass'] .step-item[data-step='ondell'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='downloaded'][data-step-status='pass'] .step-item[data-step='converted'] .step-body:before {
+  background-color: #66ff00;
+}
+
+.stepbar-progress[data-current-step='downloaded'][data-step-status='pass'] .step-item[data-step='converted'] .step-body:after,
+.stepbar-progress[data-current-step='downloaded'][data-step-status='pass'] .step-item[data-step='converted'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='downloaded'][data-step-status='pass'] .step-item[data-step='incloud'] .step-body:before {
+  background-color: #66ff00;
+}
+
+.stepbar-progress[data-current-step='downloaded'][data-step-status='pass'] .step-item[data-step='incloud'] .step-body:after,
+.stepbar-progress[data-current-step='downloaded'][data-step-status='pass'] .step-item[data-step='incloud'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='downloaded'][data-step-status='pass'] .step-item[data-step='downloaded'] .step-body:before {
+  background-color: #66ff00;
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='pass'] .step-item[data-step='sequenced'] .step-body {
+  background-color: #66ff00;
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='pass'] .step-item[data-step='sequenced'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='pass'] .step-item[data-step='analyzed'] .step-body {
+  background-color: #66ff00;
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='pass'] .step-item[data-step='analyzed'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='pass'] .step-item[data-step='ondell'] .step-body {
+  background-color: #66ff00;
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='pass'] .step-item[data-step='ondell'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='pass'] .step-item[data-step='converted'] .step-body {
+  background-color: #66ff00;
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='pass'] .step-item[data-step='converted'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='pass'] .step-item[data-step='incloud'] .step-body {
+  background-color: #66ff00;
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='pass'] .step-item[data-step='incloud'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='pass'] .step-item[data-step='downloaded'] .step-body {
+  background-color: #66ff00;
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='pass'] .step-item[data-step='downloaded'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='pass'] .step-item[data-step='jobsubmitted'] .step-body:before,
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='pass'] .step-item[data-step='jobsubmitted'] .step-body:after {
+  width: 0px;
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='pass'] .step-item[data-step='jobsubmitted'] .step-body {
+  background-color: #66ff00;
+  -webkit-box-shadow: 0 0 0 3px #66ff00;
+          box-shadow: 0 0 0 3px #66ff00;
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='pass'] .step-item[data-step='jobsubmitted'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='pass'] .step-item[data-step='sequenced'] .step-body:after,
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='pass'] .step-item[data-step='sequenced'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='pass'] .step-item[data-step='analyzed'] .step-body:before {
+  background-color: #66ff00;
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='pass'] .step-item[data-step='analyzed'] .step-body:after,
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='pass'] .step-item[data-step='analyzed'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='pass'] .step-item[data-step='ondell'] .step-body:before {
+  background-color: #66ff00;
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='pass'] .step-item[data-step='ondell'] .step-body:after,
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='pass'] .step-item[data-step='ondell'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='pass'] .step-item[data-step='converted'] .step-body:before {
+  background-color: #66ff00;
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='pass'] .step-item[data-step='converted'] .step-body:after,
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='pass'] .step-item[data-step='converted'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='pass'] .step-item[data-step='incloud'] .step-body:before {
+  background-color: #66ff00;
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='pass'] .step-item[data-step='incloud'] .step-body:after,
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='pass'] .step-item[data-step='incloud'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='pass'] .step-item[data-step='downloaded'] .step-body:before {
+  background-color: #66ff00;
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='pass'] .step-item[data-step='downloaded'] .step-body:after,
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='pass'] .step-item[data-step='downloaded'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='pass'] .step-item[data-step='jobsubmitted'] .step-body:before {
+  background-color: #66ff00;
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='pass'] .step-item[data-step='sequenced'] .step-body {
+  background-color: #66ff00;
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='pass'] .step-item[data-step='sequenced'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='pass'] .step-item[data-step='analyzed'] .step-body {
+  background-color: #66ff00;
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='pass'] .step-item[data-step='analyzed'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='pass'] .step-item[data-step='ondell'] .step-body {
+  background-color: #66ff00;
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='pass'] .step-item[data-step='ondell'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='pass'] .step-item[data-step='converted'] .step-body {
+  background-color: #66ff00;
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='pass'] .step-item[data-step='converted'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='pass'] .step-item[data-step='incloud'] .step-body {
+  background-color: #66ff00;
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='pass'] .step-item[data-step='incloud'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='pass'] .step-item[data-step='downloaded'] .step-body {
+  background-color: #66ff00;
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='pass'] .step-item[data-step='downloaded'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='pass'] .step-item[data-step='jobsubmitted'] .step-body {
+  background-color: #66ff00;
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='pass'] .step-item[data-step='jobsubmitted'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='pass'] .step-item[data-step='jobcompleted'] .step-body:before,
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='pass'] .step-item[data-step='jobcompleted'] .step-body:after {
+  width: 0px;
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='pass'] .step-item[data-step='jobcompleted'] .step-body {
+  background-color: #66ff00;
+  -webkit-box-shadow: 0 0 0 3px #66ff00;
+          box-shadow: 0 0 0 3px #66ff00;
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='pass'] .step-item[data-step='jobcompleted'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='pass'] .step-item[data-step='sequenced'] .step-body:after,
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='pass'] .step-item[data-step='sequenced'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='pass'] .step-item[data-step='analyzed'] .step-body:before {
+  background-color: #66ff00;
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='pass'] .step-item[data-step='analyzed'] .step-body:after,
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='pass'] .step-item[data-step='analyzed'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='pass'] .step-item[data-step='ondell'] .step-body:before {
+  background-color: #66ff00;
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='pass'] .step-item[data-step='ondell'] .step-body:after,
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='pass'] .step-item[data-step='ondell'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='pass'] .step-item[data-step='converted'] .step-body:before {
+  background-color: #66ff00;
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='pass'] .step-item[data-step='converted'] .step-body:after,
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='pass'] .step-item[data-step='converted'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='pass'] .step-item[data-step='incloud'] .step-body:before {
+  background-color: #66ff00;
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='pass'] .step-item[data-step='incloud'] .step-body:after,
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='pass'] .step-item[data-step='incloud'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='pass'] .step-item[data-step='downloaded'] .step-body:before {
+  background-color: #66ff00;
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='pass'] .step-item[data-step='downloaded'] .step-body:after,
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='pass'] .step-item[data-step='downloaded'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='pass'] .step-item[data-step='jobsubmitted'] .step-body:before {
+  background-color: #66ff00;
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='pass'] .step-item[data-step='jobsubmitted'] .step-body:after,
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='pass'] .step-item[data-step='jobsubmitted'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='pass'] .step-item[data-step='jobcompleted'] .step-body:before {
+  background-color: #66ff00;
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pass'] .step-item[data-step='sequenced'] .step-body {
+  background-color: #66ff00;
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pass'] .step-item[data-step='sequenced'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pass'] .step-item[data-step='analyzed'] .step-body {
+  background-color: #66ff00;
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pass'] .step-item[data-step='analyzed'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pass'] .step-item[data-step='ondell'] .step-body {
+  background-color: #66ff00;
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pass'] .step-item[data-step='ondell'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pass'] .step-item[data-step='converted'] .step-body {
+  background-color: #66ff00;
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pass'] .step-item[data-step='converted'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pass'] .step-item[data-step='incloud'] .step-body {
+  background-color: #66ff00;
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pass'] .step-item[data-step='incloud'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pass'] .step-item[data-step='downloaded'] .step-body {
+  background-color: #66ff00;
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pass'] .step-item[data-step='downloaded'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pass'] .step-item[data-step='jobsubmitted'] .step-body {
+  background-color: #66ff00;
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pass'] .step-item[data-step='jobsubmitted'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pass'] .step-item[data-step='jobcompleted'] .step-body {
+  background-color: #66ff00;
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pass'] .step-item[data-step='jobcompleted'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pass'] .step-item[data-step='backtodell'] .step-body:before,
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pass'] .step-item[data-step='backtodell'] .step-body:after {
+  width: 0px;
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pass'] .step-item[data-step='backtodell'] .step-body {
+  background-color: #66ff00;
+  -webkit-box-shadow: 0 0 0 3px #66ff00;
+          box-shadow: 0 0 0 3px #66ff00;
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pass'] .step-item[data-step='backtodell'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pass'] .step-item[data-step='sequenced'] .step-body:after,
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pass'] .step-item[data-step='sequenced'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pass'] .step-item[data-step='analyzed'] .step-body:before {
+  background-color: #66ff00;
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pass'] .step-item[data-step='analyzed'] .step-body:after,
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pass'] .step-item[data-step='analyzed'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pass'] .step-item[data-step='ondell'] .step-body:before {
+  background-color: #66ff00;
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pass'] .step-item[data-step='ondell'] .step-body:after,
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pass'] .step-item[data-step='ondell'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pass'] .step-item[data-step='converted'] .step-body:before {
+  background-color: #66ff00;
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pass'] .step-item[data-step='converted'] .step-body:after,
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pass'] .step-item[data-step='converted'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pass'] .step-item[data-step='incloud'] .step-body:before {
+  background-color: #66ff00;
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pass'] .step-item[data-step='incloud'] .step-body:after,
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pass'] .step-item[data-step='incloud'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pass'] .step-item[data-step='downloaded'] .step-body:before {
+  background-color: #66ff00;
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pass'] .step-item[data-step='downloaded'] .step-body:after,
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pass'] .step-item[data-step='downloaded'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pass'] .step-item[data-step='jobsubmitted'] .step-body:before {
+  background-color: #66ff00;
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pass'] .step-item[data-step='jobsubmitted'] .step-body:after,
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pass'] .step-item[data-step='jobsubmitted'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pass'] .step-item[data-step='jobcompleted'] .step-body:before {
+  background-color: #66ff00;
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pass'] .step-item[data-step='jobcompleted'] .step-body:after,
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pass'] .step-item[data-step='jobcompleted'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='backtodell'][data-step-status='pass'] .step-item[data-step='backtodell'] .step-body:before {
+  background-color: #66ff00;
+}
+
+.stepbar-progress[data-current-step='sequenced'][data-step-status='fail'] .step-item[data-step='sequenced'] .step-body:before,
+.stepbar-progress[data-current-step='sequenced'][data-step-status='fail'] .step-item[data-step='sequenced'] .step-body:after {
+  width: 0px;
+}
+
+.stepbar-progress[data-current-step='sequenced'][data-step-status='fail'] .step-item[data-step='sequenced'] .step-body {
+  background-color: #ed5565;
+  -webkit-box-shadow: 0 0 0 3px #ed5565;
+          box-shadow: 0 0 0 3px #ed5565;
+}
+
+.stepbar-progress[data-current-step='sequenced'][data-step-status='fail'] .step-item[data-step='sequenced'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='analyzed'][data-step-status='fail'] .step-item[data-step='sequenced'] .step-body {
+  background-color: #ed5565;
+}
+
+.stepbar-progress[data-current-step='analyzed'][data-step-status='fail'] .step-item[data-step='sequenced'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='analyzed'][data-step-status='fail'] .step-item[data-step='analyzed'] .step-body:before,
+.stepbar-progress[data-current-step='analyzed'][data-step-status='fail'] .step-item[data-step='analyzed'] .step-body:after {
+  width: 0px;
+}
+
+.stepbar-progress[data-current-step='analyzed'][data-step-status='fail'] .step-item[data-step='analyzed'] .step-body {
+  background-color: #ed5565;
+  -webkit-box-shadow: 0 0 0 3px #ed5565;
+          box-shadow: 0 0 0 3px #ed5565;
+}
+
+.stepbar-progress[data-current-step='analyzed'][data-step-status='fail'] .step-item[data-step='analyzed'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='analyzed'][data-step-status='fail'] .step-item[data-step='sequenced'] .step-body:after,
+.stepbar-progress[data-current-step='analyzed'][data-step-status='fail'] .step-item[data-step='sequenced'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='analyzed'][data-step-status='fail'] .step-item[data-step='analyzed'] .step-body:before {
+  background-color: #ed5565;
+}
+
+.stepbar-progress[data-current-step='ondell'][data-step-status='fail'] .step-item[data-step='sequenced'] .step-body {
+  background-color: #ed5565;
+}
+
+.stepbar-progress[data-current-step='ondell'][data-step-status='fail'] .step-item[data-step='sequenced'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='ondell'][data-step-status='fail'] .step-item[data-step='analyzed'] .step-body {
+  background-color: #ed5565;
+}
+
+.stepbar-progress[data-current-step='ondell'][data-step-status='fail'] .step-item[data-step='analyzed'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='ondell'][data-step-status='fail'] .step-item[data-step='ondell'] .step-body:before,
+.stepbar-progress[data-current-step='ondell'][data-step-status='fail'] .step-item[data-step='ondell'] .step-body:after {
+  width: 0px;
+}
+
+.stepbar-progress[data-current-step='ondell'][data-step-status='fail'] .step-item[data-step='ondell'] .step-body {
+  background-color: #ed5565;
+  -webkit-box-shadow: 0 0 0 3px #ed5565;
+          box-shadow: 0 0 0 3px #ed5565;
+}
+
+.stepbar-progress[data-current-step='ondell'][data-step-status='fail'] .step-item[data-step='ondell'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='ondell'][data-step-status='fail'] .step-item[data-step='sequenced'] .step-body:after,
+.stepbar-progress[data-current-step='ondell'][data-step-status='fail'] .step-item[data-step='sequenced'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='ondell'][data-step-status='fail'] .step-item[data-step='analyzed'] .step-body:before {
+  background-color: #ed5565;
+}
+
+.stepbar-progress[data-current-step='ondell'][data-step-status='fail'] .step-item[data-step='analyzed'] .step-body:after,
+.stepbar-progress[data-current-step='ondell'][data-step-status='fail'] .step-item[data-step='analyzed'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='ondell'][data-step-status='fail'] .step-item[data-step='ondell'] .step-body:before {
+  background-color: #ed5565;
+}
+
+.stepbar-progress[data-current-step='converted'][data-step-status='fail'] .step-item[data-step='sequenced'] .step-body {
+  background-color: #ed5565;
+}
+
+.stepbar-progress[data-current-step='converted'][data-step-status='fail'] .step-item[data-step='sequenced'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='converted'][data-step-status='fail'] .step-item[data-step='analyzed'] .step-body {
+  background-color: #ed5565;
+}
+
+.stepbar-progress[data-current-step='converted'][data-step-status='fail'] .step-item[data-step='analyzed'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='converted'][data-step-status='fail'] .step-item[data-step='ondell'] .step-body {
+  background-color: #ed5565;
+}
+
+.stepbar-progress[data-current-step='converted'][data-step-status='fail'] .step-item[data-step='ondell'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='converted'][data-step-status='fail'] .step-item[data-step='converted'] .step-body:before,
+.stepbar-progress[data-current-step='converted'][data-step-status='fail'] .step-item[data-step='converted'] .step-body:after {
+  width: 0px;
+}
+
+.stepbar-progress[data-current-step='converted'][data-step-status='fail'] .step-item[data-step='converted'] .step-body {
+  background-color: #ed5565;
+  -webkit-box-shadow: 0 0 0 3px #ed5565;
+          box-shadow: 0 0 0 3px #ed5565;
+}
+
+.stepbar-progress[data-current-step='converted'][data-step-status='fail'] .step-item[data-step='converted'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='converted'][data-step-status='fail'] .step-item[data-step='sequenced'] .step-body:after,
+.stepbar-progress[data-current-step='converted'][data-step-status='fail'] .step-item[data-step='sequenced'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='converted'][data-step-status='fail'] .step-item[data-step='analyzed'] .step-body:before {
+  background-color: #ed5565;
+}
+
+.stepbar-progress[data-current-step='converted'][data-step-status='fail'] .step-item[data-step='analyzed'] .step-body:after,
+.stepbar-progress[data-current-step='converted'][data-step-status='fail'] .step-item[data-step='analyzed'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='converted'][data-step-status='fail'] .step-item[data-step='ondell'] .step-body:before {
+  background-color: #ed5565;
+}
+
+.stepbar-progress[data-current-step='converted'][data-step-status='fail'] .step-item[data-step='ondell'] .step-body:after,
+.stepbar-progress[data-current-step='converted'][data-step-status='fail'] .step-item[data-step='ondell'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='converted'][data-step-status='fail'] .step-item[data-step='converted'] .step-body:before {
+  background-color: #ed5565;
+}
+
+.stepbar-progress[data-current-step='incloud'][data-step-status='fail'] .step-item[data-step='sequenced'] .step-body {
+  background-color: #ed5565;
+}
+
+.stepbar-progress[data-current-step='incloud'][data-step-status='fail'] .step-item[data-step='sequenced'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='incloud'][data-step-status='fail'] .step-item[data-step='analyzed'] .step-body {
+  background-color: #ed5565;
+}
+
+.stepbar-progress[data-current-step='incloud'][data-step-status='fail'] .step-item[data-step='analyzed'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='incloud'][data-step-status='fail'] .step-item[data-step='ondell'] .step-body {
+  background-color: #ed5565;
+}
+
+.stepbar-progress[data-current-step='incloud'][data-step-status='fail'] .step-item[data-step='ondell'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='incloud'][data-step-status='fail'] .step-item[data-step='converted'] .step-body {
+  background-color: #ed5565;
+}
+
+.stepbar-progress[data-current-step='incloud'][data-step-status='fail'] .step-item[data-step='converted'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='incloud'][data-step-status='fail'] .step-item[data-step='incloud'] .step-body:before,
+.stepbar-progress[data-current-step='incloud'][data-step-status='fail'] .step-item[data-step='incloud'] .step-body:after {
+  width: 0px;
+}
+
+.stepbar-progress[data-current-step='incloud'][data-step-status='fail'] .step-item[data-step='incloud'] .step-body {
+  background-color: #ed5565;
+  -webkit-box-shadow: 0 0 0 3px #ed5565;
+          box-shadow: 0 0 0 3px #ed5565;
+}
+
+.stepbar-progress[data-current-step='incloud'][data-step-status='fail'] .step-item[data-step='incloud'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='incloud'][data-step-status='fail'] .step-item[data-step='sequenced'] .step-body:after,
+.stepbar-progress[data-current-step='incloud'][data-step-status='fail'] .step-item[data-step='sequenced'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='incloud'][data-step-status='fail'] .step-item[data-step='analyzed'] .step-body:before {
+  background-color: #ed5565;
+}
+
+.stepbar-progress[data-current-step='incloud'][data-step-status='fail'] .step-item[data-step='analyzed'] .step-body:after,
+.stepbar-progress[data-current-step='incloud'][data-step-status='fail'] .step-item[data-step='analyzed'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='incloud'][data-step-status='fail'] .step-item[data-step='ondell'] .step-body:before {
+  background-color: #ed5565;
+}
+
+.stepbar-progress[data-current-step='incloud'][data-step-status='fail'] .step-item[data-step='ondell'] .step-body:after,
+.stepbar-progress[data-current-step='incloud'][data-step-status='fail'] .step-item[data-step='ondell'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='incloud'][data-step-status='fail'] .step-item[data-step='converted'] .step-body:before {
+  background-color: #ed5565;
+}
+
+.stepbar-progress[data-current-step='incloud'][data-step-status='fail'] .step-item[data-step='converted'] .step-body:after,
+.stepbar-progress[data-current-step='incloud'][data-step-status='fail'] .step-item[data-step='converted'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='incloud'][data-step-status='fail'] .step-item[data-step='incloud'] .step-body:before {
+  background-color: #ed5565;
+}
+
+.stepbar-progress[data-current-step='downloaded'][data-step-status='fail'] .step-item[data-step='sequenced'] .step-body {
+  background-color: #ed5565;
+}
+
+.stepbar-progress[data-current-step='downloaded'][data-step-status='fail'] .step-item[data-step='sequenced'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='downloaded'][data-step-status='fail'] .step-item[data-step='analyzed'] .step-body {
+  background-color: #ed5565;
+}
+
+.stepbar-progress[data-current-step='downloaded'][data-step-status='fail'] .step-item[data-step='analyzed'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='downloaded'][data-step-status='fail'] .step-item[data-step='ondell'] .step-body {
+  background-color: #ed5565;
+}
+
+.stepbar-progress[data-current-step='downloaded'][data-step-status='fail'] .step-item[data-step='ondell'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='downloaded'][data-step-status='fail'] .step-item[data-step='converted'] .step-body {
+  background-color: #ed5565;
+}
+
+.stepbar-progress[data-current-step='downloaded'][data-step-status='fail'] .step-item[data-step='converted'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='downloaded'][data-step-status='fail'] .step-item[data-step='incloud'] .step-body {
+  background-color: #ed5565;
+}
+
+.stepbar-progress[data-current-step='downloaded'][data-step-status='fail'] .step-item[data-step='incloud'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='downloaded'][data-step-status='fail'] .step-item[data-step='downloaded'] .step-body:before,
+.stepbar-progress[data-current-step='downloaded'][data-step-status='fail'] .step-item[data-step='downloaded'] .step-body:after {
+  width: 0px;
+}
+
+.stepbar-progress[data-current-step='downloaded'][data-step-status='fail'] .step-item[data-step='downloaded'] .step-body {
+  background-color: #ed5565;
+  -webkit-box-shadow: 0 0 0 3px #ed5565;
+          box-shadow: 0 0 0 3px #ed5565;
+}
+
+.stepbar-progress[data-current-step='downloaded'][data-step-status='fail'] .step-item[data-step='downloaded'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='downloaded'][data-step-status='fail'] .step-item[data-step='sequenced'] .step-body:after,
+.stepbar-progress[data-current-step='downloaded'][data-step-status='fail'] .step-item[data-step='sequenced'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='downloaded'][data-step-status='fail'] .step-item[data-step='analyzed'] .step-body:before {
+  background-color: #ed5565;
+}
+
+.stepbar-progress[data-current-step='downloaded'][data-step-status='fail'] .step-item[data-step='analyzed'] .step-body:after,
+.stepbar-progress[data-current-step='downloaded'][data-step-status='fail'] .step-item[data-step='analyzed'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='downloaded'][data-step-status='fail'] .step-item[data-step='ondell'] .step-body:before {
+  background-color: #ed5565;
+}
+
+.stepbar-progress[data-current-step='downloaded'][data-step-status='fail'] .step-item[data-step='ondell'] .step-body:after,
+.stepbar-progress[data-current-step='downloaded'][data-step-status='fail'] .step-item[data-step='ondell'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='downloaded'][data-step-status='fail'] .step-item[data-step='converted'] .step-body:before {
+  background-color: #ed5565;
+}
+
+.stepbar-progress[data-current-step='downloaded'][data-step-status='fail'] .step-item[data-step='converted'] .step-body:after,
+.stepbar-progress[data-current-step='downloaded'][data-step-status='fail'] .step-item[data-step='converted'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='downloaded'][data-step-status='fail'] .step-item[data-step='incloud'] .step-body:before {
+  background-color: #ed5565;
+}
+
+.stepbar-progress[data-current-step='downloaded'][data-step-status='fail'] .step-item[data-step='incloud'] .step-body:after,
+.stepbar-progress[data-current-step='downloaded'][data-step-status='fail'] .step-item[data-step='incloud'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='downloaded'][data-step-status='fail'] .step-item[data-step='downloaded'] .step-body:before {
+  background-color: #ed5565;
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='fail'] .step-item[data-step='sequenced'] .step-body {
+  background-color: #ed5565;
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='fail'] .step-item[data-step='sequenced'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='fail'] .step-item[data-step='analyzed'] .step-body {
+  background-color: #ed5565;
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='fail'] .step-item[data-step='analyzed'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='fail'] .step-item[data-step='ondell'] .step-body {
+  background-color: #ed5565;
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='fail'] .step-item[data-step='ondell'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='fail'] .step-item[data-step='converted'] .step-body {
+  background-color: #ed5565;
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='fail'] .step-item[data-step='converted'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='fail'] .step-item[data-step='incloud'] .step-body {
+  background-color: #ed5565;
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='fail'] .step-item[data-step='incloud'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='fail'] .step-item[data-step='downloaded'] .step-body {
+  background-color: #ed5565;
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='fail'] .step-item[data-step='downloaded'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='fail'] .step-item[data-step='jobsubmitted'] .step-body:before,
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='fail'] .step-item[data-step='jobsubmitted'] .step-body:after {
+  width: 0px;
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='fail'] .step-item[data-step='jobsubmitted'] .step-body {
+  background-color: #ed5565;
+  -webkit-box-shadow: 0 0 0 3px #ed5565;
+          box-shadow: 0 0 0 3px #ed5565;
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='fail'] .step-item[data-step='jobsubmitted'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='fail'] .step-item[data-step='sequenced'] .step-body:after,
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='fail'] .step-item[data-step='sequenced'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='fail'] .step-item[data-step='analyzed'] .step-body:before {
+  background-color: #ed5565;
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='fail'] .step-item[data-step='analyzed'] .step-body:after,
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='fail'] .step-item[data-step='analyzed'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='fail'] .step-item[data-step='ondell'] .step-body:before {
+  background-color: #ed5565;
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='fail'] .step-item[data-step='ondell'] .step-body:after,
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='fail'] .step-item[data-step='ondell'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='fail'] .step-item[data-step='converted'] .step-body:before {
+  background-color: #ed5565;
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='fail'] .step-item[data-step='converted'] .step-body:after,
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='fail'] .step-item[data-step='converted'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='fail'] .step-item[data-step='incloud'] .step-body:before {
+  background-color: #ed5565;
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='fail'] .step-item[data-step='incloud'] .step-body:after,
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='fail'] .step-item[data-step='incloud'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='fail'] .step-item[data-step='downloaded'] .step-body:before {
+  background-color: #ed5565;
+}
+
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='fail'] .step-item[data-step='downloaded'] .step-body:after,
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='fail'] .step-item[data-step='downloaded'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='jobsubmitted'][data-step-status='fail'] .step-item[data-step='jobsubmitted'] .step-body:before {
+  background-color: #ed5565;
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='fail'] .step-item[data-step='sequenced'] .step-body {
+  background-color: #ed5565;
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='fail'] .step-item[data-step='sequenced'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='fail'] .step-item[data-step='analyzed'] .step-body {
+  background-color: #ed5565;
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='fail'] .step-item[data-step='analyzed'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='fail'] .step-item[data-step='ondell'] .step-body {
+  background-color: #ed5565;
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='fail'] .step-item[data-step='ondell'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='fail'] .step-item[data-step='converted'] .step-body {
+  background-color: #ed5565;
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='fail'] .step-item[data-step='converted'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='fail'] .step-item[data-step='incloud'] .step-body {
+  background-color: #ed5565;
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='fail'] .step-item[data-step='incloud'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='fail'] .step-item[data-step='downloaded'] .step-body {
+  background-color: #ed5565;
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='fail'] .step-item[data-step='downloaded'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='fail'] .step-item[data-step='jobsubmitted'] .step-body {
+  background-color: #ed5565;
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='fail'] .step-item[data-step='jobsubmitted'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='fail'] .step-item[data-step='jobcompleted'] .step-body:before,
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='fail'] .step-item[data-step='jobcompleted'] .step-body:after {
+  width: 0px;
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='fail'] .step-item[data-step='jobcompleted'] .step-body {
+  background-color: #ed5565;
+  -webkit-box-shadow: 0 0 0 3px #ed5565;
+          box-shadow: 0 0 0 3px #ed5565;
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='fail'] .step-item[data-step='jobcompleted'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='fail'] .step-item[data-step='sequenced'] .step-body:after,
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='fail'] .step-item[data-step='sequenced'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='fail'] .step-item[data-step='analyzed'] .step-body:before {
+  background-color: #ed5565;
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='fail'] .step-item[data-step='analyzed'] .step-body:after,
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='fail'] .step-item[data-step='analyzed'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='fail'] .step-item[data-step='ondell'] .step-body:before {
+  background-color: #ed5565;
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='fail'] .step-item[data-step='ondell'] .step-body:after,
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='fail'] .step-item[data-step='ondell'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='fail'] .step-item[data-step='converted'] .step-body:before {
+  background-color: #ed5565;
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='fail'] .step-item[data-step='converted'] .step-body:after,
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='fail'] .step-item[data-step='converted'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='fail'] .step-item[data-step='incloud'] .step-body:before {
+  background-color: #ed5565;
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='fail'] .step-item[data-step='incloud'] .step-body:after,
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='fail'] .step-item[data-step='incloud'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='fail'] .step-item[data-step='downloaded'] .step-body:before {
+  background-color: #ed5565;
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='fail'] .step-item[data-step='downloaded'] .step-body:after,
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='fail'] .step-item[data-step='downloaded'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='fail'] .step-item[data-step='jobsubmitted'] .step-body:before {
+  background-color: #ed5565;
+}
+
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='fail'] .step-item[data-step='jobsubmitted'] .step-body:after,
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='fail'] .step-item[data-step='jobsubmitted'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='jobcompleted'][data-step-status='fail'] .step-item[data-step='jobcompleted'] .step-body:before {
+  background-color: #ed5565;
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='fail'] .step-item[data-step='sequenced'] .step-body {
+  background-color: #ed5565;
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='fail'] .step-item[data-step='sequenced'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='fail'] .step-item[data-step='analyzed'] .step-body {
+  background-color: #ed5565;
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='fail'] .step-item[data-step='analyzed'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='fail'] .step-item[data-step='ondell'] .step-body {
+  background-color: #ed5565;
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='fail'] .step-item[data-step='ondell'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='fail'] .step-item[data-step='converted'] .step-body {
+  background-color: #ed5565;
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='fail'] .step-item[data-step='converted'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='fail'] .step-item[data-step='incloud'] .step-body {
+  background-color: #ed5565;
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='fail'] .step-item[data-step='incloud'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='fail'] .step-item[data-step='downloaded'] .step-body {
+  background-color: #ed5565;
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='fail'] .step-item[data-step='downloaded'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='fail'] .step-item[data-step='jobsubmitted'] .step-body {
+  background-color: #ed5565;
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='fail'] .step-item[data-step='jobsubmitted'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='fail'] .step-item[data-step='jobcompleted'] .step-body {
+  background-color: #ed5565;
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='fail'] .step-item[data-step='jobcompleted'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='fail'] .step-item[data-step='backtodell'] .step-body:before,
+.stepbar-progress[data-current-step='backtodell'][data-step-status='fail'] .step-item[data-step='backtodell'] .step-body:after {
+  width: 0px;
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='fail'] .step-item[data-step='backtodell'] .step-body {
+  background-color: #ed5565;
+  -webkit-box-shadow: 0 0 0 3px #ed5565;
+          box-shadow: 0 0 0 3px #ed5565;
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='fail'] .step-item[data-step='backtodell'] .step-body .glyphicon:before {
+  content: "";
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='fail'] .step-item[data-step='sequenced'] .step-body:after,
+.stepbar-progress[data-current-step='backtodell'][data-step-status='fail'] .step-item[data-step='sequenced'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='backtodell'][data-step-status='fail'] .step-item[data-step='analyzed'] .step-body:before {
+  background-color: #ed5565;
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='fail'] .step-item[data-step='analyzed'] .step-body:after,
+.stepbar-progress[data-current-step='backtodell'][data-step-status='fail'] .step-item[data-step='analyzed'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='backtodell'][data-step-status='fail'] .step-item[data-step='ondell'] .step-body:before {
+  background-color: #ed5565;
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='fail'] .step-item[data-step='ondell'] .step-body:after,
+.stepbar-progress[data-current-step='backtodell'][data-step-status='fail'] .step-item[data-step='ondell'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='backtodell'][data-step-status='fail'] .step-item[data-step='converted'] .step-body:before {
+  background-color: #ed5565;
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='fail'] .step-item[data-step='converted'] .step-body:after,
+.stepbar-progress[data-current-step='backtodell'][data-step-status='fail'] .step-item[data-step='converted'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='backtodell'][data-step-status='fail'] .step-item[data-step='incloud'] .step-body:before {
+  background-color: #ed5565;
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='fail'] .step-item[data-step='incloud'] .step-body:after,
+.stepbar-progress[data-current-step='backtodell'][data-step-status='fail'] .step-item[data-step='incloud'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='backtodell'][data-step-status='fail'] .step-item[data-step='downloaded'] .step-body:before {
+  background-color: #ed5565;
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='fail'] .step-item[data-step='downloaded'] .step-body:after,
+.stepbar-progress[data-current-step='backtodell'][data-step-status='fail'] .step-item[data-step='downloaded'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='backtodell'][data-step-status='fail'] .step-item[data-step='jobsubmitted'] .step-body:before {
+  background-color: #ed5565;
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='fail'] .step-item[data-step='jobsubmitted'] .step-body:after,
+.stepbar-progress[data-current-step='backtodell'][data-step-status='fail'] .step-item[data-step='jobsubmitted'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='backtodell'][data-step-status='fail'] .step-item[data-step='jobcompleted'] .step-body:before {
+  background-color: #ed5565;
+}
+
+.stepbar-progress[data-current-step='backtodell'][data-step-status='fail'] .step-item[data-step='jobcompleted'] .step-body:after,
+.stepbar-progress[data-current-step='backtodell'][data-step-status='fail'] .step-item[data-step='jobcompleted'] + .step-item-progress .progress-body,
+.stepbar-progress[data-current-step='backtodell'][data-step-status='fail'] .step-item[data-step='backtodell'] .step-body:before {
+  background-color: #ed5565;
+>>>>>>> nips_Function
 }
 /*# sourceMappingURL=style.css.map */

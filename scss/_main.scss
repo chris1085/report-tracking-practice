@@ -1,688 +1,770 @@
 * {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
-
 
 body,
 html {
-    height: 100%;
-    width: 100%;
-    font-family: $font-family-title;
+  height: 100%;
+  width: 100%;
+  font-family: $font-family-title;
 }
 
 h1 {
-    font-family: $font-family-title;
-    font-weight: bold;
+  font-family: $font-family-title;
+  font-weight: bold;
 }
 
-h2 {
-    font-family: $font-family-title;
-    font-weight: bold;
-    color: gray;
+.sub-title {
+  font-family: $font-family-title;
+  font-weight: bold;
+  color: gray;
 }
 
 .rainbow-box {
-    @include rainbow-bar(gray, #b827fc, #2c90fc, #b8fd33, #fec837, #fd1892);
-    /* margin: 20px auto; */
-    width: 100%;
+  @include rainbow-bar(gray, #b827fc, #2c90fc, #b8fd33, #fec837, #fd1892);
+  /* margin: 20px auto; */
+  width: 100%;
 }
 
 .rainbow {
-    width: 100%;
+  width: 100%;
 }
 
 .btn {
-    border-width: 2px;
+  border-width: 2px;
 }
 
 .bg-cover {
-    background-size: cover;
-    background-position: center center;
+  background-size: cover;
+  background-position: center center;
 }
 
 @media (min-width: 768px) {
-    .text-md-dark {
-        color: #333;
-    }
+  .text-md-dark {
+    color: #333;
+  }
+}
+
+.navbar {
+  padding: 0px !important;
 }
 
 .nav-item {
-    padding: 15px 5px;
-    margin: 0 10px;
+  padding: 15px 5px;
+  margin: 0 10px;
 }
 
 .nav-link {
-    color: gray !important;
-    font-weight: bold;
-    font-size: 18px;
-    font-family: $font-family-title;
+  color: gray !important;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: $font-family-title;
 
-    /* transition-duration: .8s; */
+  /* transition-duration: .8s; */
 }
 
 .nav-item:hover .nav-link:hover {
-    color: black !important;
-    font-weight: bold;
+  color: black !important;
+  font-weight: bold;
 }
 
 .nav-item::after {
-    content: "";
-    border-bottom: 2px solid black;
-    margin: auto;
-    position: relative;
-    width: 0%;
-    display: block;
-    transition: all .2s;
+  content: '';
+  border-bottom: 2px solid black;
+  margin: auto;
+  position: relative;
+  width: 0%;
+  display: block;
+  transition: all 0.2s;
 }
 
 .nav-item:hover::after {
-    width: 100%;
+  width: 100%;
 }
 
 .test {
-    border: 1px solid red;
-    // padding: 100px;
+  border: 1px solid green;
+  // padding: 100px;
+}
+
+.font-title {
+  font-family: 'Gentium Book Basic', serif;
+  font-size: 80px;
 }
 
 .banner::after {
-    content: "";
-    border-bottom: 2px solid gray;
-    display: block;
-    padding-bottom: 25px;
+  content: '';
+  border-bottom: 2px solid gray;
+  display: block;
+  padding-bottom: 25px;
+}
+
+.content-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  // border: 1px solid red;
+  width: 100%;
+
+  @include l-mobile {
+    font-size: 10px;
+  }
+
+  h4 {
+    @include mobile {
+      font-size: 18px;
+    }
+  }
+}
+
+.banner-time-content {
+  @include l-mobile {
+    flex-direction: column;
+  }
+
+  @include mobile {
+    font-size: 18px;
+    flex-direction: column;
+  }
 }
 
 .row-sampleRun {
-    font-size: 14px;
+  font-size: 14px;
+  width: 100%;
+  // border: 1px solid gray !important;
+
+  @include l-mobile {
+    border: 1px solid gray !important;
+    margin-top: 0.5rem !important;
+    margin-bottom: 0.5rem !important;
+    margin-left: 0.1rem !important;
+    border-radius: 8px;
+    padding-bottom: 0.5rem;
+  }
+
+  @include mobile {
+    border: 1px solid gray !important;
+    border-radius: 8px;
+
+    margin-top: 0.6rem !important;
+    margin-bottom: 0.6rem !important;
+    margin-left: 0.1rem !important;
+    padding-bottom: 0.5rem;
+    // margin-right: 0.5rem !important;
+  }
+}
+
+.content-info,
+.content-header {
+  @include mobile {
+    margin-left: 0.1rem !important;
+    // border: 1px solid gray !important;
+
+    // margin-right: 0.5rem !important;
+  }
+
+  @include l-mobile {
+    margin-left: 0.1rem !important;
+  }
+}
+
+.content-info {
+  @include mobile {
+    border: 3px solid green !important;
+    border-radius: 8px;
+    // border: 1px solid gray !important;
+
+    // margin-right: 0.5rem !important;
+  }
+
+  @include l-mobile {
+    border: 3px solid green !important;
+    border-radius: 8px;
+  }
 }
 
 .content-header-info {
+  display: flex;
+
+  .arrow-container {
     display: flex;
+    float: left;
+    // right: 30px;
 
-    .arrow-container {
-        display: flex;
-        float: left;
-        // right: 30px;
-
-        .header-sofiva,
-        .header-cloud {
-            text-align: center;
-            font-weight: bold;
-            font-size: 30px;
-            // border: 1px solid blue;
-            // margin: 0 auto;
-        }
-
-        // border: 1px solid blue;
-        padding-left: 0px !important;
-        padding-right: 0px !important;
+    .header-sofiva,
+    .header-cloud {
+      text-align: center;
+      font-weight: bold;
+      font-size: 30px;
+      // border: 1px solid blue;
+      // margin: 0 auto;
     }
 
+    // border: 1px solid blue;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
 }
 
-.arrow-left {
-    display: inline-block;
-    width: 0;
-    height: 0;
-    border-top: 40px solid #F05E1C;
-    border-bottom: 40px solid #F05E1C;
-    border-left: 40px solid transparent;
-    -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.7));
-    filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.7))
+#content-header-time,
+.duration-time {
+  @include l-mobile {
+    justify-content: flex-end !important;
+  }
+
+  @include mobile {
+    justify-content: flex-end !important;
+  }
 }
 
-.arrow-ctr {
-    display: inline-block;
-    // width: 150px;
-    background: #F05E1C;
-    min-height: 80px;
-    line-height: 80px;
-    position: relative;
+.card-body {
+  // display: inline !important;
+  flex-direction: row;
+}
+
+// Mixins
+
+// creates the triangle appended to the rectangles in the progress bar
+@mixin arrow() {
+  border-bottom: 50px solid transparent;
+  border-top: 50px solid transparent;
+  content: ' ';
+  display: block;
+  height: 0;
+  left: 100%;
+  margin-top: -50px;
+  position: absolute;
+  top: 50%;
+  width: 0;
+}
+
+.content-header-info-list {
+  -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
+  list-style: none;
+  overflow: hidden; // necessary to cut off top and bottom parts of triangles
+  font: 20px Helvetica;
+  font-weight: 600;
+  display: flex;
+  width: 100%;
+
+  li {
     text-align: center;
+  }
+
+  &__steps {
+    background: #ddd;
+    color: #666;
     width: 100%;
-    font-weight: bold;
-    font-size: 25px;
-    -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.7));
-    filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.7))
-}
-
-.arrow-right {
-    display: inline-block;
-    height: 0;
-    border-top: 40px solid transparent;
-    border-bottom: 40px solid transparent;
-    border-left: 40px solid #F05E1C;
-    // position: relative;
-    -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.7));
-    filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.7))
-}
-
-.arrow-right-end {
-    border: 40px solid #F05E1C;
-    border-top-right-radius: 20%;
-    border-bottom-right-radius: 20%;
-    -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.7));
-    filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.7))
-}
-
-
-
-@keyframes myanimation {
-    from {
-        left: 0%;
-    }
-
-    to {
-        left: 50%;
-    }
-}
-
-.checkout-wrap {
-    color: #444;
-    font-family: 'PT Sans Caption', sans-serif;
-    margin: 0px auto;
-    // max-width: 1200px;
     position: relative;
-    width: 100%;
-}
+    cursor: default;
 
-ul.checkout-bar {
-    margin: 0 auto;
+    // padding: 20px 5px;
+    text-align: center;
 
-    li {
-        color: #ccc;
-        display: block;
-        font-size: 16px;
-        font-weight: 600;
-        // padding: 14px 20px 14px 80px;
-        position: relative;
-
-        &:before {
-            @include inner-shadow;
-            background: #ddd;
-            border: 2px solid #FFF;
-            border-radius: 50%;
-            color: #fff;
-            font-size: 16px;
-            font-weight: 700;
-            // left: 20px;
-            line-height: 37px;
-            height: 35px;
-            position: absolute;
-            text-align: center;
-            text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
-            top: 4px;
-            // width: 35px;
-            z-index: 999;
-        }
-
-        &.active {
-            color: #8bc53f;
-            font-weight: bold;
-
-            &:before {
-                background: #8bc53f;
-                z-index: 99999;
-            }
-        }
-
-        &.visited {
-            background: #ECECEC;
-            color: #57aed1;
-            z-index: 99999;
-
-            &:before {
-                background: #57aed1;
-                z-index: 99999;
-            }
-        }
-
-        &:nth-child(1) {
-            &:before {
-                content: "1";
-            }
-        }
-
-        &:nth-child(2) {
-            &:before {
-                content: "2";
-            }
-        }
-
-        &:nth-child(3) {
-            &:before {
-                content: "3";
-            }
-        }
-
-        &:nth-child(4) {
-            &:before {
-                content: "4";
-            }
-        }
-
-        &:nth-child(5) {
-            &:before {
-                content: "5";
-            }
-        }
-
-        &:nth-child(6) {
-            &:before {
-                content: "6";
-            }
-        }
-
-        &:nth-child(7) {
-            &:before {
-                content: "7";
-            }
-        }
-
-        &:nth-child(8) {
-            &:before {
-                content: "8";
-            }
-        }
-
-        &:nth-child(9) {
-            &:before {
-                content: "9";
-            }
-        }
-    }
-}
-
-@media all and (min-width: 800px) {
-    .checkout-bar li.active:after {
-        animation: myanimation 3s 0s;
-        @include green-stripe;
-        @include inner-shadow;
-        content: "";
-        height: 15px;
-        width: 100%;
-        left: 50%;
-        position: absolute;
-        top: -50px;
-        z-index: 0;
+    @media screen and (min-width: 800px) {
+      padding: 20px 0 20px 65px; // create padding-left to position text
+      text-align: left;
     }
 
-    // .checkout-wrap {
-    //     margin: 80px auto;
-    //     // padding-top: 100px;
-    // }
-
-    ul.checkout-bar {
-        @include inner-shadow;
-        @include gray-stripe;
-
-        border-radius: 15px;
-        height: 15px;
-        margin: 0 auto;
-        padding: 10;
-        position: absolute;
-        width: 100%;
-        top: 4px;
-
-        &:before {
-            // @include blue-stripe;
-            @include inner-shadow;
-            border-radius: 15px;
-            content: " ";
-            height: 15px;
-            left: 0;
-            position: absolute;
-            width: 10%;
-        }
-
-        li {
-            display: inline-block;
-            margin: 50px 0 0;
-            padding: 0;
-            text-align: center;
-            width: 10%;
-
-            &:before {
-                height: 35px;
-                left: 40%;
-                line-height: 30px;
-                position: absolute;
-                top: -60px;
-                width: 35px;
-                z-index: 99;
-                font-size: 10px;
-
-            }
-
-            &.visited {
-                background: none;
-
-                &:after {
-                    @include blue-stripe;
-                    @include inner-shadow;
-                    content: "";
-                    height: 15px;
-                    left: 50%;
-                    position: absolute;
-                    top: -50px;
-                    width: 100%;
-                    z-index: 99;
-                }
-            }
-        }
+    @media screen and (min-width: 800px) {
+      padding: 15px 0 15px 30px;
     }
+
+    // appended triangle
+    &:after {
+      @media screen and (min-width: 800px) {
+        @include arrow();
+        border-left: 30px solid #ddd;
+        z-index: 2;
+      }
+    }
+
+    // prepend triangle cutout to create separation border
+    &:before {
+      @media screen and (min-width: 800px) {
+        @include arrow();
+        border-left: 30px solid #fff;
+        z-index: 1;
+        margin-left: 5px;
+      }
+    }
+
+    .content-header-info-list__steps-sofiva,
+    .content-header-info-list__steps-cloud {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:before {
+        display: inline-block;
+        width: 46px;
+        height: 46px;
+        padding-right: 60px;
+        content: '';
+      }
+    }
+
+    .content-header-info-list__steps-sofiva {
+      &:before {
+        background-image: url('../images/SOFIVA.png');
+        background-repeat: no-repeat;
+        background-size: 46px 46px;
+      }
+    }
+
+    .content-header-info-list__steps-cloud {
+      &:before {
+        background-image: url('../images/cloud.png');
+        background-repeat: no-repeat;
+        background-size: 38px 46px;
+        padding-right: 46px;
+      }
+    }
+  }
+
+  .current {
+    background: #58b2dc;
+    color: #fff;
+
+    &:after {
+      border-left: 30px solid #647d5e;
+    }
+  }
 }
 
+.first-info {
+  width: 70%;
+}
 
+.content-icon-item {
+  height: 32px;
+  width: 32px;
+  color: gray !important;
+  // border: 1px solid gray;
+}
+
+.content-icon-progress {
+  width: 100% / ($step-count - 1);
+  height: 32px;
+  display: block;
+  // border: 1px solid gray;
+}
+
+.runID {
+  word-wrap: break-word;
+  width: 100%;
+}
+>>>>>>> nips_Function
 
 /*=============================================
 =     Step Bar Progress Bar for Bootstrap.    =
 =============================================*/
 
 @keyframes active-spin {
-    from {
-        transform: rotate(0deg);
-    }
+  from {
+    transform: rotate(0deg);
+  }
 
-    to {
-        transform: rotate(360deg);
-    }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
-// .container {
-//     margin-top: 20px;
+.glyphicon,
+.glyphicon-step1,
+.glyphicon-step2,
+.glyphicon-step3,
+.glyphicon-step4,
+.glyphicon-step5,
+.glyphicon-step6,
+.glyphicon-step7,
+.glyphicon-step8,
+.glyphicon-step9 {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  display: block;
+}
 
-//     h2 {
-//         text-align: center;
-//     }
+.glyphicon-step1:before {
+  font-size: 32px;
+  content: map-get($content-icon-glyph, 'step1');
+}
 
-//     h4 {
-//         color: #999;
-//         text-align: center;
-//     }
+.glyphicon-step2:before {
+  font-size: 32px;
+  content: map-get($content-icon-glyph, 'step2');
+}
 
-//     .stepbar-progress {
-//         margin-top: 30px;
-//     }
-// }
+.glyphicon-step3:before {
+  font-size: 32px;
+  content: map-get($content-icon-glyph, 'step3');
+}
 
-.glyphicon {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    display: block;
+.glyphicon-step4:before {
+  font-size: 32px;
+  content: map-get($content-icon-glyph, 'step4');
+}
+
+.glyphicon-step5:before {
+  font-size: 32px;
+  content: map-get($content-icon-glyph, 'step5');
+}
+
+.glyphicon-step6:before {
+  font-size: 32px;
+  content: map-get($content-icon-glyph, 'step6');
+}
+
+.glyphicon-step7:before {
+  font-size: 32px;
+  content: map-get($content-icon-glyph, 'step7');
+}
+
+.glyphicon-step8:before {
+  font-size: 32px;
+  content: map-get($content-icon-glyph, 'step8');
+}
+
+.glyphicon-step9:before {
+  font-size: 32px;
+  content: map-get($content-icon-glyph, 'step9');
 }
 
 td {
-    text-align: center;
+  text-align: center;
 }
 
 .stepbar-progress {
-    width: 100%;
-    height: 32px;
-    border-collapse: collapse;
-    text-align: center;
+  width: 100%;
+  height: 32px;
+  border-collapse: collapse;
+  text-align: center;
+  vertical-align: middle;
+  // display: flex;
+  // justify-content: space-evenly;
+  // align-items: center;
+
+  .step-item {
+    width: 32px;
     vertical-align: middle;
-    // display: flex;
-    // justify-content: space-evenly;
-    // align-items: center;
 
-    .step-item {
-        width: 32px;
-        vertical-align: middle;
+    .step-body {
+      position: relative;
+      display: block;
+      width: 32px;
+      height: 32px;
+      background-color: $light_gray;
+      border: 5px solid $light_gray;
+      border-radius: 50%;
+      cursor: pointer;
+      // padding: 0px 0px 10px 0px;
 
-        .step-body {
-            position: relative;
-            display: block;
-            width: 32px;
-            height: 32px;
-            background-color: $light_gray;
-            border: 5px solid $light_gray;
-            border-radius: 50%;
-            // padding: 0px 0px 10px 0px;
-
-            .glyphicon:before {
-                color: white;
-                margin: auto 4px 0 4px;
-                line-height: 20px;
-            }
-        }
+      .glyphicon:before {
+        color: white;
+        margin: auto 4px 0 4px;
+        line-height: 20px;
+      }
     }
+  }
 
-    .step-item-progress {
-        width: 100% / ($step-count - 1);
-        height: 32px;
-        // verticle-align: middle;
-        vertical-align: middle;
+  .step-item-progress {
+    width: 100% / ($step-count - 1);
+    height: 32px;
+    // verticle-align: middle;
+    vertical-align: middle;
 
-        .progress-body {
-            display: block;
-            height: 11px;
-            background-color: $light_gray;
-            border-top: 3px solid $light_gray;
-            border-bottom: 3px solid $light_gray;
+    .progress-body {
+      display: block;
+      height: 11px;
+      background-color: $light_gray;
+      border-top: 3px solid $light_gray;
+      border-bottom: 3px solid $light_gray;
 
-            background-image: -webkit-linear-gradient(-45deg,
-                    rgba(255, 255, 255, .3) 0%, transparent 5%,
-                    rgba(255, 255, 255, .3) 10%, transparent 15%,
-                    rgba(255, 255, 255, .3) 20%, transparent 25%,
-                    rgba(255, 255, 255, .3) 30%, transparent 35%,
-                    rgba(255, 255, 255, .3) 40%, transparent 45%,
-                    rgba(255, 255, 255, .3) 50%, transparent 55%,
-                    rgba(255, 255, 255, .3) 60%, transparent 65%,
-                    rgba(255, 255, 255, .3) 70%, transparent 75%,
-                    rgba(255, 255, 255, .3) 80%, transparent 85%,
-                    rgba(255, 255, 255, .3) 90%, transparent 95%,
-                    rgba(255, 255, 255, .3) 100%);
+      background-image: -webkit-linear-gradient(
+        -45deg,
+        rgba(255, 255, 255, 0.3) 0%,
+        transparent 5%,
+        rgba(255, 255, 255, 0.3) 10%,
+        transparent 15%,
+        rgba(255, 255, 255, 0.3) 20%,
+        transparent 25%,
+        rgba(255, 255, 255, 0.3) 30%,
+        transparent 35%,
+        rgba(255, 255, 255, 0.3) 40%,
+        transparent 45%,
+        rgba(255, 255, 255, 0.3) 50%,
+        transparent 55%,
+        rgba(255, 255, 255, 0.3) 60%,
+        transparent 65%,
+        rgba(255, 255, 255, 0.3) 70%,
+        transparent 75%,
+        rgba(255, 255, 255, 0.3) 80%,
+        transparent 85%,
+        rgba(255, 255, 255, 0.3) 90%,
+        transparent 95%,
+        rgba(255, 255, 255, 0.3) 100%
+      );
 
-            background-image: -moz-linear-gradient(-45deg,
-                    rgba(255, 255, 255, .3) 0%, transparent 5%,
-                    rgba(255, 255, 255, .3) 10%, transparent 15%,
-                    rgba(255, 255, 255, .3) 20%, transparent 25%,
-                    rgba(255, 255, 255, .3) 30%, transparent 35%,
-                    rgba(255, 255, 255, .3) 40%, transparent 45%,
-                    rgba(255, 255, 255, .3) 50%, transparent 55%,
-                    rgba(255, 255, 255, .3) 60%, transparent 65%,
-                    rgba(255, 255, 255, .3) 70%, transparent 75%,
-                    rgba(255, 255, 255, .3) 80%, transparent 85%,
-                    rgba(255, 255, 255, .3) 90%, transparent 95%,
-                    rgba(255, 255, 255, .3) 100%);
+      background-image: -moz-linear-gradient(
+        -45deg,
+        rgba(255, 255, 255, 0.3) 0%,
+        transparent 5%,
+        rgba(255, 255, 255, 0.3) 10%,
+        transparent 15%,
+        rgba(255, 255, 255, 0.3) 20%,
+        transparent 25%,
+        rgba(255, 255, 255, 0.3) 30%,
+        transparent 35%,
+        rgba(255, 255, 255, 0.3) 40%,
+        transparent 45%,
+        rgba(255, 255, 255, 0.3) 50%,
+        transparent 55%,
+        rgba(255, 255, 255, 0.3) 60%,
+        transparent 65%,
+        rgba(255, 255, 255, 0.3) 70%,
+        transparent 75%,
+        rgba(255, 255, 255, 0.3) 80%,
+        transparent 85%,
+        rgba(255, 255, 255, 0.3) 90%,
+        transparent 95%,
+        rgba(255, 255, 255, 0.3) 100%
+      );
 
-            background-image: -ms-linear-gradient(-45deg,
-                    rgba(255, 255, 255, .3) 0%, transparent 5%,
-                    rgba(255, 255, 255, .3) 10%, transparent 15%,
-                    rgba(255, 255, 255, .3) 20%, transparent 25%,
-                    rgba(255, 255, 255, .3) 30%, transparent 35%,
-                    rgba(255, 255, 255, .3) 40%, transparent 45%,
-                    rgba(255, 255, 255, .3) 50%, transparent 55%,
-                    rgba(255, 255, 255, .3) 60%, transparent 65%,
-                    rgba(255, 255, 255, .3) 70%, transparent 75%,
-                    rgba(255, 255, 255, .3) 80%, transparent 85%,
-                    rgba(255, 255, 255, .3) 90%, transparent 95%,
-                    rgba(255, 255, 255, .3) 100%);
+      background-image: -ms-linear-gradient(
+        -45deg,
+        rgba(255, 255, 255, 0.3) 0%,
+        transparent 5%,
+        rgba(255, 255, 255, 0.3) 10%,
+        transparent 15%,
+        rgba(255, 255, 255, 0.3) 20%,
+        transparent 25%,
+        rgba(255, 255, 255, 0.3) 30%,
+        transparent 35%,
+        rgba(255, 255, 255, 0.3) 40%,
+        transparent 45%,
+        rgba(255, 255, 255, 0.3) 50%,
+        transparent 55%,
+        rgba(255, 255, 255, 0.3) 60%,
+        transparent 65%,
+        rgba(255, 255, 255, 0.3) 70%,
+        transparent 75%,
+        rgba(255, 255, 255, 0.3) 80%,
+        transparent 85%,
+        rgba(255, 255, 255, 0.3) 90%,
+        transparent 95%,
+        rgba(255, 255, 255, 0.3) 100%
+      );
 
-            background-image: -o-linear-gradient(-45deg,
-                    rgba(255, 255, 255, .3) 0%, transparent 5%,
-                    rgba(255, 255, 255, .3) 10%, transparent 15%,
-                    rgba(255, 255, 255, .3) 20%, transparent 25%,
-                    rgba(255, 255, 255, .3) 30%, transparent 35%,
-                    rgba(255, 255, 255, .3) 40%, transparent 45%,
-                    rgba(255, 255, 255, .3) 50%, transparent 55%,
-                    rgba(255, 255, 255, .3) 60%, transparent 65%,
-                    rgba(255, 255, 255, .3) 70%, transparent 75%,
-                    rgba(255, 255, 255, .3) 80%, transparent 85%,
-                    rgba(255, 255, 255, .3) 90%, transparent 95%,
-                    rgba(255, 255, 255, .3) 100%);
+      background-image: -o-linear-gradient(
+        -45deg,
+        rgba(255, 255, 255, 0.3) 0%,
+        transparent 5%,
+        rgba(255, 255, 255, 0.3) 10%,
+        transparent 15%,
+        rgba(255, 255, 255, 0.3) 20%,
+        transparent 25%,
+        rgba(255, 255, 255, 0.3) 30%,
+        transparent 35%,
+        rgba(255, 255, 255, 0.3) 40%,
+        transparent 45%,
+        rgba(255, 255, 255, 0.3) 50%,
+        transparent 55%,
+        rgba(255, 255, 255, 0.3) 60%,
+        transparent 65%,
+        rgba(255, 255, 255, 0.3) 70%,
+        transparent 75%,
+        rgba(255, 255, 255, 0.3) 80%,
+        transparent 85%,
+        rgba(255, 255, 255, 0.3) 90%,
+        transparent 95%,
+        rgba(255, 255, 255, 0.3) 100%
+      );
 
-            background-image: linear-gradient(-45deg,
-                    rgba(255, 255, 255, .3) 0%, transparent 5%,
-                    rgba(255, 255, 255, .3) 10%, transparent 15%,
-                    rgba(255, 255, 255, .3) 20%, transparent 25%,
-                    rgba(255, 255, 255, .3) 30%, transparent 35%,
-                    rgba(255, 255, 255, .3) 40%, transparent 45%,
-                    rgba(255, 255, 255, .3) 50%, transparent 55%,
-                    rgba(255, 255, 255, .3) 60%, transparent 65%,
-                    rgba(255, 255, 255, .3) 70%, transparent 75%,
-                    rgba(255, 255, 255, .3) 80%, transparent 85%,
-                    rgba(255, 255, 255, .3) 90%, transparent 95%,
-                    rgba(255, 255, 255, .3) 100%);
+      background-image: linear-gradient(
+        -45deg,
+        rgba(255, 255, 255, 0.3) 0%,
+        transparent 5%,
+        rgba(255, 255, 255, 0.3) 10%,
+        transparent 15%,
+        rgba(255, 255, 255, 0.3) 20%,
+        transparent 25%,
+        rgba(255, 255, 255, 0.3) 30%,
+        transparent 35%,
+        rgba(255, 255, 255, 0.3) 40%,
+        transparent 45%,
+        rgba(255, 255, 255, 0.3) 50%,
+        transparent 55%,
+        rgba(255, 255, 255, 0.3) 60%,
+        transparent 65%,
+        rgba(255, 255, 255, 0.3) 70%,
+        transparent 75%,
+        rgba(255, 255, 255, 0.3) 80%,
+        transparent 85%,
+        rgba(255, 255, 255, 0.3) 90%,
+        transparent 95%,
+        rgba(255, 255, 255, 0.3) 100%
+      );
 
-            transition: all 1s ease;
+      transition: all 1s ease;
 
-            .body-fill {
-                width: 20px;
-                height: 5px;
-                background-color: #1AB394;
-            }
-        }
+      .body-fill {
+        width: 20px;
+        height: 5px;
+        background-color: #66ff00; //1ab394
+      }
     }
+  }
 
-    .step-item-first .step-body:after,
-    .step-item-middle .step-body:after,
-    .step-item-middle .step-body:before,
-    .step-item-last .step-body:before {
-        content: "";
-        position: absolute;
-        top: calc(50% - 6px);
-        height: 11px;
-        width: 6px;
-        background-color: $light_gray;
-        border-top: 3px solid $light_gray;
-        border-bottom: 3px solid $light_gray;
-    }
+  .step-item-first .step-body:after,
+  .step-item-middle .step-body:after,
+  .step-item-middle .step-body:before,
+  .step-item-last .step-body:before {
+    content: '';
+    position: absolute;
+    top: calc(50% - 6px);
+    height: 11px;
+    width: 6px;
+    background-color: $light_gray;
+    border-top: 3px solid $light_gray;
+    border-bottom: 3px solid $light_gray;
+  }
 
-    .step-item-first,
-    .step-item-middle {
-        .step-body:after {
-            left: 100%;
-        }
+  .step-item-first,
+  .step-item-middle {
+    .step-body:after {
+      left: 100%;
     }
+  }
 
-    .step-item-middle,
-    .step-item-last {
-        .step-body:before {
-            right: 100%;
-        }
+  .step-item-middle,
+  .step-item-last {
+    .step-body:before {
+      right: 100%;
     }
+  }
 }
 
 .stepbar-progress {
+  /* Individual Steps */
+  @each $state in $step-states {
+    $animate-glyphicon: $state== 'active';
+    $state-pass-glyph: map-get($state-to-glyph, 'pass');
+    $current-state-color: map-get($state-to-color, $state);
+    $current-state-glyph: map-get($state-to-glyph, $state);
 
-    /* Individual Steps */
-    @each $state in $step-states {
-        $animate-glyphicon: $state=="active";
-        $state-pass-glyph: map-get($state-to-glyph, "pass");
-        $current-state-color: map-get($state-to-color, $state);
-        $current-state-glyph: map-get($state-to-glyph, $state);
-
-        // Upto step 1
-        &[data-current-step="1"][data-step-status="#{$state}"] {
-            @include step-status('1', $current-state-color, $current-state-glyph, $animate-glyphicon, true);
-        }
-
-        // Upto step 2
-        &[data-current-step="2"][data-step-status="#{$state}"] {
-            @include step-status('1', $current-state-color, $state-pass-glyph);
-            @include step-status('2', $current-state-color, $current-state-glyph, $animate-glyphicon, true);
-            @include fill-step-progress('1', '2', $current-state-color);
-        }
-
-        // Upto step 3
-        &[data-current-step="3"][data-step-status="#{$state}"] {
-            @include step-status('1', $current-state-color, $state-pass-glyph);
-            @include step-status('2', $current-state-color, $state-pass-glyph);
-            @include step-status('3', $current-state-color, $current-state-glyph, $animate-glyphicon, true);
-            @include fill-step-progress('1', '2', $current-state-color);
-            @include fill-step-progress('2', '3', $current-state-color);
-        }
-
-        &[data-current-step="4"][data-step-status="#{$state}"] {
-            @include step-status('1', $current-state-color, $state-pass-glyph);
-            @include step-status('2', $current-state-color, $state-pass-glyph);
-            @include step-status('3', $current-state-color, $state-pass-glyph);
-            @include step-status('4', $current-state-color, $current-state-glyph, $animate-glyphicon, true);
-            @include fill-step-progress('1', '2', $current-state-color);
-            @include fill-step-progress('2', '3', $current-state-color);
-            @include fill-step-progress('3', '4', $current-state-color);
-        }
-
-        &[data-current-step="5"][data-step-status="#{$state}"] {
-            @include step-status('1', $current-state-color, $state-pass-glyph);
-            @include step-status('2', $current-state-color, $state-pass-glyph);
-            @include step-status('3', $current-state-color, $state-pass-glyph);
-            @include step-status('4', $current-state-color, $state-pass-glyph);
-            @include step-status('5', $current-state-color, $current-state-glyph, $animate-glyphicon, true);
-            @include fill-step-progress('1', '2', $current-state-color);
-            @include fill-step-progress('2', '3', $current-state-color);
-            @include fill-step-progress('3', '4', $current-state-color);
-            @include fill-step-progress('4', '5', $current-state-color);
-        }
-
-        &[data-current-step="6"][data-step-status="#{$state}"] {
-            @include step-status('1', $current-state-color, $state-pass-glyph);
-            @include step-status('2', $current-state-color, $state-pass-glyph);
-            @include step-status('3', $current-state-color, $state-pass-glyph);
-            @include step-status('4', $current-state-color, $state-pass-glyph);
-            @include step-status('5', $current-state-color, $state-pass-glyph);
-            @include step-status('6', $current-state-color, $current-state-glyph, $animate-glyphicon, true);
-            @include fill-step-progress('1', '2', $current-state-color);
-            @include fill-step-progress('2', '3', $current-state-color);
-            @include fill-step-progress('3', '4', $current-state-color);
-            @include fill-step-progress('4', '5', $current-state-color);
-            @include fill-step-progress('5', '6', $current-state-color);
-        }
-
-        &[data-current-step="7"][data-step-status="#{$state}"] {
-            @include step-status('1', $current-state-color, $state-pass-glyph);
-            @include step-status('2', $current-state-color, $state-pass-glyph);
-            @include step-status('3', $current-state-color, $state-pass-glyph);
-            @include step-status('4', $current-state-color, $state-pass-glyph);
-            @include step-status('5', $current-state-color, $state-pass-glyph);
-            @include step-status('6', $current-state-color, $state-pass-glyph);
-            @include step-status('7', $current-state-color, $current-state-glyph, $animate-glyphicon, true);
-            @include fill-step-progress('1', '2', $current-state-color);
-            @include fill-step-progress('2', '3', $current-state-color);
-            @include fill-step-progress('3', '4', $current-state-color);
-            @include fill-step-progress('4', '5', $current-state-color);
-            @include fill-step-progress('5', '6', $current-state-color);
-            @include fill-step-progress('6', '7', $current-state-color);
-        }
-
-        &[data-current-step="8"][data-step-status="#{$state}"] {
-            @include step-status('1', $current-state-color, $state-pass-glyph);
-            @include step-status('2', $current-state-color, $state-pass-glyph);
-            @include step-status('3', $current-state-color, $state-pass-glyph);
-            @include step-status('4', $current-state-color, $state-pass-glyph);
-            @include step-status('5', $current-state-color, $state-pass-glyph);
-            @include step-status('6', $current-state-color, $state-pass-glyph);
-            @include step-status('7', $current-state-color, $state-pass-glyph);
-            @include step-status('8', $current-state-color, $current-state-glyph, $animate-glyphicon, true);
-            @include fill-step-progress('1', '2', $current-state-color);
-            @include fill-step-progress('2', '3', $current-state-color);
-            @include fill-step-progress('3', '4', $current-state-color);
-            @include fill-step-progress('4', '5', $current-state-color);
-            @include fill-step-progress('5', '6', $current-state-color);
-            @include fill-step-progress('6', '7', $current-state-color);
-            @include fill-step-progress('7', '8', $current-state-color);
-        }
-
-        &[data-current-step="9"][data-step-status="#{$state}"] {
-            @include step-status('1', $current-state-color, $state-pass-glyph);
-            @include step-status('2', $current-state-color, $state-pass-glyph);
-            @include step-status('3', $current-state-color, $state-pass-glyph);
-            @include step-status('4', $current-state-color, $state-pass-glyph);
-            @include step-status('5', $current-state-color, $state-pass-glyph);
-            @include step-status('6', $current-state-color, $state-pass-glyph);
-            @include step-status('7', $current-state-color, $state-pass-glyph);
-            @include step-status('8', $current-state-color, $state-pass-glyph);
-            @include step-status('9', $current-state-color, $current-state-glyph, $animate-glyphicon, true);
-            @include fill-step-progress('1', '2', $current-state-color);
-            @include fill-step-progress('2', '3', $current-state-color);
-            @include fill-step-progress('3', '4', $current-state-color);
-            @include fill-step-progress('4', '5', $current-state-color);
-            @include fill-step-progress('5', '6', $current-state-color);
-            @include fill-step-progress('6', '7', $current-state-color);
-            @include fill-step-progress('7', '8', $current-state-color);
-            @include fill-step-progress('8', '9', $current-state-color);
-        }
+    // Upto step 1
+    &[data-current-step='sequenced'][data-step-status='#{$state}'] {
+      @include step-status('sequenced', $current-state-color, $current-state-glyph, $animate-glyphicon, true);
     }
+
+    // Upto step 2
+    &[data-current-step='analyzed'][data-step-status='#{$state}'] {
+      @include step-status('sequenced', $current-state-color, $state-pass-glyph);
+      @include step-status('analyzed', $current-state-color, $current-state-glyph, $animate-glyphicon, true);
+      @include fill-step-progress('sequenced', 'analyzed', $current-state-color);
+    }
+
+    // Upto step 3
+    &[data-current-step='ondell'][data-step-status='#{$state}'] {
+      @include step-status('sequenced', $current-state-color, $state-pass-glyph);
+      @include step-status('analyzed', $current-state-color, $state-pass-glyph);
+      @include step-status('ondell', $current-state-color, $current-state-glyph, $animate-glyphicon, true);
+      @include fill-step-progress('sequenced', 'analyzed', $current-state-color);
+      @include fill-step-progress('analyzed', 'ondell', $current-state-color);
+    }
+
+    &[data-current-step='converted'][data-step-status='#{$state}'] {
+      @include step-status('sequenced', $current-state-color, $state-pass-glyph);
+      @include step-status('analyzed', $current-state-color, $state-pass-glyph);
+      @include step-status('ondell', $current-state-color, $state-pass-glyph);
+      @include step-status('converted', $current-state-color, $current-state-glyph, $animate-glyphicon, true);
+      @include fill-step-progress('sequenced', 'analyzed', $current-state-color);
+      @include fill-step-progress('analyzed', 'ondell', $current-state-color);
+      @include fill-step-progress('ondell', 'converted', $current-state-color);
+    }
+
+    &[data-current-step='incloud'][data-step-status='#{$state}'] {
+      @include step-status('sequenced', $current-state-color, $state-pass-glyph);
+      @include step-status('analyzed', $current-state-color, $state-pass-glyph);
+      @include step-status('ondell', $current-state-color, $state-pass-glyph);
+      @include step-status('converted', $current-state-color, $state-pass-glyph);
+      @include step-status('incloud', $current-state-color, $current-state-glyph, $animate-glyphicon, true);
+      @include fill-step-progress('sequenced', 'analyzed', $current-state-color);
+      @include fill-step-progress('analyzed', 'ondell', $current-state-color);
+      @include fill-step-progress('ondell', 'converted', $current-state-color);
+      @include fill-step-progress('converted', 'incloud', $current-state-color);
+    }
+
+    &[data-current-step='downloaded'][data-step-status='#{$state}'] {
+      @include step-status('sequenced', $current-state-color, $state-pass-glyph);
+      @include step-status('analyzed', $current-state-color, $state-pass-glyph);
+      @include step-status('ondell', $current-state-color, $state-pass-glyph);
+      @include step-status('converted', $current-state-color, $state-pass-glyph);
+      @include step-status('incloud', $current-state-color, $state-pass-glyph);
+      @include step-status('downloaded', $current-state-color, $current-state-glyph, $animate-glyphicon, true);
+      @include fill-step-progress('sequenced', 'analyzed', $current-state-color);
+      @include fill-step-progress('analyzed', 'ondell', $current-state-color);
+      @include fill-step-progress('ondell', 'converted', $current-state-color);
+      @include fill-step-progress('converted', 'incloud', $current-state-color);
+      @include fill-step-progress('incloud', 'downloaded', $current-state-color);
+    }
+
+    &[data-current-step='jobsubmitted'][data-step-status='#{$state}'] {
+      @include step-status('sequenced', $current-state-color, $state-pass-glyph);
+      @include step-status('analyzed', $current-state-color, $state-pass-glyph);
+      @include step-status('ondell', $current-state-color, $state-pass-glyph);
+      @include step-status('converted', $current-state-color, $state-pass-glyph);
+      @include step-status('incloud', $current-state-color, $state-pass-glyph);
+      @include step-status('downloaded', $current-state-color, $state-pass-glyph);
+      @include step-status('jobsubmitted', $current-state-color, $current-state-glyph, $animate-glyphicon, true);
+      @include fill-step-progress('sequenced', 'analyzed', $current-state-color);
+      @include fill-step-progress('analyzed', 'ondell', $current-state-color);
+      @include fill-step-progress('ondell', 'converted', $current-state-color);
+      @include fill-step-progress('converted', 'incloud', $current-state-color);
+      @include fill-step-progress('incloud', 'downloaded', $current-state-color);
+      @include fill-step-progress('downloaded', 'jobsubmitted', $current-state-color);
+    }
+
+    &[data-current-step='jobcompleted'][data-step-status='#{$state}'] {
+      @include step-status('sequenced', $current-state-color, $state-pass-glyph);
+      @include step-status('analyzed', $current-state-color, $state-pass-glyph);
+      @include step-status('ondell', $current-state-color, $state-pass-glyph);
+      @include step-status('converted', $current-state-color, $state-pass-glyph);
+      @include step-status('incloud', $current-state-color, $state-pass-glyph);
+      @include step-status('downloaded', $current-state-color, $state-pass-glyph);
+      @include step-status('jobsubmitted', $current-state-color, $state-pass-glyph);
+      @include step-status('jobcompleted', $current-state-color, $current-state-glyph, $animate-glyphicon, true);
+      @include fill-step-progress('sequenced', 'analyzed', $current-state-color);
+      @include fill-step-progress('analyzed', 'ondell', $current-state-color);
+      @include fill-step-progress('ondell', 'converted', $current-state-color);
+      @include fill-step-progress('converted', 'incloud', $current-state-color);
+      @include fill-step-progress('incloud', 'downloaded', $current-state-color);
+      @include fill-step-progress('downloaded', 'jobsubmitted', $current-state-color);
+      @include fill-step-progress('jobsubmitted', 'jobcompleted', $current-state-color);
+    }
+
+    &[data-current-step='backtodell'][data-step-status='#{$state}'] {
+      @include step-status('sequenced', $current-state-color, $state-pass-glyph);
+      @include step-status('analyzed', $current-state-color, $state-pass-glyph);
+      @include step-status('ondell', $current-state-color, $state-pass-glyph);
+      @include step-status('converted', $current-state-color, $state-pass-glyph);
+      @include step-status('incloud', $current-state-color, $state-pass-glyph);
+      @include step-status('downloaded', $current-state-color, $state-pass-glyph);
+      @include step-status('jobsubmitted', $current-state-color, $state-pass-glyph);
+      @include step-status('jobcompleted', $current-state-color, $state-pass-glyph);
+      @include step-status('backtodell', $current-state-color, $current-state-glyph, $animate-glyphicon, true);
+      @include fill-step-progress('sequenced', 'analyzed', $current-state-color);
+      @include fill-step-progress('analyzed', 'ondell', $current-state-color);
+      @include fill-step-progress('ondell', 'converted', $current-state-color);
+      @include fill-step-progress('converted', 'incloud', $current-state-color);
+      @include fill-step-progress('incloud', 'downloaded', $current-state-color);
+      @include fill-step-progress('downloaded', 'jobsubmitted', $current-state-color);
+      @include fill-step-progress('jobsubmitted', 'jobcompleted', $current-state-color);
+      @include fill-step-progress('jobcompleted', 'backtodell', $current-state-color);
+    }
+  }
 }
