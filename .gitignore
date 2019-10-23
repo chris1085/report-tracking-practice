@@ -14,7 +14,4 @@ config/database.yml
 
 # 忽略node_modules
 node_modules
-<<<<<<< HEAD
-=======
 .DS_Store
->>>>>>> nips_Function
