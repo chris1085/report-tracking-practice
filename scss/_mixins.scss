@@ -44,6 +44,24 @@
     $color80 80%,
     $color100 100%
   );
+  border-image: -moz-linear-gradient(
+    to left,
+    $color100 0%,
+    $color20 20%,
+    $color40 40%,
+    $color60 60%,
+    $color80 80%,
+    $color100 100%
+  );
+  border-image: -webkit-linear-gradient(
+    to left,
+    $color100 0%,
+    $color20 20%,
+    $color40 40%,
+    $color60 60%,
+    $color80 80%,
+    $color100 100%
+  );
   border-image-slice: 1;
   height: 3px;
 }

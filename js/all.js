@@ -8,6 +8,7 @@ function getJSONList(path) {
 
   let statusDetail;
 
+
   /* Asynchronous ajax */
   $.getJSON(path, function (data) {
 
@@ -37,6 +38,9 @@ function getJSONList(path) {
  */
 function getModifyTime(path) {
 
+  // setInterval(getModifyTime(path), 60000);
+  // console.log("test2");
+
   /* Asynchronous ajax */
   var xhr = $.ajax({
     url: path,
@@ -48,17 +52,15 @@ function getModifyTime(path) {
       let updatedTime = res[3] + "/" + numberMonth + "/" + res[2] + " " + res[4];
 
       if (path == '../NIPS/nips_progress_tail.json') {
-        $(".nips-updatedTime").append(updatedTime);
+        $(".nips-updatedTime").html("Last Updated Time: " + updatedTime);
         modifyDurationTime(response, "nips-");
-
       } else if (path == '../SG/sg_progress_tail.json') {
-        $(".sg-updatedTime").append(updatedTime);
+        $(".sg-updatedTime").html("Last Updated Time: " + updatedTime);
         modifyDurationTime(response, "sg-");
 
       } else if (path == '../IONA/iona_progress_tail.json') {
-        $(".iona-updatedTime").append(updatedTime);
+        $(".iona-updatedTime").html("Last Updated Time: " + updatedTime);
         modifyDurationTime(response, "iona-");
-
       }
     }
   });
@@ -71,9 +73,10 @@ function getModifyTime(path) {
  * @param {Product} productType
  */
 function modifyDurationTime(JSONList, productType) {
-  // console.log("test2");
+  console.log("test2");
   let temp = JSONList;
   temp = JSON.parse(JSONList);
+  // setTimeout(modifyDurationTime(JSONList, productType), 60000);
 
   let newDate = new Date();
   let second = ("0" + newDate.getSeconds()).slice(-2);
@@ -258,22 +261,32 @@ function getProgressStatus(progressContent = data, productTypeIndex = 1) {
         $(productType[productTypeIndex] + "-progressId" + index).find(".stepbar-progress").attr("data-step-status", "fail");
       } else { //active progress info added
         let flag = 0;
-        console.log(sampleRun);
+        // console.log(sampleRun);
 
         Object.keys(sampleRun).some(function (key) {
           if (sampleRun[key] == 0 && key != "error" && key != "closed" && flag != 1) { //active
             // console.log(key + '=' + sampleRun[key]);
             $(productType[productTypeIndex] + "-progressId" + index).find(".stepbar-progress").attr("data-current-step", key);
             $(productType[productTypeIndex] + "-progressId" + index).find(".stepbar-progress").attr("data-step-status", "active");
+            // console.log("null\t" + key + "\t" + sampleRun[key]);
+
+            // flag = 1;
+
           } else if (sampleRun[key].match(regexp) != null) {
-            if (sampleRun[key].match(regexp)[1] != sampleRun[key].match(regexp)[2]) {
+            if (sampleRun[key].match(regexp)[1] != sampleRun[key].match(regexp)[2] && sampleRun[key].match(regexp)[1] != 0) {
               // console.log(key);
 
               $(productType[productTypeIndex] + "-progressId" + index).find(".stepbar-progress").attr("data-current-step", key);
               $(productType[productTypeIndex] + "-progressId" + index).find(".stepbar-progress").attr("data-step-status", "active");
+
+              // console.log("not null\t" + key + "\t" + sampleRun[key]);
+              flag = 1;
             }
-            flag = 1;
+            // console.log("C\t" + key + "\t" + sampleRun[key]);
           }
+
+          // console.log(key);
+
         });
       }
     } else { //pass progress info added
@@ -342,20 +355,22 @@ function getStatusDetail(progressContent = data, productTypeIndex = 1) {
 
 function startRefresh() {
   setTimeout(startRefresh, 1000);
-
   let newDate = new Date();
   let second = ("0" + newDate.getSeconds()).slice(-2);
   // $(".duration-time").children()[0];
   let children = Array.from($(".duration-time").children());
-  // console.log($('[data-step-status="pass"]'));
+  // console.log(children);
 
 
   children.forEach(function (sampleRun, index) {
-    let hour = sampleRun.innerText.split(":")[0];
-    let min = sampleRun.innerText.split(":")[1];
-    let content = hour + ":" + min + ":" + second;
+    if (sampleRun.innerText != "00:00:00") {
+      let hour = sampleRun.innerText.split(":")[0];
+      let min = sampleRun.innerText.split(":")[1];
+      let content = hour + ":" + min + ":" + second;
 
-    $(sampleRun).find("span").html(content);
+      $(sampleRun).find("span").html(content);
+    }
+
   });
 
   // console.log(children);
@@ -366,21 +381,45 @@ function startRefresh() {
 
 }
 
+function refreshJSON() {
+  setTimeout(refreshJSON, 60000);
+  getModifyTime('../NIPS/nips_progress_tail.json');
+
+
+}
+
 $(document).ready(function myfunction() {
+
+  let product = $(document)[0].title.split(" ")[0];
+
   const JSONListPath = [
     '../NIPS/nips_progress_tail.json',
     '../SG/sg_progress_tail.json',
     '../IONA/iona_progress_tail.json',
   ];
-  JSONListPath.forEach(getJSONList); //get Json List and changing their status
-  JSONListPath.forEach(getModifyTime); //get Json List and Modify Updated and Duration Time 
-  // startRefresh();
+
+
+  if (product == "NIPS") {
+    getJSONList('../NIPS/nips_progress_tail.json');
+    getModifyTime('../NIPS/nips_progress_tail.json');
+  } else if (product == "SG") {
+    getJSONList('../SG/sg_progress_tail.json');
+    getModifyTime('../SG/sg_progress_tail.json');
+  } else if (product == "IONA") {
+    getJSONList('../IONA/iona_progress_tail.json');
+    getModifyTime('../IONA/iona_progress_tail.json');
+  }
+
+
+
+
+  // JSONListPath.forEach(getJSONList); //get Json List and changing their status
+  // JSONListPath.forEach(getModifyTime); //get Json List and Modify Updated and Duration Time 
+  startRefresh();
+  // refreshJSON();
 
   // setTimeout(myfunction, 1000);
   // console.log("test");
 
-
-  // setInterval(getModifyTime(JSONListPath[0]), 10000);
-  // setTimeout(JSONListPath.forEach(getModifyTime), 1000);
 
 });

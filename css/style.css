@@ -37,6 +37,7 @@ h1 {
   -o-border-image: linear-gradient(to left, #fd1892 0%, #b827fc 20%, #2c90fc 40%, #b8fd33 60%, #fec837 80%, #fd1892 100%);
      border-image: -webkit-gradient(linear, right top, left top, from(#fd1892), color-stop(20%, #b827fc), color-stop(40%, #2c90fc), color-stop(60%, #b8fd33), color-stop(80%, #fec837), to(#fd1892));
      border-image: linear-gradient(to left, #fd1892 0%, #b827fc 20%, #2c90fc 40%, #b8fd33 60%, #fec837 80%, #fd1892 100%);
+  border-image: -webkit-linear-gradient(to left, #fd1892 0%, #b827fc 20%, #2c90fc 40%, #b8fd33 60%, #fec837 80%, #fd1892 100%);
   border-image-slice: 1;
   height: 3px;
   /* margin: 20px auto; */
