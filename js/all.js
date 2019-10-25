@@ -4,66 +4,95 @@
  * @param {*} path //JSON List Path
  * @returns
  */
-function getJSONList(path) {
+function getJSONList(path, productTypeIndex = 0) {
 
+  const productType = ["nips", "sg", "iona"];
   let statusDetail;
-
-
+  let productCount = 3;
   /* Asynchronous ajax */
-  $.getJSON(path, function (data) {
+  let xhr = $.getJSON(path, function (data) {
+    let fileTime = String(new Date(xhr.getResponseHeader("Last-Modified")));
+    let res = fileTime.split(" ");
+    let numberMonth = ("JanFebMarAprMayJunJulAugSepOctNovDec".indexOf(res[1]) / 3 + 1);
+    let updatedTime = res[3] + "/" + numberMonth + "/" + res[2] + " " + res[4];
+    let dataStringty = JSON.stringify(data);
 
-    if (path == '../NIPS/nips_progress_tail.json') {
-      getProgressStatus(data, 0);
-      statusDetail = getStatusDetail(data, 0);
-      transferDetail2clickEvent(statusDetail);
-    } else if (path == '../SG/sg_progress_tail.json') {
-      getProgressStatus(data, 1);
-      statusDetail = getStatusDetail(data, 1);
-      transferDetail2clickEvent(statusDetail);
-    } else if (path == '../IONA/iona_progress_tail.json') {
-      getProgressStatus(data, 2);
-      statusDetail = getStatusDetail(data, 2);
-      transferDetail2clickEvent(statusDetail);
+    if (localStorage.length < productCount) {
+      console.log("no items");
+      localStorage.setItem(productType[productTypeIndex], dataStringty);
+      // console.log(localStorage);
 
+    } else {
+      // console.log(localStorage);
+      compareStorageContent(data, productType[productTypeIndex]);
     }
+
+    getProgressStatus(data, productTypeIndex);
+    statusDetail = getStatusDetail(data, productTypeIndex);
+    transferDetail2clickEvent(statusDetail);
+    $("." + productType + "-updatedTime").html("Last Updated Time: " + updatedTime);
+    modifyDurationTime(data, productType[productTypeIndex] + "-");
+
+    setTimeout(function () {
+      getJSONList(path, productTypeIndex);
+    }, 300000);
 
   });
 }
 
+function compareStorageContent(data, productType) {
 
-/**
- * Getting Time-Used or Init Used-Time function
- *
- * @param {*} path
- */
-function getModifyTime(path) {
+  // console.log(localStorage.getItem(productType));
 
-  // setInterval(getModifyTime(path), 60000);
-  // console.log("test2");
+  let localSampleRunList = JSON.parse(localStorage.getItem(productType));
+  let newSampleRun = [];
+  let count = 0;
+  let flag = 0;
+  // console.log(data);
 
-  /* Asynchronous ajax */
-  var xhr = $.ajax({
-    url: path,
-    success: function (response) { // If response of path succeed, Cal Last-Updated and Duration time
-      var fileTime = String(new Date(xhr.getResponseHeader("Last-Modified")));
-      var res = fileTime.split(" ");
-      var numberMonth = ("JanFebMarAprMayJunJulAugSepOctNovDec".indexOf(res[1]) / 3 + 1);
+  $.each(data, function (dataIndex, dataSample) {
+    // console.log(count);
 
-      let updatedTime = res[3] + "/" + numberMonth + "/" + res[2] + " " + res[4];
-
-      if (path == '../NIPS/nips_progress_tail.json') {
-        $(".nips-updatedTime").html("Last Updated Time: " + updatedTime);
-        modifyDurationTime(response, "nips-");
-      } else if (path == '../SG/sg_progress_tail.json') {
-        $(".sg-updatedTime").html("Last Updated Time: " + updatedTime);
-        modifyDurationTime(response, "sg-");
-
-      } else if (path == '../IONA/iona_progress_tail.json') {
-        $(".iona-updatedTime").html("Last Updated Time: " + updatedTime);
-        modifyDurationTime(response, "iona-");
+    $.each(localSampleRunList, function (localIndex, localSampleRun) {
+      if (dataSample.runid == localSampleRun.runid) {
+        newSampleRun[count] = localSampleRun;
+        count += 1;
+        flag = 1;
+        return;
       }
+    });
+
+    if (flag == 0) {
+      newSampleRun[count] = localSampleRun;
+      count += 1;
+      console.log("new Sample Run: " + localSampleRun);
+
     }
+    flag = 0;
+
   });
+  // console.log(newSampleRun);
+  localStorage.setItem(productType, JSON.stringify(newSampleRun));
+}
+
+function calculateStepDuration(productType) {
+  setTimeout(function () {
+    calculateStepDuration(productType);
+  }, 1000);
+
+  console.log("test");
+
+  let sampleRunList = JSON.parse(localStorage.getItem(productType));
+  let newSampleRunList = [];
+  let count = 0;
+  // console.log(typeof (sampleRunList));
+  $.each(sampleRunList, function (index, sampleRun) {
+    // console.log(sampleRun.closed);
+
+
+    count += 1;
+  });
+
 }
 
 /**
@@ -73,13 +102,12 @@ function getModifyTime(path) {
  * @param {Product} productType
  */
 function modifyDurationTime(JSONList, productType) {
-  console.log("test2");
+  // console.log("test2");
   let temp = JSONList;
-  temp = JSON.parse(JSONList);
-  // setTimeout(modifyDurationTime(JSONList, productType), 60000);
-
+  // temp = JSON.parse(JSONList);
   let newDate = new Date();
   let second = ("0" + newDate.getSeconds()).slice(-2);
+  // console.log(localStorage);
 
   Object.keys(temp).forEach(function (sampleRun, index) {
 
@@ -381,13 +409,6 @@ function startRefresh() {
 
 }
 
-function refreshJSON() {
-  setTimeout(refreshJSON, 60000);
-  getModifyTime('../NIPS/nips_progress_tail.json');
-
-
-}
-
 $(document).ready(function myfunction() {
 
   let product = $(document)[0].title.split(" ")[0];
@@ -400,26 +421,20 @@ $(document).ready(function myfunction() {
 
 
   if (product == "NIPS") {
-    getJSONList('../NIPS/nips_progress_tail.json');
-    getModifyTime('../NIPS/nips_progress_tail.json');
+    getJSONList(JSONListPath[0], 0);
+    // calculateStepDuration("nips");
+
+    // getModifyTime(JSONListPath[0]);
   } else if (product == "SG") {
-    getJSONList('../SG/sg_progress_tail.json');
-    getModifyTime('../SG/sg_progress_tail.json');
+    getJSONList(JSONListPath[1], 1);
+    // calculateStepDuration("sg");
+    // getModifyTime(JSONListPath[1]);
   } else if (product == "IONA") {
-    getJSONList('../IONA/iona_progress_tail.json');
-    getModifyTime('../IONA/iona_progress_tail.json');
+    getJSONList(JSONListPath[2], 2);
+    // calculateStepDuration("iona");
+    // getModifyTime(JSONListPath[2]);
   }
 
-
-
-
-  // JSONListPath.forEach(getJSONList); //get Json List and changing their status
-  // JSONListPath.forEach(getModifyTime); //get Json List and Modify Updated and Duration Time 
   startRefresh();
-  // refreshJSON();
-
-  // setTimeout(myfunction, 1000);
-  // console.log("test");
-
 
 });
