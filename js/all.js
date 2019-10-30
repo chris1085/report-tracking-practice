@@ -15,84 +15,23 @@ function getJSONList(path, productTypeIndex = 0) {
     let res = fileTime.split(" ");
     let numberMonth = ("JanFebMarAprMayJunJulAugSepOctNovDec".indexOf(res[1]) / 3 + 1);
     let updatedTime = res[3] + "/" + numberMonth + "/" + res[2] + " " + res[4];
+
     let dataStringty = JSON.stringify(data);
 
-    if (localStorage.length < productCount) {
-      console.log("no items");
-      localStorage.setItem(productType[productTypeIndex], dataStringty);
-      // console.log(localStorage);
-
-    } else {
-      // console.log(localStorage);
-      compareStorageContent(data, productType[productTypeIndex]);
-    }
+    localStorage.setItem(productType[productTypeIndex], dataStringty);
 
     getProgressStatus(data, productTypeIndex);
     statusDetail = getStatusDetail(data, productTypeIndex);
-    transferDetail2clickEvent(statusDetail);
-    $("." + productType + "-updatedTime").html("Last Updated Time: " + updatedTime);
-    modifyDurationTime(data, productType[productTypeIndex] + "-");
+    // clickProgressIcon(statusDetail, data);
+    $("." + productType[productTypeIndex] + "-updatedTime").html("Last Updated Time: " + updatedTime);
 
+    modifyDurationTime(data, productType[productTypeIndex] + "-");
     setTimeout(function () {
       getJSONList(path, productTypeIndex);
-    }, 300000);
+    }, 60000);
+    console.log("getJSONList running");
 
   });
-}
-
-function compareStorageContent(data, productType) {
-
-  // console.log(localStorage.getItem(productType));
-
-  let localSampleRunList = JSON.parse(localStorage.getItem(productType));
-  let newSampleRun = [];
-  let count = 0;
-  let flag = 0;
-  // console.log(data);
-
-  $.each(data, function (dataIndex, dataSample) {
-    // console.log(count);
-
-    $.each(localSampleRunList, function (localIndex, localSampleRun) {
-      if (dataSample.runid == localSampleRun.runid) {
-        newSampleRun[count] = localSampleRun;
-        count += 1;
-        flag = 1;
-        return;
-      }
-    });
-
-    if (flag == 0) {
-      newSampleRun[count] = localSampleRun;
-      count += 1;
-      console.log("new Sample Run: " + localSampleRun);
-
-    }
-    flag = 0;
-
-  });
-  // console.log(newSampleRun);
-  localStorage.setItem(productType, JSON.stringify(newSampleRun));
-}
-
-function calculateStepDuration(productType) {
-  setTimeout(function () {
-    calculateStepDuration(productType);
-  }, 1000);
-
-  console.log("test");
-
-  let sampleRunList = JSON.parse(localStorage.getItem(productType));
-  let newSampleRunList = [];
-  let count = 0;
-  // console.log(typeof (sampleRunList));
-  $.each(sampleRunList, function (index, sampleRun) {
-    // console.log(sampleRun.closed);
-
-
-    count += 1;
-  });
-
 }
 
 /**
@@ -107,7 +46,6 @@ function modifyDurationTime(JSONList, productType) {
   // temp = JSON.parse(JSONList);
   let newDate = new Date();
   let second = ("0" + newDate.getSeconds()).slice(-2);
-  // console.log(localStorage);
 
   Object.keys(temp).forEach(function (sampleRun, index) {
 
@@ -115,32 +53,69 @@ function modifyDurationTime(JSONList, productType) {
       $("#" + productType + "timeUsed" + index).find("span").removeClass("badge-dark").addClass("badge-warning");
       $("#" + productType + "timeUsed" + index).find("span").text("00:00:00");
     } else {
-      let durationHour = temp[sampleRun].timeUsed.split(":")[0];
+      let durationHour = temp[sampleRun].totalTime.split(":")[0];
 
       if (durationHour >= 12) { //adding warning class if its duration time over half a day
         $("#" + productType + "timeUsed" + index).find("span").removeClass("badge-dark").addClass("badge-danger");
       }
 
-      if (temp[sampleRun].closed == "1") {
-        $("#" + productType + "timeUsed" + index).find("span").text(temp[sampleRun].timeUsed + ":00");
-      } else {
-        $("#" + productType + "timeUsed" + index).find("span").text(temp[sampleRun].timeUsed + ":" + second);
-        // console.log($("#" + productType + "timeUsed" + index).find("span"));
-
-      }
+      // $("#" + productType + "timeUsed" + index).find("span").text(temp[sampleRun].totalTime);
     }
   });
 }
 
+function movePseudoClock(productType, objectName) {
 
-/**
- * Just transfer data cause of async JSON
- *
- * @param {*} statusDetail
- */
-function transferDetail2clickEvent(statusDetail) {
-  clickProgressIcon(statusDetail);
+  setTimeout(function () {
+    movePseudoClock(productType, objectName);
+  }, 1050);
+
+  let dataStorage = JSON.parse(localStorage.getItem(productType), objectName);
+  let dataStorageString = [];
+  let count = 0;
+
+  for (let index = dataStorage.length - 12; index < dataStorage.length; index++) {
+    let timeClock = dataStorage[index][objectName];
+    // console.log(dataStorage[index][objectName]);
+
+    // console.log(timeClock);
+    if (dataStorage[index].closed == 0 || dataStorage[index].closed == "") {
+      let hours = parseInt(("0" + timeClock.split(":")[0]).slice(-2));
+      let mins = parseInt(("0" + timeClock.split(":")[1]).slice(-2));
+      let seconds = parseInt(("0" + timeClock.split(":")[2]).slice(-2));
+      let newPseudoClock;
+      console.log(timeClock);
+      seconds += 1;
+
+      if (seconds >= 60) {
+        seconds = seconds - 60;
+        mins += 1;
+      }
+
+      if (mins >= 60) {
+        mins = mins - 60;
+        hours += 1;
+      }
+      mins = ("0" + mins).slice(-2);
+      seconds = ("0" + seconds).slice(-2);
+      hours = ("0" + hours).slice(-2);
+      newPseudoClock = hours + ":" + mins + ":" + seconds;
+
+      $("#" + productType + "-timeUsed" + index).find("span").text(newPseudoClock);
+
+      dataStorage[index].totalTime = newPseudoClock;
+    } else {
+      $("#" + productType + "-timeUsed" + index).find("span").text(timeClock);
+
+    }
+
+    dataStorageString[count] = dataStorage[index];
+    count += 1;
+  }
+
+  localStorage.setItem(productType, JSON.stringify(dataStorageString));
 }
+
 
 /**
  * select the description in every step
@@ -189,18 +164,22 @@ function selectStepID(iconInfo) {
   return productStep[iconInfo.productType][iconInfo.iconStepId];
 }
 
-
 /**
  * click progress icon and adding collapsed class and changing their info
  *
  * @param {*} statusDetail
  */
-function clickProgressIcon(statusDetail) {
+function clickProgressIcon(product) {
   // console.log(statusDetail);
 
   $('.step-body').click(function (event) {
+    let data = JSON.parse(localStorage.getItem(product));
+    // console.log(data);
+
     let id = $(this).parents('div').attr('id').split('-progressId')[1];
     let productType = $(this).parents('div').attr('id').split('-progressId')[0];
+    // console.log(productType);
+
 
     $(this).parents().find('#collapseStepInfo' + id).children().empty(); //empty their class and content
 
@@ -215,22 +194,25 @@ function clickProgressIcon(statusDetail) {
     let collapaseContent = 'Indicated Step: ' + selectedID;
     let currentStatus = "Status: " + $(this).parents("table").attr('data-step-status');
     let currentStatusDetail = $(this).parents("td").attr('data-step');
+    let currentStatusTimeName = currentStatusDetail + "Time";
     let collapseStatusDetail = "";
+    let currentStatusTime = data[id][currentStatusTimeName];
     let sampleRunNumber = $(this).parents('.div-progress').find('.row-sampleRun').length;
 
-    Object.keys(statusDetail[id]).some(function (key) { //loop to find progress key and value
+    Object.keys(data[id]).some(function (key) { //loop to find progress key and value
       // console.log(id);
       // console.log(key);
-      if (key == currentStatusDetail && statusDetail[id].productType.match(productType)) {
+      if (key == currentStatusDetail && data[id][key].match(/\d+\/\d+/)) {
         // console.log(statusDetail[id][key]);
-        collapseStatusDetail = "Data Info: " + statusDetail[id][key];
+        collapseStatusDetail = "Data Info: " + data[id][key];
+        return;
       }
     });
 
 
     /* NOTE adding collapsed Content and changing class*/
-    $(this).parents().find('#collapseStepInfo' + id).children().append("<div class='col-6 text-left'><h6>" + collapaseContent + "</h6></div>");
-    $(this).parents().find('#collapseStepInfo' + id).children().append("<div class='col-6 text-right' id='contentStatus'><h6>" + collapseStatusDetail + "</h6><h6> " + currentStatus + "</h6></div>");
+    $(this).parents().find('#collapseStepInfo' + id).children().html("<div class='col-6 text-left'><h6>" + collapaseContent + "</h6></div>");
+    $(this).parents().find('#collapseStepInfo' + id).children().append("<div class='col-6 text-right' id='contentStatus'><h6 class='step-duration'>Step Duration: " + currentStatusTime + "</h6><h6>" + collapseStatusDetail + "</h6><h6> " + currentStatus + "</h6></div>");
     // $(this).parents().find('#collapseStepInfo' + id).children().text(collapaseContent);
 
     for (let i = 0; i < sampleRunNumber; i++) {
@@ -276,6 +258,7 @@ function getProgressStatus(progressContent = data, productTypeIndex = 1) {
         $(productType[productTypeIndex] + "-progressId" + index).find(".stepbar-progress").attr("data-current-step", "sequenced");
         $(productType[productTypeIndex] + "-progressId" + index).find(".stepbar-progress").attr("data-step-status", "pending");
 
+        // movePseudoStepClock(productType[productTypeIndex].split("#")[1], "sequencedTime");
         return;
       }
       if (sampleRun.error == 1) { //fail progress info added
@@ -297,24 +280,19 @@ function getProgressStatus(progressContent = data, productTypeIndex = 1) {
             $(productType[productTypeIndex] + "-progressId" + index).find(".stepbar-progress").attr("data-current-step", key);
             $(productType[productTypeIndex] + "-progressId" + index).find(".stepbar-progress").attr("data-step-status", "active");
             // console.log("null\t" + key + "\t" + sampleRun[key]);
-
-            // flag = 1;
+            flag = 1;
 
           } else if (sampleRun[key].match(regexp) != null) {
-            if (sampleRun[key].match(regexp)[1] != sampleRun[key].match(regexp)[2] && sampleRun[key].match(regexp)[1] != 0) {
-              // console.log(key);
+            // console.log(sampleRun[key]);
 
+            if (sampleRun[key].match(regexp)[1] != sampleRun[key].match(regexp)[2]) {
+              // console.log(key);
               $(productType[productTypeIndex] + "-progressId" + index).find(".stepbar-progress").attr("data-current-step", key);
               $(productType[productTypeIndex] + "-progressId" + index).find(".stepbar-progress").attr("data-step-status", "active");
 
-              // console.log("not null\t" + key + "\t" + sampleRun[key]);
               flag = 1;
             }
-            // console.log("C\t" + key + "\t" + sampleRun[key]);
           }
-
-          // console.log(key);
-
         });
       }
     } else { //pass progress info added
@@ -376,38 +354,30 @@ function getStatusDetail(progressContent = data, productTypeIndex = 1) {
     });
   });
   // console.log(statusDetail);
-
-  // console.log(statusDetail);
   return statusDetail;
 }
 
-function startRefresh() {
-  setTimeout(startRefresh, 1000);
-  let newDate = new Date();
-  let second = ("0" + newDate.getSeconds()).slice(-2);
-  // $(".duration-time").children()[0];
-  let children = Array.from($(".duration-time").children());
-  // console.log(children);
+// function startRefresh(path, productTypeIndex = 0) {
+//   setTimeout(startRefresh, 1000);
+//   // console.log("test");
+//   let newDate = new Date();
+//   let second = ("0" + newDate.getSeconds()).slice(-2);
+//   // $(".duration-time").children()[0];
+//   let children = Array.from($(".duration-time").children());
+//   // console.log(children);
 
 
-  children.forEach(function (sampleRun, index) {
-    if (sampleRun.innerText != "00:00:00") {
-      let hour = sampleRun.innerText.split(":")[0];
-      let min = sampleRun.innerText.split(":")[1];
-      let content = hour + ":" + min + ":" + second;
+//   children.forEach(function (sampleRun, index) {
+//     if (sampleRun.innerText != "00:00:00") {
+//       let hour = sampleRun.innerText.split(":")[0];
+//       let min = sampleRun.innerText.split(":")[1];
+//       let content = hour + ":" + min + ":" + second;
 
-      $(sampleRun).find("span").html(content);
-    }
+//       $(sampleRun).find("span").html(content);
+//     }
 
-  });
-
-  // console.log(children);
-
-
-  return second;
-  // console.log(second);
-
-}
+//   });
+// }
 
 $(document).ready(function myfunction() {
 
@@ -419,22 +389,18 @@ $(document).ready(function myfunction() {
     '../IONA/iona_progress_tail.json',
   ];
 
-
   if (product == "NIPS") {
     getJSONList(JSONListPath[0], 0);
-    // calculateStepDuration("nips");
-
-    // getModifyTime(JSONListPath[0]);
   } else if (product == "SG") {
     getJSONList(JSONListPath[1], 1);
-    // calculateStepDuration("sg");
-    // getModifyTime(JSONListPath[1]);
   } else if (product == "IONA") {
     getJSONList(JSONListPath[2], 2);
-    // calculateStepDuration("iona");
-    // getModifyTime(JSONListPath[2]);
   }
 
-  startRefresh();
+  clickProgressIcon(product.toLowerCase());
+  movePseudoClock(product.toLowerCase(), "totalTime");
+
+
+  // startRefresh(JSONListPath[0], 0);
 
 });
