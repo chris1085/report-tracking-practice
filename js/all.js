@@ -68,9 +68,9 @@ function movePseudoClock(productType, objectName) {
 
   setTimeout(function () {
     movePseudoClock(productType, objectName);
-  }, 1050);
+  }, 1000);
 
-  let dataStorage = JSON.parse(localStorage.getItem(productType), objectName);
+  let dataStorage = JSON.parse(localStorage.getItem(productType));
   let dataStorageString = [];
   let count = 0;
 
