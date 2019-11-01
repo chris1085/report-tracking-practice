@@ -1,11 +1,36 @@
-function sendMail(sample) {
+/**
+ * Sending email if we have some data status processed longer than expected.
+ * Setting nodemailer module and sending info.
+ *
+ * @param {*} content html content for nodemailer's html(key)
+ * @param {*} productType product of report-tracking system
+ * @param {*} flag to determin whether table content is empty. If it's true, it represents that data details need to send mail to related person.
+ * @returns
+ */
+function sendMail(content, productType, flag) {
+  if (flag == false) {
+    return;
+  }
+
   //引用 nodemailer
   let nodemailer = require('nodemailer');
 
-  let maillist = [
-    'bmi.hcy@sofivagenomics.com.tw',
-    'bmi.cfc@sofivagenomics.com.tw',
-  ];
+  let maillist = {
+    "nips": [
+      // 'bmi.hcy@sofivagenomics.com.tw',
+      'bmi.cfc@sofivagenomics.com.tw',
+    ],
+    "sg": [
+      // 'bmi.hcy@sofivagenomics.com.tw',
+      'bmi.cfc@sofivagenomics.com.tw',
+    ],
+    "iona": [
+      // 'bmi.hcy@sofivagenomics.com.tw',
+      'bmi.cfc@sofivagenomics.com.tw',
+    ]
+  };
+
+  let sendList = maillist[productType];
 
   //宣告發信物件
   let transporter = nodemailer.createTransport({
@@ -20,7 +45,7 @@ function sendMail(sample) {
     //寄件者
     from: 'sofiva.bmi@gmail.com',
     //收件者
-    to: maillist,
+    to: sendList,
     //副本
     // cc: 'bmi.cfc@sofivagenomics.com.tw',
     //密件副本
@@ -30,7 +55,10 @@ function sendMail(sample) {
     //純文字
     text: 'Hello world2', // plaintext body
     //嵌入 html 的內文
-    html: '<h2>Why and How</h2> <p>The <a href="http://en.wikipedia.org/wiki/Lorem_ipsum" title="Lorem ipsum - Wikipedia, the free encyclopedia">Lorem ipsum</a> text is typically composed of pseudo-Latin words. It is commonly used as placeholder text to examine or demonstrate the visual effects of various graphic design. Since the text itself is meaningless, the viewers are therefore able to focus on the overall layout without being attracted to the text.</p>',
+    html: content
+
+
+    // '<h2>Why and How</h2> <p>The <a href="http://en.wikipedia.org/wiki/Lorem_ipsum" title="Lorem ipsum - Wikipedia, the free encyclopedia">Lorem ipsum</a> text is typically composed of pseudo-Latin words. It is commonly used as placeholder text to examine or demonstrate the visual effects of various graphic design. Since the text itself is meaningless, the viewers are therefore able to focus on the overall layout without being attracted to the text.</p>',
     //附件檔案
     // attachments: [ {
     //     filename: 'text01.txt',
@@ -51,9 +79,20 @@ function sendMail(sample) {
   });
 }
 
+/**
+ * Subject: To determin sample's time of status which is higher than cut-off
+ * Method: Using for-loop to find which uncompleted status we should compare
+ *         with default cut-off time. If it's longer than default, assign
+ *         the key-value to new JSON stringtify string.
+ * 
+ * @param {*} sample
+ * @param {*} productType
+ * @returns
+ */
 function filterSampleRun(sample, productType) {
   let newSampleRun;
 
+  //default cut-off
   const cutOffSetttings = {
     "nips": {
       "totalTime": 12,
@@ -96,6 +135,7 @@ function filterSampleRun(sample, productType) {
   for (const key in sample) {
     durationName = key + "Time";
 
+    //To find without step name. If its not match with step, ignore it. 
     if (key == "runid" || key.match(/(.*)Time/) || key == "closed" || key == "error" || key == "timeUsed") {
       continue;
     }
@@ -107,22 +147,66 @@ function filterSampleRun(sample, productType) {
       let runid = sample.runid;
       let temp = {
         [productType]: {
-          [runid]: {
-            [key]: sample[durationName],
-            totalTime: sample.totalTime
-          }
+          runid: runid,
+          node: key,
+          nodeTime: sample[durationName],
+          totalTime: sample.totalTime
         }
       };
 
       newSampleRun = JSON.stringify(temp);
     }
   }
-  // console.log(newSampleRun);
   return newSampleRun;
 }
 
-function writeMailContent(data) {
+/**
+ *  Subject: To write total mail content in a variable
+ *  Method: Useing += to contiue the html content string. If flag is 
+ *          true represents uncompleted data exists and need to send
+ *          to related person. we also have template like ./test.html
+ *          to test the mail content style is what we want.
+ *
+ * @param {*} data
+ * @param {*} productType
+ * @returns
+ */
+function writeMailContent(data, productType) {
+  let flag = false;
+  let product = productType.toUpperCase();
+  let content = `
+    <h2>Report-Tracking system</h2>
+    <p>Some data processed longer than expected. Please confirm progress step and data status</p>
+    <p>The information is summerized below:</p>
+    <h4>PRODUCT: ${product}</h4>
+    <table style = "border-collapse: collapse; width:800px;">
+      <col width = "40%">
+      <col width = "30%">
+      <col width = "15%">
+      <col width = "15%">
+        <tr>
+          <th style = "border-bottom: 1px solid #ddd; padding:10px 0px; background-color: #6bc541;"> Run ID </th> 
+          <th style = "border-bottom: 1px solid #ddd; background-color: #6bc541;"> Step </th> 
+          <th style = "border-bottom: 1px solid #ddd; background-color: #6bc541;"> Duration </th> 
+          <th style = "border-bottom: 1px solid #ddd; background-color: #6bc541;"> Elapsed Time </th> 
+        </tr>`;
 
+  for (let index = 0; index < data.length; index++) {
+    let mailInfo = JSON.parse(data[index]);
+
+    if (typeof (mailInfo[productType]) != "undefined") {
+      content += `\n<tr>\n`;
+      content += `<td align='center' style='border-bottom: 1px solid #ddd; padding:10px 0px;'>${mailInfo[productType].runid}</td>\n`;
+      content += `<td align='center' style='border-bottom: 1px solid #ddd;'>${mailInfo[productType].node}</td>\n`;
+      content += `<td align='center' style='border-bottom: 1px solid #ddd;'>${mailInfo[productType].nodeTime}</td>\n`;
+      content += `<td align='center' style='border-bottom: 1px solid #ddd;'>${mailInfo[productType].totalTime}</td>\n`;
+      content += `</tr>\n`;
+      flag = true;
+    }
+  }
+
+  content += `\n</table>`;
+  sendMail(content, productType, flag);
 }
 
 const webJSONListPath = {
@@ -145,10 +229,8 @@ data.iona = JSON.parse(fs.readFileSync(webJSONListPath.iona).toString());
 
 
 for (let productType in data) {
-  // console.log(data[productType]);
   for (let index = 0; index < data[productType].length; index++) {
     if (data[productType][index].closed == "0" || data[productType][index].closed == "") {
-      // console.log(data[productType][index]);
 
       let sample = data[productType][index];
       sampleRun = filterSampleRun(sample, productType);
@@ -158,6 +240,5 @@ for (let productType in data) {
       }
     }
   }
+  writeMailContent(alertData, key);
 }
-// console.log(alertData);
-writeMailContent(alertData);
