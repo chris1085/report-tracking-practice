@@ -21,6 +21,19 @@ html {
   font-family: "Noto Sans TC";
 }
 
+footer {
+  position: relative;
+}
+
+.authorInfo {
+  position: absolute;
+  bottom: 0;
+  right: 5px;
+  text-align: right !important;
+  color: white;
+  font-size: 10px;
+}
+
 h1 {
   font-family: "Noto Sans TC";
   font-weight: bold;
@@ -98,6 +111,18 @@ h1 {
 
 .nav-item:hover::after {
   width: 100%;
+}
+
+.sticky {
+  top: 94px;
+  border: 1px solid red;
+  margin: 0 auto;
+  text-align: center !important;
+  width: 100% !important;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
 }
 
 .test {
@@ -491,6 +516,46 @@ td {
   text-align: center;
 }
 
+@-webkit-keyframes effect_dylan {
+  50% {
+    -webkit-transform: scale(1.5, 1.5);
+            transform: scale(1.5, 1.5);
+    opacity: 0;
+  }
+  99% {
+    -webkit-transform: scale(0.001, 0.001);
+            transform: scale(0.001, 0.001);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(0.001, 0.001);
+            transform: scale(0.001, 0.001);
+    opacity: 1;
+  }
+}
+
+@keyframes effect_dylan {
+  50% {
+    -webkit-transform: scale(1.5, 1.5);
+            transform: scale(1.5, 1.5);
+    opacity: 0;
+  }
+  99% {
+    -webkit-transform: scale(0.001, 0.001);
+            transform: scale(0.001, 0.001);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(0.001, 0.001);
+            transform: scale(0.001, 0.001);
+    opacity: 1;
+  }
+}
+
+.step-choose-circle {
+  border: 3px solid gray !important;
+}
+
 .stepbar-progress {
   width: 100%;
   height: 32px;
@@ -556,6 +621,7 @@ td {
   background-color: #e4e4e7;
   border-top: 3px solid #e4e4e7;
   border-bottom: 3px solid #e4e4e7;
+  z-index: -1;
 }
 
 .stepbar-progress .step-item-first .step-body:after,

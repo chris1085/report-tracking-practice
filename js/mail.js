@@ -12,6 +12,8 @@ function sendMail(content, productType, flag) {
     return;
   }
 
+  let subjectTitle = 'Report-Tracking System Notify - ' + productType.toUpperCase();
+
   //引用 nodemailer
   let nodemailer = require('nodemailer');
 
@@ -19,14 +21,32 @@ function sendMail(content, productType, flag) {
     "nips": [
       // 'bmi.hcy@sofivagenomics.com.tw',
       'bmi.cfc@sofivagenomics.com.tw',
+      'tklin@sofivagenomics.com.tw',
+      'yichu@sofivagenomics.com.tw',
+      'tsuling@sofivagenomics.com.tw',
+      // 'nips@sofivagenomics.com.tw',
+      'ying@sofivagenomics.com.tw',
+      'tehyang.hwa@sofivagenomics.com.tw',
     ],
     "sg": [
       // 'bmi.hcy@sofivagenomics.com.tw',
       'bmi.cfc@sofivagenomics.com.tw',
+      'tklin@sofivagenomics.com.tw',
+      'yichu@sofivagenomics.com.tw',
+      'tsuling@sofivagenomics.com.tw',
+      // 'nips@sofivagenomics.com.tw',
+      'ying@sofivagenomics.com.tw',
+      'tehyang.hwa@sofivagenomics.com.tw',
     ],
     "iona": [
       // 'bmi.hcy@sofivagenomics.com.tw',
       'bmi.cfc@sofivagenomics.com.tw',
+      'tklin@sofivagenomics.com.tw',
+      'yichu@sofivagenomics.com.tw',
+      'tsuling@sofivagenomics.com.tw',
+      // 'iona@sofivagenomics.com.tw',
+      'yuchen@sofivagenomics.com.tw',
+      'tehyang.hwa@sofivagenomics.com.tw',
     ]
   };
 
@@ -51,11 +71,11 @@ function sendMail(content, productType, flag) {
     //密件副本
     bcc: 'bmi.cfc@sofivagenomics.com.tw',
     //主旨
-    subject: 'Report-Tracking System Notify', // Subject line
+    subject: subjectTitle, // Subject line
     //純文字
-    text: 'Hello world2', // plaintext body
+    text: 'Hello world!', // plaintext body
     //嵌入 html 的內文
-    html: content
+    html: content,
 
 
     // '<h2>Why and How</h2> <p>The <a href="http://en.wikipedia.org/wiki/Lorem_ipsum" title="Lorem ipsum - Wikipedia, the free encyclopedia">Lorem ipsum</a> text is typically composed of pseudo-Latin words. It is commonly used as placeholder text to examine or demonstrate the visual effects of various graphic design. Since the text itself is meaningless, the viewers are therefore able to focus on the overall layout without being attracted to the text.</p>',
@@ -66,6 +86,11 @@ function sendMail(content, productType, flag) {
     // }, {
     //     filename: 'unnamed.jpg',
     //     path: '/Users/Weiju/Pictures/unnamed.jpg'
+    // }]
+    // attachments: [{
+    //   filename: 'unnamed.gif',
+    //   path: '../images/unnamed.gif',
+    //   cid: 'unique@kreata.ee' //same cid value as in the html img src
     // }]
   };
 
@@ -96,7 +121,7 @@ function filterSampleRun(sample, productType) {
   const cutOffSetttings = {
     "nips": {
       "totalTime": 12,
-      "sequencedTime": 6,
+      "sequencedTime": 1,
       "analyzedTime": 6,
       "ondellTime": 6,
       "convertedTime": 6,
@@ -108,7 +133,7 @@ function filterSampleRun(sample, productType) {
     },
     "iona": {
       "totalTime": 12,
-      "sequencedTime": 6,
+      "sequencedTime": 1,
       "analyzedTime": 6,
       "ondellTime": 6,
       "convertedTime": 6,
@@ -120,7 +145,7 @@ function filterSampleRun(sample, productType) {
     },
     "sg": {
       "totalTime": 12,
-      "sequencedTime": 6,
+      "sequencedTime": 1,
       "analyzedTime": 6,
       "ondellTime": 6,
       "convertedTime": 6,
@@ -142,7 +167,7 @@ function filterSampleRun(sample, productType) {
 
     let sampleHours = parseInt(sample[durationName].split(":")[0]);
 
-    if (sample.closed == "0" && sampleHours > cutOffSetttings[productType][durationName]) {
+    if (sample.closed != "1" && sampleHours >= cutOffSetttings[productType][durationName]) {
 
       let runid = sample.runid;
       let temp = {
@@ -206,7 +231,57 @@ function writeMailContent(data, productType) {
   }
 
   content += `\n</table>`;
+  content += `<div  style="padding-top: 100px; display:block">
+  <a class="navbar-brand"><img src="../images/unnamed.gif" width="240" height="80" alt=""></a>
+  <br>
+  <span>慧智基因</span>
+  <br>
+  <span>姜權芳 Chuan-Fang Chiang</span>
+  <br>
+  <span>生物資訊分析師</span>
+  <br>
+  <span>地址:台北市中正區寶慶路27號5樓</span>
+  <br>
+  <span>電話:(02)2382-6615 EXT.6503</span>
+</div>`;
   sendMail(content, productType, flag);
+  // console.log(data);
+
+}
+
+function compareMailContent(alertData, writeContent, productType) {
+  let finalArray = [];
+
+  if (typeof writeContent.length == "undefined") {
+    alertData.forEach((el) => {
+      alertDataJSON = JSON.parse(el);
+      if (alertDataJSON[productType].runid == writeContent[productType].runid && alertDataJSON[productType].node == writeContent[productType].node) {
+        finalArray.push(el);
+      }
+    });
+
+    if (finalArray.length == 1 && alertData.length == 1) {
+      return true;
+    } else {
+      return false;
+    }
+  } else {
+    alertData.forEach((el) => writeContent.forEach((el2) => {
+      alertDataJSON = JSON.parse(el);
+
+      // console.log(alertDataJSON);
+      if (alertDataJSON[productType].runid == el2[productType].runid && alertDataJSON[productType].node == el2[productType].node) {
+        finalArray.push(el);
+      }
+    }));
+
+    if (writeContent.length == finalArray.length) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
 }
 
 const webJSONListPath = {
@@ -217,6 +292,7 @@ const webJSONListPath = {
 
 let data = [];
 let alertData = [];
+let alertCompareData = {};
 let sampleRun;
 const fs = require('fs');
 const writeFile = (filename, content) => {
@@ -227,8 +303,9 @@ data.nips = JSON.parse(fs.readFileSync(webJSONListPath.nips).toString());
 data.sg = JSON.parse(fs.readFileSync(webJSONListPath.sg).toString());
 data.iona = JSON.parse(fs.readFileSync(webJSONListPath.iona).toString());
 
-
 for (let productType in data) {
+  alertData = [];
+
   for (let index = 0; index < data[productType].length; index++) {
     if (data[productType][index].closed == "0" || data[productType][index].closed == "") {
 
@@ -240,5 +317,90 @@ for (let productType in data) {
       }
     }
   }
-  writeMailContent(alertData, key);
+
+
+  let writeContentPath = "../mailCheckBox/" + productType + "_mailContent.txt";
+  let writeCheckPath = "../mailCheckBox/" + productType + "_mailCheck.txt";
+  // console.log(alertData);
+  let flag = 0;
+  if (fs.existsSync(writeContentPath) && fs.existsSync(writeCheckPath)) {
+    let count = parseInt(fs.readFileSync(writeCheckPath).toString());
+    let writeContent = JSON.parse(fs.readFileSync(writeContentPath).toString());
+    let compareResult = compareMailContent(alertData, writeContent, productType);
+
+    if (compareResult == true && count <= 2) {
+      writeMailContent(alertData, productType);
+      count += 1;
+      writeFile(writeContentPath, alertData);
+      writeFile(writeCheckPath, count);
+    } else if (compareResult == true && count > 2) {
+      count += 1;
+      writeFile(writeCheckPath, count);
+    } else if (compareResult == false) {
+      writeMailContent(alertData, productType);
+      writeFile(writeContentPath, alertData);
+      writeFile(writeCheckPath, 1);
+    }
+
+  } else {
+    writeFile(writeContentPath, alertData);
+    writeFile(writeCheckPath, 1);
+    writeMailContent(alertData, productType);
+  }
+
+  // for (let index = 0; index < alertData.length; index++) {
+  //   let alertDataJSON = JSON.parse(alertData[index]);
+
+  //   if (fs.existsSync(writeContentPath) && fs.existsSync(writeCheckPath)) {
+  //     let count = parseInt(fs.readFileSync(writeCheckPath).toString());
+  //     let writeContent = JSON.parse(fs.readFileSync(writeContentPath).toString());
+
+
+  //     // console.log(fs.readFileSync(writeContentPath).toString());
+
+
+  //     if (typeof alertDataJSON[productType]['runid'] !== 'undefined' && typeof writeContent[productType]['node'] !== 'undefined') {
+  //       // console.log(alertDataJSON[productType]['runid']);
+  //       // console.log(writeContentJSON[productType]['node']);
+
+  //       if (alertDataJSON[productType]['node'] == writeContent[productType]['node']) {
+  //         flag = 1;
+  //       } else {
+  //         flag = 0;
+  //       }
+
+  //       if (flag == 1 && count <= 3) {
+  //         console.log(count);
+  //         writeMailContent(alertData, productType);
+  //         count += 1;
+  //         writeFile(writeCheckPath, count);
+  //         console.log("flag is 1");
+
+  //       } else if (count > 3) {
+  //         writeFile(writeCheckPath, count);
+  //         console.log("count is " + count);
+  //       } else {
+  //         writeMailContent(alertData, productType);
+  //         writeFile(writeContentPath, JSON.stringify(alertDataJSON));
+  //         writeFile(writeCheckPath, 1);
+  //         console.log("flag is 0");
+  //       }
+  //     }
+
+  //     // if (JSON.stringify(alertData) == fs.readFileSync(writeContentPath).toString() && count <= 2) {
+  //     //   writeMailContent(alertData, productType);
+  //     //   writeFile(writeCheckPath, count);
+  //     // } else if (JSON.stringify(alertData) != fs.readFileSync(writeContentPath).toString()) {
+  //     //   writeMailContent(alertData, productType);
+  //     //   writeFile(writeContentPath, JSON.stringify(alertData));
+  //     //   writeFile(writeCheckPath, 1);
+  //     // }
+  //   } else {
+  //     writeFile(writeContentPath, JSON.stringify(alertDataJSON));
+  //     writeFile(writeCheckPath, 1);
+  //     writeMailContent(alertData, productType);
+  //   }
+  // }
+
+  // writeMailContent(alertData, productType);
 }

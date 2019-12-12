@@ -89,16 +89,21 @@ function getClock(seconds) {
 function compareContent(dataTypeContent, key) {
   const fs = require('fs');
   let path = "../temp_data/" + key + "_progress_tail.json.temp";
+  let webPath = "../" + key.toUpperCase() + "/" + key + "_progress_tail.json";
+  let stats = fs.statSync(path);
+  // console.log(stats.size);
   let tempData = [];
   let count = 0;
   let newData = [];
   let flag = 0;
   let dataTypeContentstring = JSON.stringify(dataTypeContent);
+  const writeFile = (filename, content) => {
+    fs.writeFile(filename, content, () => {});
+  };
 
   tempData[key] = JSON.parse(fs.readFileSync(path).toString());
   // console.log(tempData[key][0]);
-
-  if (fs.existsSync(path)) {
+  if (fs.existsSync(path) && stats.size > 0) {
     // console.log(path + " The file exists.");
     tempData[key] = JSON.parse(fs.readFileSync(path).toString());
     // console.log(tempData[key]);
@@ -139,10 +144,6 @@ function compareContent(dataTypeContent, key) {
     }
     // console.log(newData);
   } else {
-    const writeFile = (filename, content) => {
-      fs.writeFile(filename, content, () => {});
-    };
-
     writeFile(path, dataTypeContentstring);
     console.log(path + " not exists.");
   }
@@ -175,15 +176,12 @@ const writeFile = (filename, content) => {
   fs.writeFile(filename, content, () => {});
 };
 
-// var start = new Date();
-// var simulateTime = 1000;
-
 data.nips = JSON.parse(fs.readFileSync(JSONListPath.nips).toString());
 data.sg = JSON.parse(fs.readFileSync(JSONListPath.sg).toString());
 data.iona = JSON.parse(fs.readFileSync(JSONListPath.iona).toString());
 
-// console.log(data);
-
+// var stats = fs.statSync(JSONListPath.nips);
+// console.log(stats.size);
 
 for (const key in data) {
   data[key] = compareContent(data[key], key);

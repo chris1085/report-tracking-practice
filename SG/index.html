@@ -16,6 +16,8 @@
     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link rel="stylesheet" href="../css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,700" rel="stylesheet">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css'/>
+
 </head>
 
 <body>
@@ -1496,86 +1498,112 @@
           </div>
         </div>
       </div>
+
+      <div class="row w-100 pt-2 d-flex justify-content-between content-info animated " id="scroll-fix">
+        <div class="col-lg-3  content-header col-6" id="content-header-name">
+          <h4 class="py-2 px-3"><strong>Case Number</strong></h4>
+        </div>
+        <div class="col-lg-1 content-header col-2" id="content-header-time">
+          <h4 class=""><span class="badge badge-pill badge-dark py-2">Duration</span></h4>
+        </div>
+        <div class="col-lg-8 col-12 content-progress-icon w-100">
+          <table class="stepbar-progress">
+            <tbody>
+              <tr>
+                <td class="content-icon-item">
+                  <div class="">
+                    <a class="glyphicon-step1" title="Sequenced"></a>
+                  </div>
+                </td>
+                <td class="content-icon-progress">
+                  <div class="progress-body">
+                    <span class="body-fill"></span>
+                  </div>
+                </td>
+                <td class="content-icon-item">
+                  <div class="">
+                    <a class="glyphicon-step2" title="Analyzed"></a>
+                  </div>
+                </td>
+                <td class="content-icon-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="content-icon-item">
+                  <div class="">
+                    <a class="glyphicon-step3" title="Transferred to Dell"></a>
+                  </div>
+                </td>
+                <td class="content-icon-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="content-icon-item">
+                  <div class="">
+                    <a class="glyphicon-step4" title="Converted to Fastq"></a>
+                  </div>
+                </td>
+                <td class="content-icon-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="content-icon-item">
+                  <div class="">
+                    <a class="glyphicon-step5" title="Transferred to Cloud"></a>
+                  </div>
+                </td>
+                <td class="content-icon-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="content-icon-item">
+                  <div class="">
+                    <a class="glyphicon-step6" title="Transferred to Comp.Node"></a>
+                  </div>
+                </td>
+                <td class="content-icon-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="content-icon-item">
+                  <div class="">
+                    <a class="glyphicon-step7" title="Job submitted"></a>
+                  </div>
+                </td>
+                <td class="content-icon-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="content-icon-item">
+                  <div class="">
+                    <a class="glyphicon-step8" title="Job completed"></a>
+                  </div>
+                </td>
+                <td class="content-icon-progress">
+                  <span class="progress-body">
+                    <span class="body-fill"></span>
+                  </span>
+                </td>
+                <td class="content-icon-item">
+                  <div class="">
+                    <a class="glyphicon-step9" title="Report Transferred to Dell"></a>
+                  </div>
+                </td>
+
+              </tr>
+            </tbody>
+
+          </table>
+        </div>
+      </div>
     </div>
   </div>
-
-  <!-- <div class="div-progress">
-    <div class="row content-header py-3">
-
-    </div>
-    <div class="row row-sampleRun py-3">
-      <div class="col-lg-3" id="sg-runId0"></div>
-      <div class="col-lg-7" id="sg-progressId0"></div>
-      <div class="col-lg-1" id="sg-completed0"></div>
-      <div class="col-lg-1" id="sg-timeUsed0"></div>
-    </div>
-    <div class="row row-sampleRun py-3 test">
-      <div class="col-lg-3" id="sg-runId1"></div>
-      <div class="col-lg-7" id="sg-progressId1"></div>
-      <div class="col-lg-1" id="sg-completed1"></div>
-      <div class="col-lg-1" id="sg-timeUsed1"></div>
-    </div>
-    <div class="row row-sampleRun">
-      <div class="col-lg-3" id="sg-runId2"></div>
-      <div class="col-lg-7" id="sg-progressId2"></div>
-      <div class="col-lg-1" id="sg-completed2"></div>
-      <div class="col-lg-1" id="sg-timeUsed2"></div>
-    </div>
-    <div class="row row-sampleRun">
-      <div class="col-lg-3" id="sg-runId3"></div>
-      <div class="col-lg-7" id="sg-progressId3"></div>
-      <div class="col-lg-1" id="sg-completed3"></div>
-      <div class="col-lg-1" id="sg-timeUsed3"></div>
-    </div>
-    <div class="row row-sampleRun">
-      <div class="col-lg-3" id="sg-runId4"></div>
-      <div class="col-lg-7" id="sg-progressId4"></div>
-      <div class="col-lg-1" id="sg-completed4"></div>
-      <div class="col-lg-1" id="sg-timeUsed4"></div>
-    </div>
-    <div class="row row-sampleRun">
-      <div class="col-lg-3" id="sg-runId5"></div>
-      <div class="col-lg-7" id="sg-progressId5"></div>
-      <div class="col-lg-1" id="sg-completed5"></div>
-      <div class="col-lg-1" id="sg-timeUsed5"></div>
-    </div>
-    <div class="row row-sampleRun">
-      <div class="col-lg-3" id="sg-runId6"></div>
-      <div class="col-lg-7" id="sg-progressId6"></div>
-      <div class="col-lg-1" id="sg-completed6"></div>
-      <div class="col-lg-1" id="sg-timeUsed6"></div>
-    </div>
-    <div class="row row-sampleRun">
-      <div class="col-lg-3" id="sg-runId7"></div>
-      <div class="col-lg-7" id="sg-progressId7"></div>
-      <div class="col-lg-1" id="sg-completed7"></div>
-      <div class="col-lg-1" id="sg-timeUsed7"></div>
-    </div>
-    <div class="row row-sampleRun">
-      <div class="col-lg-3" id="sg-runId8"></div>
-      <div class="col-lg-7" id="sg-progressId8"></div>
-      <div class="col-lg-1" id="sg-completed8"></div>
-      <div class="col-lg-1" id="sg-timeUsed8"></div>
-    </div>
-    <div class="row row-sampleRun">
-      <div class="col-lg-3" id="sg-runId9"></div>
-      <div class="col-lg-7" id="sg-progressId9"></div>
-      <div class="col-lg-1" id="sg-completed9"></div>
-      <div class="col-lg-1" id="sg-timeUsed9"></div>
-    </div>
-    <div class="row row-sampleRun">
-      <div class="col-lg-3" id="sg-runId10"></div>
-      <div class="col-lg-7" id="sg-progressId10"></div>
-      <div class="col-lg-1" id="sg-completed10"></div>
-      <div class="col-lg-1" id="sg-timeUsed10"></div>
-    </div>
-    <div class="row row-sampleRun">
-      <div class="col-lg-3" id="sg-runId11"></div>
-      <div class="col-lg-7" id="sg-progressId11"></div>
-      <div class="col-lg-1" id="sg-completed11"></div>
-      <div class="col-lg-1" id="sg-timeUsed11"></div>
-    </div> -->
-  <!-- </div> -->
 
   <footer class="container-fluid bg-secondary py-1 text-center">
     <div class="container py-1">

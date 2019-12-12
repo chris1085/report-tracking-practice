@@ -174,12 +174,8 @@ function clickProgressIcon(product) {
 
   $('.step-body').click(function (event) {
     let data = JSON.parse(localStorage.getItem(product));
-    // console.log(data);
-
     let id = $(this).parents('div').attr('id').split('-progressId')[1];
     let productType = $(this).parents('div').attr('id').split('-progressId')[0];
-    // console.log(productType);
-
 
     $(this).parents().find('#collapseStepInfo' + id).children().empty(); //empty their class and content
 
@@ -357,27 +353,40 @@ function getStatusDetail(progressContent = data, productTypeIndex = 1) {
   return statusDetail;
 }
 
-// function startRefresh(path, productTypeIndex = 0) {
-//   setTimeout(startRefresh, 1000);
-//   // console.log("test");
-//   let newDate = new Date();
-//   let second = ("0" + newDate.getSeconds()).slice(-2);
-//   // $(".duration-time").children()[0];
-//   let children = Array.from($(".duration-time").children());
-//   // console.log(children);
+function fixScroll() {
+  window.onscroll = function () {
+    var header = document.getElementById("scroll-fix");
+    var sticky = header.offsetTop;
 
+    if (window.pageYOffset > 460) {
+      header.classList.remove("fadeOutDown");
+      header.classList.add("fadeInUp");
+    } else {
+      header.classList.remove("fadeInUp");
+      header.classList.add("fadeOutDown");
+    }
+  };
+}
 
-//   children.forEach(function (sampleRun, index) {
-//     if (sampleRun.innerText != "00:00:00") {
-//       let hour = sampleRun.innerText.split(":")[0];
-//       let min = sampleRun.innerText.split(":")[1];
-//       let content = hour + ":" + min + ":" + second;
+function fixStepCircle(stepArray) {
+  $('.step-body').click(function (event) {
+    if ($(this).hasClass("step-choose-circle")) {
+      $(this).removeClass("step-choose-circle");
+      return;
+    }
+    for (let index = 0; index < stepArray.length; index++) {
+      stepArray[index].classList.remove("step-choose-circle");
+    }
 
-//       $(sampleRun).find("span").html(content);
-//     }
+    $(this).addClass("step-choose-circle");
+  });
 
-//   });
-// }
+}
+
+function addInfo() {
+  content = `<span class="authorInfo">Designed by: 姜權芳 #6503</span>`;
+  $("footer").append(content);
+}
 
 $(document).ready(function myfunction() {
 
@@ -400,7 +409,9 @@ $(document).ready(function myfunction() {
   clickProgressIcon(product.toLowerCase());
   movePseudoClock(product.toLowerCase(), "totalTime");
 
-
-  // startRefresh(JSONListPath[0], 0);
+  var el = document.getElementsByClassName("step-body");
+  fixStepCircle(el);
+  fixScroll();
+  addInfo();
 
 });
