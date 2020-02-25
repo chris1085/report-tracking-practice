@@ -22,33 +22,33 @@ function sendMail(content, productType, flag) {
   let maillist = {
     nips: [
       // 'bmi.hcy@sofivagenomics.com.tw',
-      'bmi.cfc@sofivagenomics.com.tw',
-      'tklin@sofivagenomics.com.tw',
-      'yichu@sofivagenomics.com.tw',
-      'tsuling@sofivagenomics.com.tw',
-      'nips@sofivagenomics.com.tw',
-      'ying@sofivagenomics.com.tw',
-      'tehyang.hwa@sofivagenomics.com.tw'
+      'bmi.cfc@sofivagenomics.com.tw'
+      // 'tklin@sofivagenomics.com.tw',
+      // 'yichu@sofivagenomics.com.tw',
+      // 'tsuling@sofivagenomics.com.tw',
+      // 'nips@sofivagenomics.com.tw',
+      // 'ying@sofivagenomics.com.tw',
+      // 'tehyang.hwa@sofivagenomics.com.tw'
     ],
     sg: [
       // 'bmi.hcy@sofivagenomics.com.tw',
-      'bmi.cfc@sofivagenomics.com.tw',
-      'tklin@sofivagenomics.com.tw',
-      'yichu@sofivagenomics.com.tw',
-      'tsuling@sofivagenomics.com.tw',
-      'nips@sofivagenomics.com.tw',
-      'ying@sofivagenomics.com.tw',
-      'tehyang.hwa@sofivagenomics.com.tw'
+      'bmi.cfc@sofivagenomics.com.tw'
+      // 'tklin@sofivagenomics.com.tw',
+      // 'yichu@sofivagenomics.com.tw',
+      // 'tsuling@sofivagenomics.com.tw',
+      // 'nips@sofivagenomics.com.tw',
+      // 'ying@sofivagenomics.com.tw',
+      // 'tehyang.hwa@sofivagenomics.com.tw'
     ],
     iona: [
       // 'bmi.hcy@sofivagenomics.com.tw',
-      'bmi.cfc@sofivagenomics.com.tw',
-      'tklin@sofivagenomics.com.tw',
-      'yichu@sofivagenomics.com.tw',
-      'tsuling@sofivagenomics.com.tw',
-      'iona@sofivagenomics.com.tw',
-      'yuchen@phoebusgenetics.com.tw',
-      'tehyang.hwa@sofivagenomics.com.tw'
+      'bmi.cfc@sofivagenomics.com.tw'
+      // 'tklin@sofivagenomics.com.tw',
+      // 'yichu@sofivagenomics.com.tw',
+      // 'tsuling@sofivagenomics.com.tw',
+      // 'iona@sofivagenomics.com.tw',
+      // 'yuchen@phoebusgenetics.com.tw',
+      // 'tehyang.hwa@sofivagenomics.com.tw'
     ]
   };
 
@@ -190,7 +190,8 @@ function filterSampleRun(sample, productType) {
             node: key,
             nodeTime: sample[key],
             totalTime: sample.totalTime,
-            alarmTime: cutOffTime
+            alarmTime: cutOffTime,
+            count: 1
           }
         };
         // console.log(temp);
@@ -272,51 +273,107 @@ function writeMailContent(data, productType) {
   // console.log(data);
 }
 
-function compareMailContent(alertData, writeContent, productType) {
+function compareMailContent(alertData, writeContent, productType, checkCount) {
   let finalArray = [];
   let writeContentCount = 0;
   let matchConut = 0;
-  // console.log(productType);
+  // console.log(writeContent);
 
   if (typeof writeContent.length == 'undefined') {
     return false;
   } else {
-    // console.log(alertData);
-
+    let simpleAlert = [];
+    let simpleAlertJSON = {};
+    let simpleContent = [];
     for (let index = 0; index < alertData.length; index++) {
       for (let stepIndex = 0; stepIndex < alertData[index].length; stepIndex++) {
-        for (let writeIndex = 0; writeIndex < writeContent.length; writeIndex++) {
-          for (let writeStepIndex = 0; writeStepIndex < writeContent[writeIndex].length; writeStepIndex++) {
-            let alertDataJSON = JSON.parse(alertData[index][stepIndex]);
-            let writeContentJSON = JSON.parse(writeContent[writeIndex][writeStepIndex]);
+        let alertDataJSON = JSON.parse(alertData[index][stepIndex]);
+        simpleAlert.push(alertDataJSON[productType].runid + '_' + alertDataJSON[productType].node);
+        simpleAlertJSON[alertDataJSON[productType].runid + '_' + alertDataJSON[productType].node] =
+          alertDataJSON[productType].runid + '_' + alertDataJSON[productType].node;
+      }
+    }
 
-            // console.log(alertDataJSON, writeContentJSON);
+    for (let index = 0; index < writeContent.length; index++) {
+      let temp = [];
 
-            if (
-              alertDataJSON[productType].runid == writeContentJSON[productType].runid &&
-              alertDataJSON[productType].node == writeContentJSON[productType].node
-            ) {
-              finalArray.push(alertData[index][stepIndex]);
-              matchConut += 1;
-              continue;
-            }
+      for (let stepIndex = 0; stepIndex < writeContent[index].length; stepIndex++) {
+        let writeContentJSON = JSON.parse(writeContent[index][stepIndex]);
+
+        let simpleKeyName = writeContentJSON[productType].runid + '_' + writeContentJSON[productType].node;
+        // console.log(writeContentJSON);
+
+        if (simpleKeyName === simpleAlertJSON[simpleKeyName]) {
+          let alertDataJSON = JSON.parse(alertData[index][stepIndex]);
+          alertDataJSON[productType].count = writeContentJSON[productType].count + 1;
+          writeContentJSON[productType].count = writeContentJSON[productType].count + 1;
+
+          alertData[index][stepIndex] = JSON.stringify(alertDataJSON);
+          writeContent[index][stepIndex] = JSON.stringify(writeContentJSON);
+
+          // console.log(simpleKeyName, alertData[index][stepIndex]);
+        } else {
+          writeContentJSON[productType].count += 1;
+          writeContent[index][stepIndex] = JSON.stringify(writeContentJSON);
+
+          if (alertDataJSON[productType].count < 4) {
+            temp.push(JSON.stringify(writeContentJSON));
           }
         }
       }
-    }
-
-    for (let writeIndex = 0; writeIndex < writeContent.length; writeIndex++) {
-      for (let writeStepIndex = 0; writeStepIndex < writeContent[writeIndex].length; writeStepIndex++) {
-        writeContentCount += 1;
+      if (temp.length > 0) {
+        finalArray.push(temp);
       }
     }
-    // console.log(writeContent, alertData);
+    // console.log(alertData);
 
-    if (writeContentCount == matchConut) {
-      return true;
-    } else {
-      return false;
+    for (let index = 0; index < alertData.length; index++) {
+      let temp = [];
+      for (let stepIndex = 0; stepIndex < alertData[index].length; stepIndex++) {
+        let alertDataJSON = JSON.parse(alertData[index][stepIndex]);
+        if (alertDataJSON[productType].count < 4) {
+          temp.push(JSON.stringify(alertDataJSON));
+        }
+      }
+      if (temp.length > 0) {
+        finalArray.push(temp);
+      }
     }
+    console.log(finalArray);
+
+    return finalArray;
+    // for (let index = 0; index < alertData.length; index++) {
+    //   for (let stepIndex = 0; stepIndex < alertData[index].length; stepIndex++) {
+    //     for (let writeIndex = 0; writeIndex < writeContent.length; writeIndex++) {
+    //       for (let writeStepIndex = 0; writeStepIndex < writeContent[writeIndex].length; writeStepIndex++) {
+    //         let alertDataJSON = JSON.parse(alertData[index][stepIndex]);
+    //         let writeContentJSON = JSON.parse(writeContent[writeIndex][writeStepIndex]);
+    //         // console.log(alertDataJSON, writeContentJSON);
+    //         if (
+    //           alertDataJSON[productType].runid == writeContentJSON[productType].runid &&
+    //           alertDataJSON[productType].node == writeContentJSON[productType].node
+    //         ) {
+    //           finalArray.push(alertData[index][stepIndex]);
+    //           matchConut += 1;
+    //           continue;
+    //         }
+    //       }
+    //     }
+    //   }
+    // }
+    // for (let writeIndex = 0; writeIndex < writeContent.length; writeIndex++) {
+    //   for (let writeStepIndex = 0; writeStepIndex < writeContent[writeIndex].length; writeStepIndex++) {
+    //     writeContentCount += 1;
+    //   }
+    // }
+    // // console.log(writeContent, alertData);
+    // if (writeContentCount == matchConut) {
+    //   console.log('match');
+    //   return true;
+    // } else {
+    //   console.log('not match');
+    //   return false;
+    // }
   }
 }
 
@@ -335,61 +392,70 @@ const fs = require('fs');
 const writeFile = (filename, content) => {
   fs.writeFile(filename, content, () => {});
 };
+// let datetime = new Date();
+// console.log('Before running a task every minute - ' + datetime);
+
+// cron.schedule('0 */1 * * *', function() {
 let datetime = new Date();
-console.log('Before running a task every minute - ' + datetime);
+console.log('running a task every minute - ' + datetime);
+data.nips = JSON.parse(fs.readFileSync(webJSONListPath.nips).toString());
+data.sg = JSON.parse(fs.readFileSync(webJSONListPath.sg).toString());
+data.iona = JSON.parse(fs.readFileSync(webJSONListPath.iona).toString());
 
-cron.schedule('0 */1 * * *', function() {
-  let datetime = new Date();
-  console.log('running a task every minute - ' + datetime);
-  data.nips = JSON.parse(fs.readFileSync(webJSONListPath.nips).toString());
-  data.sg = JSON.parse(fs.readFileSync(webJSONListPath.sg).toString());
-  data.iona = JSON.parse(fs.readFileSync(webJSONListPath.iona).toString());
+for (let productType in data) {
+  alertData = [];
 
-  for (let productType in data) {
-    alertData = [];
+  for (let index = 0; index < data[productType].length; index++) {
+    if (data[productType][index].closed == '0' || data[productType][index].closed == '') {
+      let sample = data[productType][index];
+      sampleRun = filterSampleRun(sample, productType);
 
-    for (let index = 0; index < data[productType].length; index++) {
-      if (data[productType][index].closed == '0' || data[productType][index].closed == '') {
-        let sample = data[productType][index];
-        sampleRun = filterSampleRun(sample, productType);
-
-        if (typeof sampleRun != 'undefined' && sampleRun.length > 0) {
-          // console.log(sampleRun, 'aaa', sampleRun.length);
-          alertData.push(sampleRun);
-        }
-      }
-    }
-
-    let writeContentPath = '../mailCheckBox/' + productType + '_mailContent.txt';
-    let writeCheckPath = '../mailCheckBox/' + productType + '_mailCheck.txt';
-    // console.log(alertData);
-    let flag = 0;
-    if (fs.existsSync(writeContentPath) && fs.existsSync(writeCheckPath) && alertData.length > 0) {
-      let count = parseInt(fs.readFileSync(writeCheckPath).toString());
-      let writeContent = JSON.parse(fs.readFileSync(writeContentPath).toString());
-      // console.log(writeContent);
-
-      let compareResult = compareMailContent(alertData, writeContent, productType);
-
-      if (compareResult == true && count <= 2) {
-        writeMailContent(alertData, productType);
-        count += 1;
-        writeFile(writeContentPath, JSON.stringify(alertData));
-        writeFile(writeCheckPath, count);
-      } else if (compareResult == true && count > 2) {
-        count += 1;
-        writeFile(writeCheckPath, count);
-      } else if (compareResult == false) {
-        writeMailContent(alertData, productType);
-        writeFile(writeContentPath, JSON.stringify(alertData));
-        writeFile(writeCheckPath, 1);
-      }
-    } else {
-      if (alertData != '' && alertData.length > 0) {
-        writeFile(writeContentPath, JSON.stringify(alertData));
-        writeFile(writeCheckPath, 1);
-        writeMailContent(alertData, productType);
+      if (typeof sampleRun != 'undefined' && sampleRun.length > 0) {
+        // console.log(sampleRun, 'aaa', sampleRun.length);
+        alertData.push(sampleRun);
       }
     }
   }
-});
+
+  let writeContentPath = '../mailCheckBox/' + productType + '_mailContent.txt';
+  let writeCheckPath = '../mailCheckBox/' + productType + '_mailCheck.txt';
+  console.log(productType, alertData);
+  console.log('################');
+
+  let flag = 0;
+  if (fs.existsSync(writeContentPath) && fs.existsSync(writeCheckPath) && alertData.length > 0) {
+    let count = parseInt(fs.readFileSync(writeCheckPath).toString());
+    let writeContent = JSON.parse(fs.readFileSync(writeContentPath).toString());
+    console.log('WriteContent');
+
+    console.log(writeContent);
+
+    let compareResult = compareMailContent(alertData, writeContent, productType, count);
+    writeMailContent(compareResult, productType);
+    writeFile(writeContentPath, JSON.stringify(writeContent));
+
+    // console.log(compareResult);
+    // console.log(alertData);
+
+    // if (compareResult == true && count <= 2) {
+    //   writeMailContent(alertData, productType);
+    //   count += 1;
+    //   writeFile(writeContentPath, JSON.stringify(alertData));
+    //   writeFile(writeCheckPath, count);
+    // } else if (compareResult == true && count > 2) {
+    //   count += 1;
+    //   writeFile(writeCheckPath, count);
+    // } else if (compareResult == false) {
+    //   writeMailContent(alertData, productType);
+    //   writeFile(writeContentPath, JSON.stringify(alertData));
+    //   writeFile(writeCheckPath, 1);
+    // }
+  } else {
+    if (alertData != '' && alertData.length > 0) {
+      writeFile(writeContentPath, JSON.stringify(alertData));
+      writeFile(writeCheckPath, 1);
+      writeMailContent(alertData, productType);
+    }
+  }
+}
+// });

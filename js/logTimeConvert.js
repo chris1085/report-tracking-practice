@@ -10,41 +10,44 @@ function convertFormat(productType, runInfo) {
   let jobcompletedTime = getSeconds(runInfo.jobcompletedTime);
   let backtodellTime = getSeconds(runInfo.backtodellTime);
 
-  console.log(`${runInfo.runid}\t${totalTime}\t${sequencedTime}\t${analyzedTime}\t${ondellTime}\t${convertedTime}\t${incloudTime}\t${downloadedTime}\t${jobsubmittedTime}\t${jobcompletedTime}\t${backtodellTime}`);
+  console.log(
+    `${runInfo.runid}\t${totalTime}\t${sequencedTime}\t${analyzedTime}\t${ondellTime}\t${convertedTime}\t${incloudTime}\t${downloadedTime}\t${jobsubmittedTime}\t${jobcompletedTime}\t${backtodellTime}`
+  );
 }
 
-
 function getSeconds(time) {
-  let clockArray = time.split(":");
+  let clockArray = time.split(':');
   let seconds = parseInt(clockArray[0] * 3600) + parseInt(clockArray[1] * 60) + parseInt(clockArray[2]);
   return seconds;
 }
 
 const logJSONListPath = {
-  "nips": '../log/nips_progress.log',
-  "sg": '../log/sg_progress.log',
-  "iona": '../log/iona_progress.log'
+  nips: '/data1/lampp/htdocs/report-tracking/log/nips_progress.log',
+  sg: '/data1/lampp/htdocs/report-tracking/log/sg_progress.log',
+  iona: '/data1/lampp/htdocs/report-tracking/log/iona_progress.log'
 };
 
 const convertJSONListPath = {
-  "nips": '../convert/nips_progress.log',
-  "sg": '../convert/sg_progress.log',
-  "iona": '../convert/iona_progress.log'
+  nips: '../convert/nips_progress.log',
+  sg: '../convert/sg_progress.log',
+  iona: '../convert/iona_progress.log'
 };
 
 const fs = require('fs');
 let data = [];
 let logTime = {
-  "nips": [],
-  "sg": [],
-  "iona": []
+  nips: [],
+  sg: [],
+  iona: []
 };
 
 const writeFile = (filename, content) => {
   fs.writeFile(filename, content, () => {});
 };
 
-console.log("\ttotalTime\tsequencedTime\tanalyzedTime\tondellTime\tconvertedTime\tincloudTime\tdownloadedTime\tjobsubmittedTime\tjobcompletedTime\tbacktodellTime");
+console.log(
+  '\ttotalTime\tsequencedTime\tanalyzedTime\tondellTime\tconvertedTime\tincloudTime\tdownloadedTime\tjobsubmittedTime\tjobcompletedTime\tbacktodellTime'
+);
 
 Object.keys(logJSONListPath).forEach(productType => {
   // console.log(productType + ' - ' + logJSONListPath[productType]); // key - value
@@ -52,5 +55,4 @@ Object.keys(logJSONListPath).forEach(productType => {
     data = JSON.parse(fs.readFileSync(logJSONListPath[productType], 'utf8'));
     data.forEach(el => convertFormat(productType, el));
   }
-
 });

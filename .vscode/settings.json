@@ -17,5 +17,6 @@
   "peacock.color": "#557c9b",
   "atlascode.jira.workingSite": {
     "baseUrlSuffix": "atlassian.net"
-  }
+  },
+  "liveServer.settings.port": 5501
 }
