@@ -1,3 +1,4 @@
+// mail when progress step time over cutoff-Time
 const cutOffSetttings = {
   nips: {
     totalTime: "09:39:57",
@@ -9,7 +10,7 @@ const cutOffSetttings = {
     downloadedTime: "01:00:58",
     jobsubmittedTime: "00:02:02",
     jobcompletedTime: "00:19:14",
-    backtodellTime: "00:33:12"
+    backtodellTime: "00:33:12",
   },
   iona: {
     totalTime: "16:20:15",
@@ -21,7 +22,7 @@ const cutOffSetttings = {
     downloadedTime: "00:12:19",
     jobsubmittedTime: "00:01:00",
     jobcompletedTime: "00:17:36",
-    backtodellTime: "00:16:31"
+    backtodellTime: "00:16:31",
   },
   sg: {
     totalTime: "16:09:05",
@@ -33,8 +34,80 @@ const cutOffSetttings = {
     downloadedTime: "00:06:24",
     jobsubmittedTime: "00:01:01",
     jobcompletedTime: "00:37:17",
-    backtodellTime: "00:03:52"
-  }
+    backtodellTime: "00:03:52",
+  },
+  ctdna: {
+    totalTime: "23:59:59",
+    sequencedTime: "23:59:59",
+    analyzedTime: "23:59:59",
+    ondellTime: "23:59:59",
+    convertedTime: "23:59:59",
+    incloudTime: "23:59:59",
+    downloadedTime: "23:59:59",
+    jobsubmittedTime: "23:59:59",
+    jobcompletedTime: "23:59:59",
+    backtodellTime: "23:59:59",
+  },
+  arrayv2: {
+    totalTime: "23:59:59",
+    sequencedTime: "23:59:59",
+    analyzedTime: "23:59:59",
+    ondellTime: "23:59:59",
+    convertedTime: "23:59:59",
+    incloudTime: "23:59:59",
+    downloadedTime: "23:59:59",
+    jobsubmittedTime: "23:59:59",
+    jobcompletedTime: "23:59:59",
+    backtodellTime: "23:59:59",
+  },
+  arrayv3: {
+    totalTime: "23:59:59",
+    sequencedTime: "23:59:59",
+    analyzedTime: "23:59:59",
+    ondellTime: "23:59:59",
+    convertedTime: "23:59:59",
+    incloudTime: "23:59:59",
+    downloadedTime: "23:59:59",
+    jobsubmittedTime: "23:59:59",
+    jobcompletedTime: "23:59:59",
+    backtodellTime: "23:59:59",
+  },
+  csv1: {
+    totalTime: "23:59:59",
+    sequencedTime: "23:59:59",
+    analyzedTime: "23:59:59",
+    ondellTime: "23:59:59",
+    convertedTime: "23:59:59",
+    incloudTime: "23:59:59",
+    downloadedTime: "23:59:59",
+    jobsubmittedTime: "23:59:59",
+    jobcompletedTime: "23:59:59",
+    backtodellTime: "23:59:59",
+  },
+  csv2: {
+    totalTime: "23:59:59",
+    sequencedTime: "23:59:59",
+    analyzedTime: "23:59:59",
+    ondellTime: "23:59:59",
+    convertedTime: "23:59:59",
+    incloudTime: "23:59:59",
+    downloadedTime: "23:59:59",
+    jobsubmittedTime: "23:59:59",
+    jobcompletedTime: "23:59:59",
+    backtodellTime: "23:59:59",
+  },
+  csv3: {
+    totalTime: "23:59:59",
+    sequencedTime: "23:59:59",
+    analyzedTime: "23:59:59",
+    ondellTime: "23:59:59",
+    convertedTime: "23:59:59",
+    incloudTime: "23:59:59",
+    downloadedTime: "23:59:59",
+    jobsubmittedTime: "23:59:59",
+    jobcompletedTime: "23:59:59",
+    backtodellTime: "23:59:59",
+  },
 };
 
 /**
@@ -44,11 +117,11 @@ const cutOffSetttings = {
  * @returns
  */
 function getJSONList(path, productTypeIndex = 0) {
-  const productType = ["nips", "sg", "iona"];
+  const productType = ["nips", "sg", "iona", "ctdna", "arrayv2", "arrayv3", "csv1", "csv2", "csv3"];
   let statusDetail;
   let productCount = 3;
   /* Asynchronous ajax */
-  let xhr = $.getJSON(path, function(data) {
+  let xhr = $.getJSON(path, function (data) {
     let fileTime = String(new Date(xhr.getResponseHeader("Last-Modified")));
     let res = fileTime.split(" ");
     let numberMonth = "JanFebMarAprMayJunJulAugSepOctNovDec".indexOf(res[1]) / 3 + 1;
@@ -64,7 +137,7 @@ function getJSONList(path, productTypeIndex = 0) {
     $("." + productType[productTypeIndex] + "-updatedTime").html("Last Updated Time: " + updatedTime);
 
     modifyDurationTime(data, productType[productTypeIndex] + "-");
-    setTimeout(function() {
+    setTimeout(function () {
       getJSONList(path, productTypeIndex);
     }, 60000);
     // console.log("getJSONList running");
@@ -78,13 +151,13 @@ function getJSONList(path, productTypeIndex = 0) {
  * @param {Product} productType
  */
 function modifyDurationTime(JSONList, productType) {
-  // console.log("test2");
+  // console.log(JSONList);
   let temp = JSONList;
   // temp = JSON.parse(JSONList);
   let newDate = new Date();
   let second = ("0" + newDate.getSeconds()).slice(-2);
 
-  Object.keys(temp).forEach(function(sampleRun, index) {
+  Object.keys(temp).forEach(function (sampleRun, index) {
     if (typeof temp[sampleRun].timeUsed == "undefined") {
       //adding time-used class and text if its type is undefined!
       $("#" + productType + "timeUsed" + index)
@@ -110,8 +183,15 @@ function modifyDurationTime(JSONList, productType) {
   });
 }
 
+/**
+ * Setting Pseudo time perSeconds at TotalTime, and also calculating
+ * Time Reversed from seconds to HH:MM:SS
+ * *Using localStorage to write and read Temp Pseudo Time, and let users know time is moving
+ * @param {*} productType EX:NIPS, SG, IONA...etc
+ * @param {*} objectName Step Name(TotalTime)
+ */
 function movePseudoClock(productType, objectName) {
-  setTimeout(function() {
+  setTimeout(function () {
     movePseudoClock(productType, objectName);
   }, 1000);
 
@@ -174,7 +254,7 @@ function movePseudoClock(productType, objectName) {
 }
 
 /**
- * select the description in every step
+ * Selecting the description in every step
  *
  * @param {*} iconInfo
  * @returns product and its step description
@@ -190,7 +270,7 @@ function selectStepID(iconInfo) {
       step6: "Transferred to Comp.Node",
       step7: "Job submitted",
       step8: "Job completed",
-      step9: "Report Transferred to Dell"
+      step9: "Report Transferred to Dell",
     },
     sg: {
       step1: "Sequenced",
@@ -201,7 +281,7 @@ function selectStepID(iconInfo) {
       step6: "Transferred to Comp.Node",
       step7: "Job submitted",
       step8: "Job completed",
-      step9: "Report Transferred to Dell"
+      step9: "Report Transferred to Dell",
     },
     iona: {
       step1: "Sequenced",
@@ -212,31 +292,91 @@ function selectStepID(iconInfo) {
       step6: "Transferred to Comp.Node",
       step7: "Job submitted",
       step8: "Job completed",
-      step9: "Report Transferred to Dell"
-    }
+      step9: "Report Transferred to Dell",
+    },
+    ctdna: {
+      step1: "Sequenced",
+      step2: "Analyzed",
+      step3: "Transferred to Dell",
+      step4: "Converted to Fastq",
+      step5: "Transferred to Cloud",
+      step6: "Transferred to Comp.Node",
+      step7: "Job submitted",
+      step8: "Job completed",
+      step9: "Report Transferred to Dell",
+    },
+    arrayv2: {
+      // step1: "Sequenced",
+      // step2: "Analyzed",
+      // step3: "Transferred to Dell",
+      // step4: "Converted to Fastq",
+      // step5: "Transferred to Cloud",
+      step6: "Transferred to Cloud",
+      step7: "Job submitted",
+      step8: "Job completed",
+      step9: "Report Transferred to NAS",
+    },
+    arrayv3: {
+      // step1: "Sequenced",
+      // step2: "Analyzed",
+      // step3: "Transferred to Dell",
+      // step4: "Converted to Fastq",
+      // step5: "Transferred to Cloud",
+      step6: "Transferred to Cloud",
+      step7: "Job submitted",
+      step8: "Job completed",
+      step9: "Report Transferred to NAS",
+    },
+    csv1: {
+      // step1: "Sequenced",
+      // step2: "Analyzed",
+      // step3: "Transferred to Dell",
+      // step4: "Converted to Fastq",
+      // step5: "Transferred to Cloud",
+      step6: "Transferred to Cloud",
+      step7: "Job submitted",
+      step8: "Job completed",
+      step9: "Report Transferred to NAS",
+    },
+    csv2: {
+      // step1: "Sequenced",
+      // step2: "Analyzed",
+      // step3: "Transferred to NAS",
+      // step4: "Converted to Fastq",
+      // step5: "Transferred to Cloud",
+      step6: "Transferred to Cloud",
+      step7: "Job submitted",
+      step8: "Job completed",
+      step9: "Report Transferred to NAS",
+    },
+    csv3: {
+      // step1: "Sequenced",
+      // step2: "Analyzed",
+      // step3: "Transferred to NAS",
+      // step4: "Converted to Fastq",
+      // step5: "Transferred to Cloud",
+      step6: "Transferred to Cloud",
+      step7: "Job submitted",
+      step8: "Job completed",
+      step9: "Report Transferred to NAS",
+    },
   };
 
   return productStep[iconInfo.productType][iconInfo.iconStepId];
 }
 
 /**
- * click progress icon and adding collapsed class and changing their info
+ * Clicking progress icon and adding collapsed class and changing their info
  *
  * @param {*} statusDetail
  */
 function clickProgressIcon(product) {
   // console.log(statusDetail);
 
-  $(".step-body").click(function(event) {
+  $(".step-body").click(function (event) {
     let data = JSON.parse(localStorage.getItem(product));
-    let id = $(this)
-      .parents("div")
-      .attr("id")
-      .split("-progressId")[1];
-    let productType = $(this)
-      .parents("div")
-      .attr("id")
-      .split("-progressId")[0];
+    let id = $(this).parents("div").attr("id").split("-progressId")[1];
+    let productType = $(this).parents("div").attr("id").split("-progressId")[0];
 
     $(this)
       .parents()
@@ -244,36 +384,27 @@ function clickProgressIcon(product) {
       .children()
       .empty(); //empty their class and content
 
-    let iconStepId = $(this)
-      .attr("id")
-      .split("icon-")[1];
+    let iconStepId = $(this).attr("id").split("icon-")[1];
     let iconInfo = {
       productType: productType,
       id: id,
-      iconStepId: iconStepId
+      iconStepId: iconStepId,
     };
+    // console.log(iconInfo, iconStepId);
 
     let selectedID = selectStepID(iconInfo);
     let collapaseContent = "Indicated Step: " + selectedID;
-    let currentStatus =
-      "Status: " +
-      $(this)
-        .parents("table")
-        .attr("data-step-status");
-    let currentStatusDetail = $(this)
-      .parents("td")
-      .attr("data-step");
+    let currentStatus = "Status: " + $(this).parents("table").attr("data-step-status");
+    let currentStatusDetail = $(this).parents("td").attr("data-step");
     let currentStatusTimeName = currentStatusDetail + "Time";
     let collapseStatusDetail = "";
     let currentStatusTime = data[id][currentStatusTimeName];
     let alarmTime = cutOffSetttings[product][currentStatusTimeName];
-    console.log(alarmTime);
+    // console.log(alarmTime);
 
-    let sampleRunNumber = $(this)
-      .parents(".div-progress")
-      .find(".row-sampleRun").length;
+    let sampleRunNumber = $(this).parents(".div-progress").find(".row-sampleRun").length;
 
-    Object.keys(data[id]).some(function(key) {
+    Object.keys(data[id]).some(function (key) {
       //loop to find progress key and value
       // console.log(id);
       // console.log(key);
@@ -353,11 +484,11 @@ function clickProgressIcon(product) {
  * @param {number} [productTypeIndex=1]
  */
 function getProgressStatus(progressContent = data, productTypeIndex = 1) {
-  const productType = ["#nips", "#sg", "#iona"];
+  const productType = ["#nips", "#sg", "#iona", "#ctdna", "#arrayv2", "#arrayv3", "#csv1", "#csv2", "#csv3"];
   let regexp = /(\d+)\/(\d+)/;
 
   //NOTE To determine which run-stauts was Pending, Pass, Fail and Active and show in the collapsed content
-  progressContent.forEach(function(sampleRun, index) {
+  progressContent.forEach(function (sampleRun, index) {
     $(productType[productTypeIndex] + "-runId" + index).text(sampleRun.runid);
 
     if (sampleRun.closed == 0) {
@@ -378,7 +509,7 @@ function getProgressStatus(progressContent = data, productTypeIndex = 1) {
       if (sampleRun.error == 1) {
         //fail progress info added
         let failStep;
-        Object.keys(sampleRun).some(function(key) {
+        Object.keys(sampleRun).some(function (key) {
           //loop to find "fail" progress key and value
           if (sampleRun[key] == 0 && key != "error" && key != "closed") {
             failStep = key;
@@ -395,7 +526,7 @@ function getProgressStatus(progressContent = data, productTypeIndex = 1) {
         let flag = 0;
         // console.log(sampleRun);
 
-        Object.keys(sampleRun).some(function(key) {
+        Object.keys(sampleRun).some(function (key) {
           if (sampleRun[key] == 0 && key != "error" && key != "closed" && flag != 1) {
             //active
             // console.log(key + '=' + sampleRun[key]);
@@ -445,12 +576,12 @@ function getProgressStatus(progressContent = data, productTypeIndex = 1) {
  * @returns
  */
 function getStatusDetail(progressContent = data, productTypeIndex = 1) {
-  const productType = ["#nips", "#sg", "#iona"];
+  const productType = ["#nips", "#sg", "#iona", "#ctdna", "#arrayv2", "#arrayv3", "#csv1", "#csv2", "#csv3"];
   let statusDetail = [];
 
   let regexp = /(\d+)\/(\d+)/;
 
-  progressContent.forEach(function(sampleRun, index) {
+  progressContent.forEach(function (sampleRun, index) {
     let incloudNumber = 0;
     let downloadedNumber = 0;
     let jobsubmittedNumber = 0;
@@ -488,7 +619,7 @@ function getStatusDetail(progressContent = data, productTypeIndex = 1) {
       incloud: incloudNumber,
       downloaded: downloadedNumber,
       jobsubmitted: jobsubmittedNumber,
-      jobcompleted: jobcompletedNumber
+      jobcompleted: jobcompletedNumber,
     });
   });
   // console.log(statusDetail);
@@ -496,7 +627,7 @@ function getStatusDetail(progressContent = data, productTypeIndex = 1) {
 }
 
 function fixScroll() {
-  window.onscroll = function() {
+  window.onscroll = function () {
     var header = document.getElementById("scroll-fix");
     var sticky = header.offsetTop;
 
@@ -511,7 +642,7 @@ function fixScroll() {
 }
 
 function fixStepCircle(stepArray) {
-  $(".step-body").click(function(event) {
+  $(".step-body").click(function (event) {
     if ($(this).hasClass("step-choose-circle")) {
       $(this).removeClass("step-choose-circle");
       return;
@@ -535,7 +666,8 @@ $(document).ready(function myfunction() {
   const JSONListPath = [
     "../NIPS/nips_progress_tail.json",
     "../SG/sg_progress_tail.json",
-    "../IONA/iona_progress_tail.json"
+    "../IONA/iona_progress_tail.json",
+    "../ctDNA/ctdna_progress_tail.json",
   ];
 
   if (product == "NIPS") {
@@ -544,6 +676,8 @@ $(document).ready(function myfunction() {
     getJSONList(JSONListPath[1], 1);
   } else if (product == "IONA") {
     getJSONList(JSONListPath[2], 2);
+  } else if (product == "ctDNA") {
+    getJSONList(JSONListPath[3], 3);
   }
 
   clickProgressIcon(product.toLowerCase());

@@ -1,0 +1,1 @@
+[["{\"iona\":{\"runid\":\"Auto_user_YG3-1200-IONA_Test_20200218-B\",\"node\":\"totalTime\",\"nodeTime\":\"16:52:33\",\"totalTime\":\"16:52:33\",\"alarmTime\":\"16:20:15\",\"count\":4}}","{\"iona\":{\"runid\":\"Auto_user_YG3-1200-IONA_Test_20200218-B\",\"node\":\"sequencedTime\",\"nodeTime\":\"16:23:53\",\"totalTime\":\"16:52:33\",\"alarmTime\":\"15:55:22\",\"count\":4}}"]]

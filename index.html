@@ -26,6 +26,7 @@
   </head>
 
   <body>
+    <!-- Header section -->
     <nav class="navbar navbar-expand-sm navbar-light bg-white">
       <div class="container">
         <a class="navbar-brand" href="./index.html"
@@ -44,20 +45,18 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <!-- Menu List -->
           <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item active mr-2">
-              <a class="nav-link" href="./index.html">首頁 <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active mr-2">
+            <li class="nav-item active mr-auto">
               <a class="nav-link" href="./NIPS/index.html">NIPS <span class="sr-only"></span></a>
             </li>
-            <li class="nav-item active mr-2">
+            <li class="nav-item mr-auto">
               <a class="nav-link" href="./SG/index.html">SG <span class="sr-only"></span></a>
             </li>
-            <li class="nav-item active mr-2">
+            <li class="nav-item mr-auto">
               <a class="nav-link" href="./IONA/index.html">IONA <span class="sr-only"></span></a>
             </li>
-            <li class="nav-item dropdown active" mr-2>
+            <li class="nav-item dropdown" mr-auto>
               <a
                 class="nav-link dropdown-toggle"
                 href="#"
@@ -65,14 +64,14 @@
                 data-toggle="dropdown"
                 aria-haspopup="true"
                 aria-expanded="false"
-                >Array</a
+                >aCGH</a
               >
               <div class="dropdown-menu" aria-labelledby="dropdownId">
-                <a class="dropdown-item" href="#">V.2</a>
-                <a class="dropdown-item" href="#">V.3</a>
+                <a class="dropdown-item" href="./ArrayV2/index.html">v2.0</a>
+                <a class="dropdown-item" href="./ArrayV3/index.html">v3.0</a>
               </div>
             </li>
-            <li class="nav-item dropdown active mr-2">
+            <li class="nav-item dropdown mr-auto">
               <a
                 class="nav-link dropdown-toggle"
                 href="#"
@@ -83,10 +82,29 @@
                 >Carrier Scan</a
               >
               <div class="dropdown-menu" aria-labelledby="dropdownId">
-                <a class="dropdown-item" href="#">V.1</a>
-                <a class="dropdown-item" href="#">V.2</a>
-                <a class="dropdown-item" href="#">V.3</a>
+                <a class="dropdown-item" href="./CarrierScanV1/index.html">v1.0</a>
+                <a class="dropdown-item" href="./CarrierScanV2/index.html">v2.0</a>
+                <a class="dropdown-item" href="./CarrierScanV3/index.html">v3.0</a>
               </div>
+            </li>
+            <li class="nav-item dropdown mr-auto">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="dropdownId"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Baby Scan</a
+              >
+              <div class="dropdown-menu" aria-labelledby="dropdownId">
+                <a class="dropdown-item" href="./BabyScanV1/index.html">v1.0</a>
+                <a class="dropdown-item" href="./BabyScanV2/index.html">v2.0</a>
+                <a class="dropdown-item" href="./BabyScanV3/index.html">v3.0</a>
+              </div>
+            </li>
+            <li class="nav-item mr-auto">
+              <a class="nav-link" href="./ctDNA/index.html">ctDNA <span class="sr-only"></span></a>
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
@@ -106,37 +124,110 @@
 
     <div class="rainbow-box"></div>
 
+    <!-- Content  -->
     <section class="container-fluid py-5 text-white bg-light" style="position: relative;">
       <div class="row">
+        <!-- Left Image -->
         <div
           class="col-md-7 bg-cover"
           style="
-                position: absolute; top:0; bottom:0;
-                background-repeat: no-repeat;
-                background-size: cover;
-                height:100%;
-                width:100%;
-                background-image: url('./images/healthCare.jpg')"
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%;
+            width: 100%;
+            background-image: url('./images/healthCare.jpg');
+          "
         ></div>
       </div>
 
+      <!-- Right Btn content -->
       <div class="container">
         <div class="row justify-content-end text-md-dark">
-          <div class="col-md-4 row justify-content-center">
+          <div class="col-md-4 row justify-content-center d-flex">
             <h3 class="mb-4" style="text-align: center;">Report-Tracking System</h3>
-            <a href="./NIPS/index.html" class="col-12 col-md-10 btn btn-warning mb-4 mt-2 py-2">NIPS</a>
-            <a href="./SG/index.html" class="col-12 col-md-10 btn btn-warning mb-4 mt-2 py-2">SG</a>
-            <a href="./IONA/index.html" class="col-12 col-md-10 btn btn-warning mb-4 mt-2 py-2">IONA</a>
-            <a href="#" class="col-12 col-md-10 btn btn-warning mb-4 mt-2 py-2">Array V2</a>
-            <a href="#" class="col-12 col-md-10 btn btn-warning mb-4 mt-2 py-2">Array V3</a>
-            <a href="#" class="col-12 col-md-10 btn btn-warning mb-4 mt-2 py-2">Carrier Scan V1</a>
-            <a href="#" class="col-12 col-md-10 btn btn-warning mb-4 mt-2 py-2">Carrier Scan V2</a>
-            <a href="#" class="col-12 col-md-10 btn btn-warning mb-4 mt-2 py-2">Carrier Scan V3</a>
+            <div class="col-12 col-md-10 mb-4 mt-2 dropdown">
+              <a href="./NIPS/index.html" class="btn btn-warning">NIPS</a>
+            </div>
+            <div class="col-12 col-md-10 mb-4 mt-2 dropdown">
+              <a href="./SG/index.html" class="btn btn-warning">SG</a>
+            </div>
+            <div class="col-12 col-md-10 mb-4 mt-2 dropdown">
+              <a href="./IONA/index.html" class="btn btn-warning">IONA</a>
+            </div>
+
+            <div class="col-12 col-md-10 mb-4 mt-2 dropdown">
+              <a
+                class="dropdown-toggle btn btn-warning"
+                href="#"
+                role="button"
+                id="dropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                aCGH
+              </a>
+
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="./ArrayV2/index.html">v2.0</a>
+                <a class="dropdown-item" href="./ArrayV3/index.html">v3.0</a>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-10 mb-4 mt-2 dropdown">
+              <a
+                class="dropdown-toggle btn btn-warning"
+                href="#"
+                role="button"
+                id="dropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Carrier Scan
+              </a>
+
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="./CarrierScanV1/index.html">v1.0</a>
+                <a class="dropdown-item" href="./CarrierScanV2/index.html">v2.0</a>
+                <a class="dropdown-item" href="./CarrierScanV3/index.html">v3.0</a>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-10 mb-4 mt-2 dropdown">
+              <a
+                class="dropdown-toggle btn btn-warning"
+                href="#"
+                role="button"
+                id="dropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Baby Scan
+              </a>
+
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="./BabyScanV1/index.html">v1.0</a>
+                <a class="dropdown-item" href="./BabyScanV2/index.html">v2.0</a>
+                <a class="dropdown-item" href="./BabyScanV3/index.html">v3.0</a>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-10 mb-4 mt-2 dropdown">
+              <a href="./ctDNA/index.html" class="btn btn-warning">ctDNA</a>
+            </div>
+
+            <div class="d-inline-block py-5 w-100"></div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Footer Section -->
     <footer class="container-fluid bg-secondary py-3 text-center">
       <div class="container py-1">
         <ul class="list-unstyled my-1">

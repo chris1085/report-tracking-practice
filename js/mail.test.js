@@ -14,15 +14,15 @@ function sendMail(content, productType, flag) {
     return;
   }
 
-  let subjectTitle = 'Report-Tracking System Notify - ' + productType.toUpperCase();
+  let subjectTitle = "Report-Tracking System Notify - " + productType.toUpperCase();
 
   //引用 nodemailer
-  let nodemailer = require('nodemailer');
+  let nodemailer = require("nodemailer");
 
   let maillist = {
     nips: [
       // 'bmi.hcy@sofivagenomics.com.tw',
-      'bmi.cfc@sofivagenomics.com.tw'
+      "bmi.cfc@sofivagenomics.com.tw",
       // 'tklin@sofivagenomics.com.tw',
       // 'yichu@sofivagenomics.com.tw',
       // 'tsuling@sofivagenomics.com.tw',
@@ -32,7 +32,7 @@ function sendMail(content, productType, flag) {
     ],
     sg: [
       // 'bmi.hcy@sofivagenomics.com.tw',
-      'bmi.cfc@sofivagenomics.com.tw'
+      "bmi.cfc@sofivagenomics.com.tw",
       // 'tklin@sofivagenomics.com.tw',
       // 'yichu@sofivagenomics.com.tw',
       // 'tsuling@sofivagenomics.com.tw',
@@ -42,42 +42,71 @@ function sendMail(content, productType, flag) {
     ],
     iona: [
       // 'bmi.hcy@sofivagenomics.com.tw',
-      'bmi.cfc@sofivagenomics.com.tw'
+      "bmi.cfc@sofivagenomics.com.tw",
       // 'tklin@sofivagenomics.com.tw',
       // 'yichu@sofivagenomics.com.tw',
       // 'tsuling@sofivagenomics.com.tw',
       // 'iona@sofivagenomics.com.tw',
       // 'yuchen@phoebusgenetics.com.tw',
       // 'tehyang.hwa@sofivagenomics.com.tw'
-    ]
+    ],
   };
 
   let sendList = maillist[productType];
 
   //宣告發信物件
   let transporter = nodemailer.createTransport({
-    service: 'Gmail',
+    // host: "smtp.gmail.com",
+    // port: 587,
+    // secure: false, // upgrade later with STARTTLS
+    // auth: {
+    //   user: "bmi@sofivagenomics.com.tw",
+    //   pass: "sofiva6615",
+    // },
+    host: "smtp.gmail.com",
+    service: "gmail",
+    port: 465,
+    secure: true,
     auth: {
-      user: 'sofiva.bmi@gmail.com',
-      pass: 'zabvtgxrhahvjjqh'
+      type: "OAuth2",
+      user: "bmi@sofivagenomics.com.tw",
+      clientId: "941225549147-7ug8m79mq97mki24g0jb304u8ehctu24.apps.googleusercontent.com",
+      clientSecret: "Jc1-IAnYRrQKT-k32fcQwsRs",
+      refreshToken:
+        "1//04FvczKRKa9FhCgYIARAAGAQSNwF-L9IrsjxCIkMHUHZdBBqalGoR4ArYP3GgSv-vKCOGXoQsVlmkiEpWJFIOmHoxUtbI2QE9kz0",
+    },
+
+    // service: 'Gmail',
+    // auth: {
+    //   user: 'sofiva.bmi@gmail.com',
+    //   pass: 'zabvtgxrhahvjjqh'
+    // }
+  });
+
+  // verify connection configuration
+  transporter.verify(function (error, success) {
+    if (error) {
+      console.log(error);
+    } else {
+      console.log("Server is ready to take our messages");
     }
   });
 
   let options = {
     //寄件者
-    from: 'sofiva.bmi@gmail.com',
+    from: "bmi@sofivagenomics.com.tw",
     //收件者
     to: sendList,
     //副本
     // cc: 'bmi.cfc@sofivagenomics.com.tw',
     //密件副本
-    bcc: 'bmi.cfc@sofivagenomics.com.tw',
+    bcc: "bmi.cfc@sofivagenomics.com.tw",
     //主旨
     subject: subjectTitle, // Subject line
     //純文字
-    text: 'Hello world!', // plaintext body
+    text: "Hello world!", // plaintext body
     //嵌入 html 的內文
-    html: content
+    html: "test",
 
     // '<h2>Why and How</h2> <p>The <a href="http://en.wikipedia.org/wiki/Lorem_ipsum" title="Lorem ipsum - Wikipedia, the free encyclopedia">Lorem ipsum</a> text is typically composed of pseudo-Latin words. It is commonly used as placeholder text to examine or demonstrate the visual effects of various graphic design. Since the text itself is meaningless, the viewers are therefore able to focus on the overall layout without being attracted to the text.</p>',
     //附件檔案
@@ -96,11 +125,11 @@ function sendMail(content, productType, flag) {
   };
 
   //發送信件方法
-  transporter.sendMail(options, function(error, info) {
+  transporter.sendMail(options, function (error, info) {
     if (error) {
       console.log(error);
     } else {
-      console.log('訊息發送: ' + info.response);
+      console.log("訊息發送: " + info.response);
     }
   });
 }
@@ -132,7 +161,7 @@ function filterSampleRun(sample, productType) {
       downloadedTime: 3658,
       jobsubmittedTime: 122,
       jobcompletedTime: 1154,
-      backtodellTime: 1992
+      backtodellTime: 1992,
     },
     iona: {
       totalTime: 58815,
@@ -144,7 +173,7 @@ function filterSampleRun(sample, productType) {
       downloadedTime: 739,
       jobsubmittedTime: 60,
       jobcompletedTime: 1056,
-      backtodellTime: 991
+      backtodellTime: 991,
     },
     sg: {
       totalTime: 58145,
@@ -156,23 +185,23 @@ function filterSampleRun(sample, productType) {
       downloadedTime: 384,
       jobsubmittedTime: 61,
       jobcompletedTime: 2237,
-      backtodellTime: 232
-    }
+      backtodellTime: 232,
+    },
   };
   // console.log(sample);
 
   for (const key in sample) {
-    let durationName = key + 'Time';
+    let durationName = key + "Time";
 
     //To find without step name. If its not match with step, ignore it.
-    if (key == 'runid' || key == 'closed' || key == 'error' || key == 'timeUsed') {
+    if (key == "runid" || key == "closed" || key == "error" || key == "timeUsed") {
       continue;
     } else if (key.match(/(.*)Time$/)) {
       // console.log(sample[key], key);
 
-      let sampleHours = parseInt(sample[key].split(':')[0]);
-      let sampleMins = parseInt(sample[key].split(':')[1]);
-      let sampleSecs = parseInt(sample[key].split(':')[2]);
+      let sampleHours = parseInt(sample[key].split(":")[0]);
+      let sampleMins = parseInt(sample[key].split(":")[1]);
+      let sampleSecs = parseInt(sample[key].split(":")[2]);
       let totalSecs = sampleHours * 60 * 60 + sampleMins * 60 + sampleSecs;
       // console.log(sampleHours, sampleMins, sampleSecs, totalSecs);
 
@@ -182,7 +211,7 @@ function filterSampleRun(sample, productType) {
 
       let cutOffTime = new Date(cutOffSetttings[productType][key] * 1000).toISOString().substr(11, 8);
 
-      if (sample.closed != '1' && totalSecs > cutOffSetttings[productType][key]) {
+      if (sample.closed != "1" && totalSecs > cutOffSetttings[productType][key]) {
         let runid = sample.runid;
         let temp = {
           [productType]: {
@@ -191,8 +220,8 @@ function filterSampleRun(sample, productType) {
             nodeTime: sample[key],
             totalTime: sample.totalTime,
             alarmTime: cutOffTime,
-            count: 1
-          }
+            count: 1,
+          },
         };
         // console.log(temp);
 
@@ -216,7 +245,7 @@ function filterSampleRun(sample, productType) {
  * @returns
  */
 function writeMailContent(data, productType) {
-  let flag = false;
+  let flag = true;
   let product = productType.toUpperCase();
   let content = `
     <h2>Report-Tracking System Notify</h2>
@@ -237,23 +266,23 @@ function writeMailContent(data, productType) {
           <th style = "border-bottom: 1px solid #ddd; background-color: #6bc541;"> Elapsed Time </th>
         </tr>`;
 
-  for (let index = 0; index < data.length; index++) {
-    // console.log(data[index]);
-    for (let stepIndex = 0; stepIndex < data[index].length; stepIndex++) {
-      // console.log(data[index][stepIndex]);
-      let mailInfo = JSON.parse(data[index][stepIndex]);
-      if (typeof mailInfo[productType] != 'undefined') {
-        content += `\n<tr>\n`;
-        content += `<td align='center' style='border-bottom: 1px solid #ddd; padding:10px 0px;'>${mailInfo[productType].runid}</td>\n`;
-        content += `<td align='center' style='border-bottom: 1px solid #ddd;'>${mailInfo[productType].node}</td>\n`;
-        content += `<td align='center' style='border-bottom: 1px solid #ddd;'>${mailInfo[productType].nodeTime}</td>\n`;
-        content += `<td align='center' style='border-bottom: 1px solid #ddd;'>${mailInfo[productType].alarmTime}</td>\n`;
-        content += `<td align='center' style='border-bottom: 1px solid #ddd;'>${mailInfo[productType].totalTime}</td>\n`;
-        content += `</tr>\n`;
-        flag = true;
-      }
-    }
-  }
+  // for (let index = 0; index < data.length; index++) {
+  //   // console.log(data[index]);
+  //   for (let stepIndex = 0; stepIndex < data[index].length; stepIndex++) {
+  //     // console.log(data[index][stepIndex]);
+  //     let mailInfo = JSON.parse(data[index][stepIndex]);
+  //     if (typeof mailInfo[productType] != "undefined") {
+  //       content += `\n<tr>\n`;
+  //       content += `<td align='center' style='border-bottom: 1px solid #ddd; padding:10px 0px;'>${mailInfo[productType].runid}</td>\n`;
+  //       content += `<td align='center' style='border-bottom: 1px solid #ddd;'>${mailInfo[productType].node}</td>\n`;
+  //       content += `<td align='center' style='border-bottom: 1px solid #ddd;'>${mailInfo[productType].nodeTime}</td>\n`;
+  //       content += `<td align='center' style='border-bottom: 1px solid #ddd;'>${mailInfo[productType].alarmTime}</td>\n`;
+  //       content += `<td align='center' style='border-bottom: 1px solid #ddd;'>${mailInfo[productType].totalTime}</td>\n`;
+  //       content += `</tr>\n`;
+  //       flag = true;
+  //     }
+  //   }
+  // }
 
   content += `\n</table>`;
   content += `<div  style="padding-top: 100px; display:block">
@@ -279,7 +308,7 @@ function compareMailContent(alertData, writeContent, productType, checkCount) {
   let matchConut = 0;
   // console.log(writeContent);
 
-  if (typeof writeContent.length == 'undefined') {
+  if (typeof writeContent.length == "undefined") {
     return false;
   } else {
     let simpleAlert = [];
@@ -288,9 +317,9 @@ function compareMailContent(alertData, writeContent, productType, checkCount) {
     for (let index = 0; index < alertData.length; index++) {
       for (let stepIndex = 0; stepIndex < alertData[index].length; stepIndex++) {
         let alertDataJSON = JSON.parse(alertData[index][stepIndex]);
-        simpleAlert.push(alertDataJSON[productType].runid + '_' + alertDataJSON[productType].node);
-        simpleAlertJSON[alertDataJSON[productType].runid + '_' + alertDataJSON[productType].node] =
-          alertDataJSON[productType].runid + '_' + alertDataJSON[productType].node;
+        simpleAlert.push(alertDataJSON[productType].runid + "_" + alertDataJSON[productType].node);
+        simpleAlertJSON[alertDataJSON[productType].runid + "_" + alertDataJSON[productType].node] =
+          alertDataJSON[productType].runid + "_" + alertDataJSON[productType].node;
       }
     }
 
@@ -300,7 +329,7 @@ function compareMailContent(alertData, writeContent, productType, checkCount) {
       for (let stepIndex = 0; stepIndex < writeContent[index].length; stepIndex++) {
         let writeContentJSON = JSON.parse(writeContent[index][stepIndex]);
 
-        let simpleKeyName = writeContentJSON[productType].runid + '_' + writeContentJSON[productType].node;
+        let simpleKeyName = writeContentJSON[productType].runid + "_" + writeContentJSON[productType].node;
         // console.log(writeContentJSON);
 
         if (simpleKeyName === simpleAlertJSON[simpleKeyName]) {
@@ -378,17 +407,17 @@ function compareMailContent(alertData, writeContent, productType, checkCount) {
 }
 
 const webJSONListPath = {
-  nips: '../NIPS/nips_progress_tail.json',
-  sg: '../SG/sg_progress_tail.json',
-  iona: '../IONA/iona_progress_tail.json'
+  nips: "../NIPS/nips_progress_tail.json",
+  sg: "../SG/sg_progress_tail.json",
+  iona: "../IONA/iona_progress_tail.json",
 };
 
-let cron = require('node-cron');
+// let cron = require("node-cron");
 let data = [];
 let alertData = [];
 let alertCompareData = {};
 let sampleRun;
-const fs = require('fs');
+const fs = require("fs");
 const writeFile = (filename, content) => {
   fs.writeFile(filename, content, () => {});
 };
@@ -397,65 +426,73 @@ const writeFile = (filename, content) => {
 
 // cron.schedule('0 */1 * * *', function() {
 let datetime = new Date();
-console.log('running a task every minute - ' + datetime);
-data.nips = JSON.parse(fs.readFileSync(webJSONListPath.nips).toString());
-data.sg = JSON.parse(fs.readFileSync(webJSONListPath.sg).toString());
-data.iona = JSON.parse(fs.readFileSync(webJSONListPath.iona).toString());
+// console.log("running a task every minute - " + datetime);
+// data.nips = JSON.parse(fs.readFileSync(webJSONListPath.nips).toString());
+// data.sg = JSON.parse(fs.readFileSync(webJSONListPath.sg).toString());
+// data.iona = JSON.parse(fs.readFileSync(webJSONListPath.iona).toString());
 
-for (let productType in data) {
-  alertData = [];
+testJson = [
+  [{ runid: "testID", node: "testNode", nodeTime: "87:87:87", alarmTime: "88:88:88", totalTime: "89:89:89" }],
+];
 
-  for (let index = 0; index < data[productType].length; index++) {
-    if (data[productType][index].closed == '0' || data[productType][index].closed == '') {
-      let sample = data[productType][index];
-      sampleRun = filterSampleRun(sample, productType);
+testJSONstr = JSON.stringify(testJson);
 
-      if (typeof sampleRun != 'undefined' && sampleRun.length > 0) {
-        // console.log(sampleRun, 'aaa', sampleRun.length);
-        alertData.push(sampleRun);
-      }
-    }
-  }
+writeMailContent(testJson, "sg");
 
-  let writeContentPath = '../mailCheckBox/' + productType + '_mailContent.txt';
-  let writeCheckPath = '../mailCheckBox/' + productType + '_mailCheck.txt';
-  console.log(productType, alertData);
-  console.log('################');
+// for (let productType in data) {
+//   alertData = [];
 
-  let flag = 0;
-  if (fs.existsSync(writeContentPath) && fs.existsSync(writeCheckPath) && alertData.length > 0) {
-    let count = parseInt(fs.readFileSync(writeCheckPath).toString());
-    let writeContent = JSON.parse(fs.readFileSync(writeContentPath).toString());
-    console.log('WriteContent');
+//   for (let index = 0; index < data[productType].length; index++) {
+//     if (data[productType][index].closed == "0" || data[productType][index].closed == "") {
+//       let sample = data[productType][index];
+//       sampleRun = filterSampleRun(sample, productType);
 
-    console.log(writeContent);
+//       if (typeof sampleRun != "undefined" && sampleRun.length > 0) {
+//         // console.log(sampleRun, 'aaa', sampleRun.length);
+//         alertData.push(sampleRun);
+//       }
+//     }
+//   }
 
-    let compareResult = compareMailContent(alertData, writeContent, productType, count);
-    writeMailContent(compareResult, productType);
-    writeFile(writeContentPath, JSON.stringify(writeContent));
+//   let writeContentPath = "../mailCheckBox/" + productType + "_mailContent.txt";
+//   let writeCheckPath = "../mailCheckBox/" + productType + "_mailCheck.txt";
+//   console.log(productType, alertData);
+//   console.log("################");
 
-    // console.log(compareResult);
-    // console.log(alertData);
+//   let flag = 0;
+//   if (fs.existsSync(writeContentPath) && fs.existsSync(writeCheckPath) && alertData.length > 0) {
+//     let count = parseInt(fs.readFileSync(writeCheckPath).toString());
+//     let writeContent = JSON.parse(fs.readFileSync(writeContentPath).toString());
+//     console.log("WriteContent");
 
-    // if (compareResult == true && count <= 2) {
-    //   writeMailContent(alertData, productType);
-    //   count += 1;
-    //   writeFile(writeContentPath, JSON.stringify(alertData));
-    //   writeFile(writeCheckPath, count);
-    // } else if (compareResult == true && count > 2) {
-    //   count += 1;
-    //   writeFile(writeCheckPath, count);
-    // } else if (compareResult == false) {
-    //   writeMailContent(alertData, productType);
-    //   writeFile(writeContentPath, JSON.stringify(alertData));
-    //   writeFile(writeCheckPath, 1);
-    // }
-  } else {
-    if (alertData != '' && alertData.length > 0) {
-      writeFile(writeContentPath, JSON.stringify(alertData));
-      writeFile(writeCheckPath, 1);
-      writeMailContent(alertData, productType);
-    }
-  }
-}
+//     console.log(writeContent);
+
+//     let compareResult = compareMailContent(alertData, writeContent, productType, count);
+//     // writeMailContent(compareResult, productType);
+//     // writeFile(writeContentPath, JSON.stringify(writeContent));
+
+//     // console.log(compareResult);
+//     // console.log(alertData);
+
+//     // if (compareResult == true && count <= 2) {
+//     //   writeMailContent(alertData, productType);
+//     //   count += 1;
+//     //   writeFile(writeContentPath, JSON.stringify(alertData));
+//     //   writeFile(writeCheckPath, count);
+//     // } else if (compareResult == true && count > 2) {
+//     //   count += 1;
+//     //   writeFile(writeCheckPath, count);
+//     // } else if (compareResult == false) {
+//     //   writeMailContent(alertData, productType);
+//     //   writeFile(writeContentPath, JSON.stringify(alertData));
+//     //   writeFile(writeCheckPath, 1);
+//     // }
+//   } else {
+//     if (alertData != "" && alertData.length > 0) {
+//       writeFile(writeContentPath, JSON.stringify(alertData));
+//       writeFile(writeCheckPath, 1);
+//       writeMailContent(alertData, productType);
+//     }
+//   }
+// }
 // });

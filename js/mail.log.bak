@@ -1,0 +1,1003 @@
+nohup: ignoring input
+Before running a task every minute
+running a task every minute
+nohup: ignoring input
+internal/modules/cjs/loader.js:803
+    throw err;
+    ^
+
+Error: Cannot find module '/data1/lampp/htdocs/report-tracking/js'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:800:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:693:27)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:1051:12)
+    at internal/main/run_main_module.js:16:11 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+nohup: ignoring input
+Before running a task every minute - Fri Feb 14 2020 15:10:53 GMT+0800 (Taipei Standard Time)
+running a task every minute - Fri Feb 14 2020 15:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Fri Feb 14 2020 15:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Fri Feb 14 2020 15:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Fri Feb 14 2020 16:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Fri Feb 14 2020 16:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Fri Feb 14 2020 16:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Fri Feb 14 2020 16:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Fri Feb 14 2020 17:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Fri Feb 14 2020 17:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Fri Feb 14 2020 17:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Fri Feb 14 2020 17:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Fri Feb 14 2020 18:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Fri Feb 14 2020 18:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Fri Feb 14 2020 18:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Fri Feb 14 2020 18:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Fri Feb 14 2020 19:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Fri Feb 14 2020 19:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Fri Feb 14 2020 19:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Fri Feb 14 2020 19:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Fri Feb 14 2020 20:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Fri Feb 14 2020 20:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Fri Feb 14 2020 20:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Fri Feb 14 2020 20:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Fri Feb 14 2020 21:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Fri Feb 14 2020 21:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Fri Feb 14 2020 21:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Fri Feb 14 2020 21:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Fri Feb 14 2020 22:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Fri Feb 14 2020 22:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Fri Feb 14 2020 22:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Fri Feb 14 2020 22:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Fri Feb 14 2020 23:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Fri Feb 14 2020 23:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Fri Feb 14 2020 23:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Fri Feb 14 2020 23:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 00:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 00:15:00 GMT+0800 (Taipei Standard Time)
+訊息發送: 250 2.0.0 OK  1581697719 c19sm7371802pgh.8 - gsmtp
+running a task every minute - Sat Feb 15 2020 00:30:00 GMT+0800 (Taipei Standard Time)
+訊息發送: 250 2.0.0 OK  1581698618 h13sm7300452pjc.9 - gsmtp
+running a task every minute - Sat Feb 15 2020 00:45:00 GMT+0800 (Taipei Standard Time)
+訊息發送: 250 2.0.0 OK  1581699517 f81sm7284657pfa.118 - gsmtp
+running a task every minute - Sat Feb 15 2020 01:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 01:15:00 GMT+0800 (Taipei Standard Time)
+SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>)
+    at Task.execution (/data1/lampp/htdocs/report-tracking/js/mail.js:344:20)
+    at /data1/lampp/htdocs/report-tracking/node_modules/node-cron/src/task.js:52:23
+    at new Promise (<anonymous>)
+    at Task.update (/data1/lampp/htdocs/report-tracking/node_modules/node-cron/src/task.js:50:7)
+    at Timeout.ScheduledTask.task [as _onTimeout] (/data1/lampp/htdocs/report-tracking/node_modules/node-cron/src/scheduled-task.js:86:10)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+running a task every minute - Sat Feb 15 2020 01:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 01:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 02:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 02:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 02:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 02:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 03:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 03:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 03:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 03:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 04:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 04:15:00 GMT+0800 (Taipei Standard Time)
+訊息發送: 250 2.0.0 OK  1581712118 i2sm7201993pjs.21 - gsmtp
+running a task every minute - Sat Feb 15 2020 04:30:00 GMT+0800 (Taipei Standard Time)
+訊息發送: 250 2.0.0 OK  1581713017 y76sm8160443pfc.87 - gsmtp
+running a task every minute - Sat Feb 15 2020 04:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 05:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 05:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 05:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 05:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 06:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 06:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 06:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 06:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 07:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 07:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 07:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 07:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 08:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 08:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 08:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 08:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 09:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 09:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 09:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 09:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 10:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 10:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 10:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 10:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 11:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 11:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 11:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 11:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 12:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 12:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 12:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 12:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 13:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 13:15:00 GMT+0800 (Taipei Standard Time)
+SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>)
+    at Task.execution (/data1/lampp/htdocs/report-tracking/js/mail.js:344:20)
+    at /data1/lampp/htdocs/report-tracking/node_modules/node-cron/src/task.js:52:23
+    at new Promise (<anonymous>)
+    at Task.update (/data1/lampp/htdocs/report-tracking/node_modules/node-cron/src/task.js:50:7)
+    at Timeout.ScheduledTask.task [as _onTimeout] (/data1/lampp/htdocs/report-tracking/node_modules/node-cron/src/scheduled-task.js:86:10)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+running a task every minute - Sat Feb 15 2020 13:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 13:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 14:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 14:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 14:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 14:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 15:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 15:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 15:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 15:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 16:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 16:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 16:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 16:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 17:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 17:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 17:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 17:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 18:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 18:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 18:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 18:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 19:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 19:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 19:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 19:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 20:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 20:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 20:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 20:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 21:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 21:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 21:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 21:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 22:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 22:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 22:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 22:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 23:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 23:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 23:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sat Feb 15 2020 23:45:00 GMT+0800 (Taipei Standard Time)
+訊息發送: 250 2.0.0 OK  1581782316 y24sm11864046pge.72 - gsmtp
+running a task every minute - Sun Feb 16 2020 00:00:00 GMT+0800 (Taipei Standard Time)
+訊息發送: 250 2.0.0 OK  1581783216 ev5sm11213466pjb.4 - gsmtp
+running a task every minute - Sun Feb 16 2020 00:15:00 GMT+0800 (Taipei Standard Time)
+訊息發送: 250 2.0.0 OK  1581784116 o10sm11087143pgq.68 - gsmtp
+running a task every minute - Sun Feb 16 2020 00:30:00 GMT+0800 (Taipei Standard Time)
+訊息發送: 250 2.0.0 OK  1581785016 h3sm10869040pjs.0 - gsmtp
+running a task every minute - Sun Feb 16 2020 00:45:00 GMT+0800 (Taipei Standard Time)
+訊息發送: 250 2.0.0 OK  1581785916 bb5sm10807312pjb.8 - gsmtp
+running a task every minute - Sun Feb 16 2020 01:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 01:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 01:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 01:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 02:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 02:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 02:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 02:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 03:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 03:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 03:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 03:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 04:00:00 GMT+0800 (Taipei Standard Time)
+訊息發送: 250 2.0.0 OK  1581797616 u11sm10908854pjn.2 - gsmtp
+running a task every minute - Sun Feb 16 2020 04:15:00 GMT+0800 (Taipei Standard Time)
+訊息發送: 250 2.0.0 OK  1581798516 z3sm11479799pfz.155 - gsmtp
+running a task every minute - Sun Feb 16 2020 04:30:00 GMT+0800 (Taipei Standard Time)
+訊息發送: 250 2.0.0 OK  1581799416 k5sm10859793pju.29 - gsmtp
+running a task every minute - Sun Feb 16 2020 04:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 05:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 05:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 05:30:00 GMT+0800 (Taipei Standard Time)
+訊息發送: 250 2.0.0 OK  1581803016 e1sm11425213pff.188 - gsmtp
+running a task every minute - Sun Feb 16 2020 05:45:00 GMT+0800 (Taipei Standard Time)
+訊息發送: 250 2.0.0 OK  1581803916 k2sm11829018pgk.84 - gsmtp
+running a task every minute - Sun Feb 16 2020 06:00:00 GMT+0800 (Taipei Standard Time)
+訊息發送: 250 2.0.0 OK  1581804816 t8sm11206103pjy.20 - gsmtp
+running a task every minute - Sun Feb 16 2020 06:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 06:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 06:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 07:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 07:15:00 GMT+0800 (Taipei Standard Time)
+SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>)
+    at Task.execution (/data1/lampp/htdocs/report-tracking/js/mail.js:344:20)
+    at /data1/lampp/htdocs/report-tracking/node_modules/node-cron/src/task.js:52:23
+    at new Promise (<anonymous>)
+    at Task.update (/data1/lampp/htdocs/report-tracking/node_modules/node-cron/src/task.js:50:7)
+    at Timeout.ScheduledTask.task [as _onTimeout] (/data1/lampp/htdocs/report-tracking/node_modules/node-cron/src/scheduled-task.js:86:10)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+running a task every minute - Sun Feb 16 2020 07:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 07:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 08:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 08:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 08:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 08:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 09:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 09:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 09:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 09:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 10:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 10:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 10:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 10:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 11:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 11:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 11:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 11:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 12:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 12:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 12:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 12:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 13:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 13:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 13:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 13:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 14:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 14:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 14:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 14:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 15:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 15:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 15:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 15:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 16:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 16:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 16:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 16:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 17:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 17:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 17:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 17:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 18:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 18:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 18:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 18:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 19:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 19:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 19:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 19:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 20:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 20:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 20:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 20:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 21:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 21:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 21:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 21:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 22:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 22:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 22:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 22:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 23:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 23:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 23:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Sun Feb 16 2020 23:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 00:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 00:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 00:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 00:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 01:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 01:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 01:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 01:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 02:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 02:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 02:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 02:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 03:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 03:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 03:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 03:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 04:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 04:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 04:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 04:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 05:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 05:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 05:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 05:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 06:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 06:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 06:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 06:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 07:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 07:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 07:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 07:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 08:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 08:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 08:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 08:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 09:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 09:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 09:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 09:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 10:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 10:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 10:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 10:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 11:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 11:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 11:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 11:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 12:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 12:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 12:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 12:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 13:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 13:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 13:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 13:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 14:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 14:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 14:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 14:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 15:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 15:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 15:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 15:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 16:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 16:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 16:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 16:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 17:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 17:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 17:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 17:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 18:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 18:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 18:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 18:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 19:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 19:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 19:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 19:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 20:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 20:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 20:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 20:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 21:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 21:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 21:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 21:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 22:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 22:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 22:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 22:45:00 GMT+0800 (Taipei Standard Time)
+訊息發送: 250 2.0.0 OK  1581951513 z19sm769842pfn.49 - gsmtp
+running a task every minute - Mon Feb 17 2020 23:00:00 GMT+0800 (Taipei Standard Time)
+訊息發送: 250 2.0.0 OK  1581952414 i11sm1088730pjg.0 - gsmtp
+running a task every minute - Mon Feb 17 2020 23:15:00 GMT+0800 (Taipei Standard Time)
+訊息發送: 250 2.0.0 OK  1581953313 l26sm1293274pgn.46 - gsmtp
+running a task every minute - Mon Feb 17 2020 23:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Mon Feb 17 2020 23:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 00:00:00 GMT+0800 (Taipei Standard Time)
+訊息發送: 250 2.0.0 OK  1581956013 z5sm947320pfq.3 - gsmtp
+running a task every minute - Tue Feb 18 2020 00:15:00 GMT+0800 (Taipei Standard Time)
+訊息發送: 250 2.0.0 OK  1581956913 x197sm1002673pfc.1 - gsmtp
+running a task every minute - Tue Feb 18 2020 00:30:00 GMT+0800 (Taipei Standard Time)
+訊息發送: 250 2.0.0 OK  1581957813 i11sm15838pjg.0 - gsmtp
+running a task every minute - Tue Feb 18 2020 00:45:00 GMT+0800 (Taipei Standard Time)
+訊息發送: 250 2.0.0 OK  1581958713 o1sm984539pfg.60 - gsmtp
+訊息發送: 250 2.0.0 OK  1581958713 o1sm984540pfg.60 - gsmtp
+running a task every minute - Tue Feb 18 2020 01:00:00 GMT+0800 (Taipei Standard Time)
+訊息發送: 250 2.0.0 OK  1581959613 z64sm1094173pfz.23 - gsmtp
+訊息發送: 250 2.0.0 OK  1581959613 f13sm1082615pfk.64 - gsmtp
+running a task every minute - Tue Feb 18 2020 01:15:00 GMT+0800 (Taipei Standard Time)
+訊息發送: 250 2.0.0 OK  1581960513 11sm1090137pfz.25 - gsmtp
+running a task every minute - Tue Feb 18 2020 01:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 01:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 02:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 02:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 02:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 02:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 03:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 03:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 03:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 03:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 04:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 04:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 04:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 04:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 05:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 05:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 05:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 05:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 06:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 06:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 06:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 06:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 07:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 07:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 07:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 07:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 08:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 08:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 08:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 08:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 09:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 09:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 09:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 09:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 10:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 10:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 10:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 10:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 11:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 11:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 11:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 11:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 12:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 12:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 12:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 12:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 13:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 13:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 13:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 13:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 14:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 14:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 14:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 14:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 15:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 15:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 15:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 15:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 16:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 16:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 16:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 16:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 17:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 17:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 17:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 17:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 18:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 18:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 18:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 18:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 19:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 19:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 19:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 19:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 20:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 20:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 20:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 20:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 21:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 21:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 21:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 21:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 22:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 22:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 22:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 22:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 23:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 23:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 23:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Tue Feb 18 2020 23:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 00:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 00:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 00:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 00:45:00 GMT+0800 (Taipei Standard Time)
+訊息發送: 250 2.0.0 OK  1582045114 d73sm4878147pfd.109 - gsmtp
+running a task every minute - Wed Feb 19 2020 01:00:00 GMT+0800 (Taipei Standard Time)
+訊息發送: 250 2.0.0 OK  1582046012 x7sm5203761pfp.93 - gsmtp
+running a task every minute - Wed Feb 19 2020 01:15:00 GMT+0800 (Taipei Standard Time)
+訊息發送: 250 2.0.0 OK  1582046911 o10sm5420694pgq.68 - gsmtp
+running a task every minute - Wed Feb 19 2020 01:30:00 GMT+0800 (Taipei Standard Time)
+訊息發送: 250 2.0.0 OK  1582047811 z30sm5059182pff.131 - gsmtp
+running a task every minute - Wed Feb 19 2020 01:45:00 GMT+0800 (Taipei Standard Time)
+訊息發送: 250 2.0.0 OK  1582048712 d64sm5510083pga.17 - gsmtp
+running a task every minute - Wed Feb 19 2020 02:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 02:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 02:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 02:45:00 GMT+0800 (Taipei Standard Time)
+SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>)
+    at Task.execution (/data1/lampp/htdocs/report-tracking/js/mail.js:344:20)
+    at /data1/lampp/htdocs/report-tracking/node_modules/node-cron/src/task.js:52:23
+    at new Promise (<anonymous>)
+    at Task.update (/data1/lampp/htdocs/report-tracking/node_modules/node-cron/src/task.js:50:7)
+    at Timeout.ScheduledTask.task [as _onTimeout] (/data1/lampp/htdocs/report-tracking/node_modules/node-cron/src/scheduled-task.js:86:10)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+running a task every minute - Wed Feb 19 2020 03:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 03:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 03:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 03:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 04:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 04:15:00 GMT+0800 (Taipei Standard Time)
+訊息發送: 250 2.0.0 OK  1582057712 c19sm5813136pgh.8 - gsmtp
+running a task every minute - Wed Feb 19 2020 04:30:00 GMT+0800 (Taipei Standard Time)
+訊息發送: 250 2.0.0 OK  1582058611 a69sm5230672pfa.129 - gsmtp
+running a task every minute - Wed Feb 19 2020 04:45:00 GMT+0800 (Taipei Standard Time)
+訊息發送: 250 2.0.0 OK  1582059511 x26sm5502313pfq.55 - gsmtp
+running a task every minute - Wed Feb 19 2020 05:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 05:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 05:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 05:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 06:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 06:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 06:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 06:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 07:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 07:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 07:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 07:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 08:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 08:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 08:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 08:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 09:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 09:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 09:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 09:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 10:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 10:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 10:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 10:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 11:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 11:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 11:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 11:45:00 GMT+0800 (Taipei Standard Time)
+SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>)
+    at Task.execution (/data1/lampp/htdocs/report-tracking/js/mail.js:344:20)
+    at /data1/lampp/htdocs/report-tracking/node_modules/node-cron/src/task.js:52:23
+    at new Promise (<anonymous>)
+    at Task.update (/data1/lampp/htdocs/report-tracking/node_modules/node-cron/src/task.js:50:7)
+    at Timeout.ScheduledTask.task [as _onTimeout] (/data1/lampp/htdocs/report-tracking/node_modules/node-cron/src/scheduled-task.js:86:10)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+running a task every minute - Wed Feb 19 2020 12:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 12:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 12:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 12:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 13:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 13:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 13:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 13:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 14:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 14:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 14:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 14:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 15:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 15:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 15:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 15:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 16:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 16:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 16:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 16:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 17:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 17:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 17:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 17:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 18:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 18:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 18:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 18:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 19:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 19:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 19:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 19:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 20:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 20:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 20:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 20:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 21:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 21:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 21:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 21:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 22:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 22:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 22:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 22:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 23:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 23:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Wed Feb 19 2020 23:30:00 GMT+0800 (Taipei Standard Time)
+訊息發送: 250 2.0.0 OK  1582127011 l1sm226764pjb.28 - gsmtp
+running a task every minute - Wed Feb 19 2020 23:45:00 GMT+0800 (Taipei Standard Time)
+訊息發送: 250 2.0.0 OK  1582127910 b4sm58328pfd.18 - gsmtp
+running a task every minute - Thu Feb 20 2020 00:00:00 GMT+0800 (Taipei Standard Time)
+訊息發送: 250 2.0.0 OK  1582128810 h7sm85060pfq.36 - gsmtp
+running a task every minute - Thu Feb 20 2020 00:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Thu Feb 20 2020 00:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Thu Feb 20 2020 00:45:00 GMT+0800 (Taipei Standard Time)
+訊息發送: 250 2.0.0 OK  1582131511 o1sm166301pfg.60 - gsmtp
+running a task every minute - Thu Feb 20 2020 01:00:00 GMT+0800 (Taipei Standard Time)
+訊息發送: 250 2.0.0 OK  1582132410 196sm188579pfy.86 - gsmtp
+running a task every minute - Thu Feb 20 2020 01:15:00 GMT+0800 (Taipei Standard Time)
+訊息發送: 250 2.0.0 OK  1582133311 23sm327711pgh.0 - gsmtp
+running a task every minute - Thu Feb 20 2020 01:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Thu Feb 20 2020 01:45:00 GMT+0800 (Taipei Standard Time)
+訊息發送: 250 2.0.0 OK  1582135111 l25sm329773pgt.85 - gsmtp
+running a task every minute - Thu Feb 20 2020 02:00:00 GMT+0800 (Taipei Standard Time)
+訊息發送: 250 2.0.0 OK  1582136010 y6sm381755pgc.10 - gsmtp
+running a task every minute - Thu Feb 20 2020 02:15:00 GMT+0800 (Taipei Standard Time)
+訊息發送: 250 2.0.0 OK  1582136910 u23sm328514pfm.29 - gsmtp
+running a task every minute - Thu Feb 20 2020 02:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Thu Feb 20 2020 02:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Thu Feb 20 2020 03:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Thu Feb 20 2020 03:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Thu Feb 20 2020 03:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Thu Feb 20 2020 03:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Thu Feb 20 2020 04:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Thu Feb 20 2020 04:15:00 GMT+0800 (Taipei Standard Time)
+訊息發送: 250 2.0.0 OK  1582144110 hg11sm641958pjb.14 - gsmtp
+running a task every minute - Thu Feb 20 2020 04:30:00 GMT+0800 (Taipei Standard Time)
+訊息發送: 250 2.0.0 OK  1582145010 b1sm617889pgs.27 - gsmtp
+running a task every minute - Thu Feb 20 2020 04:45:00 GMT+0800 (Taipei Standard Time)
+訊息發送: 250 2.0.0 OK  1582145910 x190sm514598pfb.96 - gsmtp
+running a task every minute - Thu Feb 20 2020 05:00:00 GMT+0800 (Taipei Standard Time)
+訊息發送: 250 2.0.0 OK  1582146810 l15sm623709pgi.31 - gsmtp
+running a task every minute - Thu Feb 20 2020 05:15:00 GMT+0800 (Taipei Standard Time)
+訊息發送: 250 2.0.0 OK  1582147709 13sm550334pfi.78 - gsmtp
+running a task every minute - Thu Feb 20 2020 05:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Thu Feb 20 2020 05:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Thu Feb 20 2020 06:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Thu Feb 20 2020 06:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Thu Feb 20 2020 06:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Thu Feb 20 2020 06:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Thu Feb 20 2020 07:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Thu Feb 20 2020 07:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Thu Feb 20 2020 07:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Thu Feb 20 2020 07:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Thu Feb 20 2020 08:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Thu Feb 20 2020 08:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Thu Feb 20 2020 08:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Thu Feb 20 2020 08:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Thu Feb 20 2020 09:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Thu Feb 20 2020 09:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Thu Feb 20 2020 09:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Thu Feb 20 2020 09:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Thu Feb 20 2020 10:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Thu Feb 20 2020 10:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Thu Feb 20 2020 10:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Thu Feb 20 2020 10:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Thu Feb 20 2020 11:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Thu Feb 20 2020 11:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Thu Feb 20 2020 11:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Thu Feb 20 2020 11:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Thu Feb 20 2020 12:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Thu Feb 20 2020 12:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Thu Feb 20 2020 12:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Thu Feb 20 2020 12:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Thu Feb 20 2020 13:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Thu Feb 20 2020 13:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Thu Feb 20 2020 13:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Thu Feb 20 2020 13:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Thu Feb 20 2020 14:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Thu Feb 20 2020 14:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Thu Feb 20 2020 14:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Thu Feb 20 2020 14:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Thu Feb 20 2020 15:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Thu Feb 20 2020 15:15:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Thu Feb 20 2020 15:30:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Thu Feb 20 2020 15:45:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Thu Feb 20 2020 16:00:00 GMT+0800 (Taipei Standard Time)
+running a task every minute - Thu Feb 20 2020 16:15:00 GMT+0800 (Taipei Standard Time)
+訊息發送: 250 2.0.0 OK  1582187309 e17sm2477847pfm.12 - gsmtp
+running a task every minute - Thu Feb 20 2020 16:30:00 GMT+0800 (Taipei Standard Time)
+訊息發送: 250 2.0.0 OK  1582188209 c184sm2540841pfa.39 - gsmtp
+nohup: ignoring input
+internal/modules/cjs/loader.js:803
+    throw err;
+    ^
+
+Error: Cannot find module '/data1/lampp/htdocs/report-tracking/js'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:800:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:693:27)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:1051:12)
+    at internal/main/run_main_module.js:16:11 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+nohup: ignoring input
+Before running a task every minute - Thu Feb 20 2020 16:34:20 GMT+0800 (Taipei Standard Time)
+nohup: ignoring input
+Before running a task every minute - Thu Feb 20 2020 16:45:03 GMT+0800 (Taipei Standard Time)
+running a task every minute - Thu Feb 20 2020 17:00:00 GMT+0800 (Taipei Standard Time)
+Error: ENOENT: no such file or directory, open '../NIPS/nips_progress_tail.json'
+    at Object.openSync (fs.js:440:3)
+    at Object.readFileSync (fs.js:342:35)
+    at Task.execution (/data1/lampp/htdocs/report-tracking/js/mail.js:344:29)
+    at /data1/lampp/htdocs/report-tracking/node_modules/node-cron/src/task.js:52:23
+    at new Promise (<anonymous>)
+    at Task.update (/data1/lampp/htdocs/report-tracking/node_modules/node-cron/src/task.js:50:7)
+    at Timeout.ScheduledTask.task [as _onTimeout] (/data1/lampp/htdocs/report-tracking/node_modules/node-cron/src/scheduled-task.js:86:10)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7) {
+  errno: -2,
+  syscall: 'open',
+  code: 'ENOENT',
+  path: '../NIPS/nips_progress_tail.json'
+}
+running a task every minute - Thu Feb 20 2020 18:00:00 GMT+0800 (Taipei Standard Time)
+Error: ENOENT: no such file or directory, open '../NIPS/nips_progress_tail.json'
+    at Object.openSync (fs.js:440:3)
+    at Object.readFileSync (fs.js:342:35)
+    at Task.execution (/data1/lampp/htdocs/report-tracking/js/mail.js:344:29)
+    at /data1/lampp/htdocs/report-tracking/node_modules/node-cron/src/task.js:52:23
+    at new Promise (<anonymous>)
+    at Task.update (/data1/lampp/htdocs/report-tracking/node_modules/node-cron/src/task.js:50:7)
+    at Timeout.ScheduledTask.task [as _onTimeout] (/data1/lampp/htdocs/report-tracking/node_modules/node-cron/src/scheduled-task.js:86:10)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7) {
+  errno: -2,
+  syscall: 'open',
+  code: 'ENOENT',
+  path: '../NIPS/nips_progress_tail.json'
+}
+running a task every minute - Thu Feb 20 2020 19:00:00 GMT+0800 (Taipei Standard Time)
+Error: ENOENT: no such file or directory, open '../NIPS/nips_progress_tail.json'
+    at Object.openSync (fs.js:440:3)
+    at Object.readFileSync (fs.js:342:35)
+    at Task.execution (/data1/lampp/htdocs/report-tracking/js/mail.js:344:29)
+    at /data1/lampp/htdocs/report-tracking/node_modules/node-cron/src/task.js:52:23
+    at new Promise (<anonymous>)
+    at Task.update (/data1/lampp/htdocs/report-tracking/node_modules/node-cron/src/task.js:50:7)
+    at Timeout.ScheduledTask.task [as _onTimeout] (/data1/lampp/htdocs/report-tracking/node_modules/node-cron/src/scheduled-task.js:86:10)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7) {
+  errno: -2,
+  syscall: 'open',
+  code: 'ENOENT',
+  path: '../NIPS/nips_progress_tail.json'
+}
+running a task every minute - Thu Feb 20 2020 20:00:00 GMT+0800 (Taipei Standard Time)
+Error: ENOENT: no such file or directory, open '../NIPS/nips_progress_tail.json'
+    at Object.openSync (fs.js:440:3)
+    at Object.readFileSync (fs.js:342:35)
+    at Task.execution (/data1/lampp/htdocs/report-tracking/js/mail.js:344:29)
+    at /data1/lampp/htdocs/report-tracking/node_modules/node-cron/src/task.js:52:23
+    at new Promise (<anonymous>)
+    at Task.update (/data1/lampp/htdocs/report-tracking/node_modules/node-cron/src/task.js:50:7)
+    at Timeout.ScheduledTask.task [as _onTimeout] (/data1/lampp/htdocs/report-tracking/node_modules/node-cron/src/scheduled-task.js:86:10)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7) {
+  errno: -2,
+  syscall: 'open',
+  code: 'ENOENT',
+  path: '../NIPS/nips_progress_tail.json'
+}
+running a task every minute - Thu Feb 20 2020 21:00:00 GMT+0800 (Taipei Standard Time)
+Error: ENOENT: no such file or directory, open '../NIPS/nips_progress_tail.json'
+    at Object.openSync (fs.js:440:3)
+    at Object.readFileSync (fs.js:342:35)
+    at Task.execution (/data1/lampp/htdocs/report-tracking/js/mail.js:344:29)
+    at /data1/lampp/htdocs/report-tracking/node_modules/node-cron/src/task.js:52:23
+    at new Promise (<anonymous>)
+    at Task.update (/data1/lampp/htdocs/report-tracking/node_modules/node-cron/src/task.js:50:7)
+    at Timeout.ScheduledTask.task [as _onTimeout] (/data1/lampp/htdocs/report-tracking/node_modules/node-cron/src/scheduled-task.js:86:10)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7) {
+  errno: -2,
+  syscall: 'open',
+  code: 'ENOENT',
+  path: '../NIPS/nips_progress_tail.json'
+}
+running a task every minute - Thu Feb 20 2020 22:00:00 GMT+0800 (Taipei Standard Time)
+Error: ENOENT: no such file or directory, open '../NIPS/nips_progress_tail.json'
+    at Object.openSync (fs.js:440:3)
+    at Object.readFileSync (fs.js:342:35)
+    at Task.execution (/data1/lampp/htdocs/report-tracking/js/mail.js:344:29)
+    at /data1/lampp/htdocs/report-tracking/node_modules/node-cron/src/task.js:52:23
+    at new Promise (<anonymous>)
+    at Task.update (/data1/lampp/htdocs/report-tracking/node_modules/node-cron/src/task.js:50:7)
+    at Timeout.ScheduledTask.task [as _onTimeout] (/data1/lampp/htdocs/report-tracking/node_modules/node-cron/src/scheduled-task.js:86:10)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7) {
+  errno: -2,
+  syscall: 'open',
+  code: 'ENOENT',
+  path: '../NIPS/nips_progress_tail.json'
+}
+running a task every minute - Thu Feb 20 2020 23:00:00 GMT+0800 (Taipei Standard Time)
+Error: ENOENT: no such file or directory, open '../NIPS/nips_progress_tail.json'
+    at Object.openSync (fs.js:440:3)
+    at Object.readFileSync (fs.js:342:35)
+    at Task.execution (/data1/lampp/htdocs/report-tracking/js/mail.js:344:29)
+    at /data1/lampp/htdocs/report-tracking/node_modules/node-cron/src/task.js:52:23
+    at new Promise (<anonymous>)
+    at Task.update (/data1/lampp/htdocs/report-tracking/node_modules/node-cron/src/task.js:50:7)
+    at Timeout.ScheduledTask.task [as _onTimeout] (/data1/lampp/htdocs/report-tracking/node_modules/node-cron/src/scheduled-task.js:86:10)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7) {
+  errno: -2,
+  syscall: 'open',
+  code: 'ENOENT',
+  path: '../NIPS/nips_progress_tail.json'
+}
+running a task every minute - Fri Feb 21 2020 00:00:00 GMT+0800 (Taipei Standard Time)
+Error: ENOENT: no such file or directory, open '../NIPS/nips_progress_tail.json'
+    at Object.openSync (fs.js:440:3)
+    at Object.readFileSync (fs.js:342:35)
+    at Task.execution (/data1/lampp/htdocs/report-tracking/js/mail.js:344:29)
+    at /data1/lampp/htdocs/report-tracking/node_modules/node-cron/src/task.js:52:23
+    at new Promise (<anonymous>)
+    at Task.update (/data1/lampp/htdocs/report-tracking/node_modules/node-cron/src/task.js:50:7)
+    at Timeout.ScheduledTask.task [as _onTimeout] (/data1/lampp/htdocs/report-tracking/node_modules/node-cron/src/scheduled-task.js:86:10)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7) {
+  errno: -2,
+  syscall: 'open',
+  code: 'ENOENT',
+  path: '../NIPS/nips_progress_tail.json'
+}
+running a task every minute - Fri Feb 21 2020 01:00:00 GMT+0800 (Taipei Standard Time)
+Error: ENOENT: no such file or directory, open '../NIPS/nips_progress_tail.json'
+    at Object.openSync (fs.js:440:3)
+    at Object.readFileSync (fs.js:342:35)
+    at Task.execution (/data1/lampp/htdocs/report-tracking/js/mail.js:344:29)
+    at /data1/lampp/htdocs/report-tracking/node_modules/node-cron/src/task.js:52:23
+    at new Promise (<anonymous>)
+    at Task.update (/data1/lampp/htdocs/report-tracking/node_modules/node-cron/src/task.js:50:7)
+    at Timeout.ScheduledTask.task [as _onTimeout] (/data1/lampp/htdocs/report-tracking/node_modules/node-cron/src/scheduled-task.js:86:10)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7) {
+  errno: -2,
+  syscall: 'open',
+  code: 'ENOENT',
+  path: '../NIPS/nips_progress_tail.json'
+}
+running a task every minute - Fri Feb 21 2020 02:00:00 GMT+0800 (Taipei Standard Time)
+Error: ENOENT: no such file or directory, open '../NIPS/nips_progress_tail.json'
+    at Object.openSync (fs.js:440:3)
+    at Object.readFileSync (fs.js:342:35)
+    at Task.execution (/data1/lampp/htdocs/report-tracking/js/mail.js:344:29)
+    at /data1/lampp/htdocs/report-tracking/node_modules/node-cron/src/task.js:52:23
+    at new Promise (<anonymous>)
+    at Task.update (/data1/lampp/htdocs/report-tracking/node_modules/node-cron/src/task.js:50:7)
+    at Timeout.ScheduledTask.task [as _onTimeout] (/data1/lampp/htdocs/report-tracking/node_modules/node-cron/src/scheduled-task.js:86:10)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7) {
+  errno: -2,
+  syscall: 'open',
+  code: 'ENOENT',
+  path: '../NIPS/nips_progress_tail.json'
+}
+running a task every minute - Fri Feb 21 2020 03:00:00 GMT+0800 (Taipei Standard Time)
+Error: ENOENT: no such file or directory, open '../NIPS/nips_progress_tail.json'
+    at Object.openSync (fs.js:440:3)
+    at Object.readFileSync (fs.js:342:35)
+    at Task.execution (/data1/lampp/htdocs/report-tracking/js/mail.js:344:29)
+    at /data1/lampp/htdocs/report-tracking/node_modules/node-cron/src/task.js:52:23
+    at new Promise (<anonymous>)
+    at Task.update (/data1/lampp/htdocs/report-tracking/node_modules/node-cron/src/task.js:50:7)
+    at Timeout.ScheduledTask.task [as _onTimeout] (/data1/lampp/htdocs/report-tracking/node_modules/node-cron/src/scheduled-task.js:86:10)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7) {
+  errno: -2,
+  syscall: 'open',
+  code: 'ENOENT',
+  path: '../NIPS/nips_progress_tail.json'
+}
+running a task every minute - Fri Feb 21 2020 04:00:00 GMT+0800 (Taipei Standard Time)
+Error: ENOENT: no such file or directory, open '../NIPS/nips_progress_tail.json'
+    at Object.openSync (fs.js:440:3)
+    at Object.readFileSync (fs.js:342:35)
+    at Task.execution (/data1/lampp/htdocs/report-tracking/js/mail.js:344:29)
+    at /data1/lampp/htdocs/report-tracking/node_modules/node-cron/src/task.js:52:23
+    at new Promise (<anonymous>)
+    at Task.update (/data1/lampp/htdocs/report-tracking/node_modules/node-cron/src/task.js:50:7)
+    at Timeout.ScheduledTask.task [as _onTimeout] (/data1/lampp/htdocs/report-tracking/node_modules/node-cron/src/scheduled-task.js:86:10)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7) {
+  errno: -2,
+  syscall: 'open',
+  code: 'ENOENT',
+  path: '../NIPS/nips_progress_tail.json'
+}
+running a task every minute - Fri Feb 21 2020 05:00:00 GMT+0800 (Taipei Standard Time)
+Error: ENOENT: no such file or directory, open '../NIPS/nips_progress_tail.json'
+    at Object.openSync (fs.js:440:3)
+    at Object.readFileSync (fs.js:342:35)
+    at Task.execution (/data1/lampp/htdocs/report-tracking/js/mail.js:344:29)
+    at /data1/lampp/htdocs/report-tracking/node_modules/node-cron/src/task.js:52:23
+    at new Promise (<anonymous>)
+    at Task.update (/data1/lampp/htdocs/report-tracking/node_modules/node-cron/src/task.js:50:7)
+    at Timeout.ScheduledTask.task [as _onTimeout] (/data1/lampp/htdocs/report-tracking/node_modules/node-cron/src/scheduled-task.js:86:10)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7) {
+  errno: -2,
+  syscall: 'open',
+  code: 'ENOENT',
+  path: '../NIPS/nips_progress_tail.json'
+}
+running a task every minute - Fri Feb 21 2020 06:00:00 GMT+0800 (Taipei Standard Time)
+Error: ENOENT: no such file or directory, open '../NIPS/nips_progress_tail.json'
+    at Object.openSync (fs.js:440:3)
+    at Object.readFileSync (fs.js:342:35)
+    at Task.execution (/data1/lampp/htdocs/report-tracking/js/mail.js:344:29)
+    at /data1/lampp/htdocs/report-tracking/node_modules/node-cron/src/task.js:52:23
+    at new Promise (<anonymous>)
+    at Task.update (/data1/lampp/htdocs/report-tracking/node_modules/node-cron/src/task.js:50:7)
+    at Timeout.ScheduledTask.task [as _onTimeout] (/data1/lampp/htdocs/report-tracking/node_modules/node-cron/src/scheduled-task.js:86:10)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7) {
+  errno: -2,
+  syscall: 'open',
+  code: 'ENOENT',
+  path: '../NIPS/nips_progress_tail.json'
+}
+running a task every minute - Fri Feb 21 2020 07:00:00 GMT+0800 (Taipei Standard Time)
+Error: ENOENT: no such file or directory, open '../NIPS/nips_progress_tail.json'
+    at Object.openSync (fs.js:440:3)
+    at Object.readFileSync (fs.js:342:35)
+    at Task.execution (/data1/lampp/htdocs/report-tracking/js/mail.js:344:29)
+    at /data1/lampp/htdocs/report-tracking/node_modules/node-cron/src/task.js:52:23
+    at new Promise (<anonymous>)
+    at Task.update (/data1/lampp/htdocs/report-tracking/node_modules/node-cron/src/task.js:50:7)
+    at Timeout.ScheduledTask.task [as _onTimeout] (/data1/lampp/htdocs/report-tracking/node_modules/node-cron/src/scheduled-task.js:86:10)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7) {
+  errno: -2,
+  syscall: 'open',
+  code: 'ENOENT',
+  path: '../NIPS/nips_progress_tail.json'
+}
+running a task every minute - Fri Feb 21 2020 08:00:00 GMT+0800 (Taipei Standard Time)
+Error: ENOENT: no such file or directory, open '../NIPS/nips_progress_tail.json'
+    at Object.openSync (fs.js:440:3)
+    at Object.readFileSync (fs.js:342:35)
+    at Task.execution (/data1/lampp/htdocs/report-tracking/js/mail.js:344:29)
+    at /data1/lampp/htdocs/report-tracking/node_modules/node-cron/src/task.js:52:23
+    at new Promise (<anonymous>)
+    at Task.update (/data1/lampp/htdocs/report-tracking/node_modules/node-cron/src/task.js:50:7)
+    at Timeout.ScheduledTask.task [as _onTimeout] (/data1/lampp/htdocs/report-tracking/node_modules/node-cron/src/scheduled-task.js:86:10)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7) {
+  errno: -2,
+  syscall: 'open',
+  code: 'ENOENT',
+  path: '../NIPS/nips_progress_tail.json'
+}
+running a task every minute - Fri Feb 21 2020 09:00:00 GMT+0800 (Taipei Standard Time)
+Error: ENOENT: no such file or directory, open '../NIPS/nips_progress_tail.json'
+    at Object.openSync (fs.js:440:3)
+    at Object.readFileSync (fs.js:342:35)
+    at Task.execution (/data1/lampp/htdocs/report-tracking/js/mail.js:344:29)
+    at /data1/lampp/htdocs/report-tracking/node_modules/node-cron/src/task.js:52:23
+    at new Promise (<anonymous>)
+    at Task.update (/data1/lampp/htdocs/report-tracking/node_modules/node-cron/src/task.js:50:7)
+    at Timeout.ScheduledTask.task [as _onTimeout] (/data1/lampp/htdocs/report-tracking/node_modules/node-cron/src/scheduled-task.js:86:10)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7) {
+  errno: -2,
+  syscall: 'open',
+  code: 'ENOENT',
+  path: '../NIPS/nips_progress_tail.json'
+}
+nohup: ignoring input
+Before running a task every minute - Fri Feb 21 2020 09:34:27 GMT+0800 (Taipei Standard Time)
+running a task every minute - Fri Feb 21 2020 09:35:00 GMT+0800 (Taipei Standard Time)
+Error: ENOENT: no such file or directory, open '../NIPS/nips_progress_tail.json'
+    at Object.openSync (fs.js:440:3)
+    at Object.readFileSync (fs.js:342:35)
+    at Task.execution (/data1/lampp/htdocs/report-tracking/js/mail.js:344:29)
+    at /data1/lampp/htdocs/report-tracking/node_modules/node-cron/src/task.js:52:23
+    at new Promise (<anonymous>)
+    at Task.update (/data1/lampp/htdocs/report-tracking/node_modules/node-cron/src/task.js:50:7)
+    at Timeout.ScheduledTask.task [as _onTimeout] (/data1/lampp/htdocs/report-tracking/node_modules/node-cron/src/scheduled-task.js:86:10)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7) {
+  errno: -2,
+  syscall: 'open',
+  code: 'ENOENT',
+  path: '../NIPS/nips_progress_tail.json'
+}

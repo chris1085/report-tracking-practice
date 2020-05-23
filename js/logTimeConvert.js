@@ -28,9 +28,9 @@ const logJSONListPath = {
 };
 
 const convertJSONListPath = {
-  nips: '../convert/nips_progress.log',
-  sg: '../convert/sg_progress.log',
-  iona: '../convert/iona_progress.log'
+  nips: '../log_convert/nips_progress.log',
+  sg: '../log_convert/sg_progress.log',
+  iona: '../log_convert/iona_progress.log'
 };
 
 const fs = require('fs');

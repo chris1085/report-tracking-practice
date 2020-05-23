@@ -1,29 +1,37 @@
+/**
+ *  Calculating Step duration time
+ *
+ * @param {*} data JSON format form product monitoring txt
+ * @returns
+ */
 function calcStepDurationTime(data) {
   let intervalTime = 1;
   let newDurationTime;
   // console.log(data);
 
-  if (typeof data.totalTime == 'undefined') {
-    console.log('total Time not defined!');
+  if (typeof data.totalTime == "undefined") {
+    // console.log("total Time not defined!");
 
-    data.totalTime = '00:00:00';
-    data.sequencedTime = '00:00:00';
-    data.analyzedTime = '00:00:00';
-    data.ondellTime = '00:00:00';
-    data.convertedTime = '00:00:00';
-    data.incloudTime = '00:00:00';
-    data.downloadedTime = '00:00:00';
-    data.jobsubmittedTime = '00:00:00';
-    data.jobcompletedTime = '00:00:00';
-    data.backtodellTime = '00:00:00';
+    data.totalTime = "00:04:30";
+    data.sequencedTime = "00:00:30";
+    data.analyzedTime = "00:00:30";
+    data.ondellTime = "00:00:30";
+    data.convertedTime = "00:00:30";
+    data.incloudTime = "00:00:30";
+    data.downloadedTime = "00:00:30";
+    data.jobsubmittedTime = "00:00:30";
+    data.jobcompletedTime = "00:00:30";
+    data.backtodellTime = "00:00:30";
   } else {
-    if (data.closed == '0' || data.closed == '') {
+    // close == 0 indicated job is unfinished
+    if (data.closed == "0" || data.closed == "") {
       const stepEntries = Object.entries(data);
       // console.log(stepEntries);
       let flag = 0;
 
       for (let i = 1; i < stepEntries.length; i++) {
-        let contentSplit = stepEntries[i][1].split('/');
+        // To distinguish whether the step contains multiple samples
+        let contentSplit = stepEntries[i][1].split("/");
 
         if (
           stepEntries[i][0].match(/timeUsed/) ||
@@ -33,8 +41,9 @@ function calcStepDurationTime(data) {
           flag == 1
         ) {
           continue;
-        } else if ((stepEntries[i][1] == 0 || stepEntries[i][1] == '') && flag == 0) {
-          let stepTimeName = stepEntries[i][0] + 'Time';
+        } else if ((stepEntries[i][1] == 0 || stepEntries[i][1] == "") && flag == 0) {
+          //unfinished state occurs
+          let stepTimeName = stepEntries[i][0] + "Time";
 
           data[stepTimeName] = calcNodeTime(data[stepEntries[i][0]], data[stepTimeName], intervalTime);
           data.totalTime = calcNodeTime(data.closed, data.totalTime, intervalTime);
@@ -43,8 +52,10 @@ function calcStepDurationTime(data) {
           flag = 1;
           break;
         } else if (contentSplit.length == 2 && contentSplit[0] != contentSplit[1] && flag == 0) {
-          let stepTimeName = stepEntries[i][0] + 'Time';
+          //unfinished state and also has multiple samples occurs
+          let stepTimeName = stepEntries[i][0] + "Time";
 
+          // calcuating total time and step time
           data[stepTimeName] = calcNodeTime(data[stepEntries[i][0]], data[stepTimeName], intervalTime);
           data.totalTime = calcNodeTime(data.closed, data.totalTime, intervalTime);
 
@@ -57,15 +68,24 @@ function calcStepDurationTime(data) {
   return data;
 }
 
+/**
+ *  Let time of unfinished state move $intervalTime secs
+ *
+ * @param {*} node step data
+ * @param {*} nodeDuration step duration time
+ * @param {*} intervalTime perSecs
+ * @returns
+ */
 function calcNodeTime(node, nodeDuration, intervalTime) {
   // console.log(node);
 
-  if (typeof node === 'undefined') {
+  // init node
+  if (typeof node === "undefined") {
     node = 1;
-    nodeDuration = '00:00:00';
-    console.log('calcNodeTime node not defined: ' + node);
+    nodeDuration = "00:00:30";
+    // console.log("calcNodeTime node not defined: " + node);
   } else {
-    let clockArray = nodeDuration.split(':');
+    let clockArray = nodeDuration.split(":");
     let seconds = parseInt(clockArray[0] * 3600) + parseInt(clockArray[1] * 60) + parseInt(clockArray[2]);
 
     seconds += parseInt(intervalTime);
@@ -75,27 +95,41 @@ function calcNodeTime(node, nodeDuration, intervalTime) {
   return nodeDuration;
 }
 
+/**
+ *  Calculating seconds to HH:MM:SS and display '0' at Tens digit when it is an Units digit.
+ *
+ * @param {*} seconds
+ * @returns
+ */
 function getClock(seconds) {
   let newHours = Math.floor(seconds / 3600);
   let newMins = Math.floor((seconds % 3600) / 60);
   let newSeconds = (seconds % 3600) % 60;
 
   if (newHours < 99) {
-    newHours = ('0' + newHours).slice(-2);
+    newHours = ("0" + newHours).slice(-2);
   }
-  newMins = ('0' + newMins).slice(-2);
-  newSeconds = ('0' + newSeconds).slice(-2);
+  newMins = ("0" + newMins).slice(-2);
+  newSeconds = ("0" + newSeconds).slice(-2);
 
-  let clock = newHours + ':' + newMins + ':' + newSeconds;
+  let clock = newHours + ":" + newMins + ":" + newSeconds;
   // console.log(clock);
 
   return clock;
 }
 
+/**
+ * To compare between log content and processing data content.
+ * *If processing data content finished write in log content
+ *
+ * @param {*} dataTypeContent
+ * @param {*} key productType
+ * @returns
+ */
 function compareContent(dataTypeContent, key) {
-  const fs = require('fs');
-  let path = '../temp_data/' + key + '_progress_tail.json.temp';
-  let webPath = '../' + key.toUpperCase() + '/' + key + '_progress_tail.json';
+  const fs = require("fs");
+  let path = "../temp_data/" + key + "_progress_tail.json.temp";
+  let webPath = "../" + key.toUpperCase() + "/" + key + "_progress_tail.json";
   let stats = fs.statSync(path);
   // console.log(stats.size);
   let tempData = [];
@@ -148,7 +182,7 @@ function compareContent(dataTypeContent, key) {
     // console.log(newData);
   } else {
     writeFile(path, dataTypeContentstring);
-    console.log(path + ' not exists.');
+    console.log(path + " not exists.");
   }
   // console.log(newData);
 
@@ -156,24 +190,27 @@ function compareContent(dataTypeContent, key) {
 }
 
 const JSONListPath = {
-  nips: '../source_data/nips_progress_tail.json',
-  sg: '../source_data/sg_progress_tail.json',
-  iona: '../source_data/iona_progress_tail.json'
+  nips: "../source_data/nips_progress_tail.json",
+  sg: "../source_data/sg_progress_tail.json",
+  iona: "../source_data/iona_progress_tail.json",
+  ctdna: "../source_data/ctdna_progress_tail.json",
 };
 
 const tempJSONListPath = {
-  nips: '../temp_data/nips_progress_tail.json.temp',
-  sg: '../temp_data/sg_progress_tail.json.temp',
-  iona: '../temp_data/iona_progress_tail.json.temp'
+  nips: "../temp_data/nips_progress_tail.json.temp",
+  sg: "../temp_data/sg_progress_tail.json.temp",
+  iona: "../temp_data/iona_progress_tail.json.temp",
+  ctdna: "../temp_data/ctdna_progress_tail.json.temp",
 };
 
 const webJSONListPath = {
-  nips: '../NIPS/nips_progress_tail.json',
-  sg: '../SG/sg_progress_tail.json',
-  iona: '../IONA/iona_progress_tail.json'
+  nips: "../NIPS/nips_progress_tail.json",
+  sg: "../SG/sg_progress_tail.json",
+  iona: "../IONA/iona_progress_tail.json",
+  ctdna: "../ctDNA/ctdna_progress_tail.json",
 };
 
-const fs = require('fs');
+const fs = require("fs");
 let data = [];
 const writeFile = (filename, content) => {
   fs.writeFile(filename, content, () => {});
@@ -182,6 +219,7 @@ const writeFile = (filename, content) => {
 data.nips = JSON.parse(fs.readFileSync(JSONListPath.nips).toString());
 data.sg = JSON.parse(fs.readFileSync(JSONListPath.sg).toString());
 data.iona = JSON.parse(fs.readFileSync(JSONListPath.iona).toString());
+data.ctdna = JSON.parse(fs.readFileSync(JSONListPath.ctdna).toString());
 
 // var stats = fs.statSync(JSONListPath.nips);
 // console.log(stats.size);
@@ -193,40 +231,8 @@ for (const key in data) {
     data[key][i] = calcStepDurationTime(data[key][i]);
   }
 
-  if (JSON.stringify(data[key]) != '') {
+  if (JSON.stringify(data[key]) != "") {
     writeFile(webJSONListPath[key], JSON.stringify(data[key]));
     writeFile(tempJSONListPath[key], JSON.stringify(data[key]));
   }
 }
-
-let date = new Date();
-dataValues = [
-  date.getFullYear(),
-  date.getMonth() + 1,
-  date.getDate(),
-  ('0' + date.getHours()).slice(-2),
-  ('0' + date.getMinutes()).slice(-2),
-  ('0' + date.getSeconds()).slice(-2)
-];
-
-// let time = new Date(year, month, day, hours, minutes, seconds);
-console.log(
-  dataValues[0] +
-    '/' +
-    dataValues[1] +
-    '/' +
-    dataValues[2] +
-    ' ' +
-    dataValues[3] +
-    ':' +
-    dataValues[4] +
-    ':' +
-    dataValues[5]
-);
-
-// setTimeout(function (argument) {
-//   // execution time simulated with setTimeout function
-//   var end = new Date() - start;
-//   console.info('Execution time: %dms', end);
-// }, simulateTime);
-// console.log(fs.readFileSync("../NIPS/nips_progress_tail.json").toString());

@@ -1,0 +1,1 @@
+[["{\"nips\":{\"runid\":\"200224_NB500911_1342_AHMF2CBGXC\",\"node\":\"analyzedTime\",\"nodeTime\":\"02:36:25\",\"totalTime\":\"08:21:36\",\"alarmTime\":\"02:08:11\",\"count\":4}}"]]

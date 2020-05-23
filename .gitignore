@@ -1,5 +1,4 @@
 # 檔案名稱 .gitignore
-
 # 忽略 secret.yml 檔案
 secret.yml
 
@@ -15,3 +14,7 @@ config/database.yml
 # 忽略node_modules
 node_modules
 .DS_Store
+
+# 忽略log
+log
+log_convert
