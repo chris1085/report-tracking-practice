@@ -14,10 +14,6 @@
     "statusBar.background": "#557c9b",
     "statusBarItem.hoverBackground": "#7295b1",
     "statusBar.foreground": "#e7e7e7",
-<<<<<<< HEAD
-=======
-    "activityBar.activeBackground": "#7295b1",
->>>>>>> temp commit
     "statusBar.border": "#557c9b",
     "titleBar.border": "#557c9b"
   },
