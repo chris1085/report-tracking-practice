@@ -21,4 +21,3 @@ log_convert
 
 #ignore
 js/mail.js
-*/*.js
