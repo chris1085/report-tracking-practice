@@ -55,6 +55,13 @@ h1 {
   width: 100%;
 }
 
+.iconTitle {
+  font-size: 10px;
+  @include mobile {
+    display: none;
+  }
+}
+
 .btn {
   border-width: 2px;
 }
@@ -196,6 +203,14 @@ h1 {
   }
 }
 
+// .content-progress-icon {
+//   position: fixed;
+//   top: 400px;
+//   right: 300px;
+//   width: 400px;
+//   z-index:1030;
+// }
+
 .content-info,
 .content-header {
   @include mobile {
@@ -222,6 +237,18 @@ h1 {
   @include l-mobile {
     border: 3px solid green !important;
     border-radius: 8px;
+  }
+}
+
+.stepbar-progress tbody tr td:first-child .step-body {
+  @include l-pc {
+    margin-left: 1em;
+  }
+}
+
+.stepbar-progress tbody tr td:last-child .step-body {
+  @include l-pc {
+    margin-right: 1.2em;
   }
 }
 
@@ -262,6 +289,17 @@ h1 {
 .card-body {
   // display: inline !important;
   flex-direction: row;
+}
+
+.notransition {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}
+
+.progress-body {
+  cursor: pointer;
 }
 
 // Mixins

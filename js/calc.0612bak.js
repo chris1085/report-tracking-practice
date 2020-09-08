@@ -1,7 +1,5 @@
-let temp_dataArry = [];
-
 function calcStepDurationTime(data) {
-  let intervalTime = 10;
+  let intervalTime = 5;
   let newDurationTime;
   // console.log(data);
 
@@ -25,7 +23,6 @@ function calcStepDurationTime(data) {
       let flag = 0;
 
       for (let i = 1; i < stepEntries.length; i++) {
-        stepEntries[i][1] = stepEntries[i][1] + "";
         let contentSplit = stepEntries[i][1].split("/");
 
         if (
@@ -158,147 +155,6 @@ function compareContent(dataTypeContent, key) {
   return newData;
 }
 
-function getData(productType) {
-  const MongoClient = require("mongodb").MongoClient;
-  const url = "mongodb://192.168.228.18:27017/";
-  let data;
-  // let temp_dataArry = [];
-  return new Promise((resolve, reject) => {
-    MongoClient.connect(url, { useNewUrlParser: true, useUnifiedTopology: true }, function (err, db) {
-      if (err) throw err;
-      let dbo = db.db("sofiva");
-      let data = dbo.collection(productType).find().sort({ runid: -1 }).limit(12);
-
-      data.toArray().then((result) => {
-        result.reverse().forEach((element) => {
-          if (element.closed !== 1) {
-            let nowSeconds = parseInt(new Date().getTime() / 1000);
-            let clockArray = element.sequencedStart.split(/[-:]/);
-            const sequencedSeconds =
-              new Date(
-                parseInt(clockArray[0]),
-                parseInt(clockArray[1]) - 1,
-                parseInt(clockArray[2]),
-                parseInt(clockArray[3]),
-                parseInt(clockArray[4]),
-                parseInt(clockArray[5])
-              ).getTime() / 1000;
-            let intervalSeconds = nowSeconds - sequencedSeconds;
-
-            // console.log(clockArray, intervalSeconds, nowSeconds, sequencedSeconds);
-
-            if (element.sequencedStart.match("-")) {
-              element.totalTime = getClock(intervalSeconds);
-              // console.log(element.runid, clockArray, intervalSeconds, nowSeconds, sequencedSeconds, element.totalTime);
-            }
-          }
-
-          temp_dataArry.push(calcStepDurationTime(element));
-        });
-
-        db.close();
-
-        if (productType === "nips") {
-          temp_dataArry = getRunNo(temp_dataArry);
-        }
-        // console.log(temp_dataArry);
-        resolve(temp_dataArry);
-        // return temp_dataArry;
-      });
-    });
-  });
-}
-
-function getRunNo(data) {
-  let runidArr = [];
-  const analyzedArr = data.filter(function (item, index, array) {
-    return item.analyzedStart !== "00:00:30";
-  });
-
-  // console.log(data);
-  analyzedArr.forEach((el) => {
-    const runDate = el.runid.split("_");
-    runidArr.push(runDate[0]);
-  });
-
-  const runidUni = [...new Set(runidArr)];
-
-  runidUni.sort(function (a, b) {
-    if (a > b) return 1;
-    if (a < b) return -1;
-    return 0;
-  });
-  // console.log(runidUni);
-  runidUni.forEach((runid) => {
-    let tempArr = [];
-
-    data.forEach((el) => {
-      if (el.runid.match(runid) && el.analyzedStart !== "00:00:30") {
-        let clockArray = el.analyzedStart.split(/[-:]/);
-        const epoch = new Date(
-          clockArray[0],
-          clockArray[1],
-          clockArray[2],
-          clockArray[3],
-          clockArray[4],
-          clockArray[5]
-        ).getTime();
-        tempArr.push(epoch);
-      }
-    });
-    // console.log(tempArr);
-    tempArr.sort(function (a, b) {
-      if (a > b) return 1;
-      if (a < b) return -1;
-      return 0;
-    });
-
-    // console.log(tempArr);
-    let number = 0;
-
-    tempArr.forEach((epoch, index, arr) => {
-      data.forEach((el) => {
-        let clockArray = el.analyzedStart.split(/[-:]/);
-        let preClockArr = 0;
-
-        if (index !== 0) {
-          preClock = arr[index - 1];
-        }
-
-        const epochData = new Date(
-          clockArray[0],
-          clockArray[1],
-          clockArray[2],
-          clockArray[3],
-          clockArray[4],
-          clockArray[5]
-        ).getTime();
-
-        // console.log("===", el.runid, epochData, index);
-
-        if (epochData === epoch && index === 0) {
-          el.runNo = index + 1;
-          // console.log("=", el.runid, el.analyzedStart, epochData, el.runNo);
-        } else if (epochData === epoch && epochData - arr[index - 1] < 18000000) {
-          // console.log("number: " + number);
-          el.runNo = index + 1 - number;
-          // console.log("<", el.runid, el.analyzedStart, epochData, arr[index - 1], epochData - arr[index - 1], el.runNo);
-          // console.log(index, el.runNo);
-        } else if (epochData === epoch && epochData - arr[index - 1] > 18000000) {
-          // console.log(arr);
-          el.runNo = 1;
-          number = index;
-
-          // console.log(">", el.runid, el.analyzedStart, epochData, arr[index - 1], epochData - arr[index - 1], el.runNo);
-          // console.log(arr);
-        }
-      });
-    });
-  });
-  // console.log(data);
-  return data;
-}
-
 const JSONListPath = {
   nips: "../source_data/nips_progress_tail.json",
   sg: "../source_data/sg_progress_tail.json",
@@ -326,41 +182,26 @@ const writeFile = (filename, content) => {
   fs.writeFile(filename, content, () => {});
 };
 
-// data.nips = JSON.parse(fs.readFileSync(JSONListPath.nips).toString());
-// data.sg = JSON.parse(fs.readFileSync(JSONListPath.sg).toString());
-// data.iona = JSON.parse(fs.readFileSync(JSONListPath.iona).toString());
-// data.ctdna = JSON.parse(fs.readFileSync(JSONListPath.ctdna).toString());
+data.nips = JSON.parse(fs.readFileSync(JSONListPath.nips).toString());
+data.sg = JSON.parse(fs.readFileSync(JSONListPath.sg).toString());
+data.iona = JSON.parse(fs.readFileSync(JSONListPath.iona).toString());
+data.ctdna = JSON.parse(fs.readFileSync(JSONListPath.ctdna).toString());
 
-getData("nips").then((res) => {
-  // console.log("123", res);
+// var stats = fs.statSync(JSONListPath.nips);
+// console.log(stats.size);
 
-  writeFile(webJSONListPath.nips, JSON.stringify(res));
-  writeFile(tempJSONListPath.nips, JSON.stringify(res));
-});
+for (const key in data) {
+  data[key] = compareContent(data[key], key);
 
-getData("iona").then((res) => {
-  // console.log("123", res);
+  for (let i = 0; i < data[key].length; i++) {
+    data[key][i] = calcStepDurationTime(data[key][i]);
+  }
 
-  writeFile(webJSONListPath.iona, JSON.stringify(res));
-  writeFile(tempJSONListPath.iona, JSON.stringify(res));
-});
-// console.log(data.nips);
-
-// writeFile(webJSONListPath.nips, JSON.stringify(data.nips));
-// writeFile(tempJSONListPath.nips, JSON.stringify(data.nips));
-
-// for (const key in data) {
-//   data[key] = compareContent(data[key], key);
-
-//   for (let i = 0; i < data[key].length; i++) {
-//     data[key][i] = calcStepDurationTime(data[key][i]);
-//   }
-
-//   if (JSON.stringify(data[key]) != "") {
-//     writeFile(webJSONListPath[key], JSON.stringify(data[key]));
-//     writeFile(tempJSONListPath[key], JSON.stringify(data[key]));
-//   }
-// }
+  if (JSON.stringify(data[key]) != "") {
+    writeFile(webJSONListPath[key], JSON.stringify(data[key]));
+    writeFile(tempJSONListPath[key], JSON.stringify(data[key]));
+  }
+}
 
 // let date = new Date();
 // dataValues = [

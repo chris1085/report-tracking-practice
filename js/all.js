@@ -1,4 +1,3 @@
-// mail when progress step time over cutoff-Time
 const cutOffSetttings = {
   nips: {
     totalTime: "09:39:57",
@@ -116,7 +115,7 @@ const cutOffSetttings = {
  * @param {*} path //JSON List Path
  * @returns
  */
-function getJSONList(path, productTypeIndex = 0) {
+function getJSONList(path, productTypeIndex) {
   const productType = ["nips", "sg", "iona", "ctdna", "arrayv2", "arrayv3", "csv1", "csv2", "csv3"];
   let statusDetail;
   let productCount = 3;
@@ -125,15 +124,16 @@ function getJSONList(path, productTypeIndex = 0) {
     let fileTime = String(new Date(xhr.getResponseHeader("Last-Modified")));
     let res = fileTime.split(" ");
     let numberMonth = "JanFebMarAprMayJunJulAugSepOctNovDec".indexOf(res[1]) / 3 + 1;
+    numberMonth = ("0" + numberMonth).slice(-2);
     let updatedTime = res[3] + "/" + numberMonth + "/" + res[2] + " " + res[4];
 
     let dataStringty = JSON.stringify(data);
+    // console.log(data);
 
     localStorage.setItem(productType[productTypeIndex], dataStringty);
 
     getProgressStatus(data, productTypeIndex);
     statusDetail = getStatusDetail(data, productTypeIndex);
-    // clickProgressIcon(statusDetail, data);
     $("." + productType[productTypeIndex] + "-updatedTime").html("Last Updated Time: " + updatedTime);
 
     modifyDurationTime(data, productType[productTypeIndex] + "-");
@@ -183,13 +183,6 @@ function modifyDurationTime(JSONList, productType) {
   });
 }
 
-/**
- * Setting Pseudo time perSeconds at TotalTime, and also calculating
- * Time Reversed from seconds to HH:MM:SS
- * *Using localStorage to write and read Temp Pseudo Time, and let users know time is moving
- * @param {*} productType EX:NIPS, SG, IONA...etc
- * @param {*} objectName Step Name(TotalTime)
- */
 function movePseudoClock(productType, objectName) {
   setTimeout(function () {
     movePseudoClock(productType, objectName);
@@ -233,17 +226,26 @@ function movePseudoClock(productType, objectName) {
       if (hours < 9) {
         hours = ("0" + hours).slice(-2);
       }
+
       newPseudoClock = hours + ":" + mins + ":" + seconds;
 
-      $("#" + productType + "-timeUsed" + index)
+      if (objectName === "totalTime") {
+        $("#" + productType + "-timeUsed" + index)
         .find("span")
         .text(newPseudoClock);
+        
+      }
+      
 
       dataStorage[index].totalTime = newPseudoClock;
     } else {
-      $("#" + productType + "-timeUsed" + index)
+      if (objectName === "totalTime") {
+        $("#" + productType + "-timeUsed" + index)
         .find("span")
         .text(timeClock);
+        
+      }
+      
     }
 
     dataStorageString[count] = dataStorage[index];
@@ -254,7 +256,7 @@ function movePseudoClock(productType, objectName) {
 }
 
 /**
- * Selecting the description in every step
+ * select the description in every step
  *
  * @param {*} iconInfo
  * @returns product and its step description
@@ -366,7 +368,7 @@ function selectStepID(iconInfo) {
 }
 
 /**
- * Clicking progress icon and adding collapsed class and changing their info
+ * click progress icon and adding collapsed class and changing their info
  *
  * @param {*} statusDetail
  */
@@ -375,8 +377,10 @@ function clickProgressIcon(product) {
 
   $(".step-body").click(function (event) {
     let data = JSON.parse(localStorage.getItem(product));
+
     let id = $(this).parents("div").attr("id").split("-progressId")[1];
     let productType = $(this).parents("div").attr("id").split("-progressId")[0];
+    // console.log(data[id]);
 
     $(this)
       .parents()
@@ -400,41 +404,39 @@ function clickProgressIcon(product) {
     let collapseStatusDetail = "";
     let currentStatusTime = data[id][currentStatusTimeName];
     let alarmTime = cutOffSetttings[product][currentStatusTimeName];
+    const runNo = data[id]["runNo"];
     // console.log(alarmTime);
 
     let sampleRunNumber = $(this).parents(".div-progress").find(".row-sampleRun").length;
 
     Object.keys(data[id]).some(function (key) {
-      //loop to find progress key and value
-      // console.log(id);
-      // console.log(key);
+      data[id][key] += "";
       if (key == currentStatusDetail && data[id][key].match(/\d+\/\d+/)) {
-        // console.log(statusDetail[id][key]);
         collapseStatusDetail = "Data Info: " + data[id][key];
         return;
       }
     });
 
-    /* NOTE adding collapsed Content and changing class*/
+    /* adding collapsed Content and changing class*/
     $(this)
       .parents()
       .find("#collapseStepInfo" + id)
       .children()
-      .html("<div class='col-6 text-left'><h6>" + collapaseContent + "</h6></div>");
+      .html("<div class='col-6 text-left'><h6>" + collapaseContent + "</h6><h6>RunNo: " + runNo + "</h6></div>");
     $(this)
       .parents()
       .find("#collapseStepInfo" + id)
       .children()
       .append(
         "<div class='col-6 text-right' id='contentStatus'><h6 class='step-duration'>Step Duration: " +
-          currentStatusTime +
-          "</h6><h6>" +
-          collapseStatusDetail +
-          "</h6><h6> " +
-          currentStatus +
-          "</h6><h6>Alarm: " +
-          alarmTime +
-          "</h6></div>"
+        currentStatusTime +
+        "</h6><h6>" +
+        collapseStatusDetail +
+        "</h6><h6> " +
+        currentStatus +
+        "</h6><h6>Alarm: " +
+        alarmTime +
+        "</h6></div>"
       );
     // $(this).parents().find('#collapseStepInfo' + id).children().text(collapaseContent);
 
@@ -444,23 +446,32 @@ function clickProgressIcon(product) {
           .parents()
           .find("#collapseStepInfo" + i)
           .removeClass("show");
+
+        $(this)
+          .parents()
+          .find("#collapseStepInfo" + i).removeClass('notransition');
       }
+
     }
 
     if (
       $(this)
-        .parents()
-        .find("#collapseStepInfo" + id)
-        .val() != "" &&
+      .parents()
+      .find("#collapseStepInfo" + id)
+      .val() != "" &&
       $(this)
-        .parents()
-        .find("#collapseStepInfo" + id)
-        .val() != $(this).attr("id")
+      .parents()
+      .find("#collapseStepInfo" + id)
+      .val() != $(this).attr("id")
     ) {
       $(this)
         .parents()
         .find("#collapseStepInfo" + id)
         .val($(this).attr("id"));
+
+      $(this)
+        .parents()
+        .find("#collapseStepInfo" + id).addClass('notransition');
       $(this)
         .parents()
         .find("#collapseStepInfo" + id)
@@ -474,6 +485,69 @@ function clickProgressIcon(product) {
         .val($(this).attr("id"));
       // console.log($(this).parents().find('#collapseStepInfo' + id).val());
     }
+  });
+
+  $(".progress-body").click(function (event) {
+    console.log("123");
+    let id = $(this).parents("div").attr("id").split("-progressId")[1];
+    let productType = $(this).parents("div").attr("id").split("-progressId")[0];
+    let sampleRunNumber = $(this).parents(".div-progress").find(".row-sampleRun").length;
+    let collapaseContent = "Interval Time: 00:00:30";
+
+
+    // console.log(id, productType, sampleRunNumber);
+    $(this)
+      .parents()
+      .find("#collapseStepInfo" + id)
+      .children()
+      .html("<div class='col-12 text-center'><h6>" + collapaseContent + "</h6></div>");
+
+    for (let i = 0; i < sampleRunNumber; i++) {
+      if (id != i) {
+        $(this)
+          .parents()
+          .find("#collapseStepInfo" + i)
+          .removeClass("show");
+
+        $(this)
+          .parents()
+          .find("#collapseStepInfo" + i).removeClass('notransition');
+      }
+
+    }
+
+    if (
+      $(this)
+      .parents()
+      .find("#collapseStepInfo" + id)
+      .val() != "" &&
+      $(this)
+      .parents()
+      .find("#collapseStepInfo" + id)
+      .val() != $(this).attr("id")
+    ) {
+      $(this)
+        .parents()
+        .find("#collapseStepInfo" + id)
+        .val($(this).attr("id"));
+
+      $(this)
+        .parents()
+        .find("#collapseStepInfo" + id).addClass('notransition');
+      $(this)
+        .parents()
+        .find("#collapseStepInfo" + id)
+        .removeClass("show");
+
+      // console.log($(this).parents("div").attr('id') + " " + $(this).parents().find("#collapseStepInfo" + id).val());
+    } else {
+      $(this)
+        .parents()
+        .find("#collapseStepInfo" + id)
+        .val($(this).attr("id"));
+      // console.log($(this).parents().find('#collapseStepInfo' + id).val());
+    }
+
   });
 }
 
@@ -527,6 +601,7 @@ function getProgressStatus(progressContent = data, productTypeIndex = 1) {
         // console.log(sampleRun);
 
         Object.keys(sampleRun).some(function (key) {
+          sampleRun[key] += "";
           if (sampleRun[key] == 0 && key != "error" && key != "closed" && flag != 1) {
             //active
             // console.log(key + '=' + sampleRun[key]);
@@ -578,6 +653,7 @@ function getProgressStatus(progressContent = data, productTypeIndex = 1) {
 function getStatusDetail(progressContent = data, productTypeIndex = 1) {
   const productType = ["#nips", "#sg", "#iona", "#ctdna", "#arrayv2", "#arrayv3", "#csv1", "#csv2", "#csv3"];
   let statusDetail = [];
+  // console.log(productTypeIndex, data);
 
   let regexp = /(\d+)\/(\d+)/;
 
@@ -586,6 +662,8 @@ function getStatusDetail(progressContent = data, productTypeIndex = 1) {
     let downloadedNumber = 0;
     let jobsubmittedNumber = 0;
     let jobcompletedNumber = 0;
+    sampleRun.jobsubmitted += "";
+    sampleRun.jobcompleted += "";
 
     if (sampleRun.incloud.match(regexp)) {
       //if incloud matched the run numbers

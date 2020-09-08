@@ -72,6 +72,16 @@ h1 {
   width: 100%;
 }
 
+.iconTitle {
+  font-size: 10px;
+}
+
+@media (max-width: 576px) {
+  .iconTitle {
+    display: none;
+  }
+}
+
 .btn {
   border-width: 2px;
 }
@@ -252,6 +262,18 @@ h1 {
   }
 }
 
+@media (min-width: 1200px) {
+  .stepbar-progress tbody tr td:first-child .step-body {
+    margin-left: 1em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .stepbar-progress tbody tr td:last-child .step-body {
+    margin-right: 1.2em;
+  }
+}
+
 .content-header-info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -297,6 +319,15 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+}
+
+.notransition {
+  -webkit-transition: none !important;
+  transition: none !important;
+}
+
+.progress-body {
+  cursor: pointer;
 }
 
 .content-header-info-list {
@@ -412,6 +443,7 @@ h1 {
 .content-header-info-list .current {
   background: #58b2dc;
   color: #fff;
+  widows: 100%;
 }
 
 .content-header-info-list .current:after {
@@ -420,6 +452,10 @@ h1 {
 
 .first-info {
   width: 70%;
+}
+
+.first-info2 {
+  width: 35%;
 }
 
 .content-icon-item {
@@ -599,11 +635,20 @@ td {
 
 .stepbar-progress .step-item-progress {
   width: 12.5%;
+}
+
+.stepbar-progress .newStep-item-progress {
+  width: 33.33333%;
+}
+
+.stepbar-progress .step-item-progress,
+.stepbar-progress .newStep-item-progress {
   height: 32px;
   vertical-align: middle;
 }
 
-.stepbar-progress .step-item-progress .progress-body {
+.stepbar-progress .step-item-progress .progress-body,
+.stepbar-progress .newStep-item-progress .progress-body {
   display: block;
   height: 11px;
   background-color: #e4e4e7;
@@ -614,7 +659,8 @@ td {
   transition: all 1s ease;
 }
 
-.stepbar-progress .step-item-progress .progress-body .body-fill {
+.stepbar-progress .step-item-progress .progress-body .body-fill,
+.stepbar-progress .newStep-item-progress .progress-body .body-fill {
   width: 20px;
   height: 5px;
   background-color: #66ff00;
