@@ -18,3 +18,6 @@ node_modules
 # 忽略log
 log
 log_convert
+
+#ignore
+js/mail*.js
