@@ -409,6 +409,29 @@ function clickProgressIcon(product) {
 
     let sampleRunNumber = $(this).parents(".div-progress").find(".row-sampleRun").length;
 
+    if (currentStatusTime === "00:00:30" && data[id][currentStatusDetail + "Start"] != "00:00:30" ) {
+      const sampleYY = parseInt(data[id][currentStatusDetail + "Start"].split(/[:-]/)[0]);
+      const sampleMM = parseInt(data[id][currentStatusDetail + "Start"].split(/[:-]/)[1]) - 1;
+      const sampleDD = parseInt(data[id][currentStatusDetail + "Start"].split(/[:-]/)[2]);
+      const sampleHours = parseInt(data[id][currentStatusDetail + "Start"].split(/[:-]/)[3]);
+      const sampleMins = parseInt(data[id][currentStatusDetail + "Start"].split(/[:-]/)[4]);
+      const sampleSecs = parseInt(data[id][currentStatusDetail + "Start"].split(/[:-]/)[5]);
+      const totalSecs = new Date(sampleYY, sampleMM, sampleDD, sampleHours, sampleMins, sampleSecs).getTime();
+      const currSecs = new Date().getTime();
+      // console.log(currSecs,totalSecs);
+      currentStatusTime = (currSecs - totalSecs) / 1000;
+      currentStatusTime = new Date(parseInt(currentStatusTime) * 1000).toISOString().substr(11, 8);
+    } else if (currentStatusTime === "00:00:30" && data[id][currentStatusDetail + "Start"] === "00:00:30") {
+      const sampleHours = parseInt(data[id][currentStatusTimeName].split(/[:-]/)[0]);
+      const sampleMins = parseInt(data[id][currentStatusTimeName].split(/[:-]/)[1]);
+      const sampleSecs = parseInt(data[id][currentStatusTimeName].split(/[:-]/)[2]);
+      console.log(sampleHours,sampleMins,sampleSecs,data[id][currentStatusTimeName],id,currentStatusTimeName);
+      const newDate = new Date((sampleHours * 60 * 60 + sampleMins * 60 + sampleSecs + 1) * 1000).toISOString().substr(11, 8);
+      data[id][currentStatusTimeName] = newDate;
+      localStorage.setItem(productType, JSON.stringify(data));
+      // movePseudoClock(product, currentStatusTimeName);
+    }
+
     Object.keys(data[id]).some(function (key) {
       data[id][key] += "";
       if (key == currentStatusDetail && data[id][key].match(/\d+\/\d+/)) {

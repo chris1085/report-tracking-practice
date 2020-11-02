@@ -56,10 +56,16 @@ function sendMail(content, productType, flag) {
 
   //宣告發信物件
   let transporter = nodemailer.createTransport({
-    service: "Gmail",
+    // service: "Gmail",
+    // auth: {
+    //   user: "sofiva.bmi@gmail.com",
+    //   pass: "zabvtgxrhahvjjqh"
+    // }
+    host: "smtp.gmail.com",
+    secure: false, // upgrade later with STARTTLS
     auth: {
-      user: "sofiva.bmi@gmail.com",
-      pass: "zabvtgxrhahvjjqh"
+      user: "bmi@sofivagenomics.com.tw",
+      pass: "sofiva6615"
     }
   });
 
@@ -155,13 +161,19 @@ function filterSampleRun(sample, productType) {
     } else if(key.match(/(.*)Start$/) && sample.closed != "1"){
       const curStepTime = RegExp.$1 + "Time";
       if (key[curStepTime] === "00:00:30") {
-        const sampleHours = parseInt(sample[key].split(":")[0]);
-        const sampleMins = parseInt(sample[key].split(":")[1]);
-        const sampleSecs = parseInt(sample[key].split(":")[2]);
-        const totalSecs = sampleHours * 60 * 60 + sampleMins * 60 + sampleSecs;
+        const sampleYY = parseInt(sample[key].split(/[:-]/)[0]);
+        const sampleMM = parseInt(sample[key].split(/[:-]/)[1]);
+        const sampleDD = parseInt(sample[key].split(/[:-]/)[2]);
+        
+        const sampleHours = parseInt(sample[key].split(/[:-]/)[3]);
+        const sampleMins = parseInt(sample[key].split(/[:-]/)[4]);
+        const sampleSecs = parseInt(sample[key].split(/[:-]/)[5]);
+        // const totalSecs = sampleHours * 60 * 60 + sampleMins * 60 + sampleSecs;
+        const totalSecs = new Date(sampleYY, sampleMM, sampleDD, sampleHours, sampleMins, sampleSecs).getTime();
+        const currSecs = new Date().getTime();
         const cutOffTime = new Date(cutOffSetttings[productType][curStepTime] * 1000).toISOString().substr(11, 8);
 
-        if (totalSecs > cutOffSetttings[productType][curStepTime]) {
+        if ((currSecs - totalSecs)/1000 > cutOffSetttings[productType][curStepTime]) {
           let runid = sample.runid;
           let temp = {
             [productType]: {

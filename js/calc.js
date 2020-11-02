@@ -1,14 +1,14 @@
 let temp_dataArry = [];
 
 function calcStepDurationTime(data) {
-  let intervalTime = 10;
+  let intervalTime = 30;
   let newDurationTime;
   // console.log(data);
 
   if (typeof data.totalTime == "undefined") {
     // console.log("total Time not defined!");
 
-    data.totalTime = "00:04:30";
+    data.totalTime = "00:00:00";
     data.sequencedTime = "00:00:30";
     data.analyzedTime = "00:00:30";
     data.ondellTime = "00:00:30";
@@ -170,6 +170,7 @@ function getData(productType) {
       let data = dbo.collection(productType).find().sort({ runid: -1 }).limit(12);
 
       data.toArray().then((result) => {
+      // console.log(result);
         result.reverse().forEach((element) => {
           if (element.closed !== 1) {
             let nowSeconds = parseInt(new Date().getTime() / 1000);
@@ -338,12 +339,12 @@ getData("nips").then((res) => {
   writeFile(tempJSONListPath.nips, JSON.stringify(res));
 });
 
-getData("iona").then((res) => {
-  // console.log("123", res);
+// getData("iona").then((res) => {
+//   // console.log("123", res);
 
-  writeFile(webJSONListPath.iona, JSON.stringify(res));
-  writeFile(tempJSONListPath.iona, JSON.stringify(res));
-});
+//   writeFile(webJSONListPath.iona, JSON.stringify(res));
+//   writeFile(tempJSONListPath.iona, JSON.stringify(res));
+// });
 // console.log(data.nips);
 
 // writeFile(webJSONListPath.nips, JSON.stringify(data.nips));
